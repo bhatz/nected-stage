@@ -1,0 +1,16 @@
+{
+ "entityType": "connector",
+ "category": "postgres",
+ "data": {
+  "createdAt": "2024-02-08T12:08:14.466Z",
+  "updatedAt": "2025-01-07T13:44:09.671158Z",
+  "isDeleted": false,
+  "entityId": "65c4c42efe7afdaf39a7bed5",
+  "name": "NectedApp",
+  "isDemo": false,
+  "category": "database",
+  "isSource": true,
+  "isAction": true,
+  "isTrigger": true
+ }
+}

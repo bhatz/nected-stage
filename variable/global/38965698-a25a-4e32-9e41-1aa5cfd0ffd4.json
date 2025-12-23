@@ -1,0 +1,20 @@
+{
+ "entityType": "variable",
+ "data": {
+  "createdAt": "2025-12-17T13:42:52.901Z",
+  "updatedAt": "2025-12-17T13:42:52.901Z",
+  "isDeleted": false,
+  "entityId": "38965698-a25a-4e32-9e41-1aa5cfd0ffd4",
+  "name": "mukulV",
+  "category": "globalVar",
+  "scope": "workspace",
+  "dataType": "string",
+  "value": {
+   "data": "bhatiV",
+   "isSecret": false,
+   "canReset": false
+  },
+  "isFunction": false,
+  "functionName": ""
+ }
+}

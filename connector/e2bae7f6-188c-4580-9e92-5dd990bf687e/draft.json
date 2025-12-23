@@ -1,0 +1,16 @@
+{
+ "entityType": "connector",
+ "category": "openai",
+ "data": {
+  "createdAt": "2025-10-15T07:58:51.935Z",
+  "updatedAt": "2025-10-15T08:01:04.402394Z",
+  "isDeleted": false,
+  "entityId": "e2bae7f6-188c-4580-9e92-5dd990bf687e",
+  "name": "openAI",
+  "isDemo": false,
+  "category": "ai-provider",
+  "isSource": false,
+  "isAction": true,
+  "isTrigger": true
+ }
+}

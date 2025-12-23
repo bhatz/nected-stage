@@ -1,0 +1,16 @@
+{
+ "entityType": "connector",
+ "category": "snowflake",
+ "data": {
+  "createdAt": "2025-03-04T06:15:43.162Z",
+  "updatedAt": "2025-03-04T06:16:31.576383Z",
+  "isDeleted": false,
+  "entityId": "dff19c15-50d0-416c-baaa-7ce6bcc7f16e",
+  "name": "SubhanshuSnowflake",
+  "isDemo": false,
+  "category": "database",
+  "isSource": true,
+  "isAction": true,
+  "isTrigger": true
+ }
+}

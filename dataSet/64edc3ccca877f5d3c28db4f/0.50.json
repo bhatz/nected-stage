@@ -1,0 +1,245 @@
+{
+ "entityType": "dataSet",
+ "category": "dataSet",
+ "live": true,
+ "data": {
+  "createdAt": "2023-08-29T10:09:16.788Z",
+  "updatedAt": "2023-09-21T11:44:53.648Z",
+  "isDeleted": false,
+  "testedAt": "2023-09-21T11:44:46.613Z",
+  "publishedAt": "2023-09-21T11:44:53.646Z",
+  "entityId": "64edc3ccca877f5d3c28db4f",
+  "version": "0.50",
+  "name": "ruleDS",
+  "commitId": "commit-9dd0bdad-1ffa-48c0-99b4-dd354c417e40",
+  "status": "published",
+  "lastVersion": "",
+  "isLive": true,
+  "commitInfo": {
+   "title": "Publish Version",
+   "timeStamp": "2024-05-27T06:55:12.784Z"
+  },
+  "fields": {
+   "_id": {
+ "ColumnName": "",
+ "DataType": "string",
+ "Order": 0,
+ "ExecutedValue": null
+},
+   "action": {
+ "ColumnName": "",
+ "DataType": "json",
+ "Order": 0,
+ "ExecutedValue": null
+},
+   "comment": {
+ "ColumnName": "",
+ "DataType": "string",
+ "Order": 0,
+ "ExecutedValue": null
+},
+   "condition": {
+ "ColumnName": "",
+ "DataType": "json",
+ "Order": 0,
+ "ExecutedValue": null
+},
+   "createdAt": {
+ "ColumnName": "",
+ "DataType": "dateTime",
+ "Order": 0,
+ "ExecutedValue": null
+},
+   "createdBy": {
+ "ColumnName": "",
+ "DataType": "numeric",
+ "Order": 0,
+ "ExecutedValue": null
+},
+   "customInput": {
+ "ColumnName": "",
+ "DataType": "json",
+ "Order": 0,
+ "ExecutedValue": null
+},
+   "dataSetId": {
+ "ColumnName": "",
+ "DataType": "string",
+ "Order": 0,
+ "ExecutedValue": null
+},
+   "decisionTable": {
+ "ColumnName": "",
+ "DataType": "json",
+ "Order": 0,
+ "ExecutedValue": null
+},
+   "description": {
+ "ColumnName": "",
+ "DataType": "string",
+ "Order": 0,
+ "ExecutedValue": null
+},
+   "firstRuleChain": {
+ "ColumnName": "",
+ "DataType": "string",
+ "Order": 0,
+ "ExecutedValue": null
+},
+   "isDeleted": {
+ "ColumnName": "",
+ "DataType": "boolean",
+ "Order": 0,
+ "ExecutedValue": null
+},
+   "isDemo": {
+ "ColumnName": "",
+ "DataType": "boolean",
+ "Order": 0,
+ "ExecutedValue": null
+},
+   "isEnabled": {
+ "ColumnName": "",
+ "DataType": "boolean",
+ "Order": 0,
+ "ExecutedValue": null
+},
+   "isPublish": {
+ "ColumnName": "",
+ "DataType": "boolean",
+ "Order": 0,
+ "ExecutedValue": null
+},
+   "isTested": {
+ "ColumnName": "",
+ "DataType": "boolean",
+ "Order": 0,
+ "ExecutedValue": null
+},
+   "name": {
+ "ColumnName": "",
+ "DataType": "string",
+ "Order": 0,
+ "ExecutedValue": null
+},
+   "policy": {
+ "ColumnName": "",
+ "DataType": "string",
+ "Order": 0,
+ "ExecutedValue": null
+},
+   "production": {
+ "ColumnName": "",
+ "DataType": "json",
+ "Order": 0,
+ "ExecutedValue": null
+},
+   "publishedAt": {
+ "ColumnName": "",
+ "DataType": "dateTime",
+ "Order": 0,
+ "ExecutedValue": null
+},
+   "publishedBy": {
+ "ColumnName": "",
+ "DataType": "numeric",
+ "Order": 0,
+ "ExecutedValue": null
+},
+   "ruleChain": {
+ "ColumnName": "",
+ "DataType": "",
+ "Order": 0,
+ "ExecutedValue": null
+},
+   "ruleSet": {
+ "ColumnName": "",
+ "DataType": "",
+ "Order": 0,
+ "ExecutedValue": null
+},
+   "ruleSetPolicy": {
+ "ColumnName": "",
+ "DataType": "string",
+ "Order": 0,
+ "ExecutedValue": null
+},
+   "staging": {
+ "ColumnName": "",
+ "DataType": "json",
+ "Order": 0,
+ "ExecutedValue": null
+},
+   "testedAt": {
+ "ColumnName": "",
+ "DataType": "dateTime",
+ "Order": 0,
+ "ExecutedValue": null
+},
+   "testedBy": {
+ "ColumnName": "",
+ "DataType": "numeric",
+ "Order": 0,
+ "ExecutedValue": null
+},
+   "type": {
+ "ColumnName": "",
+ "DataType": "string",
+ "Order": 0,
+ "ExecutedValue": null
+},
+   "updatedAt": {
+ "ColumnName": "",
+ "DataType": "dateTime",
+ "Order": 0,
+ "ExecutedValue": null
+},
+   "updatedBy": {
+ "ColumnName": "",
+ "DataType": "numeric",
+ "Order": 0,
+ "ExecutedValue": null
+},
+   "version": {
+ "ColumnName": "",
+ "DataType": "string",
+ "Order": 0,
+ "ExecutedValue": null
+},
+   "workspaceId": {
+ "ColumnName": "",
+ "DataType": "numeric",
+ "Order": 0,
+ "ExecutedValue": null
+}
+  },
+  "description": "",
+  "query": "db.rule.find({\"isDemo\":true});",
+  "params": null,
+  "connectorId": "649c1fbe0eda1b2bd885585e",
+  "isDemo": false,
+  "settings": {
+   "durationUnit": "m",
+   "rowLimit": 1000,
+   "durationValue": 5,
+   "cacheEnabled": true,
+   "timezone": "",
+   "dateFormat": ""
+  }
+ },
+ "dependencies": [
+  {
+   "isDeleted": false,
+   "createdAt": "2024-09-10T21:33:22.785935Z",
+   "updatedAt": "2024-09-10T21:33:22.785935Z",
+   "entityCommitId": "commit-9dd0bdad-1ffa-48c0-99b4-dd354c417e40",
+   "entityType": "dataSet",
+   "entityId": "64edc3ccca877f5d3c28db4f",
+   "entityVersion": "0.50",
+   "entityNodeId": "connector",
+   "dependencyType": "connector",
+   "dependencyId": "649c1fbe0eda1b2bd885585e",
+   "dependencyVersion": "live"
+  }
+ ]
+}

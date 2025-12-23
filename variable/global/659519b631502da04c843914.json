@@ -1,0 +1,20 @@
+{
+ "entityType": "variable",
+ "data": {
+  "createdAt": "2024-01-03T08:24:22.066Z",
+  "updatedAt": "2024-07-29T08:28:43.210721Z",
+  "isDeleted": false,
+  "entityId": "659519b631502da04c843914",
+  "name": "base_price",
+  "category": "globalVar",
+  "scope": "workspace",
+  "dataType": "numeric",
+  "value": {
+   "data": 1000,
+   "isSecret": false,
+   "canReset": false
+  },
+  "isFunction": false,
+  "functionName": ""
+ }
+}

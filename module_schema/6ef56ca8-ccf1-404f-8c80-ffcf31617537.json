@@ -1,0 +1,21 @@
+{
+ "entityType": "module_schema",
+ "data": {
+  "createdAt": "2025-10-24T10:28:22.199Z",
+  "updatedAt": "2025-10-24T10:28:22.199Z",
+  "isDeleted": false,
+  "entityId": "6ef56ca8-ccf1-404f-8c80-ffcf31617537",
+  "name": "loanStatus",
+  "moduleId": "e824a452-0eb8-4a91-b259-55c1b0a0c478",
+  "dataType": "string",
+  "usageType": "mandatory",
+  "options": [
+   {
+    "value": "Approved"
+   },
+   {
+    "value": "Rejected"
+   }
+  ]
+ }
+}

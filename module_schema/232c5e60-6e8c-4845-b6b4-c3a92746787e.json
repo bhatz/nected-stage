@@ -1,0 +1,14 @@
+{
+ "entityType": "module_schema",
+ "data": {
+  "createdAt": "2025-10-24T10:28:22.029Z",
+  "updatedAt": "2025-10-24T10:28:22.029Z",
+  "isDeleted": false,
+  "entityId": "232c5e60-6e8c-4845-b6b4-c3a92746787e",
+  "name": "avg_bank_balance",
+  "moduleId": "d8af52a1-889e-41d8-9bb7-f9097c3de5f7",
+  "dataType": "numeric",
+  "usageType": "optional",
+  "options": null
+ }
+}

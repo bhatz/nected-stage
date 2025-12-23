@@ -1,0 +1,20 @@
+{
+ "entityType": "variable",
+ "data": {
+  "createdAt": "2023-05-11T04:00:44.605Z",
+  "updatedAt": "2023-05-11T04:00:44.605Z",
+  "isDeleted": false,
+  "entityId": "645c686c4bad076753850d07",
+  "name": "Countries",
+  "category": "globalVar",
+  "scope": "workspace",
+  "dataType": "string",
+  "value": {
+   "data": "Thailand,Singapore",
+   "isSecret": false,
+   "canReset": false
+  },
+  "isFunction": false,
+  "functionName": ""
+ }
+}

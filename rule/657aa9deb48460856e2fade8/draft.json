@@ -1,0 +1,192 @@
+{
+ "entityType": "rule",
+ "category": "simpleRule",
+ "data": {
+  "createdAt": "2023-12-14T07:08:14.601Z",
+  "updatedAt": "2023-12-21T09:47:16.155Z",
+  "isDeleted": false,
+  "testedAt": "2023-12-21T12:05:46.317Z",
+  "publishedAt": "0001-01-01T00:00:00Z",
+  "entityId": "657aa9deb48460856e2fade8",
+  "version": "draft",
+  "name": "testRule1",
+  "commitId": "commit-930c44b3-b9ea-4b3d-993f-0021a9da7b1a",
+  "status": "tested",
+  "lastVersion": "",
+  "isLive": false,
+  "commitInfo": {
+   "title": "Draft",
+   "timeStamp": "2024-05-27T06:55:23.528Z"
+  },
+  "customInput": null,
+  "ruleChain": null,
+  "decisionTable": {
+   "rows": null,
+   "properties": null,
+   "results": null,
+   "firstRow": "",
+   "firstProperty": "",
+   "firstResult": "",
+   "firstAggOutputData": ""
+  },
+  "action": {
+   "then": {
+    "outputData": {
+     
+    },
+    "actionNode": {
+     "actionData_1": {
+ "name": "Slack",
+ "connectorId": "6584089a3bce48507662fbc0",
+ "entity": null,
+ "entityId": null,
+ "config": {
+  "actionMethod": "sendMessage",
+  "channel": {
+ "is_private": false,
+ "label": "general",
+ "value": "general"
+},
+  "text": "I am sending you message on general channel"
+ },
+ "input": null,
+ "next": ""
+}
+    },
+    "firstOutputData": "",
+    "firstActionNode": "actionData_1"
+   },
+   "else": {
+    "outputData": {
+     
+    },
+    "actionNode": {
+     
+    },
+    "firstOutputData": "",
+    "firstActionNode": ""
+   }
+  },
+  "conditions": {
+   "nodes": {
+    "rule_01": {
+ "value": null,
+ "sourceType": "",
+ "name": "",
+ "operator": "",
+ "dataType": "",
+ "nodeType": "group",
+ "attribute": "",
+ "query": "",
+ "parent": "",
+ "children": [
+  "rule_02"
+ ],
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 1,
+ "returnType": ""
+},
+    "rule_02": {
+ "value": null,
+ "sourceType": "",
+ "name": "",
+ "operator": "any",
+ "dataType": "dateTime",
+ "nodeType": "condition",
+ "attribute": "",
+ "query": "",
+ "parent": "rule_01",
+ "children": null,
+ "leftNode": [
+  "rule_03"
+ ],
+ "rightNode": null,
+ "siblingIndex": 1,
+ "returnType": ""
+},
+    "rule_03": {
+ "value": null,
+ "sourceType": "globalVar",
+ "name": "",
+ "operator": "",
+ "dataType": "dateTime",
+ "nodeType": "params",
+ "attribute": "today",
+ "query": "",
+ "parent": "rule_02",
+ "children": null,
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 1,
+ "returnType": ""
+}
+   },
+   "startNode": "rule_01"
+  },
+  "firstCustomInput": "",
+  "firstRuleChain": "",
+  "ruleSetPolicy": "",
+  "description": "",
+  "policy": "",
+  "comment": "",
+  "type": "simpleRule",
+  "dataSetId": null,
+  "ruleSet": null,
+  "settings": {
+   "startAt": "0001-01-01T00:00:00Z",
+   "endAt": "0001-01-01T00:00:00Z",
+   "event": null,
+   "api": {
+    "isEnabled": true,
+    "isPrivate": false
+   },
+   "isEnabled": true,
+   "auditIO": false,
+   "cachingInfo": {
+    "Enabled": false,
+    "Duration": {
+     "Value": 0,
+     "Unit": ""
+    },
+    "CacheKeys": ""
+   },
+   "timezone": "",
+   "dateFormat": "",
+   "timeout": 0,
+   "timeoutAsync": 0,
+   "timeoutCron": 0
+  },
+  "isDemo": false,
+  "warnings": null,
+  "schemaVersion": "0.1.1"
+ },
+ "dependencies": [
+  {
+   "isDeleted": false,
+   "createdAt": "2024-09-10T21:23:42.369542Z",
+   "updatedAt": "2024-09-10T21:23:42.369542Z",
+   "entityCommitId": "commit-930c44b3-b9ea-4b3d-993f-0021a9da7b1a",
+   "entityType": "rule",
+   "entityId": "657aa9deb48460856e2fade8",
+   "entityVersion": "draft",
+   "entityNodeId": "today",
+   "dependencyType": "variable",
+   "dependencyId": "6436de673d1227d0da8084e2",
+   "dependencyVersion": "live"
+  },
+  {
+   "isDeleted": false,
+   "createdAt": "2024-09-10T21:23:42.355538Z",
+   "updatedAt": "2024-09-10T21:23:42.355538Z",
+   "entityCommitId": "commit-930c44b3-b9ea-4b3d-993f-0021a9da7b1a",
+   "entityType": "rule",
+   "entityId": "657aa9deb48460856e2fade8",
+   "entityVersion": "draft",
+   "entityNodeId": "then-actionData_1",
+   "dependencyType": "connector",
+   "dependencyId": "6584089a3bce48507662fbc0",
+   "dependencyVersion": "live"
+  }
+ ]
+}

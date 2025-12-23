@@ -1,0 +1,30 @@
+{
+ "entityType": "module_schema",
+ "data": {
+  "createdAt": "2025-10-24T10:28:21.922Z",
+  "updatedAt": "2025-10-24T10:28:21.922Z",
+  "isDeleted": false,
+  "entityId": "e2a9d5d8-2b02-4126-bee8-d60ae748c8de",
+  "name": "pricing_tier",
+  "moduleId": "0bf720a4-77f9-472e-81e1-fb8c2bd178f1",
+  "dataType": "string",
+  "usageType": "optional",
+  "options": [
+   {
+    "value": "P1"
+   },
+   {
+    "value": "P2"
+   },
+   {
+    "value": "P3"
+   },
+   {
+    "value": "P4"
+   },
+   {
+    "value": "P5"
+   }
+  ]
+ }
+}

@@ -1,0 +1,287 @@
+{
+ "entityType": "rule",
+ "category": "ruleSet",
+ "data": {
+  "createdAt": "2023-04-10T11:17:21.006Z",
+  "updatedAt": "2024-03-19T09:17:55.047Z",
+  "isDeleted": false,
+  "testedAt": "2024-03-19T09:18:34.73Z",
+  "publishedAt": "2023-05-04T10:22:32.836Z",
+  "entityId": "6433f041664847b381960c25",
+  "version": "draft",
+  "name": "Discount_ruleSet",
+  "commitId": "commit-bce64175-e2cf-46a6-b097-8d1c371547e6",
+  "status": "tested",
+  "lastVersion": "",
+  "isLive": false,
+  "commitInfo": {
+   "title": "Draft",
+   "timeStamp": "2024-05-27T06:55:18.917Z"
+  },
+  "customInput": null,
+  "ruleChain": {
+   "6433efcd664847b381960c22": {
+ "prevRuleId": "",
+ "nextRuleId": "6433eff6664847b381960c23",
+ "isEnabled": true
+},
+   "6433eff6664847b381960c23": {
+ "prevRuleId": "6433efcd664847b381960c22",
+ "nextRuleId": "6433f022664847b381960c24",
+ "isEnabled": true
+},
+   "6433f022664847b381960c24": {
+ "prevRuleId": "6433eff6664847b381960c23",
+ "nextRuleId": "64464f3f97d3d01a1c965407",
+ "isEnabled": true
+},
+   "64464f3f97d3d01a1c965407": {
+ "prevRuleId": "6433f022664847b381960c24",
+ "nextRuleId": "64464f5797d3d01a1c965408",
+ "isEnabled": true
+},
+   "64464f5797d3d01a1c965408": {
+ "prevRuleId": "64464f3f97d3d01a1c965407",
+ "nextRuleId": "64464f9897d3d01a1c965409",
+ "isEnabled": true
+},
+   "64464f9897d3d01a1c965409": {
+ "prevRuleId": "64464f5797d3d01a1c965408",
+ "nextRuleId": "64481bdc97d3d01a1c965419",
+ "isEnabled": true
+},
+   "64481bdc97d3d01a1c965419": {
+ "prevRuleId": "64464f9897d3d01a1c965409",
+ "nextRuleId": "64481bef97d3d01a1c96541a",
+ "isEnabled": true
+},
+   "64481bef97d3d01a1c96541a": {
+ "prevRuleId": "64481bdc97d3d01a1c965419",
+ "nextRuleId": "64481c0297d3d01a1c96541b",
+ "isEnabled": true
+},
+   "64481c0297d3d01a1c96541b": {
+ "prevRuleId": "64481bef97d3d01a1c96541a",
+ "nextRuleId": "64481c1b97d3d01a1c96541c",
+ "isEnabled": true
+},
+   "64481c1b97d3d01a1c96541c": {
+ "prevRuleId": "64481c0297d3d01a1c96541b",
+ "nextRuleId": "64481c3497d3d01a1c96541d",
+ "isEnabled": true
+},
+   "64481c3497d3d01a1c96541d": {
+ "prevRuleId": "64481c1b97d3d01a1c96541c",
+ "nextRuleId": "",
+ "isEnabled": true
+}
+  },
+  "decisionTable": {
+   "rows": null,
+   "properties": null,
+   "results": null,
+   "firstRow": "",
+   "firstProperty": "",
+   "firstResult": "",
+   "firstAggOutputData": ""
+  },
+  "action": {
+   "then": {
+    "outputData": null,
+    "actionNode": null,
+    "firstOutputData": "",
+    "firstActionNode": ""
+   },
+   "else": {
+    "outputData": null,
+    "actionNode": null,
+    "firstOutputData": "",
+    "firstActionNode": ""
+   }
+  },
+  "conditions": {
+   "nodes": null,
+   "startNode": ""
+  },
+  "firstCustomInput": "",
+  "firstRuleChain": "6433efcd664847b381960c22",
+  "ruleSetPolicy": "evaluteAll",
+  "description": "",
+  "policy": "",
+  "comment": "",
+  "type": "ruleSet",
+  "dataSetId": null,
+  "ruleSet": [
+   "6433efcd664847b381960c22",
+   "6433eff6664847b381960c23",
+   "6433f022664847b381960c24",
+   "64464f3f97d3d01a1c965407",
+   "64464f5797d3d01a1c965408",
+   "64464f9897d3d01a1c965409",
+   "64481bdc97d3d01a1c965419",
+   "64481bef97d3d01a1c96541a",
+   "64481c0297d3d01a1c96541b",
+   "64481c1b97d3d01a1c96541c",
+   "64481c3497d3d01a1c96541d"
+  ],
+  "settings": {
+   "startAt": "0001-01-01T00:00:00Z",
+   "endAt": "0001-01-01T00:00:00Z",
+   "event": null,
+   "api": {
+    "isEnabled": true,
+    "isPrivate": false
+   },
+   "isEnabled": true,
+   "auditIO": false,
+   "cachingInfo": {
+    "Enabled": false,
+    "Duration": {
+     "Value": 0,
+     "Unit": ""
+    },
+    "CacheKeys": ""
+   },
+   "timezone": "",
+   "dateFormat": "",
+   "timeout": 0,
+   "timeoutAsync": 0,
+   "timeoutCron": 0
+  },
+  "isDemo": false,
+  "warnings": null,
+  "schemaVersion": "0.1.0"
+ },
+ "dependencies": [
+  {
+   "isDeleted": false,
+   "createdAt": "2024-09-10T21:22:24.781747Z",
+   "updatedAt": "2024-09-10T21:22:24.781747Z",
+   "entityCommitId": "commit-bce64175-e2cf-46a6-b097-8d1c371547e6",
+   "entityType": "rule",
+   "entityId": "6433f041664847b381960c25",
+   "entityVersion": "draft",
+   "entityNodeId": "64481c3497d3d01a1c96541d",
+   "dependencyType": "rule",
+   "dependencyId": "64481c3497d3d01a1c96541d",
+   "dependencyVersion": "draft"
+  },
+  {
+   "isDeleted": false,
+   "createdAt": "2024-09-10T21:22:24.766747Z",
+   "updatedAt": "2024-09-10T21:22:24.766747Z",
+   "entityCommitId": "commit-bce64175-e2cf-46a6-b097-8d1c371547e6",
+   "entityType": "rule",
+   "entityId": "6433f041664847b381960c25",
+   "entityVersion": "draft",
+   "entityNodeId": "64481bef97d3d01a1c96541a",
+   "dependencyType": "rule",
+   "dependencyId": "64481bef97d3d01a1c96541a",
+   "dependencyVersion": "draft"
+  },
+  {
+   "isDeleted": false,
+   "createdAt": "2024-09-10T21:22:24.751364Z",
+   "updatedAt": "2024-09-10T21:22:24.751364Z",
+   "entityCommitId": "commit-bce64175-e2cf-46a6-b097-8d1c371547e6",
+   "entityType": "rule",
+   "entityId": "6433f041664847b381960c25",
+   "entityVersion": "draft",
+   "entityNodeId": "64464f9897d3d01a1c965409",
+   "dependencyType": "rule",
+   "dependencyId": "64464f9897d3d01a1c965409",
+   "dependencyVersion": "draft"
+  },
+  {
+   "isDeleted": false,
+   "createdAt": "2024-09-10T21:22:24.735804Z",
+   "updatedAt": "2024-09-10T21:22:24.735804Z",
+   "entityCommitId": "commit-bce64175-e2cf-46a6-b097-8d1c371547e6",
+   "entityType": "rule",
+   "entityId": "6433f041664847b381960c25",
+   "entityVersion": "draft",
+   "entityNodeId": "6433f022664847b381960c24",
+   "dependencyType": "rule",
+   "dependencyId": "6433f022664847b381960c24",
+   "dependencyVersion": "draft"
+  },
+  {
+   "isDeleted": false,
+   "createdAt": "2024-09-10T21:22:24.721925Z",
+   "updatedAt": "2024-09-10T21:22:24.721925Z",
+   "entityCommitId": "commit-bce64175-e2cf-46a6-b097-8d1c371547e6",
+   "entityType": "rule",
+   "entityId": "6433f041664847b381960c25",
+   "entityVersion": "draft",
+   "entityNodeId": "64481c0297d3d01a1c96541b",
+   "dependencyType": "rule",
+   "dependencyId": "64481c0297d3d01a1c96541b",
+   "dependencyVersion": "draft"
+  },
+  {
+   "isDeleted": false,
+   "createdAt": "2024-09-10T21:22:24.706822Z",
+   "updatedAt": "2024-09-10T21:22:24.706822Z",
+   "entityCommitId": "commit-bce64175-e2cf-46a6-b097-8d1c371547e6",
+   "entityType": "rule",
+   "entityId": "6433f041664847b381960c25",
+   "entityVersion": "draft",
+   "entityNodeId": "64464f5797d3d01a1c965408",
+   "dependencyType": "rule",
+   "dependencyId": "64464f5797d3d01a1c965408",
+   "dependencyVersion": "draft"
+  },
+  {
+   "isDeleted": false,
+   "createdAt": "2024-09-10T21:22:24.691458Z",
+   "updatedAt": "2024-09-10T21:22:24.691458Z",
+   "entityCommitId": "commit-bce64175-e2cf-46a6-b097-8d1c371547e6",
+   "entityType": "rule",
+   "entityId": "6433f041664847b381960c25",
+   "entityVersion": "draft",
+   "entityNodeId": "64464f3f97d3d01a1c965407",
+   "dependencyType": "rule",
+   "dependencyId": "64464f3f97d3d01a1c965407",
+   "dependencyVersion": "draft"
+  },
+  {
+   "isDeleted": false,
+   "createdAt": "2024-09-10T21:22:24.676332Z",
+   "updatedAt": "2024-09-10T21:22:24.676332Z",
+   "entityCommitId": "commit-bce64175-e2cf-46a6-b097-8d1c371547e6",
+   "entityType": "rule",
+   "entityId": "6433f041664847b381960c25",
+   "entityVersion": "draft",
+   "entityNodeId": "6433eff6664847b381960c23",
+   "dependencyType": "rule",
+   "dependencyId": "6433eff6664847b381960c23",
+   "dependencyVersion": "draft"
+  },
+  {
+   "isDeleted": false,
+   "createdAt": "2024-09-10T21:22:24.660644Z",
+   "updatedAt": "2024-09-10T21:22:24.660644Z",
+   "entityCommitId": "commit-bce64175-e2cf-46a6-b097-8d1c371547e6",
+   "entityType": "rule",
+   "entityId": "6433f041664847b381960c25",
+   "entityVersion": "draft",
+   "entityNodeId": "6433efcd664847b381960c22",
+   "dependencyType": "rule",
+   "dependencyId": "6433efcd664847b381960c22",
+   "dependencyVersion": "draft"
+  },
+  {
+   "isDeleted": false,
+   "createdAt": "2024-09-10T21:22:24.646333Z",
+   "updatedAt": "2024-09-10T21:22:24.646333Z",
+   "entityCommitId": "commit-bce64175-e2cf-46a6-b097-8d1c371547e6",
+   "entityType": "rule",
+   "entityId": "6433f041664847b381960c25",
+   "entityVersion": "draft",
+   "entityNodeId": "64481c1b97d3d01a1c96541c",
+   "dependencyType": "rule",
+   "dependencyId": "64481c1b97d3d01a1c96541c",
+   "dependencyVersion": "draft"
+  }
+ ]
+}

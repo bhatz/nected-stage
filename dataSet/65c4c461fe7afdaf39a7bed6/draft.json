@@ -1,0 +1,106 @@
+{
+ "entityType": "dataSet",
+ "category": "dataSet",
+ "data": {
+  "createdAt": "2024-02-08T12:09:05.719Z",
+  "updatedAt": "2025-10-23T18:10:05.832105Z",
+  "isDeleted": false,
+  "testedAt": "2025-10-23T18:10:05.83Z",
+  "publishedAt": "0001-01-01T00:00:00Z",
+  "entityId": "65c4c461fe7afdaf39a7bed6",
+  "version": "draft",
+  "name": "coupon",
+  "commitId": "commit-8eb010ca-ce36-4599-8c71-f6102fcbd842",
+  "status": "tested",
+  "lastVersion": "",
+  "isLive": false,
+  "commitInfo": {
+   "title": "Draft",
+   "timeStamp": "2024-05-27T06:55:04.987Z"
+  },
+  "fields": {
+   "agent_id": {
+ "ColumnName": "agent_id",
+ "DataType": "string",
+ "Order": 1,
+ "ExecutedValue": "1"
+},
+   "code": {
+ "ColumnName": "code",
+ "DataType": "string",
+ "Order": 2,
+ "ExecutedValue": "FLAT10"
+},
+   "customer_id": {
+ "ColumnName": "customer_id",
+ "DataType": "string",
+ "Order": 3,
+ "ExecutedValue": "1"
+},
+   "discount": {
+ "ColumnName": "discount",
+ "DataType": "numeric",
+ "Order": 4,
+ "ExecutedValue": 10
+},
+   "expiry_at": {
+ "ColumnName": "expiry_at",
+ "DataType": "dateTime",
+ "Order": 5,
+ "ExecutedValue": "2027-12-31T05:45:09.4Z"
+},
+   "id": {
+ "ColumnName": "id",
+ "DataType": "numeric",
+ "Order": 6,
+ "ExecutedValue": 1
+},
+   "max_discount": {
+ "ColumnName": "max_discount",
+ "DataType": "numeric",
+ "Order": 7,
+ "ExecutedValue": 10
+},
+   "min_order_value": {
+ "ColumnName": "min_order_value",
+ "DataType": "numeric",
+ "Order": 8,
+ "ExecutedValue": 500
+},
+   "order_id": {
+ "ColumnName": "order_id",
+ "DataType": "string",
+ "Order": 9,
+ "ExecutedValue": "1"
+}
+  },
+  "description": "",
+  "query": "select * from coupon;",
+  "params": null,
+  "connectorId": "65c4c42efe7afdaf39a7bed5",
+  "isDemo": false,
+  "settings": {
+   "durationUnit": "m",
+   "rowLimit": 1000,
+   "durationValue": 5,
+   "cacheEnabled": true,
+   "timezone": "",
+   "dateFormat": "in"
+  }
+ },
+ "dependencies": [
+  {
+   "isDeleted": false,
+   "createdAt": "2024-09-10T21:32:31.379725Z",
+   "updatedAt": "2025-10-23T18:10:04.687328Z",
+   "entityCommitId": "commit-8eb010ca-ce36-4599-8c71-f6102fcbd842",
+   "entityType": "dataSet",
+   "entityId": "65c4c461fe7afdaf39a7bed6",
+   "entityVersion": "draft",
+   "entityNodeId": "connector",
+   "dependencyType": "connector",
+   "dependencyId": "65c4c42efe7afdaf39a7bed5",
+   "dependencyVersion": "live"
+  }
+ ]
+}

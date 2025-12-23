@@ -1,0 +1,211 @@
+{
+ "entityType": "rule",
+ "category": "simpleRule",
+ "data": {
+  "createdAt": "2023-08-23T12:00:35.238Z",
+  "updatedAt": "2023-12-08T04:27:41.19Z",
+  "isDeleted": false,
+  "testedAt": "2023-12-08T04:27:46.542Z",
+  "publishedAt": "2023-12-08T04:21:43.91Z",
+  "entityId": "64e5f4e3ce938e8260c25c58",
+  "version": "draft",
+  "name": "हिंदी",
+  "commitId": "commit-ea12e825-88ea-49c0-87a8-4a5c30241949",
+  "status": "tested",
+  "lastVersion": "",
+  "isLive": false,
+  "commitInfo": {
+   "title": "Draft",
+   "timeStamp": "2024-05-27T06:55:20.063Z"
+  },
+  "customInput": {
+   "orderNumber": {
+ "name": "orderNumber",
+ "dataType": "numeric",
+ "isOptional": false,
+ "isNullable": false,
+ "isCaseSensitive": false,
+ "attribute": "orderNumber",
+ "sourceType": "dataSet",
+ "executedValue": null,
+ "config": null,
+ "value": null,
+ "next": "",
+ "previous": "",
+ "schemaId": ""
+}
+  },
+  "ruleChain": null,
+  "decisionTable": {
+   "rows": null,
+   "properties": null,
+   "results": null,
+   "firstRow": "",
+   "firstProperty": "",
+   "firstResult": "",
+   "firstAggOutputData": ""
+  },
+  "action": {
+   "then": {
+    "outputData": {
+     "jsonnull": {
+ "name": "jsonnull",
+ "dataType": "json",
+ "returnType": "object",
+ "value": "{\n  \"comment\": \"{{.dataSet.comments}}\"\n}",
+ "next": "nullFormula",
+ "executedValue": [
+  [
+   {
+    "Key": "Key",
+    "Value": "comment"
+   },
+   {
+    "Key": "Value",
+    "Value": "test_string"
+   }
+  ]
+ ],
+ "attribute": "",
+ "source": "",
+ "schemaId": ""
+},
+     "nullFormula": {
+ "name": "nullFormula",
+ "dataType": "jsFormula",
+ "returnType": "string",
+ "value": "/*\nthis  {{.a.d}}\n*/\n\nif ('{{.dataSet.comments}}' == null) {\n    'Null2'\n} else {\n    '{{.dataSet.comments}}'\n}",
+ "next": "",
+ "executedValue": "test_string",
+ "attribute": "",
+ "source": "",
+ "schemaId": ""
+}
+    },
+    "actionNode": {
+     
+    },
+    "firstOutputData": "jsonnull",
+    "firstActionNode": ""
+   },
+   "else": {
+    "outputData": {
+     
+    },
+    "actionNode": {
+     
+    },
+    "firstOutputData": "",
+    "firstActionNode": ""
+   }
+  },
+  "conditions": {
+   "nodes": {
+    "rule_01": {
+ "value": null,
+ "sourceType": "",
+ "name": "",
+ "operator": "",
+ "dataType": "",
+ "nodeType": "group",
+ "attribute": "",
+ "query": "",
+ "parent": "",
+ "children": [
+  "rule_02"
+ ],
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 1,
+ "returnType": ""
+},
+    "rule_02": {
+ "value": null,
+ "sourceType": "",
+ "name": "",
+ "operator": "isNull",
+ "dataType": "string",
+ "nodeType": "condition",
+ "attribute": "",
+ "query": "",
+ "parent": "rule_01",
+ "children": null,
+ "leftNode": [
+  "rule_03"
+ ],
+ "rightNode": null,
+ "siblingIndex": 1,
+ "returnType": ""
+},
+    "rule_03": {
+ "value": null,
+ "sourceType": "dataSet",
+ "name": "",
+ "operator": "",
+ "dataType": "string",
+ "nodeType": "params",
+ "attribute": "comments",
+ "query": "",
+ "parent": "rule_02",
+ "children": null,
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 1,
+ "returnType": ""
+}
+   },
+   "startNode": "rule_01"
+  },
+  "firstCustomInput": "",
+  "firstRuleChain": "",
+  "ruleSetPolicy": "",
+  "description": "",
+  "policy": "",
+  "comment": "",
+  "type": "simpleRule",
+  "dataSetId": "64b7d18175af4a2a0c32ca73",
+  "ruleSet": null,
+  "settings": {
+   "startAt": "0001-01-01T00:00:00Z",
+   "endAt": "0001-01-01T00:00:00Z",
+   "event": null,
+   "api": {
+    "isEnabled": true,
+    "isPrivate": false
+   },
+   "isEnabled": true,
+   "auditIO": false,
+   "cachingInfo": {
+    "Enabled": false,
+    "Duration": {
+     "Value": 0,
+     "Unit": ""
+    },
+    "CacheKeys": ""
+   },
+   "timezone": "",
+   "dateFormat": "",
+   "timeout": 0,
+   "timeoutAsync": 0,
+   "timeoutCron": 0
+  },
+  "isDemo": false,
+  "warnings": null,
+  "schemaVersion": "0.1.0"
+ },
+ "dependencies": [
+  {
+   "isDeleted": false,
+   "createdAt": "2024-09-10T21:22:59.678429Z",
+   "updatedAt": "2024-09-10T21:22:59.678429Z",
+   "entityCommitId": "commit-ea12e825-88ea-49c0-87a8-4a5c30241949",
+   "entityType": "rule",
+   "entityId": "64e5f4e3ce938e8260c25c58",
+   "entityVersion": "draft",
+   "entityNodeId": "dataSet",
+   "dependencyType": "dataSet",
+   "dependencyId": "64b7d18175af4a2a0c32ca73",
+   "dependencyVersion": "draft"
+  }
+ ]
+}

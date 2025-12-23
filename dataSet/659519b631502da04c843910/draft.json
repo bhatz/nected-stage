@@ -1,0 +1,91 @@
+{
+ "entityType": "dataSet",
+ "category": "dataSet",
+ "data": {
+  "createdAt": "2024-01-03T08:24:22.033Z",
+  "updatedAt": "2025-07-30T08:44:22.466422Z",
+  "isDeleted": false,
+  "testedAt": "2024-03-18T14:23:03.553Z",
+  "publishedAt": "2024-03-18T14:23:31.297Z",
+  "entityId": "659519b631502da04c843910",
+  "version": "0.20",
+  "name": "New_Orders_Ecomm 1704270262029",
+  "commitId": "commit-ead2c7d1-acf7-4deb-b854-c870a14c5242",
+  "status": "draft",
+  "lastVersion": "",
+  "isLive": true,
+  "commitInfo": {
+   "title": "Publish Version",
+   "timeStamp": "2024-05-27T06:55:04.941Z"
+  },
+  "fields": {
+   "customer_name": {
+ "ColumnName": "customer_name",
+ "DataType": "string",
+ "Order": 5,
+ "ExecutedValue": "Dennis Turner"
+},
+   "customernumber": {
+ "ColumnName": "customernumber",
+ "DataType": "numeric",
+ "Order": 9,
+ "ExecutedValue": 51
+},
+   "customerscore": {
+ "ColumnName": "customerscore",
+ "DataType": "numeric",
+ "Order": 6,
+ "ExecutedValue": 58
+},
+   "inventory_booked_perc": {
+ "ColumnName": "inventory_booked_perc",
+ "DataType": "numeric",
+ "Order": 7,
+ "ExecutedValue": 4
+},
+   "order_count": {
+ "ColumnName": "order_count",
+ "DataType": "numeric",
+ "Order": 8,
+ "ExecutedValue": 38
+},
+   "order_volume": {
+ "ColumnName": "order_volume",
+ "DataType": "numeric",
+ "Order": 1,
+ "ExecutedValue": 24206
+},
+   "price": {
+ "ColumnName": "price",
+ "DataType": "numeric",
+ "Order": 2,
+ "ExecutedValue": 1075
+},
+   "productline": {
+ "ColumnName": "productline",
+ "DataType": "string",
+ "Order": 3,
+ "ExecutedValue": "Kitchen Appliances"
+},
+   "productname": {
+ "ColumnName": "productname",
+ "DataType": "string",
+ "Order": 4,
+ "ExecutedValue": "Toaster"
+}
+  },
+  "description": "",
+  "query": "select customer_name, customer_id as customerNumber, category_name as productLine, name as productName, sum(customer_score) as customerScore, MIN(price) as price,  MIN ((tmp.quantity_order)*100/(tmp.quantity_in_stock+tmp.quantity_order)) as inventory_booked_perc,  sum(tmp.total_order) as order_volume,  sum(tmp.quantity_order) as order_count from  (SELECT o.id, c.name as customer_name, o.created_at, o.customer_id, c.customer_score, od.product_id, od.quantity_order, od.price_each, c.credit_limit, pl.category_name,  p.name, p.quantity_in_stock, p.price, (od.quantity_order*od.price_each) as total_order FROM ecomm.orders o JOIN ecomm.order_details od ON o.id = od.order_id JOIN ecomm.products p ON od.product_id = p.id JOIN ecomm.customers c ON o.customer_id = c.id JOIN ecomm.product_lines pl ON p.category_id = pl.id) tmp group by productName, productLine, customerNumber, customer_name;",
+  "params": null,
+  "connectorId": "659519b631502da04c84390e",
+  "isDemo": true,
+  "settings": {
+   "durationUnit": "m",
+   "rowLimit": 1000,
+   "durationValue": 5,
+   "cacheEnabled": true,
+   "timezone": "",
+   "dateFormat": "in"
+  }
+ }
+}

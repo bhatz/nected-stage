@@ -1,0 +1,198 @@
+{
+ "entityType": "rule",
+ "category": "simpleRule",
+ "live": true,
+ "data": {
+  "createdAt": "2023-12-28T13:50:08.145Z",
+  "updatedAt": "2024-07-28T16:20:08.257Z",
+  "isDeleted": false,
+  "testedAt": "2024-07-28T12:54:13.695Z",
+  "publishedAt": "2024-07-28T16:20:08.251Z",
+  "entityId": "658d7d10f85c74c5bbb80a47",
+  "version": "0.70",
+  "name": "rsTest3",
+  "commitId": "commit-f5aba43d-222f-4f76-88b8-9e9af2be2d5e",
+  "status": "published",
+  "lastVersion": "draft",
+  "isLive": false,
+  "commitInfo": {
+   "title": "Publish",
+   "description": "asdad",
+   "timeStamp": "2024-07-28T16:20:08.248Z"
+  },
+  "customInput": {
+   "name": {
+ "name": "name",
+ "dataType": "string",
+ "isOptional": false,
+ "isNullable": false,
+ "isCaseSensitive": false,
+ "attribute": "",
+ "sourceType": "",
+ "executedValue": "Mukul",
+ "config": null,
+ "value": null,
+ "next": "",
+ "previous": "",
+ "schemaId": ""
+}
+  },
+  "ruleChain": null,
+  "decisionTable": {
+   "rows": null,
+   "properties": null,
+   "results": null,
+   "firstRow": "",
+   "firstProperty": "",
+   "firstResult": "",
+   "firstAggOutputData": ""
+  },
+  "action": {
+   "then": {
+    "outputData": {
+     "key_name_1": {
+ "name": "key_name_1",
+ "dataType": "jsFormula",
+ "returnType": "datetime-local",
+ "value": "if (\"{{.customInput.name}}\" == \"Mukul\") {\n  \"2024-06-29T11:23:23Z\"\n} else {\n  \"notMukul\"\n}",
+ "next": "key_name_2",
+ "executedValue": "2024-06-29T11:23:23Z",
+ "attribute": "",
+ "source": "",
+ "schemaId": ""
+},
+     "key_name_2": {
+ "name": "key_name_2",
+ "dataType": "excelFormula",
+ "returnType": "number",
+ "value": "DAY(\"{{.outputData.key_name_1}}\")",
+ "next": "key_name_3",
+ "executedValue": 29,
+ "attribute": "",
+ "source": "",
+ "schemaId": ""
+},
+     "key_name_3": {
+ "name": "key_name_3",
+ "dataType": "date",
+ "returnType": "date",
+ "value": "2024-07-26",
+ "next": "",
+ "executedValue": "2024-07-26",
+ "attribute": "",
+ "source": "",
+ "schemaId": ""
+}
+    },
+    "actionNode": {
+     
+    },
+    "firstOutputData": "key_name_1",
+    "firstActionNode": ""
+   },
+   "else": {
+    "outputData": {
+     
+    },
+    "actionNode": {
+     
+    },
+    "firstOutputData": "",
+    "firstActionNode": ""
+   }
+  },
+  "conditions": {
+   "nodes": {
+    "rule_01": {
+ "value": null,
+ "sourceType": "",
+ "name": "",
+ "operator": "and",
+ "dataType": "",
+ "nodeType": "group",
+ "attribute": "",
+ "query": "",
+ "parent": "",
+ "children": [
+  "rule_02"
+ ],
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 1,
+ "returnType": ""
+},
+    "rule_02": {
+ "value": null,
+ "sourceType": "",
+ "name": "",
+ "operator": "any",
+ "dataType": "string",
+ "nodeType": "condition",
+ "attribute": "",
+ "query": "",
+ "parent": "rule_01",
+ "children": null,
+ "leftNode": [
+  "rule_03"
+ ],
+ "rightNode": null,
+ "siblingIndex": 1,
+ "returnType": ""
+},
+    "rule_03": {
+ "value": null,
+ "sourceType": "customInput",
+ "name": "",
+ "operator": "",
+ "dataType": "string",
+ "nodeType": "params",
+ "attribute": "name",
+ "query": "",
+ "parent": "rule_02",
+ "children": null,
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 1,
+ "returnType": ""
+}
+   },
+   "startNode": "rule_01"
+  },
+  "firstCustomInput": "name",
+  "firstRuleChain": "",
+  "ruleSetPolicy": "",
+  "description": "dfcgvhbjnk",
+  "policy": "",
+  "comment": "",
+  "type": "simpleRule",
+  "dataSetId": null,
+  "ruleSet": null,
+  "settings": {
+   "startAt": "0001-01-01T00:00:00Z",
+   "endAt": "0001-01-01T00:00:00Z",
+   "event": null,
+   "api": {
+    "isEnabled": true,
+    "isPrivate": false
+   },
+   "isEnabled": true,
+   "auditIO": false,
+   "cachingInfo": {
+    "Enabled": false,
+    "Duration": {
+     "Value": 0,
+     "Unit": ""
+    },
+    "CacheKeys": ""
+   },
+   "timezone": "",
+   "dateFormat": "",
+   "timeout": 0,
+   "timeoutAsync": 0,
+   "timeoutCron": 0
+  },
+  "isDemo": false,
+  "warnings": [],
+  "schemaVersion": "0.1.1"
+ }
+}

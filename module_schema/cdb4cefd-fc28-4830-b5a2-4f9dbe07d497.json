@@ -1,0 +1,30 @@
+{
+ "entityType": "module_schema",
+ "data": {
+  "createdAt": "2025-10-24T10:28:22.01Z",
+  "updatedAt": "2025-10-24T10:28:22.01Z",
+  "isDeleted": false,
+  "entityId": "cdb4cefd-fc28-4830-b5a2-4f9dbe07d497",
+  "name": "category",
+  "moduleId": "d8af52a1-889e-41d8-9bb7-f9097c3de5f7",
+  "dataType": "string",
+  "usageType": "optional",
+  "options": [
+   {
+    "value": "Super Prime"
+   },
+   {
+    "value": "Prime Plus"
+   },
+   {
+    "value": "Prime"
+   },
+   {
+    "value": "Near Prime"
+   },
+   {
+    "value": "Very High Risk"
+   }
+  ]
+ }
+}

@@ -1,0 +1,1097 @@
+{
+ "entityType": "rule",
+ "category": "decisionTable",
+ "data": {
+  "createdAt": "2025-10-24T10:28:22.104Z",
+  "updatedAt": "2025-10-24T10:28:22.104Z",
+  "isDeleted": false,
+  "testedAt": "0001-01-01T00:00:00Z",
+  "publishedAt": "0001-01-01T00:00:00Z",
+  "entityId": "6a201ea8-b6eb-4db2-8201-89b89eac26fa",
+  "version": "draft",
+  "name": "FOIR_Eligibility",
+  "commitId": "commit-90f0b34f-efc0-4b13-b964-ebc974dea834",
+  "status": "draft",
+  "lastVersion": "",
+  "isLive": false,
+  "commitInfo": {
+   "title": "Created at 2025-10-24 10:28:22",
+   "timeStamp": "2025-10-24T10:28:22.104854715Z"
+  },
+  "customInput": {
+   "customer_id": {
+ "name": "customer_id",
+ "dataType": "numeric",
+ "isOptional": false,
+ "isNullable": false,
+ "isCaseSensitive": false,
+ "attribute": "customernumber",
+ "sourceType": "dataSet",
+ "executedValue": 42,
+ "config": null,
+ "value": null,
+ "next": "lastexception",
+ "previous": "foir",
+ "schemaId": ""
+},
+   "existing_emi": {
+ "name": "existing_emi",
+ "dataType": "numeric",
+ "isOptional": false,
+ "isNullable": false,
+ "isCaseSensitive": false,
+ "attribute": "",
+ "sourceType": "",
+ "executedValue": 5000,
+ "config": null,
+ "value": null,
+ "next": "foir",
+ "previous": "proposed_emi",
+ "schemaId": ""
+},
+   "foir": {
+ "name": "foir",
+ "dataType": "numeric",
+ "isOptional": false,
+ "isNullable": false,
+ "isCaseSensitive": false,
+ "attribute": "",
+ "sourceType": "",
+ "executedValue": 45,
+ "config": null,
+ "value": null,
+ "next": "customer_id",
+ "previous": "existing_emi",
+ "schemaId": "4dadb049-e65a-46cb-82b0-c14f605867f3"
+},
+   "lastexception": {
+ "name": "lastexception",
+ "dataType": "string",
+ "isOptional": false,
+ "isNullable": false,
+ "isCaseSensitive": false,
+ "attribute": "",
+ "sourceType": "",
+ "executedValue": "",
+ "config": null,
+ "value": null,
+ "next": "",
+ "previous": "customer_id",
+ "schemaId": ""
+},
+   "monthly_income": {
+ "name": "monthly_income",
+ "dataType": "numeric",
+ "isOptional": false,
+ "isNullable": false,
+ "isCaseSensitive": false,
+ "attribute": "",
+ "sourceType": "",
+ "executedValue": 200000,
+ "config": null,
+ "value": null,
+ "next": "proposed_emi",
+ "previous": "",
+ "schemaId": "5e164f87-f0e9-4dfb-86e5-1122338a4326"
+},
+   "proposed_emi": {
+ "name": "proposed_emi",
+ "dataType": "numeric",
+ "isOptional": false,
+ "isNullable": false,
+ "isCaseSensitive": false,
+ "attribute": "",
+ "sourceType": "",
+ "executedValue": 60000,
+ "config": null,
+ "value": null,
+ "next": "existing_emi",
+ "previous": "monthly_income",
+ "schemaId": "e00651c5-0111-43d9-bb96-bd61fe038a17"
+}
+  },
+  "ruleChain": null,
+  "decisionTable": {
+   "rows": {
+    "group_1_0": {
+ "nextId": "group_2_0",
+ "prevId": "",
+ "firstOutputData": "output_1_4",
+ "isEnabled": true
+},
+    "group_2_0": {
+ "nextId": "group_3_0",
+ "prevId": "group_1_0",
+ "firstOutputData": "output_2_4",
+ "isEnabled": true
+},
+    "group_3_0": {
+ "nextId": "group_4_0",
+ "prevId": "group_2_0",
+ "firstOutputData": "output_3_4",
+ "isEnabled": true
+},
+    "group_4_0": {
+ "nextId": "group_5_0",
+ "prevId": "group_3_0",
+ "firstOutputData": "output_4_4",
+ "isEnabled": true
+},
+    "group_5_0": {
+ "nextId": "group_6_0",
+ "prevId": "group_4_0",
+ "firstOutputData": "output_5_4",
+ "isEnabled": true
+},
+    "group_6_0": {
+ "nextId": "",
+ "prevId": "group_5_0",
+ "firstOutputData": "output_6_4",
+ "isEnabled": true
+}
+   },
+   "properties": {
+    "props_0_1": {
+ "nextId": "props_0_2",
+ "prevId": "",
+ "type": "simpleCondition"
+},
+    "props_0_2": {
+ "nextId": "",
+ "prevId": "props_0_1",
+ "type": "simpleCondition"
+}
+   },
+   "results": {
+    "res_0_4": {
+ "nextId": "res_0_5",
+ "prevId": "",
+ "dataType": "string",
+ "keyName": "final_decision",
+ "schemaId": ""
+},
+    "res_0_5": {
+ "nextId": "res_0_6",
+ "prevId": "res_0_4",
+ "dataType": "numeric",
+ "keyName": "foir",
+ "schemaId": ""
+},
+    "res_0_6": {
+ "nextId": "",
+ "prevId": "res_0_5",
+ "dataType": "json",
+ "keyName": "keyName",
+ "schemaId": ""
+}
+   },
+   "firstRow": "group_1_0",
+   "firstProperty": "props_0_1",
+   "firstResult": "res_0_4",
+   "firstAggOutputData": ""
+  },
+  "action": {
+   "then": {
+    "outputData": {
+     "output_1_4": {
+ "name": "final_decision",
+ "dataType": "string",
+ "returnType": "",
+ "value": "Reject",
+ "next": "output_1_5",
+ "executedValue": "Reject",
+ "attribute": "",
+ "source": "",
+ "schemaId": ""
+},
+     "output_1_5": {
+ "name": "foir",
+ "dataType": "numeric",
+ "returnType": "",
+ "value": null,
+ "next": "output_1_6",
+ "executedValue": "",
+ "attribute": "foir",
+ "source": "customInput",
+ "schemaId": ""
+},
+     "output_1_6": {
+ "name": "keyName",
+ "dataType": "json",
+ "returnType": "object",
+ "value": "{\n \"payment_method\": {{.outputData.foir}}\n}",
+ "next": "",
+ "executedValue": {
+  "payment_method": 1
+ },
+ "attribute": "",
+ "source": "",
+ "schemaId": ""
+},
+     "output_2_4": {
+ "name": "final_decision",
+ "dataType": "string",
+ "returnType": "",
+ "value": "Eligible",
+ "next": "output_2_5",
+ "executedValue": "Eligible",
+ "attribute": "",
+ "source": "",
+ "schemaId": ""
+},
+     "output_2_5": {
+ "name": "foir",
+ "dataType": "excelFormula",
+ "returnType": "numeric",
+ "value": "({{.customInput.proposed_emi}}+{{.customInput.existing_emi}})*100/{{.customInput.monthly_income}}",
+ "next": "output_2_6",
+ "executedValue": "",
+ "attribute": "",
+ "source": "",
+ "schemaId": ""
+},
+     "output_2_6": {
+ "name": "keyName",
+ "dataType": "json",
+ "returnType": "",
+ "value": null,
+ "next": "",
+ "executedValue": null,
+ "attribute": "",
+ "source": "",
+ "schemaId": ""
+},
+     "output_3_4": {
+ "name": "final_decision",
+ "dataType": "string",
+ "returnType": "",
+ "value": "Eligible",
+ "next": "output_3_5",
+ "executedValue": "Eligible",
+ "attribute": "",
+ "source": "",
+ "schemaId": ""
+},
+     "output_3_5": {
+ "name": "foir",
+ "dataType": "excelFormula",
+ "returnType": "numeric",
+ "value": "({{.customInput.proposed_emi}}+{{.customInput.existing_emi}})*100/{{.customInput.monthly_income}}",
+ "next": "output_3_6",
+ "executedValue": "",
+ "attribute": "",
+ "source": "",
+ "schemaId": ""
+},
+     "output_3_6": {
+ "name": "keyName",
+ "dataType": "json",
+ "returnType": "",
+ "value": null,
+ "next": "",
+ "executedValue": null,
+ "attribute": "",
+ "source": "",
+ "schemaId": ""
+},
+     "output_4_4": {
+ "name": "final_decision",
+ "dataType": "string",
+ "returnType": "",
+ "value": "Eligible",
+ "next": "output_4_5",
+ "executedValue": "Eligible",
+ "attribute": "",
+ "source": "",
+ "schemaId": ""
+},
+     "output_4_5": {
+ "name": "foir",
+ "dataType": "excelFormula",
+ "returnType": "numeric",
+ "value": "({{.customInput.proposed_emi}}+{{.customInput.existing_emi}})*100/{{.customInput.monthly_income}}",
+ "next": "output_4_6",
+ "executedValue": "",
+ "attribute": "",
+ "source": "",
+ "schemaId": ""
+},
+     "output_4_6": {
+ "name": "keyName",
+ "dataType": "json",
+ "returnType": "",
+ "value": null,
+ "next": "",
+ "executedValue": null,
+ "attribute": "",
+ "source": "",
+ "schemaId": ""
+},
+     "output_5_4": {
+ "name": "final_decision",
+ "dataType": "string",
+ "returnType": "",
+ "value": "ManualReview",
+ "next": "output_5_5",
+ "executedValue": "ManualReview",
+ "attribute": "",
+ "source": "",
+ "schemaId": ""
+},
+     "output_5_5": {
+ "name": "foir",
+ "dataType": "excelFormula",
+ "returnType": "numeric",
+ "value": "({{.customInput.proposed_emi}}+{{.customInput.existing_emi}})*100/{{.customInput.monthly_income}}",
+ "next": "output_5_6",
+ "executedValue": "",
+ "attribute": "",
+ "source": "",
+ "schemaId": ""
+},
+     "output_5_6": {
+ "name": "keyName",
+ "dataType": "json",
+ "returnType": "",
+ "value": null,
+ "next": "",
+ "executedValue": null,
+ "attribute": "",
+ "source": "",
+ "schemaId": ""
+},
+     "output_6_4": {
+ "name": "final_decision",
+ "dataType": "string",
+ "returnType": "",
+ "value": "Reject",
+ "next": "output_6_5",
+ "executedValue": "Reject",
+ "attribute": "",
+ "source": "",
+ "schemaId": ""
+},
+     "output_6_5": {
+ "name": "foir",
+ "dataType": "excelFormula",
+ "returnType": "numeric",
+ "value": "({{.customInput.proposed_emi}}+{{.customInput.existing_emi}})*100/{{.customInput.monthly_income}}",
+ "next": "output_6_6",
+ "executedValue": "",
+ "attribute": "",
+ "source": "",
+ "schemaId": ""
+},
+     "output_6_6": {
+ "name": "keyName",
+ "dataType": "json",
+ "returnType": "",
+ "value": null,
+ "next": "",
+ "executedValue": null,
+ "attribute": "",
+ "source": "",
+ "schemaId": ""
+}
+    },
+    "actionNode": null,
+    "firstOutputData": "",
+    "firstActionNode": ""
+   },
+   "else": {
+    "outputData": null,
+    "actionNode": null,
+    "firstOutputData": "",
+    "firstActionNode": ""
+   }
+  },
+  "conditions": {
+   "nodes": {
+    "cond_1_1": {
+ "value": null,
+ "sourceType": "",
+ "name": "",
+ "operator": "lte",
+ "dataType": "numeric",
+ "nodeType": "condition",
+ "attribute": "",
+ "query": "",
+ "parent": "group_1_0",
+ "children": null,
+ "leftNode": [
+  "props_0_1"
+ ],
+ "rightNode": [
+  "rhs_1_1"
+ ],
+ "siblingIndex": 1,
+ "returnType": ""
+},
+    "cond_1_2": {
+ "value": null,
+ "sourceType": "",
+ "name": "",
+ "operator": "bet",
+ "dataType": "numeric",
+ "nodeType": "condition",
+ "attribute": "",
+ "query": "",
+ "parent": "group_1_0",
+ "children": null,
+ "leftNode": [
+  "props_0_2"
+ ],
+ "rightNode": [
+  "rhs_1_2",
+  "rhs2_1_2"
+ ],
+ "siblingIndex": 1,
+ "returnType": ""
+},
+    "cond_2_1": {
+ "value": null,
+ "sourceType": "",
+ "name": "",
+ "operator": "lte",
+ "dataType": "numeric",
+ "nodeType": "condition",
+ "attribute": "",
+ "query": "",
+ "parent": "group_2_0",
+ "children": null,
+ "leftNode": [
+  "props_0_1"
+ ],
+ "rightNode": [
+  "rhs_2_1"
+ ],
+ "siblingIndex": 1,
+ "returnType": ""
+},
+    "cond_2_2": {
+ "value": null,
+ "sourceType": "",
+ "name": "",
+ "operator": "bet",
+ "dataType": "numeric",
+ "nodeType": "condition",
+ "attribute": "",
+ "query": "",
+ "parent": "group_2_0",
+ "children": null,
+ "leftNode": [
+  "props_0_2"
+ ],
+ "rightNode": [
+  "rhs_2_2",
+  "rhs2_2_2"
+ ],
+ "siblingIndex": 1,
+ "returnType": ""
+},
+    "cond_3_1": {
+ "value": null,
+ "sourceType": "",
+ "name": "",
+ "operator": "lte",
+ "dataType": "numeric",
+ "nodeType": "condition",
+ "attribute": "",
+ "query": "",
+ "parent": "group_3_0",
+ "children": null,
+ "leftNode": [
+  "props_0_1"
+ ],
+ "rightNode": [
+  "rhs_3_1"
+ ],
+ "siblingIndex": 1,
+ "returnType": ""
+},
+    "cond_3_2": {
+ "value": null,
+ "sourceType": "",
+ "name": "",
+ "operator": "bet",
+ "dataType": "numeric",
+ "nodeType": "condition",
+ "attribute": "",
+ "query": "",
+ "parent": "group_3_0",
+ "children": null,
+ "leftNode": [
+  "props_0_2"
+ ],
+ "rightNode": [
+  "rhs_3_2",
+  "rhs2_3_2"
+ ],
+ "siblingIndex": 1,
+ "returnType": ""
+},
+    "cond_4_1": {
+ "value": null,
+ "sourceType": "",
+ "name": "",
+ "operator": "lte",
+ "dataType": "numeric",
+ "nodeType": "condition",
+ "attribute": "",
+ "query": "",
+ "parent": "group_4_0",
+ "children": null,
+ "leftNode": [
+  "props_0_1"
+ ],
+ "rightNode": [
+  "rhs_4_1"
+ ],
+ "siblingIndex": 1,
+ "returnType": ""
+},
+    "cond_4_2": {
+ "value": null,
+ "sourceType": "",
+ "name": "",
+ "operator": "gt",
+ "dataType": "numeric",
+ "nodeType": "condition",
+ "attribute": "",
+ "query": "",
+ "parent": "group_4_0",
+ "children": null,
+ "leftNode": [
+  "props_0_2"
+ ],
+ "rightNode": [
+  "rhs_4_2"
+ ],
+ "siblingIndex": 1,
+ "returnType": ""
+},
+    "cond_5_1": {
+ "value": null,
+ "sourceType": "",
+ "name": "",
+ "operator": "gt",
+ "dataType": "numeric",
+ "nodeType": "condition",
+ "attribute": "",
+ "query": "",
+ "parent": "group_5_0",
+ "children": null,
+ "leftNode": [
+  "props_0_1"
+ ],
+ "rightNode": [
+  "rhs_5_1"
+ ],
+ "siblingIndex": 1,
+ "returnType": ""
+},
+    "cond_5_2": {
+ "value": null,
+ "sourceType": "",
+ "name": "",
+ "operator": "gt",
+ "dataType": "numeric",
+ "nodeType": "condition",
+ "attribute": "",
+ "query": "",
+ "parent": "group_5_0",
+ "children": null,
+ "leftNode": [
+  "props_0_2"
+ ],
+ "rightNode": [
+  "rhs_5_2"
+ ],
+ "siblingIndex": 1,
+ "returnType": ""
+},
+    "cond_6_1": {
+ "value": null,
+ "sourceType": "",
+ "name": "",
+ "operator": "any",
+ "dataType": "numeric",
+ "nodeType": "condition",
+ "attribute": "",
+ "query": "",
+ "parent": "group_6_0",
+ "children": null,
+ "leftNode": [
+  "props_0_1"
+ ],
+ "rightNode": null,
+ "siblingIndex": 1,
+ "returnType": ""
+},
+    "cond_6_2": {
+ "value": null,
+ "sourceType": "",
+ "name": "",
+ "operator": "any",
+ "dataType": "numeric",
+ "nodeType": "condition",
+ "attribute": "",
+ "query": "",
+ "parent": "group_6_0",
+ "children": null,
+ "leftNode": [
+  "props_0_2"
+ ],
+ "rightNode": null,
+ "siblingIndex": 1,
+ "returnType": ""
+},
+    "group_1_0": {
+ "value": null,
+ "sourceType": "",
+ "name": "",
+ "operator": "and",
+ "dataType": "",
+ "nodeType": "group",
+ "attribute": "",
+ "query": "",
+ "parent": "",
+ "children": [
+  "cond_1_1",
+  "cond_1_2"
+ ],
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 1,
+ "returnType": ""
+},
+    "group_2_0": {
+ "value": null,
+ "sourceType": "",
+ "name": "",
+ "operator": "and",
+ "dataType": "",
+ "nodeType": "group",
+ "attribute": "",
+ "query": "",
+ "parent": "",
+ "children": [
+  "cond_2_1",
+  "cond_2_2"
+ ],
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 1,
+ "returnType": ""
+},
+    "group_3_0": {
+ "value": null,
+ "sourceType": "",
+ "name": "",
+ "operator": "and",
+ "dataType": "",
+ "nodeType": "group",
+ "attribute": "",
+ "query": "",
+ "parent": "",
+ "children": [
+  "cond_3_1",
+  "cond_3_2"
+ ],
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 1,
+ "returnType": ""
+},
+    "group_4_0": {
+ "value": null,
+ "sourceType": "",
+ "name": "",
+ "operator": "and",
+ "dataType": "",
+ "nodeType": "group",
+ "attribute": "",
+ "query": "",
+ "parent": "",
+ "children": [
+  "cond_4_1",
+  "cond_4_2"
+ ],
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 1,
+ "returnType": ""
+},
+    "group_5_0": {
+ "value": null,
+ "sourceType": "",
+ "name": "",
+ "operator": "and",
+ "dataType": "",
+ "nodeType": "group",
+ "attribute": "",
+ "query": "",
+ "parent": "",
+ "children": [
+  "cond_5_1",
+  "cond_5_2"
+ ],
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 1,
+ "returnType": ""
+},
+    "group_6_0": {
+ "value": null,
+ "sourceType": "",
+ "name": "",
+ "operator": "and",
+ "dataType": "",
+ "nodeType": "group",
+ "attribute": "",
+ "query": "",
+ "parent": "",
+ "children": [
+  "cond_6_1",
+  "cond_6_2"
+ ],
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 1,
+ "returnType": ""
+},
+    "props_0_1": {
+ "value": null,
+ "sourceType": "customInput",
+ "name": "",
+ "operator": "",
+ "dataType": "numeric",
+ "nodeType": "params",
+ "attribute": "foir",
+ "query": "",
+ "parent": "",
+ "children": null,
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 1,
+ "returnType": ""
+},
+    "props_0_2": {
+ "value": null,
+ "sourceType": "customInput",
+ "name": "",
+ "operator": "",
+ "dataType": "numeric",
+ "nodeType": "params",
+ "attribute": "monthly_income",
+ "query": "",
+ "parent": "",
+ "children": null,
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 1,
+ "returnType": ""
+},
+    "rhs2_1_2": {
+ "value": 30000,
+ "sourceType": "",
+ "name": "",
+ "operator": "",
+ "dataType": "numeric",
+ "nodeType": "constant",
+ "attribute": "",
+ "query": "",
+ "parent": "cond_1_2",
+ "children": null,
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 1,
+ "returnType": ""
+},
+    "rhs2_2_2": {
+ "value": 35000,
+ "sourceType": "",
+ "name": "",
+ "operator": "",
+ "dataType": "numeric",
+ "nodeType": "constant",
+ "attribute": "",
+ "query": "",
+ "parent": "cond_2_2",
+ "children": null,
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 1,
+ "returnType": ""
+},
+    "rhs2_3_2": {
+ "value": 50000,
+ "sourceType": "",
+ "name": "",
+ "operator": "",
+ "dataType": "numeric",
+ "nodeType": "constant",
+ "attribute": "",
+ "query": "",
+ "parent": "cond_3_2",
+ "children": null,
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 1,
+ "returnType": ""
+},
+    "rhs_1_1": {
+ "value": 45,
+ "sourceType": "",
+ "name": "",
+ "operator": "",
+ "dataType": "numeric",
+ "nodeType": "constant",
+ "attribute": "",
+ "query": "",
+ "parent": "cond_1_1",
+ "children": null,
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 1,
+ "returnType": ""
+},
+    "rhs_1_2": {
+ "value": 15001,
+ "sourceType": "",
+ "name": "",
+ "operator": "",
+ "dataType": "numeric",
+ "nodeType": "constant",
+ "attribute": "",
+ "query": "",
+ "parent": "cond_1_2",
+ "children": null,
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 1,
+ "returnType": ""
+},
+    "rhs_2_1": {
+ "value": 50,
+ "sourceType": "",
+ "name": "",
+ "operator": "",
+ "dataType": "numeric",
+ "nodeType": "constant",
+ "attribute": "",
+ "query": "",
+ "parent": "cond_2_1",
+ "children": null,
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 1,
+ "returnType": ""
+},
+    "rhs_2_2": {
+ "value": 25000,
+ "sourceType": "",
+ "name": "",
+ "operator": "",
+ "dataType": "numeric",
+ "nodeType": "constant",
+ "attribute": "",
+ "query": "",
+ "parent": "cond_2_2",
+ "children": null,
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 1,
+ "returnType": ""
+},
+    "rhs_3_1": {
+ "value": 60,
+ "sourceType": "",
+ "name": "",
+ "operator": "",
+ "dataType": "numeric",
+ "nodeType": "constant",
+ "attribute": "",
+ "query": "",
+ "parent": "cond_3_1",
+ "children": null,
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 1,
+ "returnType": ""
+},
+    "rhs_3_2": {
+ "value": 35000,
+ "sourceType": "",
+ "name": "",
+ "operator": "",
+ "dataType": "numeric",
+ "nodeType": "constant",
+ "attribute": "",
+ "query": "",
+ "parent": "cond_3_2",
+ "children": null,
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 1,
+ "returnType": ""
+},
+    "rhs_4_1": {
+ "value": 65,
+ "sourceType": "",
+ "name": "",
+ "operator": "",
+ "dataType": "numeric",
+ "nodeType": "constant",
+ "attribute": "",
+ "query": "",
+ "parent": "cond_4_1",
+ "children": null,
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 1,
+ "returnType": ""
+},
+    "rhs_4_2": {
+ "value": 50000,
+ "sourceType": "",
+ "name": "",
+ "operator": "",
+ "dataType": "numeric",
+ "nodeType": "constant",
+ "attribute": "",
+ "query": "",
+ "parent": "cond_4_2",
+ "children": null,
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 1,
+ "returnType": ""
+},
+    "rhs_5_1": {
+ "value": 65,
+ "sourceType": "",
+ "name": "",
+ "operator": "",
+ "dataType": "numeric",
+ "nodeType": "constant",
+ "attribute": "",
+ "query": "",
+ "parent": "cond_5_1",
+ "children": null,
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 1,
+ "returnType": ""
+},
+    "rhs_5_2": {
+ "value": 25000,
+ "sourceType": "",
+ "name": "",
+ "operator": "",
+ "dataType": "numeric",
+ "nodeType": "constant",
+ "attribute": "",
+ "query": "",
+ "parent": "cond_5_2",
+ "children": null,
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 1,
+ "returnType": ""
+}
+   },
+   "startNode": ""
+  },
+  "firstCustomInput": "monthly_income",
+  "firstRuleChain": "",
+  "ruleSetPolicy": "",
+  "description": "",
+  "policy": "collect",
+  "comment": "",
+  "type": "decisionTable",
+  "dataSetId": "f6180223-fd83-4040-ac71-3b1b7792ae53",
+  "ruleSet": null,
+  "settings": {
+   "startAt": "0001-01-01T00:00:00Z",
+   "endAt": "0001-01-01T00:00:00Z",
+   "event": null,
+   "api": {
+    "isEnabled": true,
+    "isPrivate": true
+   },
+   "isEnabled": true,
+   "auditIO": true,
+   "cachingInfo": {
+    "Enabled": false,
+    "Duration": {
+     "Value": 0,
+     "Unit": "d"
+    },
+    "CacheKeys": ""
+   },
+   "timezone": "Asia/Kolkata",
+   "dateFormat": "in",
+   "timeout": 0,
+   "timeoutAsync": 0,
+   "timeoutCron": 0
+  },
+  "isDemo": false,
+  "warnings": null,
+  "schemaVersion": "0.1.1"
+ },
+ "dependencies": [
+  {
+   "isDeleted": false,
+   "createdAt": "2025-10-24T10:28:22.159112Z",
+   "updatedAt": "2025-10-24T10:28:22.159112Z",
+   "entityCommitId": "commit-90f0b34f-efc0-4b13-b964-ebc974dea834",
+   "entityType": "rule",
+   "entityId": "6a201ea8-b6eb-4db2-8201-89b89eac26fa",
+   "entityVersion": "draft",
+   "entityNodeId": "ci-monthly_income",
+   "dependencyType": "module_schema",
+   "dependencyId": "5e164f87-f0e9-4dfb-86e5-1122338a4326",
+   "dependencyVersion": "live"
+  },
+  {
+   "isDeleted": false,
+   "createdAt": "2025-10-24T10:28:22.158126Z",
+   "updatedAt": "2025-10-24T10:28:22.158126Z",
+   "entityCommitId": "commit-90f0b34f-efc0-4b13-b964-ebc974dea834",
+   "entityType": "rule",
+   "entityId": "6a201ea8-b6eb-4db2-8201-89b89eac26fa",
+   "entityVersion": "draft",
+   "entityNodeId": "ci-proposed_emi",
+   "dependencyType": "module_schema",
+   "dependencyId": "e00651c5-0111-43d9-bb96-bd61fe038a17",
+   "dependencyVersion": "live"
+  },
+  {
+   "isDeleted": false,
+   "createdAt": "2025-10-24T10:28:22.157237Z",
+   "updatedAt": "2025-10-24T10:28:22.157237Z",
+   "entityCommitId": "commit-90f0b34f-efc0-4b13-b964-ebc974dea834",
+   "entityType": "rule",
+   "entityId": "6a201ea8-b6eb-4db2-8201-89b89eac26fa",
+   "entityVersion": "draft",
+   "entityNodeId": "ci-foir",
+   "dependencyType": "module_schema",
+   "dependencyId": "4dadb049-e65a-46cb-82b0-c14f605867f3",
+   "dependencyVersion": "live"
+  },
+  {
+   "isDeleted": false,
+   "createdAt": "2025-10-24T10:28:22.155153Z",
+   "updatedAt": "2025-10-24T10:28:22.155153Z",
+   "entityCommitId": "commit-90f0b34f-efc0-4b13-b964-ebc974dea834",
+   "entityType": "rule",
+   "entityId": "6a201ea8-b6eb-4db2-8201-89b89eac26fa",
+   "entityVersion": "draft",
+   "entityNodeId": "dataSet",
+   "dependencyType": "dataSet",
+   "dependencyId": "f6180223-fd83-4040-ac71-3b1b7792ae53",
+   "dependencyVersion": "draft"
+  }
+ ]
+}

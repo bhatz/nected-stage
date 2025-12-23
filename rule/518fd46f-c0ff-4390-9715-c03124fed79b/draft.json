@@ -1,0 +1,1099 @@
+{
+ "entityType": "rule",
+ "category": "decisionTable",
+ "data": {
+  "createdAt": "2025-10-24T10:28:21.931Z",
+  "updatedAt": "2025-10-24T10:28:21.931Z",
+  "isDeleted": false,
+  "testedAt": "0001-01-01T00:00:00Z",
+  "publishedAt": "0001-01-01T00:00:00Z",
+  "entityId": "518fd46f-c0ff-4390-9715-c03124fed79b",
+  "version": "draft",
+  "name": "PricingTierDetails",
+  "commitId": "commit-bf7d1411-6a03-48a4-995a-1b75779f2b10",
+  "status": "draft",
+  "lastVersion": "",
+  "isLive": false,
+  "commitInfo": {
+   "title": "Created at 2025-10-24 10:28:21",
+   "timeStamp": "2025-10-24T10:28:21.931050837Z"
+  },
+  "customInput": {
+   "pricing_tier": {
+ "name": "pricing_tier",
+ "dataType": "string",
+ "isOptional": false,
+ "isNullable": false,
+ "isCaseSensitive": false,
+ "attribute": "",
+ "sourceType": "",
+ "executedValue": "P3",
+ "config": null,
+ "value": null,
+ "next": "",
+ "previous": "",
+ "schemaId": "e2a9d5d8-2b02-4126-bee8-d60ae748c8de"
+}
+  },
+  "ruleChain": null,
+  "decisionTable": {
+   "rows": {
+    "rule_01": {
+ "nextId": "rule_mbers3359xm8d5viqyu",
+ "prevId": "",
+ "firstOutputData": "output_mberplcqpk0lx4rt5nj",
+ "isEnabled": true
+},
+    "rule_mbers3359xm8d5viqyu": {
+ "nextId": "rule_mbersgyeg3phjucbar7",
+ "prevId": "rule_01",
+ "firstOutputData": "output_mbers3353mkz9e9rqht",
+ "isEnabled": true
+},
+    "rule_mbersgyeg3phjucbar7": {
+ "nextId": "rule_mbersry67clnhtaj5jv",
+ "prevId": "rule_mbers3359xm8d5viqyu",
+ "firstOutputData": "output_mbersgyey2synovr21",
+ "isEnabled": true
+},
+    "rule_mbersry67clnhtaj5jv": {
+ "nextId": "rule_mbertj4glcp2s5l1rw",
+ "prevId": "rule_mbersgyeg3phjucbar7",
+ "firstOutputData": "output_mbersry6x7ewmmsao3",
+ "isEnabled": true
+},
+    "rule_mbertj4glcp2s5l1rw": {
+ "nextId": "rule_mbertmcy12xr3ph82u7g",
+ "prevId": "rule_mbersry67clnhtaj5jv",
+ "firstOutputData": "output_mbertj4hxi7yt23nwfb",
+ "isEnabled": true
+},
+    "rule_mbertmcy12xr3ph82u7g": {
+ "nextId": "rule_mbertpt9q8s7z6l4wtp",
+ "prevId": "rule_mbertj4glcp2s5l1rw",
+ "firstOutputData": "output_mbertmcygj7lba56u5",
+ "isEnabled": true
+},
+    "rule_mbertpt9q8s7z6l4wtp": {
+ "nextId": "rule_mberucgu3bafrglgsqf",
+ "prevId": "rule_mbertmcy12xr3ph82u7g",
+ "firstOutputData": "output_mbertptak5ucj6lnko",
+ "isEnabled": true
+},
+    "rule_mberucgu3bafrglgsqf": {
+ "nextId": "",
+ "prevId": "rule_mbertpt9q8s7z6l4wtp",
+ "firstOutputData": "output_mberucgupzui75yi8k",
+ "isEnabled": true
+}
+   },
+   "properties": {
+    "rule_03": {
+ "nextId": "",
+ "prevId": "",
+ "type": "simpleCondition"
+}
+   },
+   "results": {
+    "result_mberplcqjcofr2tg43": {
+ "nextId": "result_mberq3z8iwmpoh3svtk",
+ "prevId": "",
+ "dataType": "numeric",
+ "keyName": "InterestRate",
+ "schemaId": ""
+},
+    "result_mberq3z8iwmpoh3svtk": {
+ "nextId": "result_mberqe7qdymw0cnrvh7",
+ "prevId": "result_mberplcqjcofr2tg43",
+ "dataType": "numeric",
+ "keyName": "MaxTicket",
+ "schemaId": ""
+},
+    "result_mberqe7qdymw0cnrvh7": {
+ "nextId": "result_mberqsdqvn58y93bmpc",
+ "prevId": "result_mberq3z8iwmpoh3svtk",
+ "dataType": "numeric",
+ "keyName": "MinTicket",
+ "schemaId": ""
+},
+    "result_mberqsdqvn58y93bmpc": {
+ "nextId": "result_mberr0ijvebhzuld69",
+ "prevId": "result_mberqe7qdymw0cnrvh7",
+ "dataType": "numeric",
+ "keyName": "MaxTenure",
+ "schemaId": ""
+},
+    "result_mberr0ijvebhzuld69": {
+ "nextId": "",
+ "prevId": "result_mberqsdqvn58y93bmpc",
+ "dataType": "numeric",
+ "keyName": "ProcessingFeePerc",
+ "schemaId": ""
+}
+   },
+   "firstRow": "rule_01",
+   "firstProperty": "rule_03",
+   "firstResult": "result_mberplcqjcofr2tg43",
+   "firstAggOutputData": ""
+  },
+  "action": {
+   "then": {
+    "outputData": {
+     "output_mberplcqpk0lx4rt5nj": {
+ "name": "InterestRate",
+ "dataType": "numeric",
+ "returnType": "",
+ "value": 16,
+ "next": "output_mberq3z83v0yuj1akqw",
+ "executedValue": 16,
+ "attribute": "",
+ "source": "",
+ "schemaId": ""
+},
+     "output_mberq3z83v0yuj1akqw": {
+ "name": "MaxTicket",
+ "dataType": "numeric",
+ "returnType": "",
+ "value": 1000000,
+ "next": "output_mberqe7qe2qpwaomx3h",
+ "executedValue": 1000000,
+ "attribute": "",
+ "source": "",
+ "schemaId": ""
+},
+     "output_mberqe7qe2qpwaomx3h": {
+ "name": "MinTicket",
+ "dataType": "numeric",
+ "returnType": "",
+ "value": 50000,
+ "next": "output_mberqsdq6simp9oa105",
+ "executedValue": 50000,
+ "attribute": "",
+ "source": "",
+ "schemaId": ""
+},
+     "output_mberqsdq6simp9oa105": {
+ "name": "MaxTenure",
+ "dataType": "numeric",
+ "returnType": "",
+ "value": 60,
+ "next": "output_mberr0ijg8hh0gwnlmr",
+ "executedValue": 60,
+ "attribute": "",
+ "source": "",
+ "schemaId": ""
+},
+     "output_mberr0ijg8hh0gwnlmr": {
+ "name": "ProcessingFeePerc",
+ "dataType": "numeric",
+ "returnType": "",
+ "value": 4,
+ "next": "",
+ "executedValue": 4,
+ "attribute": "",
+ "source": "",
+ "schemaId": ""
+},
+     "output_mbers3353mkz9e9rqht": {
+ "name": "InterestRate",
+ "dataType": "numeric",
+ "returnType": "",
+ "value": 18,
+ "next": "output_mbers335u5f5st2ekv",
+ "executedValue": 18,
+ "attribute": "",
+ "source": "",
+ "schemaId": ""
+},
+     "output_mbers3353r4a9w6akn7": {
+ "name": "MaxTenure",
+ "dataType": "numeric",
+ "returnType": "",
+ "value": 60,
+ "next": "output_mbers335at3f0efywbi",
+ "executedValue": 60,
+ "attribute": "",
+ "source": "",
+ "schemaId": ""
+},
+     "output_mbers3353r746sn13ar": {
+ "name": "MinTicket",
+ "dataType": "numeric",
+ "returnType": "",
+ "value": 50000,
+ "next": "output_mbers3353r4a9w6akn7",
+ "executedValue": 50000,
+ "attribute": "",
+ "source": "",
+ "schemaId": ""
+},
+     "output_mbers335at3f0efywbi": {
+ "name": "ProcessingFeePerc",
+ "dataType": "numeric",
+ "returnType": "",
+ "value": 2,
+ "next": "",
+ "executedValue": 2,
+ "attribute": "",
+ "source": "",
+ "schemaId": ""
+},
+     "output_mbers335u5f5st2ekv": {
+ "name": "MaxTicket",
+ "dataType": "numeric",
+ "returnType": "",
+ "value": 7500000,
+ "next": "output_mbers3353r746sn13ar",
+ "executedValue": 7500000,
+ "attribute": "",
+ "source": "",
+ "schemaId": ""
+},
+     "output_mbersgye1368d6pavxfd": {
+ "name": "MinTicket",
+ "dataType": "numeric",
+ "returnType": "",
+ "value": 50000,
+ "next": "output_mbersgye1idmziw2iam",
+ "executedValue": 50000,
+ "attribute": "",
+ "source": "",
+ "schemaId": ""
+},
+     "output_mbersgye1idmziw2iam": {
+ "name": "MaxTenure",
+ "dataType": "numeric",
+ "returnType": "",
+ "value": 60,
+ "next": "output_mbersgyexnomqa4xixk",
+ "executedValue": 60,
+ "attribute": "",
+ "source": "",
+ "schemaId": ""
+},
+     "output_mbersgyeg46a0phs934": {
+ "name": "MaxTicket",
+ "dataType": "numeric",
+ "returnType": "",
+ "value": 5500000,
+ "next": "output_mbersgye1368d6pavxfd",
+ "executedValue": 5500000,
+ "attribute": "",
+ "source": "",
+ "schemaId": ""
+},
+     "output_mbersgyexnomqa4xixk": {
+ "name": "ProcessingFeePerc",
+ "dataType": "numeric",
+ "returnType": "",
+ "value": 3,
+ "next": "",
+ "executedValue": 3,
+ "attribute": "",
+ "source": "",
+ "schemaId": ""
+},
+     "output_mbersgyey2synovr21": {
+ "name": "InterestRate",
+ "dataType": "numeric",
+ "returnType": "",
+ "value": 22,
+ "next": "output_mbersgyeg46a0phs934",
+ "executedValue": 22,
+ "attribute": "",
+ "source": "",
+ "schemaId": ""
+},
+     "output_mbersry604dkhmpnw0bo": {
+ "name": "ProcessingFeePerc",
+ "dataType": "numeric",
+ "returnType": "",
+ "value": 4,
+ "next": "",
+ "executedValue": 4,
+ "attribute": "",
+ "source": "",
+ "schemaId": ""
+},
+     "output_mbersry62j6ofb2gl0a": {
+ "name": "MaxTicket",
+ "dataType": "numeric",
+ "returnType": "",
+ "value": 4500000,
+ "next": "output_mbersry6v1ftmbnomfb",
+ "executedValue": 4500000,
+ "attribute": "",
+ "source": "",
+ "schemaId": ""
+},
+     "output_mbersry6nwkq7iigl4i": {
+ "name": "MaxTenure",
+ "dataType": "numeric",
+ "returnType": "",
+ "value": 48,
+ "next": "output_mbersry604dkhmpnw0bo",
+ "executedValue": 48,
+ "attribute": "",
+ "source": "",
+ "schemaId": ""
+},
+     "output_mbersry6v1ftmbnomfb": {
+ "name": "MinTicket",
+ "dataType": "numeric",
+ "returnType": "",
+ "value": 50000,
+ "next": "output_mbersry6nwkq7iigl4i",
+ "executedValue": 50000,
+ "attribute": "",
+ "source": "",
+ "schemaId": ""
+},
+     "output_mbersry6x7ewmmsao3": {
+ "name": "InterestRate",
+ "dataType": "numeric",
+ "returnType": "",
+ "value": 24,
+ "next": "output_mbersry62j6ofb2gl0a",
+ "executedValue": 24,
+ "attribute": "",
+ "source": "",
+ "schemaId": ""
+},
+     "output_mbertj4h1z6dgdntzz": {
+ "name": "MaxTenure",
+ "dataType": "numeric",
+ "returnType": "",
+ "value": 48,
+ "next": "output_mbertj4hiuv6sagd1j",
+ "executedValue": 48,
+ "attribute": "",
+ "source": "",
+ "schemaId": ""
+},
+     "output_mbertj4hiuv6sagd1j": {
+ "name": "ProcessingFeePerc",
+ "dataType": "numeric",
+ "returnType": "",
+ "value": 5,
+ "next": "",
+ "executedValue": 5,
+ "attribute": "",
+ "source": "",
+ "schemaId": ""
+},
+     "output_mbertj4hr8oga2m85c": {
+ "name": "MaxTicket",
+ "dataType": "numeric",
+ "returnType": "",
+ "value": 3500000,
+ "next": "output_mbertj4hvajxpcrl4n",
+ "executedValue": 3500000,
+ "attribute": "",
+ "source": "",
+ "schemaId": ""
+},
+     "output_mbertj4hvajxpcrl4n": {
+ "name": "MinTicket",
+ "dataType": "numeric",
+ "returnType": "",
+ "value": 50000,
+ "next": "output_mbertj4h1z6dgdntzz",
+ "executedValue": 50000,
+ "attribute": "",
+ "source": "",
+ "schemaId": ""
+},
+     "output_mbertj4hxi7yt23nwfb": {
+ "name": "InterestRate",
+ "dataType": "numeric",
+ "returnType": "",
+ "value": 28,
+ "next": "output_mbertj4hr8oga2m85c",
+ "executedValue": 28,
+ "attribute": "",
+ "source": "",
+ "schemaId": ""
+},
+     "output_mbertmcygj7lba56u5": {
+ "name": "InterestRate",
+ "dataType": "numeric",
+ "returnType": "",
+ "value": 30,
+ "next": "output_mbertmcymrbp6fauips",
+ "executedValue": 30,
+ "attribute": "",
+ "source": "",
+ "schemaId": ""
+},
+     "output_mbertmcyh8y5h3sgerj": {
+ "name": "ProcessingFeePerc",
+ "dataType": "numeric",
+ "returnType": "",
+ "value": 5,
+ "next": "",
+ "executedValue": 5,
+ "attribute": "",
+ "source": "",
+ "schemaId": ""
+},
+     "output_mbertmcymlsn1f52l9": {
+ "name": "MinTicket",
+ "dataType": "numeric",
+ "returnType": "",
+ "value": 20000,
+ "next": "output_mbertmcyt6y1yj57i",
+ "executedValue": 20000,
+ "attribute": "",
+ "source": "",
+ "schemaId": ""
+},
+     "output_mbertmcymrbp6fauips": {
+ "name": "MaxTicket",
+ "dataType": "numeric",
+ "returnType": "",
+ "value": 3000000,
+ "next": "output_mbertmcymlsn1f52l9",
+ "executedValue": 3000000,
+ "attribute": "",
+ "source": "",
+ "schemaId": ""
+},
+     "output_mbertmcyt6y1yj57i": {
+ "name": "MaxTenure",
+ "dataType": "numeric",
+ "returnType": "",
+ "value": 36,
+ "next": "output_mbertmcyh8y5h3sgerj",
+ "executedValue": 36,
+ "attribute": "",
+ "source": "",
+ "schemaId": ""
+},
+     "output_mbertpta53ewtn4zkd9": {
+ "name": "MaxTenure",
+ "dataType": "numeric",
+ "returnType": "",
+ "value": 36,
+ "next": "output_mbertptawbbro16rng",
+ "executedValue": 36,
+ "attribute": "",
+ "source": "",
+ "schemaId": ""
+},
+     "output_mbertpta8s4mj5qvunq": {
+ "name": "MinTicket",
+ "dataType": "numeric",
+ "returnType": "",
+ "value": 20000,
+ "next": "output_mbertpta53ewtn4zkd9",
+ "executedValue": 20000,
+ "attribute": "",
+ "source": "",
+ "schemaId": ""
+},
+     "output_mbertptai9zatrkyqnn": {
+ "name": "MaxTicket",
+ "dataType": "numeric",
+ "returnType": "",
+ "value": 2500000,
+ "next": "output_mbertpta8s4mj5qvunq",
+ "executedValue": 2500000,
+ "attribute": "",
+ "source": "",
+ "schemaId": ""
+},
+     "output_mbertptak5ucj6lnko": {
+ "name": "InterestRate",
+ "dataType": "numeric",
+ "returnType": "",
+ "value": 33,
+ "next": "output_mbertptai9zatrkyqnn",
+ "executedValue": 33,
+ "attribute": "",
+ "source": "",
+ "schemaId": ""
+},
+     "output_mbertptawbbro16rng": {
+ "name": "ProcessingFeePerc",
+ "dataType": "numeric",
+ "returnType": "",
+ "value": 5,
+ "next": "",
+ "executedValue": 5,
+ "attribute": "",
+ "source": "",
+ "schemaId": ""
+},
+     "output_mberucgu0pbkhvu5x1ao": {
+ "name": "MaxTicket",
+ "dataType": "numeric",
+ "returnType": "",
+ "value": 1500000,
+ "next": "output_mberucguy8lx78et1hb",
+ "executedValue": 1500000,
+ "attribute": "",
+ "source": "",
+ "schemaId": ""
+},
+     "output_mberucgu379s2kl8m9y": {
+ "name": "MaxTenure",
+ "dataType": "numeric",
+ "returnType": "",
+ "value": 24,
+ "next": "output_mberucgugi09e21yue4",
+ "executedValue": 24,
+ "attribute": "",
+ "source": "",
+ "schemaId": ""
+},
+     "output_mberucgugi09e21yue4": {
+ "name": "ProcessingFeePerc",
+ "dataType": "numeric",
+ "returnType": "",
+ "value": 5,
+ "next": "",
+ "executedValue": 5,
+ "attribute": "",
+ "source": "",
+ "schemaId": ""
+},
+     "output_mberucgupzui75yi8k": {
+ "name": "InterestRate",
+ "dataType": "numeric",
+ "returnType": "",
+ "value": 36,
+ "next": "output_mberucgu0pbkhvu5x1ao",
+ "executedValue": 36,
+ "attribute": "",
+ "source": "",
+ "schemaId": ""
+},
+     "output_mberucguy8lx78et1hb": {
+ "name": "MinTicket",
+ "dataType": "numeric",
+ "returnType": "",
+ "value": 20000,
+ "next": "output_mberucgu379s2kl8m9y",
+ "executedValue": 20000,
+ "attribute": "",
+ "source": "",
+ "schemaId": ""
+}
+    },
+    "actionNode": null,
+    "firstOutputData": "",
+    "firstActionNode": ""
+   },
+   "else": {
+    "outputData": null,
+    "actionNode": null,
+    "firstOutputData": "",
+    "firstActionNode": ""
+   }
+  },
+  "conditions": {
+   "nodes": {
+    "rule_01": {
+ "value": null,
+ "sourceType": "",
+ "name": "",
+ "operator": "and",
+ "dataType": "",
+ "nodeType": "group",
+ "attribute": "",
+ "query": "",
+ "parent": "",
+ "children": [
+  "rule_02"
+ ],
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 1,
+ "returnType": ""
+},
+    "rule_02": {
+ "value": "",
+ "sourceType": "",
+ "name": "",
+ "operator": "eq",
+ "dataType": "string",
+ "nodeType": "condition",
+ "attribute": "",
+ "query": "",
+ "parent": "rule_01",
+ "children": null,
+ "leftNode": [
+  "rule_03"
+ ],
+ "rightNode": [
+  "rule_mberpi1vn2u2k2facyo"
+ ],
+ "siblingIndex": 1,
+ "returnType": ""
+},
+    "rule_03": {
+ "value": null,
+ "sourceType": "customInput",
+ "name": "",
+ "operator": "",
+ "dataType": "string",
+ "nodeType": "params",
+ "attribute": "pricing_tier",
+ "query": "",
+ "parent": "",
+ "children": null,
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 1,
+ "returnType": ""
+},
+    "rule_mberpi1vn2u2k2facyo": {
+ "value": "P1",
+ "sourceType": "",
+ "name": "",
+ "operator": "",
+ "dataType": "string",
+ "nodeType": "constant",
+ "attribute": "",
+ "query": "",
+ "parent": "rule_02",
+ "children": null,
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 1,
+ "returnType": ""
+},
+    "rule_mbers3356zhqkqkhhth": {
+ "value": "",
+ "sourceType": "",
+ "name": "",
+ "operator": "eq",
+ "dataType": "string",
+ "nodeType": "condition",
+ "attribute": "",
+ "query": "",
+ "parent": "rule_mbers3359xm8d5viqyu",
+ "children": null,
+ "leftNode": [
+  "rule_03"
+ ],
+ "rightNode": [
+  "rule_mbers335rllnprnzw68"
+ ],
+ "siblingIndex": 1,
+ "returnType": ""
+},
+    "rule_mbers3359xm8d5viqyu": {
+ "value": null,
+ "sourceType": "",
+ "name": "",
+ "operator": "and",
+ "dataType": "",
+ "nodeType": "group",
+ "attribute": "",
+ "query": "",
+ "parent": "",
+ "children": [
+  "rule_mbers3356zhqkqkhhth"
+ ],
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 1,
+ "returnType": ""
+},
+    "rule_mbers335rllnprnzw68": {
+ "value": "P2",
+ "sourceType": "",
+ "name": "",
+ "operator": "",
+ "dataType": "string",
+ "nodeType": "constant",
+ "attribute": "",
+ "query": "",
+ "parent": "rule_mbers3356zhqkqkhhth",
+ "children": null,
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 1,
+ "returnType": ""
+},
+    "rule_mbersgyeb6c50d6btp6": {
+ "value": "P3",
+ "sourceType": "",
+ "name": "",
+ "operator": "",
+ "dataType": "string",
+ "nodeType": "constant",
+ "attribute": "",
+ "query": "",
+ "parent": "rule_mbersgyequa4lzpax6q",
+ "children": null,
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 1,
+ "returnType": ""
+},
+    "rule_mbersgyeg3phjucbar7": {
+ "value": null,
+ "sourceType": "",
+ "name": "",
+ "operator": "and",
+ "dataType": "",
+ "nodeType": "group",
+ "attribute": "",
+ "query": "",
+ "parent": "",
+ "children": [
+  "rule_mbersgyequa4lzpax6q"
+ ],
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 1,
+ "returnType": ""
+},
+    "rule_mbersgyequa4lzpax6q": {
+ "value": "",
+ "sourceType": "",
+ "name": "",
+ "operator": "eq",
+ "dataType": "string",
+ "nodeType": "condition",
+ "attribute": "",
+ "query": "",
+ "parent": "rule_mbersgyeg3phjucbar7",
+ "children": null,
+ "leftNode": [
+  "rule_03"
+ ],
+ "rightNode": [
+  "rule_mbersgyeb6c50d6btp6"
+ ],
+ "siblingIndex": 1,
+ "returnType": ""
+},
+    "rule_mbersry67clnhtaj5jv": {
+ "value": null,
+ "sourceType": "",
+ "name": "",
+ "operator": "and",
+ "dataType": "",
+ "nodeType": "group",
+ "attribute": "",
+ "query": "",
+ "parent": "",
+ "children": [
+  "rule_mbersry6yrvmy6hmiae"
+ ],
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 1,
+ "returnType": ""
+},
+    "rule_mbersry6bevt447vjo": {
+ "value": "P4",
+ "sourceType": "",
+ "name": "",
+ "operator": "",
+ "dataType": "string",
+ "nodeType": "constant",
+ "attribute": "",
+ "query": "",
+ "parent": "rule_mbersry6yrvmy6hmiae",
+ "children": null,
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 1,
+ "returnType": ""
+},
+    "rule_mbersry6yrvmy6hmiae": {
+ "value": "",
+ "sourceType": "",
+ "name": "",
+ "operator": "eq",
+ "dataType": "string",
+ "nodeType": "condition",
+ "attribute": "",
+ "query": "",
+ "parent": "rule_mbersry67clnhtaj5jv",
+ "children": null,
+ "leftNode": [
+  "rule_03"
+ ],
+ "rightNode": [
+  "rule_mbersry6bevt447vjo"
+ ],
+ "siblingIndex": 1,
+ "returnType": ""
+},
+    "rule_mbertj4g0nwxb2ehw4kk": {
+ "value": "",
+ "sourceType": "",
+ "name": "",
+ "operator": "eq",
+ "dataType": "string",
+ "nodeType": "condition",
+ "attribute": "",
+ "query": "",
+ "parent": "rule_mbertj4glcp2s5l1rw",
+ "children": null,
+ "leftNode": [
+  "rule_03"
+ ],
+ "rightNode": [
+  "rule_mbertj4guhayf4d0jfm"
+ ],
+ "siblingIndex": 1,
+ "returnType": ""
+},
+    "rule_mbertj4glcp2s5l1rw": {
+ "value": null,
+ "sourceType": "",
+ "name": "",
+ "operator": "and",
+ "dataType": "",
+ "nodeType": "group",
+ "attribute": "",
+ "query": "",
+ "parent": "",
+ "children": [
+  "rule_mbertj4g0nwxb2ehw4kk"
+ ],
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 1,
+ "returnType": ""
+},
+    "rule_mbertj4guhayf4d0jfm": {
+ "value": "P5",
+ "sourceType": "",
+ "name": "",
+ "operator": "",
+ "dataType": "string",
+ "nodeType": "constant",
+ "attribute": "",
+ "query": "",
+ "parent": "rule_mbertj4g0nwxb2ehw4kk",
+ "children": null,
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 1,
+ "returnType": ""
+},
+    "rule_mbertmcy12xr3ph82u7g": {
+ "value": null,
+ "sourceType": "",
+ "name": "",
+ "operator": "and",
+ "dataType": "",
+ "nodeType": "group",
+ "attribute": "",
+ "query": "",
+ "parent": "",
+ "children": [
+  "rule_mbertmcyht8kawatgjn"
+ ],
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 1,
+ "returnType": ""
+},
+    "rule_mbertmcyert3rsnc0r9": {
+ "value": "P6",
+ "sourceType": "",
+ "name": "",
+ "operator": "",
+ "dataType": "string",
+ "nodeType": "constant",
+ "attribute": "",
+ "query": "",
+ "parent": "rule_mbertmcyht8kawatgjn",
+ "children": null,
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 1,
+ "returnType": ""
+},
+    "rule_mbertmcyht8kawatgjn": {
+ "value": "",
+ "sourceType": "",
+ "name": "",
+ "operator": "eq",
+ "dataType": "string",
+ "nodeType": "condition",
+ "attribute": "",
+ "query": "",
+ "parent": "rule_mbertmcy12xr3ph82u7g",
+ "children": null,
+ "leftNode": [
+  "rule_03"
+ ],
+ "rightNode": [
+  "rule_mbertmcyert3rsnc0r9"
+ ],
+ "siblingIndex": 1,
+ "returnType": ""
+},
+    "rule_mbertpt91xatj7tl474": {
+ "value": "",
+ "sourceType": "",
+ "name": "",
+ "operator": "eq",
+ "dataType": "string",
+ "nodeType": "condition",
+ "attribute": "",
+ "query": "",
+ "parent": "rule_mbertpt9q8s7z6l4wtp",
+ "children": null,
+ "leftNode": [
+  "rule_03"
+ ],
+ "rightNode": [
+  "rule_mbertpt98q38tktl5tr"
+ ],
+ "siblingIndex": 1,
+ "returnType": ""
+},
+    "rule_mbertpt98q38tktl5tr": {
+ "value": "P7",
+ "sourceType": "",
+ "name": "",
+ "operator": "",
+ "dataType": "string",
+ "nodeType": "constant",
+ "attribute": "",
+ "query": "",
+ "parent": "rule_mbertpt91xatj7tl474",
+ "children": null,
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 1,
+ "returnType": ""
+},
+    "rule_mbertpt9q8s7z6l4wtp": {
+ "value": null,
+ "sourceType": "",
+ "name": "",
+ "operator": "and",
+ "dataType": "",
+ "nodeType": "group",
+ "attribute": "",
+ "query": "",
+ "parent": "",
+ "children": [
+  "rule_mbertpt91xatj7tl474"
+ ],
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 1,
+ "returnType": ""
+},
+    "rule_mberucgu3bafrglgsqf": {
+ "value": null,
+ "sourceType": "",
+ "name": "",
+ "operator": "and",
+ "dataType": "",
+ "nodeType": "group",
+ "attribute": "",
+ "query": "",
+ "parent": "",
+ "children": [
+  "rule_mberucguc65xfg8iian"
+ ],
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 1,
+ "returnType": ""
+},
+    "rule_mberucguc65xfg8iian": {
+ "value": "",
+ "sourceType": "",
+ "name": "",
+ "operator": "eq",
+ "dataType": "string",
+ "nodeType": "condition",
+ "attribute": "",
+ "query": "",
+ "parent": "rule_mberucgu3bafrglgsqf",
+ "children": null,
+ "leftNode": [
+  "rule_03"
+ ],
+ "rightNode": [
+  "rule_mberucguu68vprza9gc"
+ ],
+ "siblingIndex": 1,
+ "returnType": ""
+},
+    "rule_mberucguu68vprza9gc": {
+ "value": "P8",
+ "sourceType": "",
+ "name": "",
+ "operator": "",
+ "dataType": "string",
+ "nodeType": "constant",
+ "attribute": "",
+ "query": "",
+ "parent": "rule_mberucguc65xfg8iian",
+ "children": null,
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 1,
+ "returnType": ""
+}
+   },
+   "startNode": ""
+  },
+  "firstCustomInput": "pricing_tier",
+  "firstRuleChain": "",
+  "ruleSetPolicy": "",
+  "description": "",
+  "policy": "first",
+  "comment": "",
+  "type": "decisionTable",
+  "dataSetId": "",
+  "ruleSet": null,
+  "settings": {
+   "startAt": "0001-01-01T00:00:00Z",
+   "endAt": "0001-01-01T00:00:00Z",
+   "event": null,
+   "api": {
+    "isEnabled": true,
+    "isPrivate": true
+   },
+   "isEnabled": true,
+   "auditIO": false,
+   "cachingInfo": {
+    "Enabled": false,
+    "Duration": {
+     "Value": 0,
+     "Unit": "d"
+    },
+    "CacheKeys": ""
+   },
+   "timezone": "Asia/Kolkata",
+   "dateFormat": "in",
+   "timeout": 0,
+   "timeoutAsync": 0,
+   "timeoutCron": 0
+  },
+  "isDemo": false,
+  "warnings": null,
+  "schemaVersion": "0.1.1"
+ },
+ "dependencies": [
+  {
+   "isDeleted": false,
+   "createdAt": "2025-10-24T10:28:22.122048Z",
+   "updatedAt": "2025-10-24T10:28:22.122048Z",
+   "entityCommitId": "commit-bf7d1411-6a03-48a4-995a-1b75779f2b10",
+   "entityType": "rule",
+   "entityId": "518fd46f-c0ff-4390-9715-c03124fed79b",
+   "entityVersion": "draft",
+   "entityNodeId": "ci-pricing_tier",
+   "dependencyType": "module_schema",
+   "dependencyId": "e2a9d5d8-2b02-4126-bee8-d60ae748c8de",
+   "dependencyVersion": "live"
+  }
+ ]
+}

@@ -1,0 +1,1086 @@
+{
+ "entityType": "workflow",
+ "live": true,
+ "data": {
+  "createdAt": "2024-02-23T06:29:59.967Z",
+  "updatedAt": "2024-03-19T12:45:12.55Z",
+  "isDeleted": false,
+  "testedAt": "2024-03-18T15:17:51.982Z",
+  "publishedAt": "2024-03-18T15:18:41.634Z",
+  "entityId": "65d83b6780d1d0c3e226d0ee",
+  "version": "0.10",
+  "name": "WF1",
+  "commitId": "commit-b8305a82-9b20-4fe6-abdc-01dcba334802",
+  "status": "published",
+  "lastVersion": "",
+  "isLive": true,
+  "commitInfo": {
+   "title": "Publish Version",
+   "timeStamp": "2024-05-27T06:56:18.163Z"
+  },
+  "startNode": "node_ltx0c722e8m3rnx4eyo",
+  "description": "",
+  "trigger": {
+   "apiNode": "1",
+   "cronNode": ""
+  },
+  "nodes": [
+   {
+    "position": {
+     "x": 115,
+     "y": 0
+    },
+    "style": null,
+    "sourcePosition": "bottom",
+    "targetPosition": "top",
+    "id": "1",
+    "type": "trigger",
+    "data": {
+     "input": null,
+     "output": null,
+     "executedValue": null,
+     "settings": {
+      "authType": "none",
+      "isEnabled": true
+     },
+     "nodeType": "apiTrigger",
+     "entity": "",
+     "entityId": "",
+     "status": "",
+     "name": "Trigger",
+     "rootId": "",
+     "sourceId": null,
+     "isMergeNode": false,
+     "runInLoop": {
+      "status": false,
+      "source": "",
+      "attribute": "",
+      "value": null
+     },
+     "switcher": null,
+     "conditions": null,
+     "blockName": "",
+     "testedAt": "0001-01-01T00:00:00Z"
+    },
+    "draggable": false
+   },
+   {
+    "position": {
+     "x": 115,
+     "y": 130
+    },
+    "style": null,
+    "sourcePosition": "bottom",
+    "targetPosition": "top",
+    "id": "node_lsy9vqkkq8eud64by2",
+    "type": "addNode",
+    "data": {
+     "input": null,
+     "output": null,
+     "executedValue": null,
+     "settings": null,
+     "nodeType": "addNodeMd",
+     "entity": "",
+     "entityId": "",
+     "status": "",
+     "name": "",
+     "rootId": "",
+     "sourceId": null,
+     "isMergeNode": false,
+     "runInLoop": {
+      "status": false,
+      "source": "",
+      "attribute": "",
+      "value": null
+     },
+     "switcher": null,
+     "conditions": null,
+     "blockName": "",
+     "testedAt": "0001-01-01T00:00:00Z"
+    },
+    "draggable": false
+   },
+   {
+    "position": {
+     "x": 115,
+     "y": 485
+    },
+    "style": null,
+    "sourcePosition": "bottom",
+    "targetPosition": "top",
+    "id": "node_lsy9wifpbw8mwc1husw",
+    "type": "codeNode",
+    "data": {
+     "input": {
+      "language": {
+ "value": "JS",
+ "executedValue": null,
+ "name": "",
+ "dataType": "",
+ "source": "",
+ "attribute": "",
+ "keySource": "",
+ "keyAttribute": "",
+ "mapping": false,
+ "isOptional": false,
+ "isNullable": false,
+ "isCaseSensitive": false,
+ "sendNull": false,
+ "notSend": false,
+ "order": 0,
+ "schemaId": ""
+},
+      "snippet": {
+ "value": "var a = { \"mukul\":\"bhati\"}\na",
+ "executedValue": null,
+ "name": "",
+ "dataType": "",
+ "source": "",
+ "attribute": "",
+ "keySource": "",
+ "keyAttribute": "",
+ "mapping": false,
+ "isOptional": false,
+ "isNullable": false,
+ "isCaseSensitive": false,
+ "sendNull": false,
+ "notSend": false,
+ "order": 0,
+ "schemaId": ""
+}
+     },
+     "output": null,
+     "executedValue": {
+      "error": null,
+      "output": {
+ "mukul": "bhati"
+}
+     },
+     "settings": {
+      "timeout": 30
+     },
+     "nodeType": "codeNode",
+     "entity": "codeNode",
+     "entityId": "node_lsy9wifpbw8mwc1husw",
+     "status": "success",
+     "name": "CODE",
+     "rootId": "",
+     "sourceId": null,
+     "isMergeNode": false,
+     "runInLoop": {
+      "status": false,
+      "source": "",
+      "attribute": "",
+      "value": null
+     },
+     "switcher": null,
+     "conditions": null,
+     "blockName": "",
+     "testedAt": "0001-01-01T00:00:00Z"
+    },
+    "draggable": false
+   },
+   {
+    "position": {
+     "x": 115,
+     "y": 615
+    },
+    "style": null,
+    "sourcePosition": "bottom",
+    "targetPosition": "top",
+    "id": "node_lsy9wifpty8v6yqri1g",
+    "type": "addNode",
+    "data": {
+     "input": null,
+     "output": null,
+     "executedValue": null,
+     "settings": null,
+     "nodeType": "addNodeMd",
+     "entity": "",
+     "entityId": "",
+     "status": "",
+     "name": "",
+     "rootId": "",
+     "sourceId": null,
+     "isMergeNode": false,
+     "runInLoop": {
+      "status": false,
+      "source": "",
+      "attribute": "",
+      "value": null
+     },
+     "switcher": null,
+     "conditions": null,
+     "blockName": "",
+     "testedAt": "0001-01-01T00:00:00Z"
+    },
+    "draggable": false
+   },
+   {
+    "position": {
+     "x": 115,
+     "y": 1100
+    },
+    "style": null,
+    "sourcePosition": "bottom",
+    "targetPosition": "top",
+    "id": "node_ltx094zoddoyy53v8ef",
+    "type": "responseNode",
+    "data": {
+     "input": {
+      "key_0": {
+ "value": false,
+ "executedValue": null,
+ "name": "key_0",
+ "dataType": "boolean",
+ "source": "",
+ "attribute": "",
+ "keySource": "",
+ "keyAttribute": "",
+ "mapping": false,
+ "isOptional": false,
+ "isNullable": false,
+ "isCaseSensitive": false,
+ "sendNull": false,
+ "notSend": false,
+ "order": 0,
+ "schemaId": ""
+},
+      "key_1": {
+ "value": null,
+ "executedValue": null,
+ "name": "key_1",
+ "dataType": "string",
+ "source": "CODE",
+ "attribute": "output.mukul",
+ "keySource": "",
+ "keyAttribute": "",
+ "mapping": false,
+ "isOptional": false,
+ "isNullable": false,
+ "isCaseSensitive": false,
+ "sendNull": false,
+ "notSend": false,
+ "order": 0,
+ "schemaId": ""
+},
+      "key_2": {
+ "value": null,
+ "executedValue": null,
+ "name": "key_2",
+ "dataType": "list",
+ "source": "SET_VARIABLE",
+ "attribute": "output.key_0",
+ "keySource": "",
+ "keyAttribute": "",
+ "mapping": false,
+ "isOptional": false,
+ "isNullable": false,
+ "isCaseSensitive": false,
+ "sendNull": false,
+ "notSend": false,
+ "order": 0,
+ "schemaId": ""
+},
+      "key_3": {
+ "value": "{{.Demo_Db.output[0].metadata}}",
+ "executedValue": null,
+ "name": "key_3",
+ "dataType": "json",
+ "source": "",
+ "attribute": "",
+ "keySource": "",
+ "keyAttribute": "",
+ "mapping": false,
+ "isOptional": false,
+ "isNullable": false,
+ "isCaseSensitive": false,
+ "sendNull": false,
+ "notSend": false,
+ "order": 0,
+ "schemaId": ""
+}
+     },
+     "output": null,
+     "executedValue": {
+      "key_0": false,
+      "key_1": "bhati",
+      "key_2": [
+ 1,
+ 2,
+ 3
+],
+      "key_3": {
+ "flags": {
+ "checkLicense": [
+ "simpleRule",
+ "dataSet",
+ "actionConnector",
+ "decisionTable",
+ "dbConnector"
+]
+}
+}
+     },
+     "settings": {
+      "timeout": 60
+     },
+     "nodeType": "responseNode",
+     "entity": "responseNode",
+     "entityId": "node_ltx094zoddoyy53v8ef",
+     "status": "success",
+     "name": "Response_node1",
+     "rootId": "",
+     "sourceId": null,
+     "isMergeNode": false,
+     "runInLoop": {
+      "status": false,
+      "source": "",
+      "attribute": "",
+      "value": null
+     },
+     "switcher": null,
+     "conditions": null,
+     "blockName": "",
+     "testedAt": "0001-01-01T00:00:00Z"
+    },
+    "draggable": false
+   },
+   {
+    "position": {
+     "x": 115,
+     "y": 1230
+    },
+    "style": null,
+    "sourcePosition": "bottom",
+    "targetPosition": "top",
+    "id": "node_ltx094zoap6l3yvogkn",
+    "type": "addNode",
+    "data": {
+     "input": null,
+     "output": null,
+     "executedValue": null,
+     "settings": null,
+     "nodeType": "addNodeMd",
+     "entity": "",
+     "entityId": "",
+     "status": "",
+     "name": "",
+     "rootId": "",
+     "sourceId": null,
+     "isMergeNode": false,
+     "runInLoop": {
+      "status": false,
+      "source": "",
+      "attribute": "",
+      "value": null
+     },
+     "switcher": null,
+     "conditions": null,
+     "blockName": "",
+     "testedAt": "0001-01-01T00:00:00Z"
+    },
+    "draggable": false
+   },
+   {
+    "position": {
+     "x": 115,
+     "y": 205
+    },
+    "style": null,
+    "sourcePosition": "bottom",
+    "targetPosition": "top",
+    "id": "node_ltx0c722e8m3rnx4eyo",
+    "type": "rule",
+    "data": {
+     "input": {
+      
+     },
+     "output": null,
+     "executedValue": {
+      "output": [
+ {
+  "defaultOutputData": true
+ }
+]
+     },
+     "settings": {
+      "runAction": false,
+      "timeout": 30
+     },
+     "nodeType": "srNode",
+     "entity": "rule",
+     "entityId": "659ebc65321b345807ceab00",
+     "status": "success",
+     "name": "dtime",
+     "rootId": "",
+     "sourceId": [
+      "source_ltx0c722gpfyqmg0qt6",
+      "source_ltx0c722avh3eik323d"
+     ],
+     "isMergeNode": false,
+     "runInLoop": {
+      "status": false,
+      "source": "",
+      "attribute": "",
+      "value": null
+     },
+     "switcher": null,
+     "conditions": null,
+     "blockName": "",
+     "testedAt": "0001-01-01T00:00:00Z"
+    },
+    "draggable": false
+   },
+   {
+    "position": {
+     "x": 0,
+     "y": 335
+    },
+    "style": null,
+    "sourcePosition": "bottom",
+    "targetPosition": "top",
+    "id": "node_ltx0c7226rh2kpw3kys",
+    "type": "addNode",
+    "data": {
+     "input": null,
+     "output": null,
+     "executedValue": null,
+     "settings": null,
+     "nodeType": "addNodeMd",
+     "entity": "",
+     "entityId": "",
+     "status": "",
+     "name": "",
+     "rootId": "node_ltx0c722e8m3rnx4eyo",
+     "sourceId": null,
+     "isMergeNode": false,
+     "runInLoop": {
+      "status": false,
+      "source": "",
+      "attribute": "",
+      "value": null
+     },
+     "switcher": null,
+     "conditions": null,
+     "blockName": "",
+     "testedAt": "0001-01-01T00:00:00Z"
+    },
+    "draggable": false
+   },
+   {
+    "position": {
+     "x": 230,
+     "y": 335
+    },
+    "style": null,
+    "sourcePosition": "bottom",
+    "targetPosition": "top",
+    "id": "node_ltx0c722eh691yuvdpm",
+    "type": "addNode",
+    "data": {
+     "input": null,
+     "output": null,
+     "executedValue": null,
+     "settings": null,
+     "nodeType": "addNodeMd",
+     "entity": "",
+     "entityId": "",
+     "status": "",
+     "name": "",
+     "rootId": "node_ltx0c722e8m3rnx4eyo",
+     "sourceId": null,
+     "isMergeNode": false,
+     "runInLoop": {
+      "status": false,
+      "source": "",
+      "attribute": "",
+      "value": null
+     },
+     "switcher": null,
+     "conditions": null,
+     "blockName": "",
+     "testedAt": "0001-01-01T00:00:00Z"
+    },
+    "draggable": false
+   },
+   {
+    "position": {
+     "x": 115,
+     "y": 410
+    },
+    "style": null,
+    "sourcePosition": "bottom",
+    "targetPosition": "top",
+    "id": "node_ltx0c722wdw75q1ohzk",
+    "type": "addNode",
+    "data": {
+     "input": null,
+     "output": null,
+     "executedValue": null,
+     "settings": null,
+     "nodeType": "addNodeMd",
+     "entity": "",
+     "entityId": "",
+     "status": "",
+     "name": "",
+     "rootId": "node_ltx0c722e8m3rnx4eyo",
+     "sourceId": null,
+     "isMergeNode": true,
+     "runInLoop": {
+      "status": false,
+      "source": "",
+      "attribute": "",
+      "value": null
+     },
+     "switcher": null,
+     "conditions": null,
+     "blockName": "",
+     "testedAt": "0001-01-01T00:00:00Z"
+    },
+    "draggable": false
+   },
+   {
+    "position": {
+     "x": 115,
+     "y": 690
+    },
+    "style": null,
+    "sourcePosition": "bottom",
+    "targetPosition": "top",
+    "id": "node_ltx0hroh5ofrp7xq8x",
+    "type": "setVarNode",
+    "data": {
+     "input": {
+      "key_0": {
+ "value": [
+  1,
+  2,
+  3
+ ],
+ "executedValue": null,
+ "name": "key_0",
+ "dataType": "list",
+ "source": "",
+ "attribute": "",
+ "keySource": "",
+ "keyAttribute": "",
+ "mapping": false,
+ "isOptional": false,
+ "isNullable": false,
+ "isCaseSensitive": false,
+ "sendNull": false,
+ "notSend": false,
+ "order": 0,
+ "schemaId": ""
+}
+     },
+     "output": null,
+     "executedValue": {
+      "error": null,
+      "output": {
+ "key_0": [
+ 1,
+ 2,
+ 3
+]
+}
+     },
+     "settings": {
+      "timeout": 30
+     },
+     "nodeType": "setVarNode",
+     "entity": "setVariableNode",
+     "entityId": "node_ltx0hroh5ofrp7xq8x",
+     "status": "success",
+     "name": "SET_VARIABLE",
+     "rootId": "",
+     "sourceId": null,
+     "isMergeNode": false,
+     "runInLoop": {
+      "status": false,
+      "source": "",
+      "attribute": "",
+      "value": null
+     },
+     "switcher": null,
+     "conditions": null,
+     "blockName": "",
+     "testedAt": "0001-01-01T00:00:00Z"
+    },
+    "draggable": false
+   },
+   {
+    "position": {
+     "x": 115,
+     "y": 820
+    },
+    "style": null,
+    "sourcePosition": "bottom",
+    "targetPosition": "top",
+    "id": "node_ltx0hrohedyceukdq9k",
+    "type": "addNode",
+    "data": {
+     "input": null,
+     "output": null,
+     "executedValue": null,
+     "settings": null,
+     "nodeType": "addNodeMd",
+     "entity": "",
+     "entityId": "",
+     "status": "",
+     "name": "",
+     "rootId": "",
+     "sourceId": null,
+     "isMergeNode": false,
+     "runInLoop": {
+      "status": false,
+      "source": "",
+      "attribute": "",
+      "value": null
+     },
+     "switcher": null,
+     "conditions": null,
+     "blockName": "",
+     "testedAt": "0001-01-01T00:00:00Z"
+    },
+    "draggable": false
+   },
+   {
+    "position": {
+     "x": 115,
+     "y": 895
+    },
+    "style": null,
+    "sourcePosition": "bottom",
+    "targetPosition": "top",
+    "id": "node_ltx34t1nq7fdwmjdof",
+    "type": "dbNode",
+    "data": {
+     "input": {
+      "action": {
+ "value": 0,
+ "executedValue": null,
+ "name": "",
+ "dataType": "",
+ "source": "",
+ "attribute": "",
+ "keySource": "",
+ "keyAttribute": "",
+ "mapping": false,
+ "isOptional": false,
+ "isNullable": false,
+ "isCaseSensitive": false,
+ "sendNull": false,
+ "notSend": false,
+ "order": 0,
+ "schemaId": ""
+},
+      "query": {
+ "value": "SELECT * from agent where id={{.SET_VARIABLE.output.key_0[1]}}",
+ "executedValue": null,
+ "name": "",
+ "dataType": "",
+ "source": "",
+ "attribute": "",
+ "keySource": "",
+ "keyAttribute": "",
+ "mapping": false,
+ "isOptional": false,
+ "isNullable": false,
+ "isCaseSensitive": false,
+ "sendNull": false,
+ "notSend": false,
+ "order": 0,
+ "schemaId": ""
+}
+     },
+     "output": null,
+     "executedValue": {
+      "error": null,
+      "output": [
+ {
+  "created_at": null,
+  "domain": "localhost:8001",
+  "id": 2,
+  "infra_info": null,
+  "is_deleted": false,
+  "metadata": {
+ "flags": {
+ "checkLicense": [
+ "simpleRule",
+ "dataSet",
+ "actionConnector",
+ "decisionTable",
+ "dbConnector"
+]
+}
+},
+  "pre_shared_key": "f1bcebc1-b4a6-4035-9920-671defdf6b4d",
+  "scheme": "http",
+  "secret_key": "e8d86aeb-d35a-4502-b2fd-721473708061",
+  "type": "OPA",
+  "updated_at": null,
+  "whitelist_ips": null
+ }
+]
+     },
+     "settings": {
+      "cacheEnabled": false,
+      "durationUnit": "m",
+      "durationValue": 5,
+      "rowLimit": 1000,
+      "timeout": 30
+     },
+     "nodeType": "dbNode",
+     "entity": "connector",
+     "entityId": "659519b631502da04c84390e",
+     "status": "success",
+     "name": "Demo_Db",
+     "rootId": "",
+     "sourceId": null,
+     "isMergeNode": false,
+     "runInLoop": {
+      "status": false,
+      "source": "",
+      "attribute": "",
+      "value": null
+     },
+     "switcher": null,
+     "conditions": null,
+     "blockName": "",
+     "testedAt": "0001-01-01T00:00:00Z"
+    },
+    "draggable": false
+   },
+   {
+    "position": {
+     "x": 115,
+     "y": 1025
+    },
+    "style": null,
+    "sourcePosition": "bottom",
+    "targetPosition": "top",
+    "id": "node_ltx34t1n3bjps4z4rjs",
+    "type": "addNode",
+    "data": {
+     "input": null,
+     "output": null,
+     "executedValue": null,
+     "settings": null,
+     "nodeType": "addNodeMd",
+     "entity": "",
+     "entityId": "",
+     "status": "",
+     "name": "",
+     "rootId": "",
+     "sourceId": null,
+     "isMergeNode": false,
+     "runInLoop": {
+      "status": false,
+      "source": "",
+      "attribute": "",
+      "value": null
+     },
+     "switcher": null,
+     "conditions": null,
+     "blockName": "",
+     "testedAt": "0001-01-01T00:00:00Z"
+    },
+    "draggable": false
+   }
+  ],
+  "edges": [
+   {
+    "style": {
+     "stroke": "gray",
+     "strokeWidth": 1
+    },
+    "id": "edge_lsy9vqkkjvf5b3spi78",
+    "markerEnd": "",
+    "label": "",
+    "source": "1",
+    "target": "node_lsy9vqkkq8eud64by2",
+    "data": {
+     "edgeType": "then",
+     "pathId": ""
+    },
+    "type": "smoothEdge",
+    "sourceHandle": "",
+    "animated": false
+   },
+   {
+    "style": {
+     "stroke": "gray",
+     "strokeWidth": 1
+    },
+    "id": "edge_lsy9wifp5j4yfl7dyfx",
+    "markerEnd": "",
+    "label": "",
+    "source": "node_lsy9wifpbw8mwc1husw",
+    "target": "node_lsy9wifpty8v6yqri1g",
+    "data": {
+     "edgeType": "then",
+     "pathId": ""
+    },
+    "type": "smoothEdge",
+    "sourceHandle": "",
+    "animated": false
+   },
+   {
+    "style": {
+     "stroke": "gray",
+     "strokeWidth": 1
+    },
+    "id": "edge_ltx094zos8yp9svvhv",
+    "markerEnd": "",
+    "label": "",
+    "source": "node_ltx094zoddoyy53v8ef",
+    "target": "node_ltx094zoap6l3yvogkn",
+    "data": {
+     "edgeType": "then",
+     "pathId": ""
+    },
+    "type": "smoothEdge",
+    "sourceHandle": "",
+    "animated": false
+   },
+   {
+    "style": {
+     "stroke": "gray",
+     "strokeWidth": 1
+    },
+    "id": "edge_ltx0c722xj41u5r9o38",
+    "markerEnd": "",
+    "label": "",
+    "source": "node_ltx0c722wdw75q1ohzk",
+    "target": "node_lsy9wifpbw8mwc1husw",
+    "data": {
+     "edgeType": "then",
+     "pathId": ""
+    },
+    "type": "smoothEdge",
+    "sourceHandle": "source_ltx0c722gpfyqmg0qt6",
+    "animated": false
+   },
+   {
+    "style": {
+     "stroke": "gray",
+     "strokeWidth": 1
+    },
+    "id": "edge_ltx0c722nz4yvpcfaj",
+    "markerEnd": "",
+    "label": "",
+    "source": "node_lsy9vqkkq8eud64by2",
+    "target": "node_ltx0c722e8m3rnx4eyo",
+    "data": {
+     "edgeType": "then",
+     "pathId": ""
+    },
+    "type": "smoothEdge",
+    "sourceHandle": "",
+    "animated": false
+   },
+   {
+    "style": {
+     "stroke": "gray",
+     "strokeWidth": 1
+    },
+    "id": "edge_ltx0c723l052u3zu86k",
+    "markerEnd": "",
+    "label": "True",
+    "source": "node_ltx0c722e8m3rnx4eyo",
+    "target": "node_ltx0c7226rh2kpw3kys",
+    "data": {
+     "edgeType": "then",
+     "pathId": ""
+    },
+    "type": "smoothEdge",
+    "sourceHandle": "source_ltx0c722gpfyqmg0qt6",
+    "animated": false
+   },
+   {
+    "style": {
+     "stroke": "gray",
+     "strokeWidth": 1
+    },
+    "id": "edge_ltx0c723362h64j6199",
+    "markerEnd": "",
+    "label": "False",
+    "source": "node_ltx0c722e8m3rnx4eyo",
+    "target": "node_ltx0c722eh691yuvdpm",
+    "data": {
+     "edgeType": "else",
+     "pathId": ""
+    },
+    "type": "smoothEdge",
+    "sourceHandle": "source_ltx0c722avh3eik323d",
+    "animated": false
+   },
+   {
+    "style": {
+     "stroke": "gray",
+     "strokeWidth": 1
+    },
+    "id": "edge_ltx0c723yala4hb32hs",
+    "markerEnd": "",
+    "label": "",
+    "source": "node_ltx0c7226rh2kpw3kys",
+    "target": "node_ltx0c722wdw75q1ohzk",
+    "data": {
+     "edgeType": "then",
+     "pathId": ""
+    },
+    "type": "smoothEdge",
+    "sourceHandle": "source_ltx0c722gpfyqmg0qt6",
+    "animated": false
+   },
+   {
+    "style": {
+     "stroke": "gray",
+     "strokeWidth": 1
+    },
+    "id": "edge_ltx0c723tyk1smfdm4",
+    "markerEnd": "",
+    "label": "",
+    "source": "node_ltx0c722eh691yuvdpm",
+    "target": "node_ltx0c722wdw75q1ohzk",
+    "data": {
+     "edgeType": "then",
+     "pathId": ""
+    },
+    "type": "smoothEdge",
+    "sourceHandle": "",
+    "animated": false
+   },
+   {
+    "style": {
+     "stroke": "gray",
+     "strokeWidth": 1
+    },
+    "id": "edge_ltx0hrohepiqnn3ai44",
+    "markerEnd": "",
+    "label": "",
+    "source": "node_ltx0hroh5ofrp7xq8x",
+    "target": "node_ltx0hrohedyceukdq9k",
+    "data": {
+     "edgeType": "then",
+     "pathId": ""
+    },
+    "type": "smoothEdge",
+    "sourceHandle": "",
+    "animated": false
+   },
+   {
+    "style": {
+     "stroke": "gray",
+     "strokeWidth": 1
+    },
+    "id": "edge_ltx0hroh8emrgi0k64m",
+    "markerEnd": "",
+    "label": "",
+    "source": "node_lsy9wifpty8v6yqri1g",
+    "target": "node_ltx0hroh5ofrp7xq8x",
+    "data": {
+     "edgeType": "then",
+     "pathId": ""
+    },
+    "type": "smoothEdge",
+    "sourceHandle": "",
+    "animated": false
+   },
+   {
+    "style": {
+     "stroke": "gray",
+     "strokeWidth": 1
+    },
+    "id": "edge_ltx34t1oqcbfzjgjm7",
+    "markerEnd": "",
+    "label": "",
+    "source": "node_ltx34t1n3bjps4z4rjs",
+    "target": "node_ltx094zoddoyy53v8ef",
+    "data": {
+     "edgeType": "then",
+     "pathId": ""
+    },
+    "type": "smoothEdge",
+    "sourceHandle": "",
+    "animated": false
+   },
+   {
+    "style": {
+     "stroke": "gray",
+     "strokeWidth": 1
+    },
+    "id": "edge_ltx34t1o0qfi60oxikgg",
+    "markerEnd": "",
+    "label": "",
+    "source": "node_ltx34t1nq7fdwmjdof",
+    "target": "node_ltx34t1n3bjps4z4rjs",
+    "data": {
+     "edgeType": "then",
+     "pathId": ""
+    },
+    "type": "smoothEdge",
+    "sourceHandle": "",
+    "animated": false
+   },
+   {
+    "style": {
+     "stroke": "gray",
+     "strokeWidth": 1
+    },
+    "id": "edge_ltx34t1oqc1pt0c3xp",
+    "markerEnd": "",
+    "label": "",
+    "source": "node_ltx0hrohedyceukdq9k",
+    "target": "node_ltx34t1nq7fdwmjdof",
+    "data": {
+     "edgeType": "then",
+     "pathId": ""
+    },
+    "type": "smoothEdge",
+    "sourceHandle": "",
+    "animated": false
+   }
+  ],
+  "isEnabled": true,
+  "settings": {
+   "auditIO": false,
+   "timezone": "",
+   "dateFormat": "",
+   "timeout": 0,
+   "timeoutAsync": 0
+  },
+  "comment": "",
+  "isDemo": false
+ },
+ "dependencies": [
+  {
+   "isDeleted": false,
+   "createdAt": "2024-09-10T21:31:09.165703Z",
+   "updatedAt": "2024-09-10T21:31:09.165703Z",
+   "entityCommitId": "commit-b8305a82-9b20-4fe6-abdc-01dcba334802",
+   "entityType": "workflow",
+   "entityId": "65d83b6780d1d0c3e226d0ee",
+   "entityVersion": "0.10",
+   "entityNodeId": "node_ltx0c722e8m3rnx4eyo",
+   "dependencyType": "rule",
+   "dependencyId": "659ebc65321b345807ceab00",
+   "dependencyVersion": "live"
+  },
+  {
+   "isDeleted": false,
+   "createdAt": "2024-09-10T21:31:09.150258Z",
+   "updatedAt": "2024-09-10T21:31:09.150258Z",
+   "entityCommitId": "commit-b8305a82-9b20-4fe6-abdc-01dcba334802",
+   "entityType": "workflow",
+   "entityId": "65d83b6780d1d0c3e226d0ee",
+   "entityVersion": "0.10",
+   "entityNodeId": "node_ltx34t1nq7fdwmjdof",
+   "dependencyType": "connector",
+   "dependencyId": "659519b631502da04c84390e",
+   "dependencyVersion": "live"
+  }
+ ]
+}

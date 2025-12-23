@@ -1,0 +1,79 @@
+{
+ "entityType": "dataSet",
+ "category": "dataSet",
+ "data": {
+  "createdAt": "2023-06-28T11:58:06.554Z",
+  "updatedAt": "2023-07-21T07:14:08.394Z",
+  "isDeleted": false,
+  "testedAt": "2023-09-20T13:22:53.577Z",
+  "publishedAt": "0001-01-01T00:00:00Z",
+  "entityId": "649c204e0eda1b2bd8855861",
+  "version": "0.20",
+  "name": "mySQLDS",
+  "commitId": "commit-fc37b85f-5cb9-4f04-b065-8197c7d3788e",
+  "status": "tested",
+  "lastVersion": "",
+  "isLive": false,
+  "commitInfo": {
+   "title": "Draft",
+   "timeStamp": "2024-05-27T08:05:29.207Z"
+  },
+  "fields": {
+   "a_N": {
+ "ColumnName": "",
+ "DataType": "numeric",
+ "Order": 0,
+ "ExecutedValue": null
+},
+   "inventory_booked_perc": {
+ "ColumnName": "",
+ "DataType": "numeric",
+ "Order": 0,
+ "ExecutedValue": null
+},
+   "order_count": {
+ "ColumnName": "",
+ "DataType": "numeric",
+ "Order": 0,
+ "ExecutedValue": null
+},
+   "order_volume": {
+ "ColumnName": "",
+ "DataType": "numeric",
+ "Order": 0,
+ "ExecutedValue": null
+},
+   "price": {
+ "ColumnName": "",
+ "DataType": "numeric",
+ "Order": 0,
+ "ExecutedValue": null
+},
+   "productline": {
+ "ColumnName": "",
+ "DataType": "string",
+ "Order": 0,
+ "ExecutedValue": null
+},
+   "productname": {
+ "ColumnName": "",
+ "DataType": "string",
+ "Order": 0,
+ "ExecutedValue": null
+}
+  },
+  "description": "",
+  "query": "select customerNumber as a_N, productLine, productName,\nMIN(buyprice) as price,\nMIN ((tmp.quantityordered)*100/(quantityinstock+tmp.quantityordered)) as inventory_booked_perc,\nsum(tmp.total_order) as order_volume,\nsum(tmp.quantityordered) as order_count from\n(SELECT o.ordernumber,\no.orderdate, o.requireddate, o.shippeddate, o.customernumber,\nod.productcode, od.quantityordered, od.priceeach, c.creditlimit, pl.productline,\np.productname, p.quantityinstock, p.buyprice, (od.QUANTITYORDERED*od.PRICEEACH) as total_order\nFROM orders o\nJOIN orderdetails od ON o.ordernumber = od.ordernumber\nJOIN customers c ON o.customernumber = c.customernumber\nJOIN products p ON od.productcode = p.productcode\nJOIN productlines pl ON p.productline = pl.productline) tmp\ngroup by productname, productline, customernumber;",
+  "params": null,
+  "connectorId": "649c1fe70eda1b2bd885585f",
+  "isDemo": false,
+  "settings": {
+   "durationUnit": "m",
+   "rowLimit": 1000,
+   "durationValue": 30,
+   "cacheEnabled": false,
+   "timezone": "",
+   "dateFormat": ""
+  }
+ }
+}

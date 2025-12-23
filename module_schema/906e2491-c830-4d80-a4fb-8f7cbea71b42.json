@@ -1,0 +1,24 @@
+{
+ "entityType": "module_schema",
+ "data": {
+  "createdAt": "2025-10-24T10:28:22.203Z",
+  "updatedAt": "2025-10-24T10:28:22.203Z",
+  "isDeleted": false,
+  "entityId": "906e2491-c830-4d80-a4fb-8f7cbea71b42",
+  "name": "Tier",
+  "moduleId": "90865a87-43fc-4507-af7c-b1a1be943a70",
+  "dataType": "string",
+  "usageType": "optional",
+  "options": [
+   {
+    "value": "Standard"
+   },
+   {
+    "value": "Premium"
+   },
+   {
+    "value": "Advance"
+   }
+  ]
+ }
+}

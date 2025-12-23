@@ -1,0 +1,151 @@
+{
+ "entityType": "rule",
+ "category": "simpleRule",
+ "live": true,
+ "data": {
+  "createdAt": "2024-01-10T15:48:53.068Z",
+  "updatedAt": "2024-03-18T15:18:32.761Z",
+  "isDeleted": false,
+  "testedAt": "2024-03-18T15:18:28.84Z",
+  "publishedAt": "2024-03-18T15:18:32.761Z",
+  "entityId": "659ebc65321b345807ceab00",
+  "version": "0.10",
+  "name": "dtime",
+  "commitId": "commit-22835864-e87e-47bb-a67e-9040d6dcc81e",
+  "status": "published",
+  "lastVersion": "",
+  "isLive": true,
+  "commitInfo": {
+   "title": "Publish Version",
+   "timeStamp": "2024-05-27T06:55:59.508Z"
+  },
+  "customInput": {
+   
+  },
+  "ruleChain": null,
+  "decisionTable": {
+   "rows": null,
+   "properties": null,
+   "results": null,
+   "firstRow": "",
+   "firstProperty": "",
+   "firstResult": "",
+   "firstAggOutputData": ""
+  },
+  "action": {
+   "then": {
+    "outputData": {
+     
+    },
+    "actionNode": {
+     
+    },
+    "firstOutputData": "",
+    "firstActionNode": ""
+   },
+   "else": {
+    "outputData": {
+     
+    },
+    "actionNode": {
+     
+    },
+    "firstOutputData": "",
+    "firstActionNode": ""
+   }
+  },
+  "conditions": {
+   "nodes": {
+    "rule_01": {
+ "value": null,
+ "sourceType": "",
+ "name": "",
+ "operator": "and",
+ "dataType": "",
+ "nodeType": "group",
+ "attribute": "",
+ "query": "",
+ "parent": "",
+ "children": [
+  "rule_lr7zwkorjwmxkvh7qf7"
+ ],
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 1,
+ "returnType": ""
+},
+    "rule_lr7zwkorjwmxkvh7qf7": {
+ "value": null,
+ "sourceType": "",
+ "name": "",
+ "operator": "ex",
+ "dataType": "dateTime",
+ "nodeType": "condition",
+ "attribute": "",
+ "query": "",
+ "parent": "rule_01",
+ "children": null,
+ "leftNode": [
+  "rule_lr7zwkorl2eqhw39xi"
+ ],
+ "rightNode": null,
+ "siblingIndex": 2,
+ "returnType": ""
+},
+    "rule_lr7zwkorl2eqhw39xi": {
+ "value": null,
+ "sourceType": "systemVar",
+ "name": "",
+ "operator": "",
+ "dataType": "dateTime",
+ "nodeType": "params",
+ "attribute": "RequestTime",
+ "query": "",
+ "parent": "rule_lr7zwkorjwmxkvh7qf7",
+ "children": null,
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 2,
+ "returnType": ""
+}
+   },
+   "startNode": "rule_01"
+  },
+  "firstCustomInput": "b",
+  "firstRuleChain": "",
+  "ruleSetPolicy": "",
+  "description": "",
+  "policy": "",
+  "comment": "",
+  "type": "simpleRule",
+  "dataSetId": null,
+  "ruleSet": null,
+  "settings": {
+   "startAt": "0001-01-01T00:00:00Z",
+   "endAt": "0001-01-01T00:00:00Z",
+   "event": null,
+   "api": {
+    "isEnabled": true,
+    "isPrivate": false
+   },
+   "isEnabled": true,
+   "auditIO": false,
+   "cachingInfo": {
+    "Enabled": false,
+    "Duration": {
+     "Value": 0,
+     "Unit": ""
+    },
+    "CacheKeys": ""
+   },
+   "timezone": "",
+   "dateFormat": "",
+   "timeout": 0,
+   "timeoutAsync": 0,
+   "timeoutCron": 0
+  },
+  "isDemo": false,
+  "warnings": null,
+  "schemaVersion": "0.1.1"
+ }
+}

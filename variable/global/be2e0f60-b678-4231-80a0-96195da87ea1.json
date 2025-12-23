@@ -1,0 +1,20 @@
+{
+ "entityType": "variable",
+ "data": {
+  "createdAt": "2025-12-17T13:43:07.045Z",
+  "updatedAt": "2025-12-17T13:43:07.045Z",
+  "isDeleted": false,
+  "entityId": "be2e0f60-b678-4231-80a0-96195da87ea1",
+  "name": "counter",
+  "category": "globalVar",
+  "scope": "workspace",
+  "dataType": "numeric",
+  "value": {
+   "data": 20,
+   "isSecret": false,
+   "canReset": true
+  },
+  "isFunction": false,
+  "functionName": ""
+ }
+}

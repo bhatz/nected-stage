@@ -1,0 +1,469 @@
+{
+ "entityType": "rule",
+ "category": "decisionTable",
+ "data": {
+  "createdAt": "2025-07-21T12:59:54.803Z",
+  "updatedAt": "2025-10-23T18:08:10.501156Z",
+  "isDeleted": false,
+  "testedAt": "2025-07-21T15:43:57.105Z",
+  "publishedAt": "0001-01-01T00:00:00Z",
+  "entityId": "758950bc-cad4-4bc4-b180-9f471282f9ee",
+  "version": "draft",
+  "name": "claims",
+  "commitId": "commit-0e893313-5420-4d71-b3dd-0b920ebcd183",
+  "status": "draft",
+  "lastVersion": "",
+  "isLive": false,
+  "commitInfo": {
+   "title": "Created at 2025-07-21 12:59:54",
+   "timeStamp": "2025-07-21T12:59:54.803224289Z"
+  },
+  "customInput": {
+   "bills": {
+ "name": "bills",
+ "dataType": "list",
+ "isOptional": false,
+ "isNullable": false,
+ "isCaseSensitive": false,
+ "attribute": "",
+ "sourceType": "",
+ "executedValue": [
+  {
+   "CPT_Code": "123",
+   "Date_of_Service": "20/05/2025",
+   "Procedure_Description": "ROOM AND BOARD - SEMI PRIVATE",
+   "Revenue_Code": 100
+  },
+  {
+   "CPT_Code": "A4913",
+   "Date_of_Service": "20/05/2025",
+   "Procedure_Description": "PHOXILLUM SOL",
+   "Revenue_Code": 100
+  },
+  {
+   "CPT_Code": "J1885",
+   "Date_of_Service": "20/05/2025",
+   "Procedure_Description": "KETOROLAC INJECTION",
+   "Revenue_Code": 100
+  },
+  {
+   "CPT_Code": "90935",
+   "Date_of_Service": "20/05/2025",
+   "Procedure_Description": "HEMODIALYSIS PROCEDURE",
+   "Revenue_Code": 100
+  }
+ ],
+ "config": {
+  
+ },
+ "value": null,
+ "next": "",
+ "previous": "",
+ "schemaId": ""
+}
+  },
+  "ruleChain": null,
+  "decisionTable": {
+   "rows": {
+    "g_FpE8Gt": {
+ "nextId": "",
+ "prevId": "rule_01",
+ "firstOutputData": "output_jJ9R9i",
+ "isEnabled": true
+},
+    "rule_01": {
+ "nextId": "g_FpE8Gt",
+ "prevId": "",
+ "firstOutputData": "output_dVlIeA",
+ "isEnabled": true
+}
+   },
+   "properties": {
+    "param_SsbdCV": {
+ "nextId": "",
+ "prevId": "rule_03",
+ "type": "simpleCondition"
+},
+    "rule_03": {
+ "nextId": "param_SsbdCV",
+ "prevId": "",
+ "type": "simpleCondition"
+}
+   },
+   "results": {
+    "result_Fu11qN": {
+ "nextId": "",
+ "prevId": "result_fyxqoq",
+ "dataType": "jsFormula",
+ "keyName": "keyName",
+ "schemaId": ""
+},
+    "result_fyxqoq": {
+ "nextId": "result_Fu11qN",
+ "prevId": "",
+ "dataType": "boolean",
+ "keyName": "result",
+ "schemaId": ""
+}
+   },
+   "firstRow": "rule_01",
+   "firstProperty": "rule_03",
+   "firstResult": "result_fyxqoq",
+   "firstAggOutputData": ""
+  },
+  "action": {
+   "then": {
+    "outputData": {
+     "output_DXhTtC": {
+ "name": "keyName",
+ "dataType": "jsFormula",
+ "returnType": "",
+ "value": null,
+ "next": "",
+ "executedValue": null,
+ "attribute": "",
+ "source": "",
+ "schemaId": ""
+},
+     "output_Rzzt9Q": {
+ "name": "keyName",
+ "dataType": "jsFormula",
+ "returnType": "",
+ "value": null,
+ "next": "",
+ "executedValue": null,
+ "attribute": "",
+ "source": "",
+ "schemaId": ""
+},
+     "output_dVlIeA": {
+ "name": "result",
+ "dataType": "boolean",
+ "returnType": "",
+ "value": true,
+ "next": "output_Rzzt9Q",
+ "executedValue": true,
+ "attribute": "",
+ "source": "",
+ "schemaId": ""
+},
+     "output_jJ9R9i": {
+ "name": "result",
+ "dataType": "boolean",
+ "returnType": "",
+ "value": false,
+ "next": "output_DXhTtC",
+ "executedValue": false,
+ "attribute": "",
+ "source": "",
+ "schemaId": ""
+}
+    },
+    "actionNode": {
+     
+    },
+    "firstOutputData": "",
+    "firstActionNode": ""
+   },
+   "else": {
+    "outputData": null,
+    "actionNode": null,
+    "firstOutputData": "",
+    "firstActionNode": ""
+   }
+  },
+  "conditions": {
+   "nodes": {
+    "c_9jYFLN": {
+ "value": "",
+ "sourceType": "",
+ "name": "",
+ "operator": "any",
+ "dataType": "list",
+ "nodeType": "condition",
+ "attribute": "",
+ "query": "",
+ "parent": "g_FpE8Gt",
+ "children": null,
+ "leftNode": [
+  "param_SsbdCV"
+ ],
+ "rightNode": [],
+ "siblingIndex": 1,
+ "returnType": ""
+},
+    "c_JJxVXo": {
+ "value": "",
+ "sourceType": "",
+ "name": "",
+ "operator": "any",
+ "dataType": "list",
+ "nodeType": "condition",
+ "attribute": "",
+ "query": "",
+ "parent": "rule_01",
+ "children": null,
+ "leftNode": [
+  "param_SsbdCV"
+ ],
+ "rightNode": [],
+ "siblingIndex": 1,
+ "returnType": ""
+},
+    "c_lBHmQQ": {
+ "value": null,
+ "sourceType": "",
+ "name": "Any",
+ "operator": "any",
+ "dataType": "list",
+ "nodeType": "condition",
+ "attribute": "",
+ "query": "",
+ "parent": "g_FpE8Gt",
+ "children": null,
+ "leftNode": [
+  "rule_03"
+ ],
+ "rightNode": [],
+ "siblingIndex": 1,
+ "returnType": ""
+},
+    "cc_pM427b": {
+ "value": null,
+ "sourceType": "",
+ "name": "",
+ "operator": "sw",
+ "dataType": "string",
+ "nodeType": "condition",
+ "attribute": "",
+ "query": "",
+ "parent": "gc_Sj5uEP",
+ "children": null,
+ "leftNode": [
+  "pc_S4nM87"
+ ],
+ "rightNode": [
+  "rhs_jCUjQq"
+ ],
+ "siblingIndex": 0,
+ "returnType": ""
+},
+    "g_FpE8Gt": {
+ "value": null,
+ "sourceType": "",
+ "name": "",
+ "operator": "and",
+ "dataType": "",
+ "nodeType": "group",
+ "attribute": "",
+ "query": "",
+ "parent": "",
+ "children": [
+  "c_lBHmQQ",
+  "c_9jYFLN"
+ ],
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 1,
+ "returnType": ""
+},
+    "gc_Sj5uEP": {
+ "value": null,
+ "sourceType": "",
+ "name": "Path1",
+ "operator": "",
+ "dataType": "",
+ "nodeType": "group",
+ "attribute": "",
+ "query": "",
+ "parent": "",
+ "children": [
+  "cc_pM427b"
+ ],
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 0,
+ "returnType": ""
+},
+    "param_SsbdCV": {
+ "value": null,
+ "sourceType": "dataSet",
+ "name": "",
+ "operator": "",
+ "dataType": "list",
+ "nodeType": "params",
+ "attribute": "inputData",
+ "query": "",
+ "parent": "",
+ "children": null,
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 1,
+ "returnType": ""
+},
+    "pc_S4nM87": {
+ "value": null,
+ "sourceType": "list",
+ "name": "",
+ "operator": "",
+ "dataType": "string",
+ "nodeType": "params",
+ "attribute": "item.CPT_Code",
+ "query": "",
+ "parent": "cc_pM427b",
+ "children": null,
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 0,
+ "returnType": ""
+},
+    "rhs_jCUjQq": {
+ "value": "ANES",
+ "sourceType": "",
+ "name": "",
+ "operator": "",
+ "dataType": "string",
+ "nodeType": "constant",
+ "attribute": "",
+ "query": "",
+ "parent": "cc_pM427b",
+ "children": null,
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 0,
+ "returnType": ""
+},
+    "rhs_moALNz": {
+ "value": {
+  "aggOperator": "",
+  "compareNodeId": "",
+  "filterKeys": [],
+  "startNodeId": "gc_Sj5uEP"
+ },
+ "sourceType": "",
+ "name": "condition_1",
+ "operator": "",
+ "dataType": "list",
+ "nodeType": "listFilter",
+ "attribute": "",
+ "query": "",
+ "parent": "rule_02",
+ "children": null,
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 1,
+ "returnType": ""
+},
+    "rule_01": {
+ "value": null,
+ "sourceType": "",
+ "name": "",
+ "operator": "and",
+ "dataType": "",
+ "nodeType": "group",
+ "attribute": "",
+ "query": "",
+ "parent": "",
+ "children": [
+  "rule_02",
+  "c_JJxVXo"
+ ],
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 1,
+ "returnType": ""
+},
+    "rule_02": {
+ "value": "",
+ "sourceType": "",
+ "name": "",
+ "operator": "anyFilterMatch",
+ "dataType": "list",
+ "nodeType": "condition",
+ "attribute": "",
+ "query": "",
+ "parent": "rule_01",
+ "children": null,
+ "leftNode": [
+  "rule_03"
+ ],
+ "rightNode": [
+  "rhs_moALNz"
+ ],
+ "siblingIndex": 1,
+ "returnType": ""
+},
+    "rule_03": {
+ "value": null,
+ "sourceType": "customInput",
+ "name": "",
+ "operator": "",
+ "dataType": "list",
+ "nodeType": "params",
+ "attribute": "bills",
+ "query": "",
+ "parent": "",
+ "children": null,
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 1,
+ "returnType": ""
+}
+   },
+   "startNode": ""
+  },
+  "firstCustomInput": "bills",
+  "firstRuleChain": "",
+  "ruleSetPolicy": "",
+  "description": "",
+  "policy": "first",
+  "comment": "",
+  "type": "decisionTable",
+  "dataSetId": "65c4c461fe7afdaf39a7bed6",
+  "ruleSet": null,
+  "settings": {
+   "startAt": "0001-01-01T00:00:00Z",
+   "endAt": "0001-01-01T00:00:00Z",
+   "event": null,
+   "api": {
+    "isEnabled": true,
+    "isPrivate": true
+   },
+   "isEnabled": true,
+   "auditIO": false,
+   "cachingInfo": {
+    "Enabled": false,
+    "Duration": {
+     "Value": 0,
+     "Unit": ""
+    },
+    "CacheKeys": ""
+   },
+   "timezone": "",
+   "dateFormat": "",
+   "timeout": 0,
+   "timeoutAsync": 0,
+   "timeoutCron": 0
+  },
+  "isDemo": false,
+  "warnings": [
+   "Dataset is attached in rule input but not used inside any condition or used only with Any operator."
+  ],
+  "schemaVersion": "0.1.1"
+ },
+ "dependencies": [
+  {
+   "isDeleted": false,
+   "createdAt": "2025-07-21T13:06:56.170736Z",
+   "updatedAt": "2025-10-23T18:08:10.509047Z",
+   "entityCommitId": "commit-0e893313-5420-4d71-b3dd-0b920ebcd183",
+   "entityType": "rule",
+   "entityId": "758950bc-cad4-4bc4-b180-9f471282f9ee",
+   "entityVersion": "draft",
+   "entityNodeId": "dataSet",
+   "dependencyType": "dataSet",
+   "dependencyId": "65c4c461fe7afdaf39a7bed6",
+   "dependencyVersion": "draft"
+  }
+ ]
+}

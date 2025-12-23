@@ -1,0 +1,36 @@
+{
+ "entityType": "module_schema",
+ "data": {
+  "createdAt": "2025-10-24T10:28:22.107Z",
+  "updatedAt": "2025-10-24T10:28:22.107Z",
+  "isDeleted": false,
+  "entityId": "96212600-2716-4143-bcfa-b34b89b7cf03",
+  "name": "Segment",
+  "moduleId": "d8af52a1-889e-41d8-9bb7-f9097c3de5f7",
+  "dataType": "string",
+  "usageType": "optional",
+  "options": [
+   {
+    "value": "C1"
+   },
+   {
+    "value": "C2"
+   },
+   {
+    "value": "C3"
+   },
+   {
+    "value": "C4"
+   },
+   {
+    "value": "C5"
+   },
+   {
+    "value": "C6"
+   },
+   {
+    "value": "C7"
+   }
+  ]
+ }
+}

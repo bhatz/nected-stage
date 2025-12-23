@@ -1,0 +1,14 @@
+{
+ "entityType": "module_schema",
+ "data": {
+  "createdAt": "2025-10-24T10:28:22.004Z",
+  "updatedAt": "2025-10-24T10:28:22.004Z",
+  "isDeleted": false,
+  "entityId": "5c01173b-dc7c-4e57-8979-2b0c1ba3371b",
+  "name": "credit_score",
+  "moduleId": "d8af52a1-889e-41d8-9bb7-f9097c3de5f7",
+  "dataType": "numeric",
+  "usageType": "optional",
+  "options": null
+ }
+}

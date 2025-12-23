@@ -1,0 +1,16 @@
+{
+ "entityType": "connector",
+ "category": "restAPI",
+ "data": {
+  "createdAt": "2024-11-08T07:08:14.445Z",
+  "updatedAt": "2024-11-08T09:16:40.229034Z",
+  "isDeleted": false,
+  "entityId": "d4f11941-4e28-4ac5-b9f7-723cc0e010d5",
+  "name": "cibilMock",
+  "isDemo": false,
+  "category": "api",
+  "isSource": false,
+  "isAction": true,
+  "isTrigger": true
+ }
+}

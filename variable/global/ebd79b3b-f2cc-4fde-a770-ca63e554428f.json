@@ -1,0 +1,59 @@
+{
+ "entityType": "variable",
+ "data": {
+  "createdAt": "2025-07-15T13:47:25.584Z",
+  "updatedAt": "2025-07-15T13:47:25.584Z",
+  "isDeleted": false,
+  "entityId": "ebd79b3b-f2cc-4fde-a770-ca63e554428f",
+  "name": "finalJson",
+  "category": "globalVar",
+  "scope": "workspace",
+  "dataType": "json",
+  "value": {
+   "data": {
+    "cartId": "12345",
+    "currency": "USD",
+    "discount": 10,
+    "items": [
+ {
+  "Ages": [
+ 12,
+ 30,
+ 20
+],
+  "Dates": "2025-11-10",
+  "DatesTime": "2025-11-10T11:12:13+05:30",
+  "productId": "p1001",
+  "productName": "Wireless Mouse",
+  "quantity": 2,
+  "totalPrice": 51.98,
+  "unitPrice": 25.99
+ },
+ {
+  "Ages": [
+ 22,
+ 10,
+ 10
+],
+  "Dates": "2025-11-11",
+  "DatesTime": "2025-11-10T12:12:13+05:30",
+  "productId": "p1002",
+  "productName": "Keyboard",
+  "quantity": 1,
+  "totalPrice": 45,
+  "unitPrice": 45
+ }
+],
+    "shipping": 5,
+    "subtotal": 96.98,
+    "tax": 7.76,
+    "total": 99.74,
+    "userId": "u001"
+   },
+   "isSecret": false,
+   "canReset": false
+  },
+  "isFunction": false,
+  "functionName": ""
+ }
+}

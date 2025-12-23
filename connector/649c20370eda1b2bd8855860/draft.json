@@ -1,0 +1,16 @@
+{
+ "entityType": "connector",
+ "category": "postgres",
+ "data": {
+  "createdAt": "2023-06-28T11:57:43.145Z",
+  "updatedAt": "2024-09-26T18:55:14.406593Z",
+  "isDeleted": false,
+  "entityId": "649c20370eda1b2bd8855860",
+  "name": "PostgreSampleDB",
+  "isDemo": false,
+  "category": "database",
+  "isSource": true,
+  "isAction": true,
+  "isTrigger": true
+ }
+}

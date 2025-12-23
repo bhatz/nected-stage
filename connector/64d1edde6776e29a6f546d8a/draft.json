@@ -1,0 +1,16 @@
+{
+ "entityType": "connector",
+ "category": "restAPI",
+ "data": {
+  "createdAt": "2023-08-08T07:25:18.503Z",
+  "updatedAt": "2024-09-26T18:55:14.191717Z",
+  "isDeleted": false,
+  "entityId": "64d1edde6776e29a6f546d8a",
+  "name": "VidhaanDev",
+  "isDemo": false,
+  "category": "api",
+  "isSource": false,
+  "isAction": true,
+  "isTrigger": true
+ }
+}

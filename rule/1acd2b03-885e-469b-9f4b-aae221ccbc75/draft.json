@@ -1,0 +1,8821 @@
+{
+ "entityType": "rule",
+ "category": "decisionTable",
+ "data": {
+  "createdAt": "2025-07-28T07:22:02.272Z",
+  "updatedAt": "2025-09-03T10:41:13.156111Z",
+  "isDeleted": false,
+  "testedAt": "2025-07-30T16:41:52.999Z",
+  "publishedAt": "0001-01-01T00:00:00Z",
+  "entityId": "1acd2b03-885e-469b-9f4b-aae221ccbc75",
+  "version": "draft",
+  "name": "testListFilter",
+  "commitId": "commit-d16736f5-f582-4cc0-9e74-cc500fdb9593",
+  "status": "draft",
+  "lastVersion": "",
+  "isLive": false,
+  "commitInfo": {
+   "title": "Created at 2025-07-28 07:22:02",
+   "timeStamp": "2025-07-28T07:22:02.272976962Z"
+  },
+  "customInput": {
+   "cart": {
+ "name": "cart",
+ "dataType": "json",
+ "isOptional": false,
+ "isNullable": false,
+ "isCaseSensitive": false,
+ "attribute": "",
+ "sourceType": "",
+ "executedValue": {
+  "cartId": "12345",
+  "currency": "USD",
+  "discount": 10,
+  "items": [
+ {
+  "Ages": [
+ 12,
+ 30,
+ 20
+],
+  "Dates": "2025-11-10",
+  "DatesTime": "2025-11-10T11:12:13+05:30",
+  "productId": "p1001",
+  "productName": "Wireless Mouse",
+  "quantity": 2,
+  "totalPrice": 51.98,
+  "unitPrice": 25.99
+ },
+ {
+  "Ages": [
+ 22,
+ 10,
+ 10
+],
+  "Dates": "2025-11-11",
+  "DatesTime": "2025-11-10T12:12:13+05:30",
+  "productId": "p1002",
+  "productName": "Keyboard",
+  "quantity": 1,
+  "totalPrice": 45,
+  "unitPrice": 45
+ }
+],
+  "shipping": 5,
+  "subtotal": 96.98,
+  "tax": 7.76,
+  "total": 99.74,
+  "userId": "u001"
+ },
+ "config": null,
+ "value": null,
+ "next": "",
+ "previous": "",
+ "schemaId": ""
+}
+  },
+  "ruleChain": {
+   
+  },
+  "decisionTable": {
+   "rows": {
+    "g_08Jxmc": {
+ "nextId": "g_8uB5Tc",
+ "prevId": "g_7pLhd0",
+ "firstOutputData": "output_t8t8Yf",
+ "isEnabled": true
+},
+    "g_2NtZ6O": {
+ "nextId": "g_y5jDSK",
+ "prevId": "g_UYATCd",
+ "firstOutputData": "output_B9005C",
+ "isEnabled": true
+},
+    "g_2iN8Og": {
+ "nextId": "g_tAAEjE",
+ "prevId": "g_cZVxSA",
+ "firstOutputData": "output_CZhpk0",
+ "isEnabled": true
+},
+    "g_5qg8M0": {
+ "nextId": "g_hSUqL6",
+ "prevId": "g_iRUEkX",
+ "firstOutputData": "output_JsA1iJ",
+ "isEnabled": true
+},
+    "g_69lN9G": {
+ "nextId": "g_ZIop76",
+ "prevId": "g_IFC9ui",
+ "firstOutputData": "output_KnjXPd",
+ "isEnabled": true
+},
+    "g_7pLhd0": {
+ "nextId": "g_08Jxmc",
+ "prevId": "g_ZIop76",
+ "firstOutputData": "output_bqZGXL",
+ "isEnabled": true
+},
+    "g_8OCoYY": {
+ "nextId": "g_ooeEiv",
+ "prevId": "g_jzEtKB",
+ "firstOutputData": "output_bA3DaU",
+ "isEnabled": true
+},
+    "g_8uB5Tc": {
+ "nextId": "g_AzBUDa",
+ "prevId": "g_08Jxmc",
+ "firstOutputData": "output_gPfYge",
+ "isEnabled": true
+},
+    "g_AzBUDa": {
+ "nextId": "g_M9zX2N",
+ "prevId": "g_8uB5Tc",
+ "firstOutputData": "output_W1rbnV",
+ "isEnabled": true
+},
+    "g_F7wCoq": {
+ "nextId": "g_KvHAWX",
+ "prevId": "g_tAAEjE",
+ "firstOutputData": "output_Q7Nxx0",
+ "isEnabled": true
+},
+    "g_IDfasJ": {
+ "nextId": "g_uGtxYg",
+ "prevId": "g_aPqiiQ",
+ "firstOutputData": "output_HCtnHl",
+ "isEnabled": true
+},
+    "g_IFC9ui": {
+ "nextId": "g_69lN9G",
+ "prevId": "g_hUCyqC",
+ "firstOutputData": "output_OCWH9c",
+ "isEnabled": true
+},
+    "g_KvHAWX": {
+ "nextId": "g_prhmt1",
+ "prevId": "g_F7wCoq",
+ "firstOutputData": "output_4L7Gwt",
+ "isEnabled": true
+},
+    "g_M9zX2N": {
+ "nextId": "",
+ "prevId": "g_AzBUDa",
+ "firstOutputData": "output_qVSm0X",
+ "isEnabled": true
+},
+    "g_OpsdUR": {
+ "nextId": "g_UYATCd",
+ "prevId": "rule_01",
+ "firstOutputData": "output_YEA5Jx",
+ "isEnabled": true
+},
+    "g_OtGegL": {
+ "nextId": "g_S3qEKk",
+ "prevId": "g_cYkL6l",
+ "firstOutputData": "output_sDWxuW",
+ "isEnabled": true
+},
+    "g_Qf1vay": {
+ "nextId": "g_iRUEkX",
+ "prevId": "g_jQ1EMO",
+ "firstOutputData": "output_XJHJ1B",
+ "isEnabled": true
+},
+    "g_S3qEKk": {
+ "nextId": "g_d4vMBG",
+ "prevId": "g_OtGegL",
+ "firstOutputData": "output_Rv9P1r",
+ "isEnabled": true
+},
+    "g_ULnKf3": {
+ "nextId": "g_UxDWWs",
+ "prevId": "g_uGtxYg",
+ "firstOutputData": "output_bHrhv4",
+ "isEnabled": true
+},
+    "g_UYATCd": {
+ "nextId": "g_2NtZ6O",
+ "prevId": "g_OpsdUR",
+ "firstOutputData": "output_3zqWZ1",
+ "isEnabled": true
+},
+    "g_UxDWWs": {
+ "nextId": "g_jzEtKB",
+ "prevId": "g_ULnKf3",
+ "firstOutputData": "output_CRDPoJ",
+ "isEnabled": true
+},
+    "g_WvFi6z": {
+ "nextId": "g_aPqiiQ",
+ "prevId": "g_gCDHKR",
+ "firstOutputData": "output_zYeWVD",
+ "isEnabled": true
+},
+    "g_ZIop76": {
+ "nextId": "g_7pLhd0",
+ "prevId": "g_69lN9G",
+ "firstOutputData": "output_nR7WsK",
+ "isEnabled": true
+},
+    "g_aPqiiQ": {
+ "nextId": "g_IDfasJ",
+ "prevId": "g_WvFi6z",
+ "firstOutputData": "output_gmbzFb",
+ "isEnabled": true
+},
+    "g_cYkL6l": {
+ "nextId": "g_OtGegL",
+ "prevId": "g_zIOYQU",
+ "firstOutputData": "output_r99BLz",
+ "isEnabled": true
+},
+    "g_cZVxSA": {
+ "nextId": "g_2iN8Og",
+ "prevId": "g_tuIM25",
+ "firstOutputData": "output_xmjGpw",
+ "isEnabled": true
+},
+    "g_d4vMBG": {
+ "nextId": "g_gCDHKR",
+ "prevId": "g_S3qEKk",
+ "firstOutputData": "output_l86FmD",
+ "isEnabled": true
+},
+    "g_gCDHKR": {
+ "nextId": "g_WvFi6z",
+ "prevId": "g_d4vMBG",
+ "firstOutputData": "output_kxf4yh",
+ "isEnabled": true
+},
+    "g_hSUqL6": {
+ "nextId": "g_tuIM25",
+ "prevId": "g_5qg8M0",
+ "firstOutputData": "output_ZnniAT",
+ "isEnabled": true
+},
+    "g_hUCyqC": {
+ "nextId": "g_IFC9ui",
+ "prevId": "g_prhmt1",
+ "firstOutputData": "output_zAfw9X",
+ "isEnabled": true
+},
+    "g_iRUEkX": {
+ "nextId": "g_5qg8M0",
+ "prevId": "g_Qf1vay",
+ "firstOutputData": "output_4tcZ3Z",
+ "isEnabled": true
+},
+    "g_jQ1EMO": {
+ "nextId": "g_Qf1vay",
+ "prevId": "g_ooeEiv",
+ "firstOutputData": "output_dWIeDj",
+ "isEnabled": true
+},
+    "g_jzEtKB": {
+ "nextId": "g_8OCoYY",
+ "prevId": "g_UxDWWs",
+ "firstOutputData": "output_N86HDC",
+ "isEnabled": true
+},
+    "g_ooeEiv": {
+ "nextId": "g_jQ1EMO",
+ "prevId": "g_8OCoYY",
+ "firstOutputData": "output_dA8HDs",
+ "isEnabled": true
+},
+    "g_prhmt1": {
+ "nextId": "g_hUCyqC",
+ "prevId": "g_KvHAWX",
+ "firstOutputData": "output_kvKZFx",
+ "isEnabled": true
+},
+    "g_tAAEjE": {
+ "nextId": "g_F7wCoq",
+ "prevId": "g_2iN8Og",
+ "firstOutputData": "output_Lng0cg",
+ "isEnabled": true
+},
+    "g_tuIM25": {
+ "nextId": "g_cZVxSA",
+ "prevId": "g_hSUqL6",
+ "firstOutputData": "output_mCTKfL",
+ "isEnabled": true
+},
+    "g_uGtxYg": {
+ "nextId": "g_ULnKf3",
+ "prevId": "g_IDfasJ",
+ "firstOutputData": "output_cLv7IR",
+ "isEnabled": true
+},
+    "g_y5jDSK": {
+ "nextId": "g_zIOYQU",
+ "prevId": "g_2NtZ6O",
+ "firstOutputData": "output_VO9c1K",
+ "isEnabled": true
+},
+    "g_zIOYQU": {
+ "nextId": "g_cYkL6l",
+ "prevId": "g_y5jDSK",
+ "firstOutputData": "output_ThhwBH",
+ "isEnabled": true
+},
+    "rule_01": {
+ "nextId": "g_OpsdUR",
+ "prevId": "",
+ "firstOutputData": "output_sVkqyV",
+ "isEnabled": true
+}
+   },
+   "properties": {
+    "rule_03": {
+ "nextId": "",
+ "prevId": "",
+ "type": "simpleCondition"
+}
+   },
+   "results": {
+    "result_1WhBtc": {
+ "nextId": "result_awpha0",
+ "prevId": "",
+ "dataType": "string",
+ "keyName": "res",
+ "schemaId": ""
+},
+    "result_awpha0": {
+ "nextId": "result_brUpq5",
+ "prevId": "result_1WhBtc",
+ "dataType": "list",
+ "keyName": "matches",
+ "schemaId": ""
+},
+    "result_brUpq5": {
+ "nextId": "",
+ "prevId": "result_awpha0",
+ "dataType": "list",
+ "keyName": "keyName",
+ "schemaId": ""
+}
+   },
+   "firstRow": "rule_01",
+   "firstProperty": "rule_03",
+   "firstResult": "result_1WhBtc",
+   "firstAggOutputData": ""
+  },
+  "action": {
+   "then": {
+    "outputData": {
+     "output_1rhUdI": {
+ "name": "keyName",
+ "dataType": "list",
+ "returnType": "",
+ "value": null,
+ "next": "",
+ "executedValue": [
+  12,
+  30,
+  20
+ ],
+ "attribute": "matchedItems[0].Ages",
+ "source": "condition_31",
+ "schemaId": ""
+},
+     "output_2kWOj5": {
+ "name": "keyName",
+ "dataType": "list",
+ "returnType": "",
+ "value": null,
+ "next": "",
+ "executedValue": [
+  12,
+  30,
+  20
+ ],
+ "attribute": "matchedItems[0].Ages",
+ "source": "condition_31",
+ "schemaId": ""
+},
+     "output_2obisw": {
+ "name": "matches",
+ "dataType": "list",
+ "returnType": "",
+ "value": null,
+ "next": "output_byRYSX",
+ "executedValue": [
+  {
+   "Ages": [
+ 12,
+ 30,
+ 20
+],
+   "Dates": "2025-11-10",
+   "DatesTime": "2025-11-10T11:12:13+05:30",
+   "productId": "p1001",
+   "productName": "Wireless Mouse",
+   "quantity": 2,
+   "totalPrice": 51.98,
+   "unitPrice": 25.99
+  }
+ ],
+ "attribute": "matchedItems",
+ "source": "condition_31",
+ "schemaId": ""
+},
+     "output_3iLkd2": {
+ "name": "keyName",
+ "dataType": "list",
+ "returnType": "",
+ "value": null,
+ "next": "",
+ "executedValue": [
+  12,
+  30,
+  20
+ ],
+ "attribute": "matchedItems[0].Ages",
+ "source": "condition_31",
+ "schemaId": ""
+},
+     "output_3zqWZ1": {
+ "name": "res",
+ "dataType": "string",
+ "returnType": "",
+ "value": "Sum < 2",
+ "next": "output_F5JmtT",
+ "executedValue": "Sum < 2",
+ "attribute": "",
+ "source": "",
+ "schemaId": ""
+},
+     "output_4CCF8I": {
+ "name": "matches",
+ "dataType": "list",
+ "returnType": "",
+ "value": null,
+ "next": "output_1rhUdI",
+ "executedValue": [
+  {
+   "Ages": [
+ 12,
+ 30,
+ 20
+],
+   "Dates": "2025-11-10",
+   "DatesTime": "2025-11-10T11:12:13+05:30",
+   "productId": "p1001",
+   "productName": "Wireless Mouse",
+   "quantity": 2,
+   "totalPrice": 51.98,
+   "unitPrice": 25.99
+  }
+ ],
+ "attribute": "matchedItems",
+ "source": "condition_31",
+ "schemaId": ""
+},
+     "output_4KayWo": {
+ "name": "keyName",
+ "dataType": "list",
+ "returnType": "",
+ "value": null,
+ "next": "",
+ "executedValue": [
+  12,
+  30,
+  20
+ ],
+ "attribute": "matchedItems[0].Ages",
+ "source": "condition_31",
+ "schemaId": ""
+},
+     "output_4L7Gwt": {
+ "name": "res",
+ "dataType": "string",
+ "returnType": "",
+ "value": "Sum < 2",
+ "next": "output_58vs0F",
+ "executedValue": "Sum < 2",
+ "attribute": "",
+ "source": "",
+ "schemaId": ""
+},
+     "output_4SEaM4": {
+ "name": "matches",
+ "dataType": "list",
+ "returnType": "",
+ "value": null,
+ "next": "output_ia6MXQ",
+ "executedValue": [
+  {
+   "Ages": [
+ 12,
+ 30,
+ 20
+],
+   "Dates": "2025-11-10",
+   "DatesTime": "2025-11-10T11:12:13+05:30",
+   "productId": "p1001",
+   "productName": "Wireless Mouse",
+   "quantity": 2,
+   "totalPrice": 51.98,
+   "unitPrice": 25.99
+  }
+ ],
+ "attribute": "matchedItems",
+ "source": "condition_31",
+ "schemaId": ""
+},
+     "output_4tcZ3Z": {
+ "name": "res",
+ "dataType": "string",
+ "returnType": "",
+ "value": "Sum < 2",
+ "next": "output_cRisyc",
+ "executedValue": "Sum < 2",
+ "attribute": "",
+ "source": "",
+ "schemaId": ""
+},
+     "output_51PRZE": {
+ "name": "matches",
+ "dataType": "list",
+ "returnType": "",
+ "value": null,
+ "next": "output_IWz4ES",
+ "executedValue": [
+  {
+   "Ages": [
+ 12,
+ 30,
+ 20
+],
+   "Dates": "2025-11-10",
+   "DatesTime": "2025-11-10T11:12:13+05:30",
+   "productId": "p1001",
+   "productName": "Wireless Mouse",
+   "quantity": 2,
+   "totalPrice": 51.98,
+   "unitPrice": 25.99
+  }
+ ],
+ "attribute": "matchedItems",
+ "source": "condition_31",
+ "schemaId": ""
+},
+     "output_58vs0F": {
+ "name": "matches",
+ "dataType": "list",
+ "returnType": "",
+ "value": null,
+ "next": "output_InFbDl",
+ "executedValue": [
+  {
+   "Ages": [
+ 12,
+ 30,
+ 20
+],
+   "Dates": "2025-11-10",
+   "DatesTime": "2025-11-10T11:12:13+05:30",
+   "productId": "p1001",
+   "productName": "Wireless Mouse",
+   "quantity": 2,
+   "totalPrice": 51.98,
+   "unitPrice": 25.99
+  }
+ ],
+ "attribute": "matchedItems",
+ "source": "condition_31",
+ "schemaId": ""
+},
+     "output_5qdJzz": {
+ "name": "keyName",
+ "dataType": "list",
+ "returnType": "",
+ "value": null,
+ "next": "",
+ "executedValue": [
+  12,
+  30,
+  20
+ ],
+ "attribute": "matchedItems[0].Ages",
+ "source": "condition_31",
+ "schemaId": ""
+},
+     "output_6e7Hc6": {
+ "name": "keyName",
+ "dataType": "list",
+ "returnType": "",
+ "value": null,
+ "next": "",
+ "executedValue": [
+  12,
+  30,
+  20
+ ],
+ "attribute": "matchedItems[0].Ages",
+ "source": "condition_31",
+ "schemaId": ""
+},
+     "output_718Q4B": {
+ "name": "keyName",
+ "dataType": "list",
+ "returnType": "",
+ "value": null,
+ "next": "",
+ "executedValue": [
+  12,
+  30,
+  20
+ ],
+ "attribute": "matchedItems[0].Ages",
+ "source": "condition_31",
+ "schemaId": ""
+},
+     "output_7tyGMJ": {
+ "name": "matches",
+ "dataType": "list",
+ "returnType": "",
+ "value": null,
+ "next": "output_hQRMsD",
+ "executedValue": [
+  {
+   "Ages": [
+ 12,
+ 30,
+ 20
+],
+   "Dates": "2025-11-10",
+   "DatesTime": "2025-11-10T11:12:13+05:30",
+   "productId": "p1001",
+   "productName": "Wireless Mouse",
+   "quantity": 2,
+   "totalPrice": 51.98,
+   "unitPrice": 25.99
+  }
+ ],
+ "attribute": "matchedItems",
+ "source": "condition_31",
+ "schemaId": ""
+},
+     "output_7zcofY": {
+ "name": "matches",
+ "dataType": "list",
+ "returnType": "",
+ "value": null,
+ "next": "output_rkmvqg",
+ "executedValue": [
+  {
+   "Ages": [
+ 12,
+ 30,
+ 20
+],
+   "Dates": "2025-11-10",
+   "DatesTime": "2025-11-10T11:12:13+05:30",
+   "productId": "p1001",
+   "productName": "Wireless Mouse",
+   "quantity": 2,
+   "totalPrice": 51.98,
+   "unitPrice": 25.99
+  }
+ ],
+ "attribute": "matchedItems",
+ "source": "condition_31",
+ "schemaId": ""
+},
+     "output_8DsmxI": {
+ "name": "matches",
+ "dataType": "list",
+ "returnType": "",
+ "value": null,
+ "next": "output_dSPfFY",
+ "executedValue": [
+  {
+   "Ages": [
+ 12,
+ 30,
+ 20
+],
+   "Dates": "2025-11-10",
+   "DatesTime": "2025-11-10T11:12:13+05:30",
+   "productId": "p1001",
+   "productName": "Wireless Mouse",
+   "quantity": 2,
+   "totalPrice": 51.98,
+   "unitPrice": 25.99
+  }
+ ],
+ "attribute": "matchedItems",
+ "source": "condition_31",
+ "schemaId": ""
+},
+     "output_8M6oqv": {
+ "name": "keyName",
+ "dataType": "list",
+ "returnType": "",
+ "value": null,
+ "next": "",
+ "executedValue": [
+  12,
+  30,
+  20
+ ],
+ "attribute": "matchedItems[0].Ages",
+ "source": "condition_31",
+ "schemaId": ""
+},
+     "output_B9005C": {
+ "name": "res",
+ "dataType": "string",
+ "returnType": "",
+ "value": "Sum < 2",
+ "next": "output_SfibxK",
+ "executedValue": "Sum < 2",
+ "attribute": "",
+ "source": "",
+ "schemaId": ""
+},
+     "output_BBJP3F": {
+ "name": "keyName",
+ "dataType": "list",
+ "returnType": "",
+ "value": null,
+ "next": "",
+ "executedValue": [
+  12,
+  30,
+  20
+ ],
+ "attribute": "matchedItems[0].Ages",
+ "source": "condition_31",
+ "schemaId": ""
+},
+     "output_BITRDX": {
+ "name": "matches",
+ "dataType": "list",
+ "returnType": "",
+ "value": null,
+ "next": "output_8M6oqv",
+ "executedValue": [
+  {
+   "Ages": [
+ 12,
+ 30,
+ 20
+],
+   "Dates": "2025-11-10",
+   "DatesTime": "2025-11-10T11:12:13+05:30",
+   "productId": "p1001",
+   "productName": "Wireless Mouse",
+   "quantity": 2,
+   "totalPrice": 51.98,
+   "unitPrice": 25.99
+  }
+ ],
+ "attribute": "matchedItems",
+ "source": "condition_31",
+ "schemaId": ""
+},
+     "output_BNokaX": {
+ "name": "keyName",
+ "dataType": "list",
+ "returnType": "",
+ "value": null,
+ "next": "",
+ "executedValue": [
+  12,
+  30,
+  20
+ ],
+ "attribute": "matchedItems[0].Ages",
+ "source": "condition_31",
+ "schemaId": ""
+},
+     "output_CRDPoJ": {
+ "name": "res",
+ "dataType": "string",
+ "returnType": "",
+ "value": "Sum < 4",
+ "next": "output_7tyGMJ",
+ "executedValue": "Sum < 4",
+ "attribute": "",
+ "source": "",
+ "schemaId": ""
+},
+     "output_CZhpk0": {
+ "name": "res",
+ "dataType": "string",
+ "returnType": "",
+ "value": "Sum < 2",
+ "next": "output_jk5f1J",
+ "executedValue": "Sum < 2",
+ "attribute": "",
+ "source": "",
+ "schemaId": ""
+},
+     "output_CvLY1P": {
+ "name": "keyName",
+ "dataType": "list",
+ "returnType": "",
+ "value": null,
+ "next": "",
+ "executedValue": [
+  12,
+  30,
+  20
+ ],
+ "attribute": "matchedItems[0].Ages",
+ "source": "condition_31",
+ "schemaId": ""
+},
+     "output_ECHCmU": {
+ "name": "matches",
+ "dataType": "list",
+ "returnType": "",
+ "value": null,
+ "next": "output_CvLY1P",
+ "executedValue": [
+  {
+   "Ages": [
+ 12,
+ 30,
+ 20
+],
+   "Dates": "2025-11-10",
+   "DatesTime": "2025-11-10T11:12:13+05:30",
+   "productId": "p1001",
+   "productName": "Wireless Mouse",
+   "quantity": 2,
+   "totalPrice": 51.98,
+   "unitPrice": 25.99
+  }
+ ],
+ "attribute": "matchedItems",
+ "source": "condition_31",
+ "schemaId": ""
+},
+     "output_ELgzfd": {
+ "name": "matches",
+ "dataType": "list",
+ "returnType": "",
+ "value": null,
+ "next": "output_4KayWo",
+ "executedValue": [
+  {
+   "Ages": [
+ 12,
+ 30,
+ 20
+],
+   "Dates": "2025-11-10",
+   "DatesTime": "2025-11-10T11:12:13+05:30",
+   "productId": "p1001",
+   "productName": "Wireless Mouse",
+   "quantity": 2,
+   "totalPrice": 51.98,
+   "unitPrice": 25.99
+  }
+ ],
+ "attribute": "matchedItems",
+ "source": "condition_31",
+ "schemaId": ""
+},
+     "output_F5JmtT": {
+ "name": "matches",
+ "dataType": "list",
+ "returnType": "",
+ "value": null,
+ "next": "output_XYVFZp",
+ "executedValue": [
+  {
+   "Ages": [
+ 12,
+ 30,
+ 20
+],
+   "Dates": "2025-11-10",
+   "DatesTime": "2025-11-10T11:12:13+05:30",
+   "productId": "p1001",
+   "productName": "Wireless Mouse",
+   "quantity": 2,
+   "totalPrice": 51.98,
+   "unitPrice": 25.99
+  }
+ ],
+ "attribute": "matchedItems",
+ "source": "condition_31",
+ "schemaId": ""
+},
+     "output_FFcmD8": {
+ "name": "keyName",
+ "dataType": "list",
+ "returnType": "",
+ "value": null,
+ "next": "",
+ "executedValue": [
+  12,
+  30,
+  20
+ ],
+ "attribute": "matchedItems[0].Ages",
+ "source": "condition_31",
+ "schemaId": ""
+},
+     "output_GYWGLi": {
+ "name": "keyName",
+ "dataType": "list",
+ "returnType": "",
+ "value": "[1,2,3]",
+ "next": "",
+ "executedValue": [
+  1,
+  2,
+  3
+ ],
+ "attribute": "",
+ "source": "",
+ "schemaId": ""
+},
+     "output_HCtnHl": {
+ "name": "res",
+ "dataType": "string",
+ "returnType": "",
+ "value": "Sum < 2",
+ "next": "output_TTNuer",
+ "executedValue": "Sum < 2",
+ "attribute": "",
+ "source": "",
+ "schemaId": ""
+},
+     "output_HMjTUR": {
+ "name": "matches",
+ "dataType": "list",
+ "returnType": "",
+ "value": null,
+ "next": "output_FFcmD8",
+ "executedValue": [
+  {
+   "Ages": [
+ 12,
+ 30,
+ 20
+],
+   "Dates": "2025-11-10",
+   "DatesTime": "2025-11-10T11:12:13+05:30",
+   "productId": "p1001",
+   "productName": "Wireless Mouse",
+   "quantity": 2,
+   "totalPrice": 51.98,
+   "unitPrice": 25.99
+  }
+ ],
+ "attribute": "matchedItems",
+ "source": "condition_31",
+ "schemaId": ""
+},
+     "output_HfBSKt": {
+ "name": "keyName",
+ "dataType": "list",
+ "returnType": "",
+ "value": null,
+ "next": "",
+ "executedValue": [
+  12,
+  30,
+  20
+ ],
+ "attribute": "matchedItems[0].Ages",
+ "source": "condition_31",
+ "schemaId": ""
+},
+     "output_IAmrVY": {
+ "name": "keyName",
+ "dataType": "list",
+ "returnType": "",
+ "value": null,
+ "next": "",
+ "executedValue": [
+  12,
+  30,
+  20
+ ],
+ "attribute": "matchedItems[0].Ages",
+ "source": "condition_21",
+ "schemaId": ""
+},
+     "output_IWz4ES": {
+ "name": "keyName",
+ "dataType": "list",
+ "returnType": "",
+ "value": null,
+ "next": "",
+ "executedValue": [
+  12,
+  30,
+  20
+ ],
+ "attribute": "matchedItems[0].Ages",
+ "source": "condition_31",
+ "schemaId": ""
+},
+     "output_InFbDl": {
+ "name": "keyName",
+ "dataType": "list",
+ "returnType": "",
+ "value": null,
+ "next": "",
+ "executedValue": [
+  12,
+  30,
+  20
+ ],
+ "attribute": "matchedItems[0].Ages",
+ "source": "condition_31",
+ "schemaId": ""
+},
+     "output_JRVpOV": {
+ "name": "keyName",
+ "dataType": "list",
+ "returnType": "",
+ "value": null,
+ "next": "",
+ "executedValue": [
+  12,
+  30,
+  20
+ ],
+ "attribute": "matchedItems[0].Ages",
+ "source": "condition_31",
+ "schemaId": ""
+},
+     "output_JsA1iJ": {
+ "name": "res",
+ "dataType": "string",
+ "returnType": "",
+ "value": "Sum < 2",
+ "next": "output_4CCF8I",
+ "executedValue": "Sum < 2",
+ "attribute": "",
+ "source": "",
+ "schemaId": ""
+},
+     "output_KfBWVe": {
+ "name": "matches",
+ "dataType": "list",
+ "returnType": "",
+ "value": null,
+ "next": "output_LIv1fd",
+ "executedValue": [
+  {
+   "Ages": [
+ 12,
+ 30,
+ 20
+],
+   "Dates": "2025-11-10",
+   "DatesTime": "2025-11-10T11:12:13+05:30",
+   "productId": "p1001",
+   "productName": "Wireless Mouse",
+   "quantity": 2,
+   "totalPrice": 51.98,
+   "unitPrice": 25.99
+  }
+ ],
+ "attribute": "matchedItems",
+ "source": "condition_31",
+ "schemaId": ""
+},
+     "output_KnjXPd": {
+ "name": "res",
+ "dataType": "string",
+ "returnType": "",
+ "value": "Sum < 2",
+ "next": "output_y8qrh1",
+ "executedValue": "Sum < 2",
+ "attribute": "",
+ "source": "",
+ "schemaId": ""
+},
+     "output_LIv1fd": {
+ "name": "keyName",
+ "dataType": "list",
+ "returnType": "",
+ "value": null,
+ "next": "",
+ "executedValue": [
+  12,
+  30,
+  20
+ ],
+ "attribute": "matchedItems[0].Ages",
+ "source": "condition_31",
+ "schemaId": ""
+},
+     "output_LRQWfh": {
+ "name": "keyName",
+ "dataType": "list",
+ "returnType": "",
+ "value": null,
+ "next": "",
+ "executedValue": [
+  12,
+  30,
+  20
+ ],
+ "attribute": "matchedItems[0].Ages",
+ "source": "condition_31",
+ "schemaId": ""
+},
+     "output_LhF0DZ": {
+ "name": "matches",
+ "dataType": "list",
+ "returnType": "",
+ "value": null,
+ "next": "output_IAmrVY",
+ "executedValue": [
+  {
+   "Ages": [
+ 12,
+ 30,
+ 20
+],
+   "Dates": "2025-11-10",
+   "DatesTime": "2025-11-10T11:12:13+05:30",
+   "productId": "p1001",
+   "productName": "Wireless Mouse",
+   "quantity": 2,
+   "totalPrice": 51.98,
+   "unitPrice": 25.99
+  }
+ ],
+ "attribute": "matchedItems",
+ "source": "condition_21",
+ "schemaId": ""
+},
+     "output_Lng0cg": {
+ "name": "res",
+ "dataType": "string",
+ "returnType": "",
+ "value": "Sum < 2",
+ "next": "output_RXmwc0",
+ "executedValue": "Sum < 2",
+ "attribute": "",
+ "source": "",
+ "schemaId": ""
+},
+     "output_MjjTdb": {
+ "name": "matches",
+ "dataType": "list",
+ "returnType": "",
+ "value": null,
+ "next": "output_2kWOj5",
+ "executedValue": [
+  {
+   "Ages": [
+ 12,
+ 30,
+ 20
+],
+   "Dates": "2025-11-10",
+   "DatesTime": "2025-11-10T11:12:13+05:30",
+   "productId": "p1001",
+   "productName": "Wireless Mouse",
+   "quantity": 2,
+   "totalPrice": 51.98,
+   "unitPrice": 25.99
+  }
+ ],
+ "attribute": "matchedItems",
+ "source": "condition_31",
+ "schemaId": ""
+},
+     "output_N86HDC": {
+ "name": "res",
+ "dataType": "string",
+ "returnType": "",
+ "value": "Sum < 2",
+ "next": "output_U0ulP3",
+ "executedValue": "Sum < 2",
+ "attribute": "",
+ "source": "",
+ "schemaId": ""
+},
+     "output_OCWH9c": {
+ "name": "res",
+ "dataType": "string",
+ "returnType": "",
+ "value": "Suuum < 2",
+ "next": "output_HMjTUR",
+ "executedValue": "Suuum < 2",
+ "attribute": "",
+ "source": "",
+ "schemaId": ""
+},
+     "output_OWDF1y": {
+ "name": "keyName",
+ "dataType": "list",
+ "returnType": "",
+ "value": null,
+ "next": "",
+ "executedValue": [
+  12,
+  30,
+  20
+ ],
+ "attribute": "matchedItems[0].Ages",
+ "source": "condition_31",
+ "schemaId": ""
+},
+     "output_Q7Nxx0": {
+ "name": "res",
+ "dataType": "string",
+ "returnType": "",
+ "value": "Sum < 2",
+ "next": "output_i3yWyY",
+ "executedValue": "Sum < 2",
+ "attribute": "",
+ "source": "",
+ "schemaId": ""
+},
+     "output_RCFB24": {
+ "name": "keyName",
+ "dataType": "list",
+ "returnType": "",
+ "value": null,
+ "next": "",
+ "executedValue": [
+  12,
+  30,
+  20
+ ],
+ "attribute": "matchedItems[0].Ages",
+ "source": "condition_31",
+ "schemaId": ""
+},
+     "output_RXmwc0": {
+ "name": "matches",
+ "dataType": "list",
+ "returnType": "",
+ "value": null,
+ "next": "output_VbOUkX",
+ "executedValue": [
+  {
+   "Ages": [
+ 12,
+ 30,
+ 20
+],
+   "Dates": "2025-11-10",
+   "DatesTime": "2025-11-10T11:12:13+05:30",
+   "productId": "p1001",
+   "productName": "Wireless Mouse",
+   "quantity": 2,
+   "totalPrice": 51.98,
+   "unitPrice": 25.99
+  }
+ ],
+ "attribute": "matchedItems",
+ "source": "condition_31",
+ "schemaId": ""
+},
+     "output_Rv9P1r": {
+ "name": "res",
+ "dataType": "string",
+ "returnType": "",
+ "value": "Suuum < 2",
+ "next": "output_mSwa6P",
+ "executedValue": "Suuum < 2",
+ "attribute": "",
+ "source": "",
+ "schemaId": ""
+},
+     "output_SDMS7g": {
+ "name": "matches",
+ "dataType": "list",
+ "returnType": "",
+ "value": null,
+ "next": "output_ephYeE",
+ "executedValue": [
+  {
+   "Ages": [
+ 12,
+ 30,
+ 20
+],
+   "Dates": "2025-11-10",
+   "DatesTime": "2025-11-10T11:12:13+05:30",
+   "productId": "p1001",
+   "productName": "Wireless Mouse",
+   "quantity": 2,
+   "totalPrice": 51.98,
+   "unitPrice": 25.99
+  }
+ ],
+ "attribute": "matchedItems",
+ "source": "condition_31",
+ "schemaId": ""
+},
+     "output_SfibxK": {
+ "name": "matches",
+ "dataType": "list",
+ "returnType": "",
+ "value": null,
+ "next": "output_5qdJzz",
+ "executedValue": [
+  {
+   "Ages": [
+ 12,
+ 30,
+ 20
+],
+   "Dates": "2025-11-10",
+   "DatesTime": "2025-11-10T11:12:13+05:30",
+   "productId": "p1001",
+   "productName": "Wireless Mouse",
+   "quantity": 2,
+   "totalPrice": 51.98,
+   "unitPrice": 25.99
+  }
+ ],
+ "attribute": "matchedItems",
+ "source": "condition_31",
+ "schemaId": ""
+},
+     "output_SuQxWd": {
+ "name": "matches",
+ "dataType": "list",
+ "returnType": "",
+ "value": null,
+ "next": "output_jWL9t4",
+ "executedValue": [
+  {
+   "Ages": [
+ 12,
+ 30,
+ 20
+],
+   "Dates": "2025-11-10",
+   "DatesTime": "2025-11-10T11:12:13+05:30",
+   "productId": "p1001",
+   "productName": "Wireless Mouse",
+   "quantity": 2,
+   "totalPrice": 51.98,
+   "unitPrice": 25.99
+  }
+ ],
+ "attribute": "matchedItems",
+ "source": "condition_31",
+ "schemaId": ""
+},
+     "output_TTNuer": {
+ "name": "matches",
+ "dataType": "list",
+ "returnType": "",
+ "value": null,
+ "next": "output_agsp56",
+ "executedValue": [
+  {
+   "Ages": [
+ 12,
+ 30,
+ 20
+],
+   "Dates": "2025-11-10",
+   "DatesTime": "2025-11-10T11:12:13+05:30",
+   "productId": "p1001",
+   "productName": "Wireless Mouse",
+   "quantity": 2,
+   "totalPrice": 51.98,
+   "unitPrice": 25.99
+  }
+ ],
+ "attribute": "matchedItems",
+ "source": "condition_31",
+ "schemaId": ""
+},
+     "output_ThhwBH": {
+ "name": "res",
+ "dataType": "string",
+ "returnType": "",
+ "value": "Sum < 2",
+ "next": "output_ECHCmU",
+ "executedValue": "Sum < 2",
+ "attribute": "",
+ "source": "",
+ "schemaId": ""
+},
+     "output_U0ulP3": {
+ "name": "matches",
+ "dataType": "list",
+ "returnType": "",
+ "value": null,
+ "next": "output_BBJP3F",
+ "executedValue": [
+  {
+   "Ages": [
+ 12,
+ 30,
+ 20
+],
+   "Dates": "2025-11-10",
+   "DatesTime": "2025-11-10T11:12:13+05:30",
+   "productId": "p1001",
+   "productName": "Wireless Mouse",
+   "quantity": 2,
+   "totalPrice": 51.98,
+   "unitPrice": 25.99
+  }
+ ],
+ "attribute": "matchedItems",
+ "source": "condition_31",
+ "schemaId": ""
+},
+     "output_VO9c1K": {
+ "name": "res",
+ "dataType": "string",
+ "returnType": "",
+ "value": "Sum < 2",
+ "next": "output_kJZ3qh",
+ "executedValue": "Sum < 2",
+ "attribute": "",
+ "source": "",
+ "schemaId": ""
+},
+     "output_VXZaSC": {
+ "name": "matches",
+ "dataType": "list",
+ "returnType": "",
+ "value": null,
+ "next": "output_gbzRHP",
+ "executedValue": [
+  {
+   "Ages": [
+ 12,
+ 30,
+ 20
+],
+   "Dates": "2025-11-10",
+   "DatesTime": "2025-11-10T11:12:13+05:30",
+   "productId": "p1001",
+   "productName": "Wireless Mouse",
+   "quantity": 2,
+   "totalPrice": 51.98,
+   "unitPrice": 25.99
+  }
+ ],
+ "attribute": "matchedItems",
+ "source": "condition_31",
+ "schemaId": ""
+},
+     "output_VbOUkX": {
+ "name": "keyName",
+ "dataType": "list",
+ "returnType": "",
+ "value": null,
+ "next": "",
+ "executedValue": [
+  12,
+  30,
+  20
+ ],
+ "attribute": "matchedItems[0].Ages",
+ "source": "condition_31",
+ "schemaId": ""
+},
+     "output_Vz8m0p": {
+ "name": "keyName",
+ "dataType": "list",
+ "returnType": "",
+ "value": null,
+ "next": "",
+ "executedValue": [
+  12,
+  30,
+  20
+ ],
+ "attribute": "matchedItems[0].Ages",
+ "source": "condition_31",
+ "schemaId": ""
+},
+     "output_W1rbnV": {
+ "name": "res",
+ "dataType": "string",
+ "returnType": "",
+ "value": "Sum < 2",
+ "next": "output_spFnAt",
+ "executedValue": "Sum < 2",
+ "attribute": "",
+ "source": "",
+ "schemaId": ""
+},
+     "output_XJHJ1B": {
+ "name": "res",
+ "dataType": "string",
+ "returnType": "",
+ "value": "Sum < 2",
+ "next": "output_2obisw",
+ "executedValue": "Sum < 2",
+ "attribute": "",
+ "source": "",
+ "schemaId": ""
+},
+     "output_XYVFZp": {
+ "name": "keyName",
+ "dataType": "list",
+ "returnType": "",
+ "value": null,
+ "next": "",
+ "executedValue": [
+  12,
+  30,
+  20
+ ],
+ "attribute": "matchedItems[0].Ages",
+ "source": "condition_31",
+ "schemaId": ""
+},
+     "output_XnWrft": {
+ "name": "keyName",
+ "dataType": "list",
+ "returnType": "",
+ "value": null,
+ "next": "",
+ "executedValue": [
+  12,
+  30,
+  20
+ ],
+ "attribute": "matchedItems[0].Ages",
+ "source": "condition_31",
+ "schemaId": ""
+},
+     "output_YEA5Jx": {
+ "name": "res",
+ "dataType": "string",
+ "returnType": "",
+ "value": "Avg > 2",
+ "next": "output_LhF0DZ",
+ "executedValue": "Avg > 2",
+ "attribute": "",
+ "source": "",
+ "schemaId": ""
+},
+     "output_ZnniAT": {
+ "name": "res",
+ "dataType": "string",
+ "returnType": "",
+ "value": "Sum < 2",
+ "next": "output_gj5c9w",
+ "executedValue": "Sum < 2",
+ "attribute": "",
+ "source": "",
+ "schemaId": ""
+},
+     "output_agsp56": {
+ "name": "keyName",
+ "dataType": "list",
+ "returnType": "",
+ "value": null,
+ "next": "",
+ "executedValue": [
+  12,
+  30,
+  20
+ ],
+ "attribute": "matchedItems[0].Ages",
+ "source": "condition_31",
+ "schemaId": ""
+},
+     "output_bA3DaU": {
+ "name": "res",
+ "dataType": "string",
+ "returnType": "",
+ "value": "Sum < 2",
+ "next": "output_8DsmxI",
+ "executedValue": "Sum < 2",
+ "attribute": "",
+ "source": "",
+ "schemaId": ""
+},
+     "output_bHrhv4": {
+ "name": "res",
+ "dataType": "string",
+ "returnType": "",
+ "value": "Sum < 4",
+ "next": "output_BITRDX",
+ "executedValue": "Sum < 4",
+ "attribute": "",
+ "source": "",
+ "schemaId": ""
+},
+     "output_bqZGXL": {
+ "name": "res",
+ "dataType": "string",
+ "returnType": "",
+ "value": "Sum < 2",
+ "next": "output_tT9cla",
+ "executedValue": "Sum < 2",
+ "attribute": "",
+ "source": "",
+ "schemaId": ""
+},
+     "output_byRYSX": {
+ "name": "keyName",
+ "dataType": "list",
+ "returnType": "",
+ "value": null,
+ "next": "",
+ "executedValue": [
+  12,
+  30,
+  20
+ ],
+ "attribute": "matchedItems[0].Ages",
+ "source": "condition_31",
+ "schemaId": ""
+},
+     "output_cBYRDi": {
+ "name": "keyName",
+ "dataType": "list",
+ "returnType": "",
+ "value": null,
+ "next": "",
+ "executedValue": [
+  12,
+  30,
+  20
+ ],
+ "attribute": "matchedItems[0].Ages",
+ "source": "condition_31",
+ "schemaId": ""
+},
+     "output_cLv7IR": {
+ "name": "res",
+ "dataType": "string",
+ "returnType": "",
+ "value": "Sum < 6",
+ "next": "output_51PRZE",
+ "executedValue": "Sum < 6",
+ "attribute": "",
+ "source": "",
+ "schemaId": ""
+},
+     "output_cRisyc": {
+ "name": "matches",
+ "dataType": "list",
+ "returnType": "",
+ "value": null,
+ "next": "output_Vz8m0p",
+ "executedValue": [
+  {
+   "Ages": [
+ 12,
+ 30,
+ 20
+],
+   "Dates": "2025-11-10",
+   "DatesTime": "2025-11-10T11:12:13+05:30",
+   "productId": "p1001",
+   "productName": "Wireless Mouse",
+   "quantity": 2,
+   "totalPrice": 51.98,
+   "unitPrice": 25.99
+  }
+ ],
+ "attribute": "matchedItems",
+ "source": "condition_31",
+ "schemaId": ""
+},
+     "output_cbIniE": {
+ "name": "matches",
+ "dataType": "list",
+ "returnType": "",
+ "value": null,
+ "next": "output_GYWGLi",
+ "executedValue": [
+  {
+   "Ages": [
+ 12,
+ 30,
+ 20
+],
+   "Dates": "2025-11-10",
+   "DatesTime": "2025-11-10T11:12:13+05:30",
+   "productId": "p1001",
+   "productName": "Wireless Mouse",
+   "quantity": 2,
+   "totalPrice": 51.98,
+   "unitPrice": 25.99
+  }
+ ],
+ "attribute": "matchedItems",
+ "source": "condition_1",
+ "schemaId": ""
+},
+     "output_dA8HDs": {
+ "name": "res",
+ "dataType": "string",
+ "returnType": "",
+ "value": "Sum < 2",
+ "next": "output_VXZaSC",
+ "executedValue": "Sum < 2",
+ "attribute": "",
+ "source": "",
+ "schemaId": ""
+},
+     "output_dSPfFY": {
+ "name": "keyName",
+ "dataType": "list",
+ "returnType": "",
+ "value": null,
+ "next": "",
+ "executedValue": [
+  12,
+  30,
+  20
+ ],
+ "attribute": "matchedItems[0].Ages",
+ "source": "condition_31",
+ "schemaId": ""
+},
+     "output_dWIeDj": {
+ "name": "res",
+ "dataType": "string",
+ "returnType": "",
+ "value": "Sum < 2",
+ "next": "output_vzxzzK",
+ "executedValue": "Sum < 2",
+ "attribute": "",
+ "source": "",
+ "schemaId": ""
+},
+     "output_eVd6lS": {
+ "name": "matches",
+ "dataType": "list",
+ "returnType": "",
+ "value": null,
+ "next": "output_3iLkd2",
+ "executedValue": [
+  {
+   "Ages": [
+ 12,
+ 30,
+ 20
+],
+   "Dates": "2025-11-10",
+   "DatesTime": "2025-11-10T11:12:13+05:30",
+   "productId": "p1001",
+   "productName": "Wireless Mouse",
+   "quantity": 2,
+   "totalPrice": 51.98,
+   "unitPrice": 25.99
+  }
+ ],
+ "attribute": "matchedItems",
+ "source": "condition_31",
+ "schemaId": ""
+},
+     "output_ephYeE": {
+ "name": "keyName",
+ "dataType": "list",
+ "returnType": "",
+ "value": null,
+ "next": "",
+ "executedValue": [
+  12,
+  30,
+  20
+ ],
+ "attribute": "matchedItems[0].Ages",
+ "source": "condition_31",
+ "schemaId": ""
+},
+     "output_gOY8Pn": {
+ "name": "keyName",
+ "dataType": "list",
+ "returnType": "",
+ "value": null,
+ "next": "",
+ "executedValue": [
+  12,
+  30,
+  20
+ ],
+ "attribute": "matchedItems[0].Ages",
+ "source": "condition_31",
+ "schemaId": ""
+},
+     "output_gPfYge": {
+ "name": "res",
+ "dataType": "string",
+ "returnType": "",
+ "value": "Sum < 2",
+ "next": "output_7zcofY",
+ "executedValue": "Sum < 2",
+ "attribute": "",
+ "source": "",
+ "schemaId": ""
+},
+     "output_gSAxKm": {
+ "name": "keyName",
+ "dataType": "list",
+ "returnType": "",
+ "value": null,
+ "next": "",
+ "executedValue": [
+  12,
+  30,
+  20
+ ],
+ "attribute": "matchedItems[0].Ages",
+ "source": "condition_31",
+ "schemaId": ""
+},
+     "output_gbzRHP": {
+ "name": "keyName",
+ "dataType": "list",
+ "returnType": "",
+ "value": null,
+ "next": "",
+ "executedValue": [
+  12,
+  30,
+  20
+ ],
+ "attribute": "matchedItems[0].Ages",
+ "source": "condition_31",
+ "schemaId": ""
+},
+     "output_gj5c9w": {
+ "name": "matches",
+ "dataType": "list",
+ "returnType": "",
+ "value": null,
+ "next": "output_XnWrft",
+ "executedValue": [
+  {
+   "Ages": [
+ 12,
+ 30,
+ 20
+],
+   "Dates": "2025-11-10",
+   "DatesTime": "2025-11-10T11:12:13+05:30",
+   "productId": "p1001",
+   "productName": "Wireless Mouse",
+   "quantity": 2,
+   "totalPrice": 51.98,
+   "unitPrice": 25.99
+  }
+ ],
+ "attribute": "matchedItems",
+ "source": "condition_31",
+ "schemaId": ""
+},
+     "output_gmbzFb": {
+ "name": "res",
+ "dataType": "string",
+ "returnType": "",
+ "value": "Suuuum < 2",
+ "next": "output_MjjTdb",
+ "executedValue": "Suuuum < 2",
+ "attribute": "",
+ "source": "",
+ "schemaId": ""
+},
+     "output_hQRMsD": {
+ "name": "keyName",
+ "dataType": "list",
+ "returnType": "",
+ "value": null,
+ "next": "",
+ "executedValue": [
+  12,
+  30,
+  20
+ ],
+ "attribute": "matchedItems[0].Ages",
+ "source": "condition_31",
+ "schemaId": ""
+},
+     "output_i3yWyY": {
+ "name": "matches",
+ "dataType": "list",
+ "returnType": "",
+ "value": null,
+ "next": "output_pMssOM",
+ "executedValue": [
+  {
+   "Ages": [
+ 12,
+ 30,
+ 20
+],
+   "Dates": "2025-11-10",
+   "DatesTime": "2025-11-10T11:12:13+05:30",
+   "productId": "p1001",
+   "productName": "Wireless Mouse",
+   "quantity": 2,
+   "totalPrice": 51.98,
+   "unitPrice": 25.99
+  }
+ ],
+ "attribute": "matchedItems",
+ "source": "condition_31",
+ "schemaId": ""
+},
+     "output_iTHJ3B": {
+ "name": "matches",
+ "dataType": "list",
+ "returnType": "",
+ "value": null,
+ "next": "output_BNokaX",
+ "executedValue": [
+  {
+   "Ages": [
+ 12,
+ 30,
+ 20
+],
+   "Dates": "2025-11-10",
+   "DatesTime": "2025-11-10T11:12:13+05:30",
+   "productId": "p1001",
+   "productName": "Wireless Mouse",
+   "quantity": 2,
+   "totalPrice": 51.98,
+   "unitPrice": 25.99
+  }
+ ],
+ "attribute": "matchedItems",
+ "source": "condition_31",
+ "schemaId": ""
+},
+     "output_ia6MXQ": {
+ "name": "keyName",
+ "dataType": "list",
+ "returnType": "",
+ "value": null,
+ "next": "",
+ "executedValue": [
+  12,
+  30,
+  20
+ ],
+ "attribute": "matchedItems[0].Ages",
+ "source": "condition_31",
+ "schemaId": ""
+},
+     "output_jWL9t4": {
+ "name": "keyName",
+ "dataType": "list",
+ "returnType": "",
+ "value": null,
+ "next": "",
+ "executedValue": [
+  12,
+  30,
+  20
+ ],
+ "attribute": "matchedItems[0].Ages",
+ "source": "condition_31",
+ "schemaId": ""
+},
+     "output_jk5f1J": {
+ "name": "matches",
+ "dataType": "list",
+ "returnType": "",
+ "value": null,
+ "next": "output_nwolWN",
+ "executedValue": [
+  {
+   "Ages": [
+ 12,
+ 30,
+ 20
+],
+   "Dates": "2025-11-10",
+   "DatesTime": "2025-11-10T11:12:13+05:30",
+   "productId": "p1001",
+   "productName": "Wireless Mouse",
+   "quantity": 2,
+   "totalPrice": 51.98,
+   "unitPrice": 25.99
+  }
+ ],
+ "attribute": "matchedItems",
+ "source": "condition_31",
+ "schemaId": ""
+},
+     "output_kJZ3qh": {
+ "name": "matches",
+ "dataType": "list",
+ "returnType": "",
+ "value": null,
+ "next": "output_cBYRDi",
+ "executedValue": [
+  {
+   "Ages": [
+ 12,
+ 30,
+ 20
+],
+   "Dates": "2025-11-10",
+   "DatesTime": "2025-11-10T11:12:13+05:30",
+   "productId": "p1001",
+   "productName": "Wireless Mouse",
+   "quantity": 2,
+   "totalPrice": 51.98,
+   "unitPrice": 25.99
+  }
+ ],
+ "attribute": "matchedItems",
+ "source": "condition_31",
+ "schemaId": ""
+},
+     "output_kvKZFx": {
+ "name": "res",
+ "dataType": "string",
+ "returnType": "",
+ "value": "Sum < 2",
+ "next": "output_KfBWVe",
+ "executedValue": "Sum < 2",
+ "attribute": "",
+ "source": "",
+ "schemaId": ""
+},
+     "output_kxf4yh": {
+ "name": "res",
+ "dataType": "string",
+ "returnType": "",
+ "value": "Sum < 2",
+ "next": "output_ELgzfd",
+ "executedValue": "Sum < 2",
+ "attribute": "",
+ "source": "",
+ "schemaId": ""
+},
+     "output_l86FmD": {
+ "name": "res",
+ "dataType": "string",
+ "returnType": "",
+ "value": "Sum < 2",
+ "next": "output_SuQxWd",
+ "executedValue": "Sum < 2",
+ "attribute": "",
+ "source": "",
+ "schemaId": ""
+},
+     "output_mCTKfL": {
+ "name": "res",
+ "dataType": "string",
+ "returnType": "",
+ "value": "Sum < 2",
+ "next": "output_SDMS7g",
+ "executedValue": "Sum < 2",
+ "attribute": "",
+ "source": "",
+ "schemaId": ""
+},
+     "output_mSwa6P": {
+ "name": "matches",
+ "dataType": "list",
+ "returnType": "",
+ "value": null,
+ "next": "output_RCFB24",
+ "executedValue": [
+  {
+   "Ages": [
+ 12,
+ 30,
+ 20
+],
+   "Dates": "2025-11-10",
+   "DatesTime": "2025-11-10T11:12:13+05:30",
+   "productId": "p1001",
+   "productName": "Wireless Mouse",
+   "quantity": 2,
+   "totalPrice": 51.98,
+   "unitPrice": 25.99
+  }
+ ],
+ "attribute": "matchedItems",
+ "source": "condition_31",
+ "schemaId": ""
+},
+     "output_miRXLl": {
+ "name": "matches",
+ "dataType": "list",
+ "returnType": "",
+ "value": null,
+ "next": "output_OWDF1y",
+ "executedValue": [
+  {
+   "Ages": [
+ 12,
+ 30,
+ 20
+],
+   "Dates": "2025-11-10",
+   "DatesTime": "2025-11-10T11:12:13+05:30",
+   "productId": "p1001",
+   "productName": "Wireless Mouse",
+   "quantity": 2,
+   "totalPrice": 51.98,
+   "unitPrice": 25.99
+  }
+ ],
+ "attribute": "matchedItems",
+ "source": "condition_31",
+ "schemaId": ""
+},
+     "output_nR7WsK": {
+ "name": "res",
+ "dataType": "string",
+ "returnType": "",
+ "value": "Sum < 2",
+ "next": "output_xnhGB1",
+ "executedValue": "Sum < 2",
+ "attribute": "",
+ "source": "",
+ "schemaId": ""
+},
+     "output_nwolWN": {
+ "name": "keyName",
+ "dataType": "list",
+ "returnType": "",
+ "value": null,
+ "next": "",
+ "executedValue": [
+  12,
+  30,
+  20
+ ],
+ "attribute": "matchedItems[0].Ages",
+ "source": "condition_31",
+ "schemaId": ""
+},
+     "output_pMssOM": {
+ "name": "keyName",
+ "dataType": "list",
+ "returnType": "",
+ "value": null,
+ "next": "",
+ "executedValue": [
+  12,
+  30,
+  20
+ ],
+ "attribute": "matchedItems[0].Ages",
+ "source": "condition_31",
+ "schemaId": ""
+},
+     "output_qVSm0X": {
+ "name": "res",
+ "dataType": "string",
+ "returnType": "",
+ "value": "Sum < 2",
+ "next": "output_upUfvo",
+ "executedValue": "Sum < 2",
+ "attribute": "",
+ "source": "",
+ "schemaId": ""
+},
+     "output_r99BLz": {
+ "name": "res",
+ "dataType": "string",
+ "returnType": "",
+ "value": "Sum < 2",
+ "next": "output_wtvLoc",
+ "executedValue": "Sum < 2",
+ "attribute": "",
+ "source": "",
+ "schemaId": ""
+},
+     "output_rkmvqg": {
+ "name": "keyName",
+ "dataType": "list",
+ "returnType": "",
+ "value": null,
+ "next": "",
+ "executedValue": [
+  12,
+  30,
+  20
+ ],
+ "attribute": "matchedItems[0].Ages",
+ "source": "condition_31",
+ "schemaId": ""
+},
+     "output_sDWxuW": {
+ "name": "res",
+ "dataType": "string",
+ "returnType": "",
+ "value": "Sum < 4",
+ "next": "output_iTHJ3B",
+ "executedValue": "Sum < 4",
+ "attribute": "",
+ "source": "",
+ "schemaId": ""
+},
+     "output_sVkqyV": {
+ "name": "res",
+ "dataType": "string",
+ "returnType": "",
+ "value": "Single Quantity",
+ "next": "output_cbIniE",
+ "executedValue": "Single Quantity",
+ "attribute": "",
+ "source": "",
+ "schemaId": ""
+},
+     "output_spFnAt": {
+ "name": "matches",
+ "dataType": "list",
+ "returnType": "",
+ "value": null,
+ "next": "output_gSAxKm",
+ "executedValue": [
+  {
+   "Ages": [
+ 12,
+ 30,
+ 20
+],
+   "Dates": "2025-11-10",
+   "DatesTime": "2025-11-10T11:12:13+05:30",
+   "productId": "p1001",
+   "productName": "Wireless Mouse",
+   "quantity": 2,
+   "totalPrice": 51.98,
+   "unitPrice": 25.99
+  }
+ ],
+ "attribute": "matchedItems",
+ "source": "condition_31",
+ "schemaId": ""
+},
+     "output_t8t8Yf": {
+ "name": "res",
+ "dataType": "string",
+ "returnType": "",
+ "value": "Sum < 2",
+ "next": "output_u8vnaK",
+ "executedValue": "Sum < 2",
+ "attribute": "",
+ "source": "",
+ "schemaId": ""
+},
+     "output_tT9cla": {
+ "name": "matches",
+ "dataType": "list",
+ "returnType": "",
+ "value": null,
+ "next": "output_LRQWfh",
+ "executedValue": [
+  {
+   "Ages": [
+ 12,
+ 30,
+ 20
+],
+   "Dates": "2025-11-10",
+   "DatesTime": "2025-11-10T11:12:13+05:30",
+   "productId": "p1001",
+   "productName": "Wireless Mouse",
+   "quantity": 2,
+   "totalPrice": 51.98,
+   "unitPrice": 25.99
+  }
+ ],
+ "attribute": "matchedItems",
+ "source": "condition_31",
+ "schemaId": ""
+},
+     "output_u8vnaK": {
+ "name": "matches",
+ "dataType": "list",
+ "returnType": "",
+ "value": null,
+ "next": "output_JRVpOV",
+ "executedValue": [
+  {
+   "Ages": [
+ 12,
+ 30,
+ 20
+],
+   "Dates": "2025-11-10",
+   "DatesTime": "2025-11-10T11:12:13+05:30",
+   "productId": "p1001",
+   "productName": "Wireless Mouse",
+   "quantity": 2,
+   "totalPrice": 51.98,
+   "unitPrice": 25.99
+  }
+ ],
+ "attribute": "matchedItems",
+ "source": "condition_31",
+ "schemaId": ""
+},
+     "output_upO0Qy": {
+ "name": "keyName",
+ "dataType": "list",
+ "returnType": "",
+ "value": null,
+ "next": "",
+ "executedValue": [
+  12,
+  30,
+  20
+ ],
+ "attribute": "matchedItems[0].Ages",
+ "source": "condition_31",
+ "schemaId": ""
+},
+     "output_upUfvo": {
+ "name": "matches",
+ "dataType": "list",
+ "returnType": "",
+ "value": null,
+ "next": "output_6e7Hc6",
+ "executedValue": [
+  {
+   "Ages": [
+ 12,
+ 30,
+ 20
+],
+   "Dates": "2025-11-10",
+   "DatesTime": "2025-11-10T11:12:13+05:30",
+   "productId": "p1001",
+   "productName": "Wireless Mouse",
+   "quantity": 2,
+   "totalPrice": 51.98,
+   "unitPrice": 25.99
+  }
+ ],
+ "attribute": "matchedItems",
+ "source": "condition_31",
+ "schemaId": ""
+},
+     "output_vzxzzK": {
+ "name": "matches",
+ "dataType": "list",
+ "returnType": "",
+ "value": null,
+ "next": "output_gOY8Pn",
+ "executedValue": [
+  {
+   "Ages": [
+ 12,
+ 30,
+ 20
+],
+   "Dates": "2025-11-10",
+   "DatesTime": "2025-11-10T11:12:13+05:30",
+   "productId": "p1001",
+   "productName": "Wireless Mouse",
+   "quantity": 2,
+   "totalPrice": 51.98,
+   "unitPrice": 25.99
+  }
+ ],
+ "attribute": "matchedItems",
+ "source": "condition_31",
+ "schemaId": ""
+},
+     "output_wtvLoc": {
+ "name": "matches",
+ "dataType": "list",
+ "returnType": "",
+ "value": null,
+ "next": "output_upO0Qy",
+ "executedValue": [
+  {
+   "Ages": [
+ 12,
+ 30,
+ 20
+],
+   "Dates": "2025-11-10",
+   "DatesTime": "2025-11-10T11:12:13+05:30",
+   "productId": "p1001",
+   "productName": "Wireless Mouse",
+   "quantity": 2,
+   "totalPrice": 51.98,
+   "unitPrice": 25.99
+  }
+ ],
+ "attribute": "matchedItems",
+ "source": "condition_31",
+ "schemaId": ""
+},
+     "output_xmjGpw": {
+ "name": "res",
+ "dataType": "string",
+ "returnType": "",
+ "value": "Sum < 2",
+ "next": "output_miRXLl",
+ "executedValue": "Sum < 2",
+ "attribute": "",
+ "source": "",
+ "schemaId": ""
+},
+     "output_xnhGB1": {
+ "name": "matches",
+ "dataType": "list",
+ "returnType": "",
+ "value": null,
+ "next": "output_718Q4B",
+ "executedValue": [
+  {
+   "Ages": [
+ 12,
+ 30,
+ 20
+],
+   "Dates": "2025-11-10",
+   "DatesTime": "2025-11-10T11:12:13+05:30",
+   "productId": "p1001",
+   "productName": "Wireless Mouse",
+   "quantity": 2,
+   "totalPrice": 51.98,
+   "unitPrice": 25.99
+  }
+ ],
+ "attribute": "matchedItems",
+ "source": "condition_31",
+ "schemaId": ""
+},
+     "output_y8qrh1": {
+ "name": "matches",
+ "dataType": "list",
+ "returnType": "",
+ "value": null,
+ "next": "output_HfBSKt",
+ "executedValue": [
+  {
+   "Ages": [
+ 12,
+ 30,
+ 20
+],
+   "Dates": "2025-11-10",
+   "DatesTime": "2025-11-10T11:12:13+05:30",
+   "productId": "p1001",
+   "productName": "Wireless Mouse",
+   "quantity": 2,
+   "totalPrice": 51.98,
+   "unitPrice": 25.99
+  }
+ ],
+ "attribute": "matchedItems",
+ "source": "condition_31",
+ "schemaId": ""
+},
+     "output_zAfw9X": {
+ "name": "res",
+ "dataType": "string",
+ "returnType": "",
+ "value": "Sum < 2",
+ "next": "output_4SEaM4",
+ "executedValue": "Sum < 2",
+ "attribute": "",
+ "source": "",
+ "schemaId": ""
+},
+     "output_zYeWVD": {
+ "name": "res",
+ "dataType": "string",
+ "returnType": "",
+ "value": "Sum < 2",
+ "next": "output_eVd6lS",
+ "executedValue": "Sum < 2",
+ "attribute": "",
+ "source": "",
+ "schemaId": ""
+}
+    },
+    "actionNode": {
+     
+    },
+    "firstOutputData": "",
+    "firstActionNode": ""
+   },
+   "else": {
+    "outputData": null,
+    "actionNode": null,
+    "firstOutputData": "",
+    "firstActionNode": ""
+   }
+  },
+  "conditions": {
+   "nodes": {
+    "c_0TShCC": {
+ "value": null,
+ "sourceType": "",
+ "name": "Any",
+ "operator": "sumFilter",
+ "dataType": "list",
+ "nodeType": "condition",
+ "attribute": "",
+ "query": "",
+ "parent": "g_F7wCoq",
+ "children": null,
+ "leftNode": [
+  "rule_03"
+ ],
+ "rightNode": [
+  "rhs_UUttBX"
+ ],
+ "siblingIndex": 1,
+ "returnType": ""
+},
+    "c_0ejCuh": {
+ "value": null,
+ "sourceType": "",
+ "name": "Any",
+ "operator": "sumFilter",
+ "dataType": "list",
+ "nodeType": "condition",
+ "attribute": "",
+ "query": "",
+ "parent": "g_Qf1vay",
+ "children": null,
+ "leftNode": [
+  "rule_03"
+ ],
+ "rightNode": [
+  "rhs_dAllGa"
+ ],
+ "siblingIndex": 1,
+ "returnType": ""
+},
+    "c_5gkjiP": {
+ "value": null,
+ "sourceType": "",
+ "name": "Any",
+ "operator": "sumFilter",
+ "dataType": "list",
+ "nodeType": "condition",
+ "attribute": "",
+ "query": "",
+ "parent": "g_cZVxSA",
+ "children": null,
+ "leftNode": [
+  "rule_03"
+ ],
+ "rightNode": [
+  "rhs_9OvVHz"
+ ],
+ "siblingIndex": 1,
+ "returnType": ""
+},
+    "c_9NggNV": {
+ "value": null,
+ "sourceType": "",
+ "name": "Any",
+ "operator": "sumFilter",
+ "dataType": "list",
+ "nodeType": "condition",
+ "attribute": "",
+ "query": "",
+ "parent": "g_WvFi6z",
+ "children": null,
+ "leftNode": [
+  "rule_03"
+ ],
+ "rightNode": [
+  "rhs_ra3jpT"
+ ],
+ "siblingIndex": 1,
+ "returnType": ""
+},
+    "c_A0LMQ6": {
+ "value": null,
+ "sourceType": "",
+ "name": "Any",
+ "operator": "sumFilter",
+ "dataType": "list",
+ "nodeType": "condition",
+ "attribute": "",
+ "query": "",
+ "parent": "g_S3qEKk",
+ "children": null,
+ "leftNode": [
+  "rule_03"
+ ],
+ "rightNode": [
+  "rhs_6Vg4Zs"
+ ],
+ "siblingIndex": 1,
+ "returnType": ""
+},
+    "c_BVeRL3": {
+ "value": null,
+ "sourceType": "",
+ "name": "Any",
+ "operator": "sumFilter",
+ "dataType": "list",
+ "nodeType": "condition",
+ "attribute": "",
+ "query": "",
+ "parent": "g_hUCyqC",
+ "children": null,
+ "leftNode": [
+  "rule_03"
+ ],
+ "rightNode": [
+  "rhs_B6CZRJ"
+ ],
+ "siblingIndex": 1,
+ "returnType": ""
+},
+    "c_C5UI9c": {
+ "value": null,
+ "sourceType": "",
+ "name": "Any",
+ "operator": "sumFilter",
+ "dataType": "list",
+ "nodeType": "condition",
+ "attribute": "",
+ "query": "",
+ "parent": "g_UYATCd",
+ "children": null,
+ "leftNode": [
+  "rule_03"
+ ],
+ "rightNode": [
+  "rhs_8hcd4o"
+ ],
+ "siblingIndex": 1,
+ "returnType": ""
+},
+    "c_IGHWFZ": {
+ "value": null,
+ "sourceType": "",
+ "name": "Any",
+ "operator": "sumFilter",
+ "dataType": "list",
+ "nodeType": "condition",
+ "attribute": "",
+ "query": "",
+ "parent": "g_tuIM25",
+ "children": null,
+ "leftNode": [
+  "rule_03"
+ ],
+ "rightNode": [
+  "rhs_paB5Uz"
+ ],
+ "siblingIndex": 1,
+ "returnType": ""
+},
+    "c_JGn4VY": {
+ "value": null,
+ "sourceType": "",
+ "name": "Any",
+ "operator": "sumFilter",
+ "dataType": "list",
+ "nodeType": "condition",
+ "attribute": "",
+ "query": "",
+ "parent": "g_UxDWWs",
+ "children": null,
+ "leftNode": [
+  "rule_03"
+ ],
+ "rightNode": [
+  "rhs_ujqGxQ"
+ ],
+ "siblingIndex": 1,
+ "returnType": ""
+},
+    "c_K9OW7F": {
+ "value": null,
+ "sourceType": "",
+ "name": "Any",
+ "operator": "sumFilter",
+ "dataType": "list",
+ "nodeType": "condition",
+ "attribute": "",
+ "query": "",
+ "parent": "g_cYkL6l",
+ "children": null,
+ "leftNode": [
+  "rule_03"
+ ],
+ "rightNode": [
+  "rhs_yUfiHO"
+ ],
+ "siblingIndex": 1,
+ "returnType": ""
+},
+    "c_LHZn7d": {
+ "value": null,
+ "sourceType": "",
+ "name": "Any",
+ "operator": "sumFilter",
+ "dataType": "list",
+ "nodeType": "condition",
+ "attribute": "",
+ "query": "",
+ "parent": "g_ooeEiv",
+ "children": null,
+ "leftNode": [
+  "rule_03"
+ ],
+ "rightNode": [
+  "rhs_8CeVXJ"
+ ],
+ "siblingIndex": 1,
+ "returnType": ""
+},
+    "c_LgiTJ1": {
+ "value": null,
+ "sourceType": "",
+ "name": "Any",
+ "operator": "sumFilter",
+ "dataType": "list",
+ "nodeType": "condition",
+ "attribute": "",
+ "query": "",
+ "parent": "g_ULnKf3",
+ "children": null,
+ "leftNode": [
+  "rule_03"
+ ],
+ "rightNode": [
+  "rhs_okTbah"
+ ],
+ "siblingIndex": 1,
+ "returnType": ""
+},
+    "c_LvC8oM": {
+ "value": null,
+ "sourceType": "",
+ "name": "Any",
+ "operator": "sumFilter",
+ "dataType": "list",
+ "nodeType": "condition",
+ "attribute": "",
+ "query": "",
+ "parent": "g_2NtZ6O",
+ "children": null,
+ "leftNode": [
+  "rule_03"
+ ],
+ "rightNode": [
+  "rhs_ql24cZ"
+ ],
+ "siblingIndex": 1,
+ "returnType": ""
+},
+    "c_OFur2v": {
+ "value": null,
+ "sourceType": "",
+ "name": "Any",
+ "operator": "sumFilter",
+ "dataType": "list",
+ "nodeType": "condition",
+ "attribute": "",
+ "query": "",
+ "parent": "g_hSUqL6",
+ "children": null,
+ "leftNode": [
+  "rule_03"
+ ],
+ "rightNode": [
+  "rhs_Yom2AH"
+ ],
+ "siblingIndex": 1,
+ "returnType": ""
+},
+    "c_PFXsXa": {
+ "value": null,
+ "sourceType": "",
+ "name": "Any",
+ "operator": "sumFilter",
+ "dataType": "list",
+ "nodeType": "condition",
+ "attribute": "",
+ "query": "",
+ "parent": "g_tAAEjE",
+ "children": null,
+ "leftNode": [
+  "rule_03"
+ ],
+ "rightNode": [
+  "rhs_4XXmDq"
+ ],
+ "siblingIndex": 1,
+ "returnType": ""
+},
+    "c_QRkz1y": {
+ "value": null,
+ "sourceType": "",
+ "name": "Any",
+ "operator": "sumFilter",
+ "dataType": "list",
+ "nodeType": "condition",
+ "attribute": "",
+ "query": "",
+ "parent": "g_uGtxYg",
+ "children": null,
+ "leftNode": [
+  "rule_03"
+ ],
+ "rightNode": [
+  "rhs_kiOuy6"
+ ],
+ "siblingIndex": 1,
+ "returnType": ""
+},
+    "c_TmXeBd": {
+ "value": null,
+ "sourceType": "",
+ "name": "Any",
+ "operator": "sumFilter",
+ "dataType": "list",
+ "nodeType": "condition",
+ "attribute": "",
+ "query": "",
+ "parent": "g_5qg8M0",
+ "children": null,
+ "leftNode": [
+  "rule_03"
+ ],
+ "rightNode": [
+  "rhs_iT8CU3"
+ ],
+ "siblingIndex": 1,
+ "returnType": ""
+},
+    "c_VIyHuI": {
+ "value": null,
+ "sourceType": "",
+ "name": "Any",
+ "operator": "sumFilter",
+ "dataType": "list",
+ "nodeType": "condition",
+ "attribute": "",
+ "query": "",
+ "parent": "g_prhmt1",
+ "children": null,
+ "leftNode": [
+  "rule_03"
+ ],
+ "rightNode": [
+  "rhs_kGk3cY"
+ ],
+ "siblingIndex": 1,
+ "returnType": ""
+},
+    "c_VcqQuE": {
+ "value": null,
+ "sourceType": "",
+ "name": "Any",
+ "operator": "sumFilter",
+ "dataType": "list",
+ "nodeType": "condition",
+ "attribute": "",
+ "query": "",
+ "parent": "g_69lN9G",
+ "children": null,
+ "leftNode": [
+  "rule_03"
+ ],
+ "rightNode": [
+  "rhs_fZaFhg"
+ ],
+ "siblingIndex": 1,
+ "returnType": ""
+},
+    "c_W35RvU": {
+ "value": null,
+ "sourceType": "",
+ "name": "Any",
+ "operator": "sumFilter",
+ "dataType": "list",
+ "nodeType": "condition",
+ "attribute": "",
+ "query": "",
+ "parent": "g_AzBUDa",
+ "children": null,
+ "leftNode": [
+  "rule_03"
+ ],
+ "rightNode": [
+  "rhs_N6rpE0"
+ ],
+ "siblingIndex": 1,
+ "returnType": ""
+},
+    "c_W9eOkT": {
+ "value": null,
+ "sourceType": "",
+ "name": "Any",
+ "operator": "sumFilter",
+ "dataType": "list",
+ "nodeType": "condition",
+ "attribute": "",
+ "query": "",
+ "parent": "g_aPqiiQ",
+ "children": null,
+ "leftNode": [
+  "rule_03"
+ ],
+ "rightNode": [
+  "rhs_sTjJyd"
+ ],
+ "siblingIndex": 1,
+ "returnType": ""
+},
+    "c_X3S7hP": {
+ "value": null,
+ "sourceType": "",
+ "name": "Any",
+ "operator": "sumFilter",
+ "dataType": "list",
+ "nodeType": "condition",
+ "attribute": "",
+ "query": "",
+ "parent": "g_7pLhd0",
+ "children": null,
+ "leftNode": [
+  "rule_03"
+ ],
+ "rightNode": [
+  "rhs_xMGsTm"
+ ],
+ "siblingIndex": 1,
+ "returnType": ""
+},
+    "c_XKlby1": {
+ "value": null,
+ "sourceType": "",
+ "name": "Any",
+ "operator": "sumFilter",
+ "dataType": "list",
+ "nodeType": "condition",
+ "attribute": "",
+ "query": "",
+ "parent": "g_M9zX2N",
+ "children": null,
+ "leftNode": [
+  "rule_03"
+ ],
+ "rightNode": [
+  "rhs_CCfkMp"
+ ],
+ "siblingIndex": 1,
+ "returnType": ""
+},
+    "c_YqVWVR": {
+ "value": null,
+ "sourceType": "",
+ "name": "Any",
+ "operator": "sumFilter",
+ "dataType": "list",
+ "nodeType": "condition",
+ "attribute": "",
+ "query": "",
+ "parent": "g_2iN8Og",
+ "children": null,
+ "leftNode": [
+  "rule_03"
+ ],
+ "rightNode": [
+  "rhs_vTBBKf"
+ ],
+ "siblingIndex": 1,
+ "returnType": ""
+},
+    "c_a56pcp": {
+ "value": null,
+ "sourceType": "",
+ "name": "Any",
+ "operator": "sumFilter",
+ "dataType": "list",
+ "nodeType": "condition",
+ "attribute": "",
+ "query": "",
+ "parent": "g_KvHAWX",
+ "children": null,
+ "leftNode": [
+  "rule_03"
+ ],
+ "rightNode": [
+  "rhs_twfJvf"
+ ],
+ "siblingIndex": 1,
+ "returnType": ""
+},
+    "c_bF2lNJ": {
+ "value": null,
+ "sourceType": "",
+ "name": "Any",
+ "operator": "sumFilter",
+ "dataType": "list",
+ "nodeType": "condition",
+ "attribute": "",
+ "query": "",
+ "parent": "g_8OCoYY",
+ "children": null,
+ "leftNode": [
+  "rule_03"
+ ],
+ "rightNode": [
+  "rhs_h1IROI"
+ ],
+ "siblingIndex": 1,
+ "returnType": ""
+},
+    "c_bNEd8O": {
+ "value": null,
+ "sourceType": "",
+ "name": "Any",
+ "operator": "sumFilter",
+ "dataType": "list",
+ "nodeType": "condition",
+ "attribute": "",
+ "query": "",
+ "parent": "g_8uB5Tc",
+ "children": null,
+ "leftNode": [
+  "rule_03"
+ ],
+ "rightNode": [
+  "rhs_RVbyjx"
+ ],
+ "siblingIndex": 1,
+ "returnType": ""
+},
+    "c_d32AEC": {
+ "value": null,
+ "sourceType": "",
+ "name": "Any",
+ "operator": "avgFilter",
+ "dataType": "list",
+ "nodeType": "condition",
+ "attribute": "",
+ "query": "",
+ "parent": "g_OpsdUR",
+ "children": null,
+ "leftNode": [
+  "rule_03"
+ ],
+ "rightNode": [
+  "rhs_RjFFno"
+ ],
+ "siblingIndex": 1,
+ "returnType": ""
+},
+    "c_dANQWm": {
+ "value": null,
+ "sourceType": "",
+ "name": "Any",
+ "operator": "sumFilter",
+ "dataType": "list",
+ "nodeType": "condition",
+ "attribute": "",
+ "query": "",
+ "parent": "g_gCDHKR",
+ "children": null,
+ "leftNode": [
+  "rule_03"
+ ],
+ "rightNode": [
+  "rhs_MPmAMc"
+ ],
+ "siblingIndex": 1,
+ "returnType": ""
+},
+    "c_fPIHUr": {
+ "value": null,
+ "sourceType": "",
+ "name": "Any",
+ "operator": "sumFilter",
+ "dataType": "list",
+ "nodeType": "condition",
+ "attribute": "",
+ "query": "",
+ "parent": "g_y5jDSK",
+ "children": null,
+ "leftNode": [
+  "rule_03"
+ ],
+ "rightNode": [
+  "rhs_OMGKum"
+ ],
+ "siblingIndex": 1,
+ "returnType": ""
+},
+    "c_hOc3Nq": {
+ "value": null,
+ "sourceType": "",
+ "name": "Any",
+ "operator": "sumFilter",
+ "dataType": "list",
+ "nodeType": "condition",
+ "attribute": "",
+ "query": "",
+ "parent": "g_jzEtKB",
+ "children": null,
+ "leftNode": [
+  "rule_03"
+ ],
+ "rightNode": [
+  "rhs_vmwZBh"
+ ],
+ "siblingIndex": 1,
+ "returnType": ""
+},
+    "c_hjt0Sg": {
+ "value": null,
+ "sourceType": "",
+ "name": "Any",
+ "operator": "sumFilter",
+ "dataType": "list",
+ "nodeType": "condition",
+ "attribute": "",
+ "query": "",
+ "parent": "g_IFC9ui",
+ "children": null,
+ "leftNode": [
+  "rule_03"
+ ],
+ "rightNode": [
+  "rhs_47P7DY"
+ ],
+ "siblingIndex": 1,
+ "returnType": ""
+},
+    "c_kJA8Vj": {
+ "value": null,
+ "sourceType": "",
+ "name": "Any",
+ "operator": "sumFilter",
+ "dataType": "list",
+ "nodeType": "condition",
+ "attribute": "",
+ "query": "",
+ "parent": "g_OtGegL",
+ "children": null,
+ "leftNode": [
+  "rule_03"
+ ],
+ "rightNode": [
+  "rhs_ytikRF"
+ ],
+ "siblingIndex": 1,
+ "returnType": ""
+},
+    "c_lb8mah": {
+ "value": null,
+ "sourceType": "",
+ "name": "Any",
+ "operator": "sumFilter",
+ "dataType": "list",
+ "nodeType": "condition",
+ "attribute": "",
+ "query": "",
+ "parent": "g_IDfasJ",
+ "children": null,
+ "leftNode": [
+  "rule_03"
+ ],
+ "rightNode": [
+  "rhs_8dgW12"
+ ],
+ "siblingIndex": 1,
+ "returnType": ""
+},
+    "c_mCBFHz": {
+ "value": null,
+ "sourceType": "",
+ "name": "Any",
+ "operator": "sumFilter",
+ "dataType": "list",
+ "nodeType": "condition",
+ "attribute": "",
+ "query": "",
+ "parent": "g_d4vMBG",
+ "children": null,
+ "leftNode": [
+  "rule_03"
+ ],
+ "rightNode": [
+  "rhs_eH6e8Y"
+ ],
+ "siblingIndex": 1,
+ "returnType": ""
+},
+    "c_nV4v4p": {
+ "value": null,
+ "sourceType": "",
+ "name": "Any",
+ "operator": "sumFilter",
+ "dataType": "list",
+ "nodeType": "condition",
+ "attribute": "",
+ "query": "",
+ "parent": "g_iRUEkX",
+ "children": null,
+ "leftNode": [
+  "rule_03"
+ ],
+ "rightNode": [
+  "rhs_6dGeuA"
+ ],
+ "siblingIndex": 1,
+ "returnType": ""
+},
+    "c_pUSUPn": {
+ "value": null,
+ "sourceType": "",
+ "name": "Any",
+ "operator": "sumFilter",
+ "dataType": "list",
+ "nodeType": "condition",
+ "attribute": "",
+ "query": "",
+ "parent": "g_zIOYQU",
+ "children": null,
+ "leftNode": [
+  "rule_03"
+ ],
+ "rightNode": [
+  "rhs_x6yCPy"
+ ],
+ "siblingIndex": 1,
+ "returnType": ""
+},
+    "c_sD7saW": {
+ "value": null,
+ "sourceType": "",
+ "name": "Any",
+ "operator": "sumFilter",
+ "dataType": "list",
+ "nodeType": "condition",
+ "attribute": "",
+ "query": "",
+ "parent": "g_08Jxmc",
+ "children": null,
+ "leftNode": [
+  "rule_03"
+ ],
+ "rightNode": [
+  "rhs_bOHMNA"
+ ],
+ "siblingIndex": 1,
+ "returnType": ""
+},
+    "c_sz4CxX": {
+ "value": null,
+ "sourceType": "",
+ "name": "Any",
+ "operator": "sumFilter",
+ "dataType": "list",
+ "nodeType": "condition",
+ "attribute": "",
+ "query": "",
+ "parent": "g_jQ1EMO",
+ "children": null,
+ "leftNode": [
+  "rule_03"
+ ],
+ "rightNode": [
+  "rhs_AvivmE"
+ ],
+ "siblingIndex": 1,
+ "returnType": ""
+},
+    "c_yOifMR": {
+ "value": null,
+ "sourceType": "",
+ "name": "Any",
+ "operator": "sumFilter",
+ "dataType": "list",
+ "nodeType": "condition",
+ "attribute": "",
+ "query": "",
+ "parent": "g_ZIop76",
+ "children": null,
+ "leftNode": [
+  "rule_03"
+ ],
+ "rightNode": [
+  "rhs_01XMwS"
+ ],
+ "siblingIndex": 1,
+ "returnType": ""
+},
+    "cc_0O8VEJ": {
+ "value": null,
+ "sourceType": "",
+ "name": "",
+ "operator": "gt",
+ "dataType": "numeric",
+ "nodeType": "condition",
+ "attribute": "",
+ "query": "",
+ "parent": "gc_3Hxtzo",
+ "children": null,
+ "leftNode": [
+  "p_cuDH0R"
+ ],
+ "rightNode": [
+  "node_Jejx7S"
+ ],
+ "siblingIndex": 0,
+ "returnType": ""
+},
+    "cc_0lAu6L": {
+ "value": null,
+ "sourceType": "",
+ "name": "",
+ "operator": "gt",
+ "dataType": "numeric",
+ "nodeType": "condition",
+ "attribute": "",
+ "query": "",
+ "parent": "gc_WQOAdk",
+ "children": null,
+ "leftNode": [
+  "p_AZrIbZ"
+ ],
+ "rightNode": [
+  "node_yqo3dg"
+ ],
+ "siblingIndex": 0,
+ "returnType": ""
+},
+    "cc_6XKOFy": {
+ "value": null,
+ "sourceType": "",
+ "name": "",
+ "operator": "gt",
+ "dataType": "numeric",
+ "nodeType": "condition",
+ "attribute": "",
+ "query": "",
+ "parent": "gc_U1SlFd",
+ "children": null,
+ "leftNode": [
+  "p_g7mc4W"
+ ],
+ "rightNode": [
+  "node_697qlb"
+ ],
+ "siblingIndex": 0,
+ "returnType": ""
+},
+    "cc_7QumuP": {
+ "value": null,
+ "sourceType": "",
+ "name": "",
+ "operator": "gt",
+ "dataType": "numeric",
+ "nodeType": "condition",
+ "attribute": "",
+ "query": "",
+ "parent": "gc_1CloRo",
+ "children": null,
+ "leftNode": [
+  "p_AJOleZ"
+ ],
+ "rightNode": [
+  "node_fodqXr"
+ ],
+ "siblingIndex": 0,
+ "returnType": ""
+},
+    "cc_7mmZ5m": {
+ "value": null,
+ "sourceType": "",
+ "name": "",
+ "operator": "gt",
+ "dataType": "numeric",
+ "nodeType": "condition",
+ "attribute": "",
+ "query": "",
+ "parent": "gc_JotOF0",
+ "children": null,
+ "leftNode": [
+  "p_Jqvns2"
+ ],
+ "rightNode": [
+  "node_d1ULyl"
+ ],
+ "siblingIndex": 0,
+ "returnType": ""
+},
+    "cc_A9FnqM": {
+ "value": null,
+ "sourceType": "",
+ "name": "",
+ "operator": "gt",
+ "dataType": "numeric",
+ "nodeType": "condition",
+ "attribute": "",
+ "query": "",
+ "parent": "gc_krkPio",
+ "children": null,
+ "leftNode": [
+  "p_Gy71he"
+ ],
+ "rightNode": [
+  "node_sXeutS"
+ ],
+ "siblingIndex": 0,
+ "returnType": ""
+},
+    "cc_F6DJDo": {
+ "value": null,
+ "sourceType": "",
+ "name": "",
+ "operator": "gt",
+ "dataType": "numeric",
+ "nodeType": "condition",
+ "attribute": "",
+ "query": "",
+ "parent": "gc_KoRBjh",
+ "children": null,
+ "leftNode": [
+  "p_9mFShD"
+ ],
+ "rightNode": [
+  "node_yunz9a"
+ ],
+ "siblingIndex": 0,
+ "returnType": ""
+},
+    "cc_Imc37z": {
+ "value": null,
+ "sourceType": "",
+ "name": "",
+ "operator": "gt",
+ "dataType": "numeric",
+ "nodeType": "condition",
+ "attribute": "",
+ "query": "",
+ "parent": "gc_CTHuxc",
+ "children": null,
+ "leftNode": [
+  "p_wOX87e"
+ ],
+ "rightNode": [
+  "node_68rZbE"
+ ],
+ "siblingIndex": 0,
+ "returnType": ""
+},
+    "cc_IxaRQD": {
+ "value": null,
+ "sourceType": "",
+ "name": "",
+ "operator": "gt",
+ "dataType": "numeric",
+ "nodeType": "condition",
+ "attribute": "",
+ "query": "",
+ "parent": "gc_lqm1m0",
+ "children": null,
+ "leftNode": [
+  "p_vsGFBm"
+ ],
+ "rightNode": [
+  "node_BHzNjR"
+ ],
+ "siblingIndex": 0,
+ "returnType": ""
+},
+    "cc_K9wo5k": {
+ "value": null,
+ "sourceType": "",
+ "name": "",
+ "operator": "gt",
+ "dataType": "numeric",
+ "nodeType": "condition",
+ "attribute": "",
+ "query": "",
+ "parent": "gc_3oQW68",
+ "children": null,
+ "leftNode": [
+  "p_AXExIV"
+ ],
+ "rightNode": [
+  "node_Ex3gWw"
+ ],
+ "siblingIndex": 0,
+ "returnType": ""
+},
+    "cc_L5W5nM": {
+ "value": null,
+ "sourceType": "",
+ "name": "",
+ "operator": "gt",
+ "dataType": "numeric",
+ "nodeType": "condition",
+ "attribute": "",
+ "query": "",
+ "parent": "gc_wTI8Ev",
+ "children": null,
+ "leftNode": [
+  "p_R8bypm"
+ ],
+ "rightNode": [
+  "node_E6C3OV"
+ ],
+ "siblingIndex": 0,
+ "returnType": ""
+},
+    "cc_LQ37Qo": {
+ "value": null,
+ "sourceType": "",
+ "name": "",
+ "operator": "gt",
+ "dataType": "numeric",
+ "nodeType": "condition",
+ "attribute": "",
+ "query": "",
+ "parent": "gc_2WnCBL",
+ "children": null,
+ "leftNode": [
+  "p_iLWcmd"
+ ],
+ "rightNode": [
+  "node_ceK9av"
+ ],
+ "siblingIndex": 0,
+ "returnType": ""
+},
+    "cc_MEJpYe": {
+ "value": null,
+ "sourceType": "",
+ "name": "",
+ "operator": "gt",
+ "dataType": "numeric",
+ "nodeType": "condition",
+ "attribute": "",
+ "query": "",
+ "parent": "gc_nZbxCm",
+ "children": null,
+ "leftNode": [
+  "p_UYOmb0"
+ ],
+ "rightNode": [
+  "node_Xgksx1"
+ ],
+ "siblingIndex": 0,
+ "returnType": ""
+},
+    "cc_MclQ2F": {
+ "value": null,
+ "sourceType": "",
+ "name": "",
+ "operator": "gt",
+ "dataType": "numeric",
+ "nodeType": "condition",
+ "attribute": "",
+ "query": "",
+ "parent": "gc_mE5p3A",
+ "children": null,
+ "leftNode": [
+  "p_xRk0Zd"
+ ],
+ "rightNode": [
+  "node_v4M19k"
+ ],
+ "siblingIndex": 0,
+ "returnType": ""
+},
+    "cc_Nj9gg8": {
+ "value": null,
+ "sourceType": "",
+ "name": "",
+ "operator": "gt",
+ "dataType": "numeric",
+ "nodeType": "condition",
+ "attribute": "",
+ "query": "",
+ "parent": "gc_uCWVtf",
+ "children": null,
+ "leftNode": [
+  "p_FWPu3g"
+ ],
+ "rightNode": [
+  "node_7AjjI4"
+ ],
+ "siblingIndex": 0,
+ "returnType": ""
+},
+    "cc_OUQcyG": {
+ "value": null,
+ "sourceType": "",
+ "name": "",
+ "operator": "gt",
+ "dataType": "numeric",
+ "nodeType": "condition",
+ "attribute": "",
+ "query": "",
+ "parent": "gc_29rdkY",
+ "children": null,
+ "leftNode": [
+  "p_jmd6KH"
+ ],
+ "rightNode": [
+  "node_FWrhqO"
+ ],
+ "siblingIndex": 0,
+ "returnType": ""
+},
+    "cc_OlqPWT": {
+ "value": null,
+ "sourceType": "",
+ "name": "",
+ "operator": "gt",
+ "dataType": "numeric",
+ "nodeType": "condition",
+ "attribute": "",
+ "query": "",
+ "parent": "gc_CRw6Cq",
+ "children": null,
+ "leftNode": [
+  "p_KRYZWI"
+ ],
+ "rightNode": [
+  "node_Q7mJMw"
+ ],
+ "siblingIndex": 0,
+ "returnType": ""
+},
+    "cc_OnrLvm": {
+ "value": null,
+ "sourceType": "",
+ "name": "",
+ "operator": "gt",
+ "dataType": "numeric",
+ "nodeType": "condition",
+ "attribute": "",
+ "query": "",
+ "parent": "gc_e8zWnY",
+ "children": null,
+ "leftNode": [
+  "p_RO9Sjb"
+ ],
+ "rightNode": [
+  "node_Hvip7q"
+ ],
+ "siblingIndex": 0,
+ "returnType": ""
+},
+    "cc_PHpDDX": {
+ "value": null,
+ "sourceType": "",
+ "name": "",
+ "operator": "gt",
+ "dataType": "numeric",
+ "nodeType": "condition",
+ "attribute": "",
+ "query": "",
+ "parent": "gc_xCer4m",
+ "children": null,
+ "leftNode": [
+  "p_7BZFlK"
+ ],
+ "rightNode": [
+  "node_s1pvLS"
+ ],
+ "siblingIndex": 0,
+ "returnType": ""
+},
+    "cc_YT7Fzs": {
+ "value": null,
+ "sourceType": "",
+ "name": "",
+ "operator": "gt",
+ "dataType": "numeric",
+ "nodeType": "condition",
+ "attribute": "",
+ "query": "",
+ "parent": "gc_5ZVzXj",
+ "children": null,
+ "leftNode": [
+  "pc_wlljBZ"
+ ],
+ "rightNode": [
+  "rhs_cDi45q"
+ ],
+ "siblingIndex": 0,
+ "returnType": ""
+},
+    "cc_ZJjRFL": {
+ "value": null,
+ "sourceType": "",
+ "name": "",
+ "operator": "gt",
+ "dataType": "numeric",
+ "nodeType": "condition",
+ "attribute": "",
+ "query": "",
+ "parent": "gc_B2lZH5",
+ "children": null,
+ "leftNode": [
+  "p_NyCAV3"
+ ],
+ "rightNode": [
+  "node_mRrT7U"
+ ],
+ "siblingIndex": 0,
+ "returnType": ""
+},
+    "cc_bEML9f": {
+ "value": null,
+ "sourceType": "",
+ "name": "",
+ "operator": "gt",
+ "dataType": "numeric",
+ "nodeType": "condition",
+ "attribute": "",
+ "query": "",
+ "parent": "gc_g5R07P",
+ "children": null,
+ "leftNode": [
+  "p_WprNOg"
+ ],
+ "rightNode": [
+  "node_YHaSKY"
+ ],
+ "siblingIndex": 0,
+ "returnType": ""
+},
+    "cc_btJuAd": {
+ "value": null,
+ "sourceType": "",
+ "name": "",
+ "operator": "gt",
+ "dataType": "numeric",
+ "nodeType": "condition",
+ "attribute": "",
+ "query": "",
+ "parent": "gc_MKtOXe",
+ "children": null,
+ "leftNode": [
+  "p_MMANQO"
+ ],
+ "rightNode": [
+  "node_xzcVbY"
+ ],
+ "siblingIndex": 0,
+ "returnType": ""
+},
+    "cc_cHlEDh": {
+ "value": null,
+ "sourceType": "",
+ "name": "",
+ "operator": "gt",
+ "dataType": "numeric",
+ "nodeType": "condition",
+ "attribute": "",
+ "query": "",
+ "parent": "gc_HKPuar",
+ "children": null,
+ "leftNode": [
+  "p_wPWylB"
+ ],
+ "rightNode": [
+  "node_YUDX4N"
+ ],
+ "siblingIndex": 0,
+ "returnType": ""
+},
+    "cc_cKjDAg": {
+ "value": null,
+ "sourceType": "",
+ "name": "",
+ "operator": "gt",
+ "dataType": "numeric",
+ "nodeType": "condition",
+ "attribute": "",
+ "query": "",
+ "parent": "gc_sDrwHf",
+ "children": null,
+ "leftNode": [
+  "pc_UJN7QL"
+ ],
+ "rightNode": [
+  "rhs_FLPE5w"
+ ],
+ "siblingIndex": 0,
+ "returnType": ""
+},
+    "cc_d7vVgo": {
+ "value": null,
+ "sourceType": "",
+ "name": "",
+ "operator": "gt",
+ "dataType": "numeric",
+ "nodeType": "condition",
+ "attribute": "",
+ "query": "",
+ "parent": "gc_Q1BG5Y",
+ "children": null,
+ "leftNode": [
+  "p_m8IkKS"
+ ],
+ "rightNode": [
+  "node_LXKFpZ"
+ ],
+ "siblingIndex": 0,
+ "returnType": ""
+},
+    "cc_dK9jOK": {
+ "value": null,
+ "sourceType": "",
+ "name": "",
+ "operator": "gt",
+ "dataType": "numeric",
+ "nodeType": "condition",
+ "attribute": "",
+ "query": "",
+ "parent": "gc_4emB2U",
+ "children": null,
+ "leftNode": [
+  "p_nUloBb"
+ ],
+ "rightNode": [
+  "node_mk73Xb"
+ ],
+ "siblingIndex": 0,
+ "returnType": ""
+},
+    "cc_dtMx1O": {
+ "value": null,
+ "sourceType": "",
+ "name": "",
+ "operator": "gt",
+ "dataType": "numeric",
+ "nodeType": "condition",
+ "attribute": "",
+ "query": "",
+ "parent": "gc_KAp7uL",
+ "children": null,
+ "leftNode": [
+  "p_7eCopC"
+ ],
+ "rightNode": [
+  "node_wLJVGe"
+ ],
+ "siblingIndex": 0,
+ "returnType": ""
+},
+    "cc_fOK1bt": {
+ "value": null,
+ "sourceType": "",
+ "name": "",
+ "operator": "gt",
+ "dataType": "numeric",
+ "nodeType": "condition",
+ "attribute": "",
+ "query": "",
+ "parent": "gc_OeLcce",
+ "children": null,
+ "leftNode": [
+  "pc_q7zrqq"
+ ],
+ "rightNode": [
+  "rhs_ePKXzF"
+ ],
+ "siblingIndex": 0,
+ "returnType": ""
+},
+    "cc_fWeinJ": {
+ "value": null,
+ "sourceType": "",
+ "name": "",
+ "operator": "gt",
+ "dataType": "numeric",
+ "nodeType": "condition",
+ "attribute": "",
+ "query": "",
+ "parent": "gc_bsg7vY",
+ "children": null,
+ "leftNode": [
+  "p_wp1qfR"
+ ],
+ "rightNode": [
+  "node_BYh9N7"
+ ],
+ "siblingIndex": 0,
+ "returnType": ""
+},
+    "cc_g0vR7E": {
+ "value": null,
+ "sourceType": "",
+ "name": "",
+ "operator": "gt",
+ "dataType": "numeric",
+ "nodeType": "condition",
+ "attribute": "",
+ "query": "",
+ "parent": "gc_IxYnIZ",
+ "children": null,
+ "leftNode": [
+  "p_kemGh7"
+ ],
+ "rightNode": [
+  "node_c9TTEn"
+ ],
+ "siblingIndex": 0,
+ "returnType": ""
+},
+    "cc_ilkaDm": {
+ "value": null,
+ "sourceType": "",
+ "name": "",
+ "operator": "gt",
+ "dataType": "numeric",
+ "nodeType": "condition",
+ "attribute": "",
+ "query": "",
+ "parent": "gc_T5oyUG",
+ "children": null,
+ "leftNode": [
+  "p_Uf0Kle"
+ ],
+ "rightNode": [
+  "node_DHBkXF"
+ ],
+ "siblingIndex": 0,
+ "returnType": ""
+},
+    "cc_jqI16b": {
+ "value": null,
+ "sourceType": "",
+ "name": "",
+ "operator": "gt",
+ "dataType": "numeric",
+ "nodeType": "condition",
+ "attribute": "",
+ "query": "",
+ "parent": "gc_kTNskk",
+ "children": null,
+ "leftNode": [
+  "p_bjlH3C"
+ ],
+ "rightNode": [
+  "node_ViwLRu"
+ ],
+ "siblingIndex": 0,
+ "returnType": ""
+},
+    "cc_kYy0yj": {
+ "value": null,
+ "sourceType": "",
+ "name": "",
+ "operator": "anyFilterMatch",
+ "dataType": "list",
+ "nodeType": "condition",
+ "attribute": "",
+ "query": "",
+ "parent": "gc_3kO8wG",
+ "children": null,
+ "leftNode": [
+  "p_fNfhDF"
+ ],
+ "rightNode": [
+  "rhs_iskcdt"
+ ],
+ "siblingIndex": 0,
+ "returnType": ""
+},
+    "cc_lezjlO": {
+ "value": null,
+ "sourceType": "",
+ "name": "",
+ "operator": "gt",
+ "dataType": "numeric",
+ "nodeType": "condition",
+ "attribute": "",
+ "query": "",
+ "parent": "gc_4dhF2M",
+ "children": null,
+ "leftNode": [
+  "p_vffUIC"
+ ],
+ "rightNode": [
+  "node_4vVe6K"
+ ],
+ "siblingIndex": 0,
+ "returnType": ""
+},
+    "cc_m3Uwtp": {
+ "value": null,
+ "sourceType": "",
+ "name": "",
+ "operator": "gt",
+ "dataType": "numeric",
+ "nodeType": "condition",
+ "attribute": "",
+ "query": "",
+ "parent": "gc_4F0Vpe",
+ "children": null,
+ "leftNode": [
+  "p_mMLuQp"
+ ],
+ "rightNode": [
+  "node_l4EhBS"
+ ],
+ "siblingIndex": 0,
+ "returnType": ""
+},
+    "cc_ouRMTd": {
+ "value": null,
+ "sourceType": "",
+ "name": "",
+ "operator": "gt",
+ "dataType": "numeric",
+ "nodeType": "condition",
+ "attribute": "",
+ "query": "",
+ "parent": "gc_5OfZil",
+ "children": null,
+ "leftNode": [
+  "p_dumeSk"
+ ],
+ "rightNode": [
+  "node_pbYywc"
+ ],
+ "siblingIndex": 0,
+ "returnType": ""
+},
+    "cc_r0UnXu": {
+ "value": null,
+ "sourceType": "",
+ "name": "",
+ "operator": "gt",
+ "dataType": "numeric",
+ "nodeType": "condition",
+ "attribute": "",
+ "query": "",
+ "parent": "gc_bz8kK1",
+ "children": null,
+ "leftNode": [
+  "p_UVLsvy"
+ ],
+ "rightNode": [
+  "node_RwGePR"
+ ],
+ "siblingIndex": 0,
+ "returnType": ""
+},
+    "cc_sBv1NE": {
+ "value": null,
+ "sourceType": "",
+ "name": "",
+ "operator": "gt",
+ "dataType": "numeric",
+ "nodeType": "condition",
+ "attribute": "",
+ "query": "",
+ "parent": "gc_Q8qGhJ",
+ "children": null,
+ "leftNode": [
+  "p_NjgQbk"
+ ],
+ "rightNode": [
+  "node_LCdd1u"
+ ],
+ "siblingIndex": 0,
+ "returnType": ""
+},
+    "cc_sMvV1m": {
+ "value": null,
+ "sourceType": "",
+ "name": "",
+ "operator": "gt",
+ "dataType": "numeric",
+ "nodeType": "condition",
+ "attribute": "",
+ "query": "",
+ "parent": "gc_GuGM7C",
+ "children": null,
+ "leftNode": [
+  "p_XxfpvL"
+ ],
+ "rightNode": [
+  "node_gvUPDI"
+ ],
+ "siblingIndex": 0,
+ "returnType": ""
+},
+    "cc_uvAHWT": {
+ "value": null,
+ "sourceType": "",
+ "name": "",
+ "operator": "eq",
+ "dataType": "numeric",
+ "nodeType": "condition",
+ "attribute": "",
+ "query": "",
+ "parent": "gc_d8whxr",
+ "children": null,
+ "leftNode": [
+  "pc_tD6a14"
+ ],
+ "rightNode": [
+  "rhs_kwrwCC"
+ ],
+ "siblingIndex": 0,
+ "returnType": ""
+},
+    "cc_yIjwJr": {
+ "value": null,
+ "sourceType": "",
+ "name": "",
+ "operator": "gt",
+ "dataType": "numeric",
+ "nodeType": "condition",
+ "attribute": "",
+ "query": "",
+ "parent": "gc_TfqwPR",
+ "children": null,
+ "leftNode": [
+  "p_ShRDDg"
+ ],
+ "rightNode": [
+  "node_wDXU1W"
+ ],
+ "siblingIndex": 0,
+ "returnType": ""
+},
+    "g_08Jxmc": {
+ "value": null,
+ "sourceType": "",
+ "name": "",
+ "operator": "and",
+ "dataType": "",
+ "nodeType": "group",
+ "attribute": "",
+ "query": "",
+ "parent": "",
+ "children": [
+  "c_sD7saW"
+ ],
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 1,
+ "returnType": ""
+},
+    "g_2NtZ6O": {
+ "value": null,
+ "sourceType": "",
+ "name": "",
+ "operator": "and",
+ "dataType": "",
+ "nodeType": "group",
+ "attribute": "",
+ "query": "",
+ "parent": "",
+ "children": [
+  "c_LvC8oM"
+ ],
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 1,
+ "returnType": ""
+},
+    "g_2iN8Og": {
+ "value": null,
+ "sourceType": "",
+ "name": "",
+ "operator": "and",
+ "dataType": "",
+ "nodeType": "group",
+ "attribute": "",
+ "query": "",
+ "parent": "",
+ "children": [
+  "c_YqVWVR"
+ ],
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 1,
+ "returnType": ""
+},
+    "g_5qg8M0": {
+ "value": null,
+ "sourceType": "",
+ "name": "",
+ "operator": "and",
+ "dataType": "",
+ "nodeType": "group",
+ "attribute": "",
+ "query": "",
+ "parent": "",
+ "children": [
+  "c_TmXeBd"
+ ],
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 1,
+ "returnType": ""
+},
+    "g_69lN9G": {
+ "value": null,
+ "sourceType": "",
+ "name": "",
+ "operator": "and",
+ "dataType": "",
+ "nodeType": "group",
+ "attribute": "",
+ "query": "",
+ "parent": "",
+ "children": [
+  "c_VcqQuE"
+ ],
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 1,
+ "returnType": ""
+},
+    "g_7pLhd0": {
+ "value": null,
+ "sourceType": "",
+ "name": "",
+ "operator": "and",
+ "dataType": "",
+ "nodeType": "group",
+ "attribute": "",
+ "query": "",
+ "parent": "",
+ "children": [
+  "c_X3S7hP"
+ ],
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 1,
+ "returnType": ""
+},
+    "g_8OCoYY": {
+ "value": null,
+ "sourceType": "",
+ "name": "",
+ "operator": "and",
+ "dataType": "",
+ "nodeType": "group",
+ "attribute": "",
+ "query": "",
+ "parent": "",
+ "children": [
+  "c_bF2lNJ"
+ ],
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 1,
+ "returnType": ""
+},
+    "g_8uB5Tc": {
+ "value": null,
+ "sourceType": "",
+ "name": "",
+ "operator": "and",
+ "dataType": "",
+ "nodeType": "group",
+ "attribute": "",
+ "query": "",
+ "parent": "",
+ "children": [
+  "c_bNEd8O"
+ ],
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 1,
+ "returnType": ""
+},
+    "g_AzBUDa": {
+ "value": null,
+ "sourceType": "",
+ "name": "",
+ "operator": "and",
+ "dataType": "",
+ "nodeType": "group",
+ "attribute": "",
+ "query": "",
+ "parent": "",
+ "children": [
+  "c_W35RvU"
+ ],
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 1,
+ "returnType": ""
+},
+    "g_F7wCoq": {
+ "value": null,
+ "sourceType": "",
+ "name": "",
+ "operator": "and",
+ "dataType": "",
+ "nodeType": "group",
+ "attribute": "",
+ "query": "",
+ "parent": "",
+ "children": [
+  "c_0TShCC"
+ ],
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 1,
+ "returnType": ""
+},
+    "g_IDfasJ": {
+ "value": null,
+ "sourceType": "",
+ "name": "",
+ "operator": "and",
+ "dataType": "",
+ "nodeType": "group",
+ "attribute": "",
+ "query": "",
+ "parent": "",
+ "children": [
+  "c_lb8mah"
+ ],
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 1,
+ "returnType": ""
+},
+    "g_IFC9ui": {
+ "value": null,
+ "sourceType": "",
+ "name": "",
+ "operator": "and",
+ "dataType": "",
+ "nodeType": "group",
+ "attribute": "",
+ "query": "",
+ "parent": "",
+ "children": [
+  "c_hjt0Sg"
+ ],
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 1,
+ "returnType": ""
+},
+    "g_KvHAWX": {
+ "value": null,
+ "sourceType": "",
+ "name": "",
+ "operator": "and",
+ "dataType": "",
+ "nodeType": "group",
+ "attribute": "",
+ "query": "",
+ "parent": "",
+ "children": [
+  "c_a56pcp"
+ ],
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 1,
+ "returnType": ""
+},
+    "g_M9zX2N": {
+ "value": null,
+ "sourceType": "",
+ "name": "",
+ "operator": "and",
+ "dataType": "",
+ "nodeType": "group",
+ "attribute": "",
+ "query": "",
+ "parent": "",
+ "children": [
+  "c_XKlby1"
+ ],
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 1,
+ "returnType": ""
+},
+    "g_OpsdUR": {
+ "value": null,
+ "sourceType": "",
+ "name": "",
+ "operator": "and",
+ "dataType": "",
+ "nodeType": "group",
+ "attribute": "",
+ "query": "",
+ "parent": "",
+ "children": [
+  "c_d32AEC"
+ ],
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 1,
+ "returnType": ""
+},
+    "g_OtGegL": {
+ "value": null,
+ "sourceType": "",
+ "name": "",
+ "operator": "and",
+ "dataType": "",
+ "nodeType": "group",
+ "attribute": "",
+ "query": "",
+ "parent": "",
+ "children": [
+  "c_kJA8Vj"
+ ],
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 1,
+ "returnType": ""
+},
+    "g_Qf1vay": {
+ "value": null,
+ "sourceType": "",
+ "name": "",
+ "operator": "and",
+ "dataType": "",
+ "nodeType": "group",
+ "attribute": "",
+ "query": "",
+ "parent": "",
+ "children": [
+  "c_0ejCuh"
+ ],
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 1,
+ "returnType": ""
+},
+    "g_S3qEKk": {
+ "value": null,
+ "sourceType": "",
+ "name": "",
+ "operator": "and",
+ "dataType": "",
+ "nodeType": "group",
+ "attribute": "",
+ "query": "",
+ "parent": "",
+ "children": [
+  "c_A0LMQ6"
+ ],
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 1,
+ "returnType": ""
+},
+    "g_ULnKf3": {
+ "value": null,
+ "sourceType": "",
+ "name": "",
+ "operator": "and",
+ "dataType": "",
+ "nodeType": "group",
+ "attribute": "",
+ "query": "",
+ "parent": "",
+ "children": [
+  "c_LgiTJ1"
+ ],
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 1,
+ "returnType": ""
+},
+    "g_UYATCd": {
+ "value": null,
+ "sourceType": "",
+ "name": "",
+ "operator": "and",
+ "dataType": "",
+ "nodeType": "group",
+ "attribute": "",
+ "query": "",
+ "parent": "",
+ "children": [
+  "c_C5UI9c"
+ ],
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 1,
+ "returnType": ""
+},
+    "g_UxDWWs": {
+ "value": null,
+ "sourceType": "",
+ "name": "",
+ "operator": "and",
+ "dataType": "",
+ "nodeType": "group",
+ "attribute": "",
+ "query": "",
+ "parent": "",
+ "children": [
+  "c_JGn4VY"
+ ],
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 1,
+ "returnType": ""
+},
+    "g_WvFi6z": {
+ "value": null,
+ "sourceType": "",
+ "name": "",
+ "operator": "and",
+ "dataType": "",
+ "nodeType": "group",
+ "attribute": "",
+ "query": "",
+ "parent": "",
+ "children": [
+  "c_9NggNV"
+ ],
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 1,
+ "returnType": ""
+},
+    "g_ZIop76": {
+ "value": null,
+ "sourceType": "",
+ "name": "",
+ "operator": "and",
+ "dataType": "",
+ "nodeType": "group",
+ "attribute": "",
+ "query": "",
+ "parent": "",
+ "children": [
+  "c_yOifMR"
+ ],
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 1,
+ "returnType": ""
+},
+    "g_aPqiiQ": {
+ "value": null,
+ "sourceType": "",
+ "name": "",
+ "operator": "and",
+ "dataType": "",
+ "nodeType": "group",
+ "attribute": "",
+ "query": "",
+ "parent": "",
+ "children": [
+  "c_W9eOkT"
+ ],
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 1,
+ "returnType": ""
+},
+    "g_cYkL6l": {
+ "value": null,
+ "sourceType": "",
+ "name": "",
+ "operator": "and",
+ "dataType": "",
+ "nodeType": "group",
+ "attribute": "",
+ "query": "",
+ "parent": "",
+ "children": [
+  "c_K9OW7F"
+ ],
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 1,
+ "returnType": ""
+},
+    "g_cZVxSA": {
+ "value": null,
+ "sourceType": "",
+ "name": "",
+ "operator": "and",
+ "dataType": "",
+ "nodeType": "group",
+ "attribute": "",
+ "query": "",
+ "parent": "",
+ "children": [
+  "c_5gkjiP"
+ ],
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 1,
+ "returnType": ""
+},
+    "g_d4vMBG": {
+ "value": null,
+ "sourceType": "",
+ "name": "",
+ "operator": "and",
+ "dataType": "",
+ "nodeType": "group",
+ "attribute": "",
+ "query": "",
+ "parent": "",
+ "children": [
+  "c_mCBFHz"
+ ],
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 1,
+ "returnType": ""
+},
+    "g_gCDHKR": {
+ "value": null,
+ "sourceType": "",
+ "name": "",
+ "operator": "and",
+ "dataType": "",
+ "nodeType": "group",
+ "attribute": "",
+ "query": "",
+ "parent": "",
+ "children": [
+  "c_dANQWm"
+ ],
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 1,
+ "returnType": ""
+},
+    "g_hSUqL6": {
+ "value": null,
+ "sourceType": "",
+ "name": "",
+ "operator": "and",
+ "dataType": "",
+ "nodeType": "group",
+ "attribute": "",
+ "query": "",
+ "parent": "",
+ "children": [
+  "c_OFur2v"
+ ],
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 1,
+ "returnType": ""
+},
+    "g_hUCyqC": {
+ "value": null,
+ "sourceType": "",
+ "name": "",
+ "operator": "and",
+ "dataType": "",
+ "nodeType": "group",
+ "attribute": "",
+ "query": "",
+ "parent": "",
+ "children": [
+  "c_BVeRL3"
+ ],
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 1,
+ "returnType": ""
+},
+    "g_iRUEkX": {
+ "value": null,
+ "sourceType": "",
+ "name": "",
+ "operator": "and",
+ "dataType": "",
+ "nodeType": "group",
+ "attribute": "",
+ "query": "",
+ "parent": "",
+ "children": [
+  "c_nV4v4p"
+ ],
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 1,
+ "returnType": ""
+},
+    "g_jQ1EMO": {
+ "value": null,
+ "sourceType": "",
+ "name": "",
+ "operator": "and",
+ "dataType": "",
+ "nodeType": "group",
+ "attribute": "",
+ "query": "",
+ "parent": "",
+ "children": [
+  "c_sz4CxX"
+ ],
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 1,
+ "returnType": ""
+},
+    "g_jzEtKB": {
+ "value": null,
+ "sourceType": "",
+ "name": "",
+ "operator": "and",
+ "dataType": "",
+ "nodeType": "group",
+ "attribute": "",
+ "query": "",
+ "parent": "",
+ "children": [
+  "c_hOc3Nq"
+ ],
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 1,
+ "returnType": ""
+},
+    "g_ooeEiv": {
+ "value": null,
+ "sourceType": "",
+ "name": "",
+ "operator": "and",
+ "dataType": "",
+ "nodeType": "group",
+ "attribute": "",
+ "query": "",
+ "parent": "",
+ "children": [
+  "c_LHZn7d"
+ ],
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 1,
+ "returnType": ""
+},
+    "g_prhmt1": {
+ "value": null,
+ "sourceType": "",
+ "name": "",
+ "operator": "and",
+ "dataType": "",
+ "nodeType": "group",
+ "attribute": "",
+ "query": "",
+ "parent": "",
+ "children": [
+  "c_VIyHuI"
+ ],
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 1,
+ "returnType": ""
+},
+    "g_tAAEjE": {
+ "value": null,
+ "sourceType": "",
+ "name": "",
+ "operator": "and",
+ "dataType": "",
+ "nodeType": "group",
+ "attribute": "",
+ "query": "",
+ "parent": "",
+ "children": [
+  "c_PFXsXa"
+ ],
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 1,
+ "returnType": ""
+},
+    "g_tuIM25": {
+ "value": null,
+ "sourceType": "",
+ "name": "",
+ "operator": "and",
+ "dataType": "",
+ "nodeType": "group",
+ "attribute": "",
+ "query": "",
+ "parent": "",
+ "children": [
+  "c_IGHWFZ"
+ ],
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 1,
+ "returnType": ""
+},
+    "g_uGtxYg": {
+ "value": null,
+ "sourceType": "",
+ "name": "",
+ "operator": "and",
+ "dataType": "",
+ "nodeType": "group",
+ "attribute": "",
+ "query": "",
+ "parent": "",
+ "children": [
+  "c_QRkz1y"
+ ],
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 1,
+ "returnType": ""
+},
+    "g_y5jDSK": {
+ "value": null,
+ "sourceType": "",
+ "name": "",
+ "operator": "and",
+ "dataType": "",
+ "nodeType": "group",
+ "attribute": "",
+ "query": "",
+ "parent": "",
+ "children": [
+  "c_fPIHUr"
+ ],
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 1,
+ "returnType": ""
+},
+    "g_zIOYQU": {
+ "value": null,
+ "sourceType": "",
+ "name": "",
+ "operator": "and",
+ "dataType": "",
+ "nodeType": "group",
+ "attribute": "",
+ "query": "",
+ "parent": "",
+ "children": [
+  "c_pUSUPn"
+ ],
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 1,
+ "returnType": ""
+},
+    "gc_1CloRo": {
+ "value": null,
+ "sourceType": "",
+ "name": "Path1",
+ "operator": "",
+ "dataType": "",
+ "nodeType": "group",
+ "attribute": "",
+ "query": "",
+ "parent": "",
+ "children": [
+  "cc_7QumuP"
+ ],
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 0,
+ "returnType": ""
+},
+    "gc_29rdkY": {
+ "value": null,
+ "sourceType": "",
+ "name": "Path1",
+ "operator": "",
+ "dataType": "",
+ "nodeType": "group",
+ "attribute": "",
+ "query": "",
+ "parent": "",
+ "children": [
+  "cc_OUQcyG"
+ ],
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 0,
+ "returnType": ""
+},
+    "gc_2WnCBL": {
+ "value": null,
+ "sourceType": "",
+ "name": "Path1",
+ "operator": "",
+ "dataType": "",
+ "nodeType": "group",
+ "attribute": "",
+ "query": "",
+ "parent": "",
+ "children": [
+  "cc_LQ37Qo"
+ ],
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 0,
+ "returnType": ""
+},
+    "gc_3Hxtzo": {
+ "value": null,
+ "sourceType": "",
+ "name": "Path1",
+ "operator": "",
+ "dataType": "",
+ "nodeType": "group",
+ "attribute": "",
+ "query": "",
+ "parent": "",
+ "children": [
+  "cc_0O8VEJ"
+ ],
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 0,
+ "returnType": ""
+},
+    "gc_3kO8wG": {
+ "value": null,
+ "sourceType": "",
+ "name": "Path1",
+ "operator": "",
+ "dataType": "",
+ "nodeType": "group",
+ "attribute": "",
+ "query": "",
+ "parent": "",
+ "children": [
+  "cc_kYy0yj"
+ ],
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 0,
+ "returnType": ""
+},
+    "gc_3oQW68": {
+ "value": null,
+ "sourceType": "",
+ "name": "Path1",
+ "operator": "",
+ "dataType": "",
+ "nodeType": "group",
+ "attribute": "",
+ "query": "",
+ "parent": "",
+ "children": [
+  "cc_K9wo5k"
+ ],
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 0,
+ "returnType": ""
+},
+    "gc_4F0Vpe": {
+ "value": null,
+ "sourceType": "",
+ "name": "Path1",
+ "operator": "",
+ "dataType": "",
+ "nodeType": "group",
+ "attribute": "",
+ "query": "",
+ "parent": "",
+ "children": [
+  "cc_m3Uwtp"
+ ],
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 0,
+ "returnType": ""
+},
+    "gc_4dhF2M": {
+ "value": null,
+ "sourceType": "",
+ "name": "Path1",
+ "operator": "",
+ "dataType": "",
+ "nodeType": "group",
+ "attribute": "",
+ "query": "",
+ "parent": "",
+ "children": [
+  "cc_lezjlO"
+ ],
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 0,
+ "returnType": ""
+},
+    "gc_4emB2U": {
+ "value": null,
+ "sourceType": "",
+ "name": "Path1",
+ "operator": "",
+ "dataType": "",
+ "nodeType": "group",
+ "attribute": "",
+ "query": "",
+ "parent": "",
+ "children": [
+  "cc_dK9jOK"
+ ],
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 0,
+ "returnType": ""
+},
+    "gc_5OfZil": {
+ "value": null,
+ "sourceType": "",
+ "name": "Path1",
+ "operator": "",
+ "dataType": "",
+ "nodeType": "group",
+ "attribute": "",
+ "query": "",
+ "parent": "",
+ "children": [
+  "cc_ouRMTd"
+ ],
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 0,
+ "returnType": ""
+},
+    "gc_5ZVzXj": {
+ "value": null,
+ "sourceType": "",
+ "name": "Path1",
+ "operator": "",
+ "dataType": "",
+ "nodeType": "group",
+ "attribute": "",
+ "query": "",
+ "parent": "",
+ "children": [
+  "cc_YT7Fzs"
+ ],
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 0,
+ "returnType": ""
+},
+    "gc_B2lZH5": {
+ "value": null,
+ "sourceType": "",
+ "name": "Path1",
+ "operator": "",
+ "dataType": "",
+ "nodeType": "group",
+ "attribute": "",
+ "query": "",
+ "parent": "",
+ "children": [
+  "cc_ZJjRFL"
+ ],
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 0,
+ "returnType": ""
+},
+    "gc_CRw6Cq": {
+ "value": null,
+ "sourceType": "",
+ "name": "Path1",
+ "operator": "",
+ "dataType": "",
+ "nodeType": "group",
+ "attribute": "",
+ "query": "",
+ "parent": "",
+ "children": [
+  "cc_OlqPWT"
+ ],
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 0,
+ "returnType": ""
+},
+    "gc_CTHuxc": {
+ "value": null,
+ "sourceType": "",
+ "name": "Path1",
+ "operator": "",
+ "dataType": "",
+ "nodeType": "group",
+ "attribute": "",
+ "query": "",
+ "parent": "",
+ "children": [
+  "cc_Imc37z"
+ ],
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 0,
+ "returnType": ""
+},
+    "gc_GuGM7C": {
+ "value": null,
+ "sourceType": "",
+ "name": "Path1",
+ "operator": "",
+ "dataType": "",
+ "nodeType": "group",
+ "attribute": "",
+ "query": "",
+ "parent": "",
+ "children": [
+  "cc_sMvV1m"
+ ],
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 0,
+ "returnType": ""
+},
+    "gc_HKPuar": {
+ "value": null,
+ "sourceType": "",
+ "name": "Path1",
+ "operator": "",
+ "dataType": "",
+ "nodeType": "group",
+ "attribute": "",
+ "query": "",
+ "parent": "",
+ "children": [
+  "cc_cHlEDh"
+ ],
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 0,
+ "returnType": ""
+},
+    "gc_IxYnIZ": {
+ "value": null,
+ "sourceType": "",
+ "name": "Path1",
+ "operator": "",
+ "dataType": "",
+ "nodeType": "group",
+ "attribute": "",
+ "query": "",
+ "parent": "",
+ "children": [
+  "cc_g0vR7E"
+ ],
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 0,
+ "returnType": ""
+},
+    "gc_JotOF0": {
+ "value": null,
+ "sourceType": "",
+ "name": "Path1",
+ "operator": "",
+ "dataType": "",
+ "nodeType": "group",
+ "attribute": "",
+ "query": "",
+ "parent": "",
+ "children": [
+  "cc_7mmZ5m"
+ ],
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 0,
+ "returnType": ""
+},
+    "gc_KAp7uL": {
+ "value": null,
+ "sourceType": "",
+ "name": "Path1",
+ "operator": "",
+ "dataType": "",
+ "nodeType": "group",
+ "attribute": "",
+ "query": "",
+ "parent": "",
+ "children": [
+  "cc_dtMx1O"
+ ],
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 0,
+ "returnType": ""
+},
+    "gc_KoRBjh": {
+ "value": null,
+ "sourceType": "",
+ "name": "Path1",
+ "operator": "",
+ "dataType": "",
+ "nodeType": "group",
+ "attribute": "",
+ "query": "",
+ "parent": "",
+ "children": [
+  "cc_F6DJDo"
+ ],
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 0,
+ "returnType": ""
+},
+    "gc_MKtOXe": {
+ "value": null,
+ "sourceType": "",
+ "name": "Path1",
+ "operator": "",
+ "dataType": "",
+ "nodeType": "group",
+ "attribute": "",
+ "query": "",
+ "parent": "",
+ "children": [
+  "cc_btJuAd"
+ ],
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 0,
+ "returnType": ""
+},
+    "gc_OeLcce": {
+ "value": null,
+ "sourceType": "",
+ "name": "Path1",
+ "operator": "",
+ "dataType": "",
+ "nodeType": "group",
+ "attribute": "",
+ "query": "",
+ "parent": "",
+ "children": [
+  "cc_fOK1bt"
+ ],
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 0,
+ "returnType": ""
+},
+    "gc_Q1BG5Y": {
+ "value": null,
+ "sourceType": "",
+ "name": "Path1",
+ "operator": "",
+ "dataType": "",
+ "nodeType": "group",
+ "attribute": "",
+ "query": "",
+ "parent": "",
+ "children": [
+  "cc_d7vVgo"
+ ],
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 0,
+ "returnType": ""
+},
+    "gc_Q8qGhJ": {
+ "value": null,
+ "sourceType": "",
+ "name": "Path1",
+ "operator": "",
+ "dataType": "",
+ "nodeType": "group",
+ "attribute": "",
+ "query": "",
+ "parent": "",
+ "children": [
+  "cc_sBv1NE"
+ ],
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 0,
+ "returnType": ""
+},
+    "gc_T5oyUG": {
+ "value": null,
+ "sourceType": "",
+ "name": "Path1",
+ "operator": "",
+ "dataType": "",
+ "nodeType": "group",
+ "attribute": "",
+ "query": "",
+ "parent": "",
+ "children": [
+  "cc_ilkaDm"
+ ],
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 0,
+ "returnType": ""
+},
+    "gc_TfqwPR": {
+ "value": null,
+ "sourceType": "",
+ "name": "Path1",
+ "operator": "",
+ "dataType": "",
+ "nodeType": "group",
+ "attribute": "",
+ "query": "",
+ "parent": "",
+ "children": [
+  "cc_yIjwJr"
+ ],
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 0,
+ "returnType": ""
+},
+    "gc_U1SlFd": {
+ "value": null,
+ "sourceType": "",
+ "name": "Path1",
+ "operator": "",
+ "dataType": "",
+ "nodeType": "group",
+ "attribute": "",
+ "query": "",
+ "parent": "",
+ "children": [
+  "cc_6XKOFy"
+ ],
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 0,
+ "returnType": ""
+},
+    "gc_WQOAdk": {
+ "value": null,
+ "sourceType": "",
+ "name": "Path1",
+ "operator": "",
+ "dataType": "",
+ "nodeType": "group",
+ "attribute": "",
+ "query": "",
+ "parent": "",
+ "children": [
+  "cc_0lAu6L"
+ ],
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 0,
+ "returnType": ""
+},
+    "gc_bsg7vY": {
+ "value": null,
+ "sourceType": "",
+ "name": "Path1",
+ "operator": "",
+ "dataType": "",
+ "nodeType": "group",
+ "attribute": "",
+ "query": "",
+ "parent": "",
+ "children": [
+  "cc_fWeinJ"
+ ],
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 0,
+ "returnType": ""
+},
+    "gc_bz8kK1": {
+ "value": null,
+ "sourceType": "",
+ "name": "Path1",
+ "operator": "",
+ "dataType": "",
+ "nodeType": "group",
+ "attribute": "",
+ "query": "",
+ "parent": "",
+ "children": [
+  "cc_r0UnXu"
+ ],
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 0,
+ "returnType": ""
+},
+    "gc_d8whxr": {
+ "value": null,
+ "sourceType": "",
+ "name": "Path1",
+ "operator": "",
+ "dataType": "",
+ "nodeType": "group",
+ "attribute": "",
+ "query": "",
+ "parent": "",
+ "children": [
+  "cc_uvAHWT"
+ ],
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 0,
+ "returnType": ""
+},
+    "gc_e8zWnY": {
+ "value": null,
+ "sourceType": "",
+ "name": "Path1",
+ "operator": "",
+ "dataType": "",
+ "nodeType": "group",
+ "attribute": "",
+ "query": "",
+ "parent": "",
+ "children": [
+  "cc_OnrLvm"
+ ],
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 0,
+ "returnType": ""
+},
+    "gc_g5R07P": {
+ "value": null,
+ "sourceType": "",
+ "name": "Path1",
+ "operator": "",
+ "dataType": "",
+ "nodeType": "group",
+ "attribute": "",
+ "query": "",
+ "parent": "",
+ "children": [
+  "cc_bEML9f"
+ ],
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 0,
+ "returnType": ""
+},
+    "gc_kTNskk": {
+ "value": null,
+ "sourceType": "",
+ "name": "Path1",
+ "operator": "",
+ "dataType": "",
+ "nodeType": "group",
+ "attribute": "",
+ "query": "",
+ "parent": "",
+ "children": [
+  "cc_jqI16b"
+ ],
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 0,
+ "returnType": ""
+},
+    "gc_krkPio": {
+ "value": null,
+ "sourceType": "",
+ "name": "Path1",
+ "operator": "",
+ "dataType": "",
+ "nodeType": "group",
+ "attribute": "",
+ "query": "",
+ "parent": "",
+ "children": [
+  "cc_A9FnqM"
+ ],
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 0,
+ "returnType": ""
+},
+    "gc_lqm1m0": {
+ "value": null,
+ "sourceType": "",
+ "name": "Path1",
+ "operator": "",
+ "dataType": "",
+ "nodeType": "group",
+ "attribute": "",
+ "query": "",
+ "parent": "",
+ "children": [
+  "cc_IxaRQD"
+ ],
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 0,
+ "returnType": ""
+},
+    "gc_mE5p3A": {
+ "value": null,
+ "sourceType": "",
+ "name": "Path1",
+ "operator": "",
+ "dataType": "",
+ "nodeType": "group",
+ "attribute": "",
+ "query": "",
+ "parent": "",
+ "children": [
+  "cc_MclQ2F"
+ ],
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 0,
+ "returnType": ""
+},
+    "gc_nZbxCm": {
+ "value": null,
+ "sourceType": "",
+ "name": "Path1",
+ "operator": "",
+ "dataType": "",
+ "nodeType": "group",
+ "attribute": "",
+ "query": "",
+ "parent": "",
+ "children": [
+  "cc_MEJpYe"
+ ],
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 0,
+ "returnType": ""
+},
+    "gc_sDrwHf": {
+ "value": null,
+ "sourceType": "",
+ "name": "Path1",
+ "operator": "",
+ "dataType": "",
+ "nodeType": "group",
+ "attribute": "",
+ "query": "",
+ "parent": "",
+ "children": [
+  "cc_cKjDAg"
+ ],
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 0,
+ "returnType": ""
+},
+    "gc_uCWVtf": {
+ "value": null,
+ "sourceType": "",
+ "name": "Path1",
+ "operator": "",
+ "dataType": "",
+ "nodeType": "group",
+ "attribute": "",
+ "query": "",
+ "parent": "",
+ "children": [
+  "cc_Nj9gg8"
+ ],
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 0,
+ "returnType": ""
+},
+    "gc_wTI8Ev": {
+ "value": null,
+ "sourceType": "",
+ "name": "Path1",
+ "operator": "",
+ "dataType": "",
+ "nodeType": "group",
+ "attribute": "",
+ "query": "",
+ "parent": "",
+ "children": [
+  "cc_L5W5nM"
+ ],
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 0,
+ "returnType": ""
+},
+    "gc_xCer4m": {
+ "value": null,
+ "sourceType": "",
+ "name": "Path1",
+ "operator": "",
+ "dataType": "",
+ "nodeType": "group",
+ "attribute": "",
+ "query": "",
+ "parent": "",
+ "children": [
+  "cc_PHpDDX"
+ ],
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 0,
+ "returnType": ""
+},
+    "node_2p7JO2": {
+ "value": 2,
+ "sourceType": "",
+ "name": "",
+ "operator": "",
+ "dataType": "numeric",
+ "nodeType": "constant",
+ "attribute": "",
+ "query": "",
+ "parent": "rhs_8hcd4o",
+ "children": null,
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 1,
+ "returnType": ""
+},
+    "node_3VeLLb": {
+ "value": 2,
+ "sourceType": "",
+ "name": "",
+ "operator": "",
+ "dataType": "numeric",
+ "nodeType": "constant",
+ "attribute": "",
+ "query": "",
+ "parent": "rhs_8hcd4o",
+ "children": null,
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 1,
+ "returnType": ""
+},
+    "node_4qi0GE": {
+ "value": 2,
+ "sourceType": "",
+ "name": "",
+ "operator": "",
+ "dataType": "numeric",
+ "nodeType": "constant",
+ "attribute": "",
+ "query": "",
+ "parent": "rhs_8hcd4o",
+ "children": null,
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 1,
+ "returnType": ""
+},
+    "node_4vVe6K": {
+ "value": 1,
+ "sourceType": "",
+ "name": "",
+ "operator": "",
+ "dataType": "numeric",
+ "nodeType": "constant",
+ "attribute": "",
+ "query": "",
+ "parent": "cc_lezjlO",
+ "children": null,
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 0,
+ "returnType": ""
+},
+    "node_56kDDc": {
+ "value": 2,
+ "sourceType": "",
+ "name": "",
+ "operator": "",
+ "dataType": "numeric",
+ "nodeType": "constant",
+ "attribute": "",
+ "query": "",
+ "parent": "rhs_8hcd4o",
+ "children": null,
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 1,
+ "returnType": ""
+},
+    "node_68rZbE": {
+ "value": 1,
+ "sourceType": "",
+ "name": "",
+ "operator": "",
+ "dataType": "numeric",
+ "nodeType": "constant",
+ "attribute": "",
+ "query": "",
+ "parent": "cc_Imc37z",
+ "children": null,
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 0,
+ "returnType": ""
+},
+    "node_697qlb": {
+ "value": 1,
+ "sourceType": "",
+ "name": "",
+ "operator": "",
+ "dataType": "numeric",
+ "nodeType": "constant",
+ "attribute": "",
+ "query": "",
+ "parent": "cc_6XKOFy",
+ "children": null,
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 0,
+ "returnType": ""
+},
+    "node_7AjjI4": {
+ "value": 1,
+ "sourceType": "",
+ "name": "",
+ "operator": "",
+ "dataType": "numeric",
+ "nodeType": "constant",
+ "attribute": "",
+ "query": "",
+ "parent": "cc_Nj9gg8",
+ "children": null,
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 0,
+ "returnType": ""
+},
+    "node_7ZQjbp": {
+ "value": 2,
+ "sourceType": "",
+ "name": "",
+ "operator": "",
+ "dataType": "numeric",
+ "nodeType": "constant",
+ "attribute": "",
+ "query": "",
+ "parent": "rhs_8hcd4o",
+ "children": null,
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 1,
+ "returnType": ""
+},
+    "node_9jGpRC": {
+ "value": 2,
+ "sourceType": "",
+ "name": "",
+ "operator": "",
+ "dataType": "numeric",
+ "nodeType": "constant",
+ "attribute": "",
+ "query": "",
+ "parent": "rhs_8hcd4o",
+ "children": null,
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 1,
+ "returnType": ""
+},
+    "node_9leKJ0": {
+ "value": 2,
+ "sourceType": "",
+ "name": "",
+ "operator": "",
+ "dataType": "numeric",
+ "nodeType": "constant",
+ "attribute": "",
+ "query": "",
+ "parent": "rhs_8hcd4o",
+ "children": null,
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 1,
+ "returnType": ""
+},
+    "node_AUtdjD": {
+ "value": 2,
+ "sourceType": "",
+ "name": "",
+ "operator": "",
+ "dataType": "numeric",
+ "nodeType": "constant",
+ "attribute": "",
+ "query": "",
+ "parent": "rhs_8hcd4o",
+ "children": null,
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 1,
+ "returnType": ""
+},
+    "node_BHzNjR": {
+ "value": 1,
+ "sourceType": "",
+ "name": "",
+ "operator": "",
+ "dataType": "numeric",
+ "nodeType": "constant",
+ "attribute": "",
+ "query": "",
+ "parent": "cc_IxaRQD",
+ "children": null,
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 0,
+ "returnType": ""
+},
+    "node_BYh9N7": {
+ "value": 1,
+ "sourceType": "",
+ "name": "",
+ "operator": "",
+ "dataType": "numeric",
+ "nodeType": "constant",
+ "attribute": "",
+ "query": "",
+ "parent": "cc_fWeinJ",
+ "children": null,
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 0,
+ "returnType": ""
+},
+    "node_C4k7dm": {
+ "value": 2,
+ "sourceType": "",
+ "name": "",
+ "operator": "",
+ "dataType": "numeric",
+ "nodeType": "constant",
+ "attribute": "",
+ "query": "",
+ "parent": "rhs_8hcd4o",
+ "children": null,
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 1,
+ "returnType": ""
+},
+    "node_DHBkXF": {
+ "value": 1,
+ "sourceType": "",
+ "name": "",
+ "operator": "",
+ "dataType": "numeric",
+ "nodeType": "constant",
+ "attribute": "",
+ "query": "",
+ "parent": "cc_ilkaDm",
+ "children": null,
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 0,
+ "returnType": ""
+},
+    "node_E6C3OV": {
+ "value": 1,
+ "sourceType": "",
+ "name": "",
+ "operator": "",
+ "dataType": "numeric",
+ "nodeType": "constant",
+ "attribute": "",
+ "query": "",
+ "parent": "cc_L5W5nM",
+ "children": null,
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 0,
+ "returnType": ""
+},
+    "node_Ex3gWw": {
+ "value": 1,
+ "sourceType": "",
+ "name": "",
+ "operator": "",
+ "dataType": "numeric",
+ "nodeType": "constant",
+ "attribute": "",
+ "query": "",
+ "parent": "cc_K9wo5k",
+ "children": null,
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 0,
+ "returnType": ""
+},
+    "node_FWrhqO": {
+ "value": 1,
+ "sourceType": "",
+ "name": "",
+ "operator": "",
+ "dataType": "numeric",
+ "nodeType": "constant",
+ "attribute": "",
+ "query": "",
+ "parent": "cc_OUQcyG",
+ "children": null,
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 0,
+ "returnType": ""
+},
+    "node_Gw0g8R": {
+ "value": 2,
+ "sourceType": "",
+ "name": "",
+ "operator": "",
+ "dataType": "numeric",
+ "nodeType": "constant",
+ "attribute": "",
+ "query": "",
+ "parent": "rhs_8hcd4o",
+ "children": null,
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 1,
+ "returnType": ""
+},
+    "node_Hvip7q": {
+ "value": 1,
+ "sourceType": "",
+ "name": "",
+ "operator": "",
+ "dataType": "numeric",
+ "nodeType": "constant",
+ "attribute": "",
+ "query": "",
+ "parent": "cc_OnrLvm",
+ "children": null,
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 0,
+ "returnType": ""
+},
+    "node_I3WSBG": {
+ "value": 2,
+ "sourceType": "",
+ "name": "",
+ "operator": "",
+ "dataType": "numeric",
+ "nodeType": "constant",
+ "attribute": "",
+ "query": "",
+ "parent": "rhs_8hcd4o",
+ "children": null,
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 1,
+ "returnType": ""
+},
+    "node_IGztJF": {
+ "value": 2,
+ "sourceType": "",
+ "name": "",
+ "operator": "",
+ "dataType": "numeric",
+ "nodeType": "constant",
+ "attribute": "",
+ "query": "",
+ "parent": "rhs_8hcd4o",
+ "children": null,
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 1,
+ "returnType": ""
+},
+    "node_JIMuCJ": {
+ "value": 2,
+ "sourceType": "",
+ "name": "",
+ "operator": "",
+ "dataType": "numeric",
+ "nodeType": "constant",
+ "attribute": "",
+ "query": "",
+ "parent": "rhs_8hcd4o",
+ "children": null,
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 1,
+ "returnType": ""
+},
+    "node_Jejx7S": {
+ "value": 1,
+ "sourceType": "",
+ "name": "",
+ "operator": "",
+ "dataType": "numeric",
+ "nodeType": "constant",
+ "attribute": "",
+ "query": "",
+ "parent": "cc_0O8VEJ",
+ "children": null,
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 0,
+ "returnType": ""
+},
+    "node_KFQPOf": {
+ "value": 2,
+ "sourceType": "",
+ "name": "",
+ "operator": "",
+ "dataType": "numeric",
+ "nodeType": "constant",
+ "attribute": "",
+ "query": "",
+ "parent": "rhs_8hcd4o",
+ "children": null,
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 1,
+ "returnType": ""
+},
+    "node_LCdd1u": {
+ "value": 1,
+ "sourceType": "",
+ "name": "",
+ "operator": "",
+ "dataType": "numeric",
+ "nodeType": "constant",
+ "attribute": "",
+ "query": "",
+ "parent": "cc_sBv1NE",
+ "children": null,
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 0,
+ "returnType": ""
+},
+    "node_LXKFpZ": {
+ "value": 1,
+ "sourceType": "",
+ "name": "",
+ "operator": "",
+ "dataType": "numeric",
+ "nodeType": "constant",
+ "attribute": "",
+ "query": "",
+ "parent": "cc_d7vVgo",
+ "children": null,
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 0,
+ "returnType": ""
+},
+    "node_Q7mJMw": {
+ "value": 1,
+ "sourceType": "",
+ "name": "",
+ "operator": "",
+ "dataType": "numeric",
+ "nodeType": "constant",
+ "attribute": "",
+ "query": "",
+ "parent": "cc_OlqPWT",
+ "children": null,
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 0,
+ "returnType": ""
+},
+    "node_RwGePR": {
+ "value": 1,
+ "sourceType": "",
+ "name": "",
+ "operator": "",
+ "dataType": "numeric",
+ "nodeType": "constant",
+ "attribute": "",
+ "query": "",
+ "parent": "cc_r0UnXu",
+ "children": null,
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 0,
+ "returnType": ""
+},
+    "node_SM6MwO": {
+ "value": 2,
+ "sourceType": "",
+ "name": "",
+ "operator": "",
+ "dataType": "numeric",
+ "nodeType": "constant",
+ "attribute": "",
+ "query": "",
+ "parent": "rhs_8hcd4o",
+ "children": null,
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 1,
+ "returnType": ""
+},
+    "node_SkGXMG": {
+ "value": 2,
+ "sourceType": "",
+ "name": "",
+ "operator": "",
+ "dataType": "numeric",
+ "nodeType": "constant",
+ "attribute": "",
+ "query": "",
+ "parent": "rhs_8hcd4o",
+ "children": null,
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 1,
+ "returnType": ""
+},
+    "node_TvFf9x": {
+ "value": 2,
+ "sourceType": "",
+ "name": "",
+ "operator": "",
+ "dataType": "numeric",
+ "nodeType": "constant",
+ "attribute": "",
+ "query": "",
+ "parent": "rhs_8hcd4o",
+ "children": null,
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 1,
+ "returnType": ""
+},
+    "node_VVvRPu": {
+ "value": 2,
+ "sourceType": "",
+ "name": "",
+ "operator": "",
+ "dataType": "numeric",
+ "nodeType": "constant",
+ "attribute": "",
+ "query": "",
+ "parent": "rhs_8hcd4o",
+ "children": null,
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 1,
+ "returnType": ""
+},
+    "node_ViwLRu": {
+ "value": 1,
+ "sourceType": "",
+ "name": "",
+ "operator": "",
+ "dataType": "numeric",
+ "nodeType": "constant",
+ "attribute": "",
+ "query": "",
+ "parent": "cc_jqI16b",
+ "children": null,
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 0,
+ "returnType": ""
+},
+    "node_Xgksx1": {
+ "value": 1,
+ "sourceType": "",
+ "name": "",
+ "operator": "",
+ "dataType": "numeric",
+ "nodeType": "constant",
+ "attribute": "",
+ "query": "",
+ "parent": "cc_MEJpYe",
+ "children": null,
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 0,
+ "returnType": ""
+},
+    "node_YHaSKY": {
+ "value": 1,
+ "sourceType": "",
+ "name": "",
+ "operator": "",
+ "dataType": "numeric",
+ "nodeType": "constant",
+ "attribute": "",
+ "query": "",
+ "parent": "cc_bEML9f",
+ "children": null,
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 0,
+ "returnType": ""
+},
+    "node_YUDX4N": {
+ "value": 1,
+ "sourceType": "",
+ "name": "",
+ "operator": "",
+ "dataType": "numeric",
+ "nodeType": "constant",
+ "attribute": "",
+ "query": "",
+ "parent": "cc_cHlEDh",
+ "children": null,
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 0,
+ "returnType": ""
+},
+    "node_YyD0QL": {
+ "value": 2,
+ "sourceType": "",
+ "name": "",
+ "operator": "",
+ "dataType": "numeric",
+ "nodeType": "constant",
+ "attribute": "",
+ "query": "",
+ "parent": "rhs_8hcd4o",
+ "children": null,
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 1,
+ "returnType": ""
+},
+    "node_aAfpuh": {
+ "value": 2,
+ "sourceType": "",
+ "name": "",
+ "operator": "",
+ "dataType": "numeric",
+ "nodeType": "constant",
+ "attribute": "",
+ "query": "",
+ "parent": "rhs_8hcd4o",
+ "children": null,
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 1,
+ "returnType": ""
+},
+    "node_aOkJiq": {
+ "value": 2,
+ "sourceType": "",
+ "name": "",
+ "operator": "",
+ "dataType": "numeric",
+ "nodeType": "constant",
+ "attribute": "",
+ "query": "",
+ "parent": "rhs_8hcd4o",
+ "children": null,
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 1,
+ "returnType": ""
+},
+    "node_c9TTEn": {
+ "value": 1,
+ "sourceType": "",
+ "name": "",
+ "operator": "",
+ "dataType": "numeric",
+ "nodeType": "constant",
+ "attribute": "",
+ "query": "",
+ "parent": "cc_g0vR7E",
+ "children": null,
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 0,
+ "returnType": ""
+},
+    "node_cEM3uM": {
+ "value": 2,
+ "sourceType": "",
+ "name": "",
+ "operator": "",
+ "dataType": "numeric",
+ "nodeType": "constant",
+ "attribute": "",
+ "query": "",
+ "parent": "rhs_8hcd4o",
+ "children": null,
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 1,
+ "returnType": ""
+},
+    "node_ceK9av": {
+ "value": 1,
+ "sourceType": "",
+ "name": "",
+ "operator": "",
+ "dataType": "numeric",
+ "nodeType": "constant",
+ "attribute": "",
+ "query": "",
+ "parent": "cc_LQ37Qo",
+ "children": null,
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 0,
+ "returnType": ""
+},
+    "node_d1ULyl": {
+ "value": 1,
+ "sourceType": "",
+ "name": "",
+ "operator": "",
+ "dataType": "numeric",
+ "nodeType": "constant",
+ "attribute": "",
+ "query": "",
+ "parent": "cc_7mmZ5m",
+ "children": null,
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 0,
+ "returnType": ""
+},
+    "node_fodqXr": {
+ "value": 1,
+ "sourceType": "",
+ "name": "",
+ "operator": "",
+ "dataType": "numeric",
+ "nodeType": "constant",
+ "attribute": "",
+ "query": "",
+ "parent": "cc_7QumuP",
+ "children": null,
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 0,
+ "returnType": ""
+},
+    "node_gvUPDI": {
+ "value": 1,
+ "sourceType": "",
+ "name": "",
+ "operator": "",
+ "dataType": "numeric",
+ "nodeType": "constant",
+ "attribute": "",
+ "query": "",
+ "parent": "cc_sMvV1m",
+ "children": null,
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 0,
+ "returnType": ""
+},
+    "node_hfTJKB": {
+ "value": 2,
+ "sourceType": "",
+ "name": "",
+ "operator": "",
+ "dataType": "numeric",
+ "nodeType": "constant",
+ "attribute": "",
+ "query": "",
+ "parent": "rhs_8hcd4o",
+ "children": null,
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 1,
+ "returnType": ""
+},
+    "node_jhsiV8": {
+ "value": 2,
+ "sourceType": "",
+ "name": "",
+ "operator": "",
+ "dataType": "numeric",
+ "nodeType": "constant",
+ "attribute": "",
+ "query": "",
+ "parent": "rhs_8hcd4o",
+ "children": null,
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 1,
+ "returnType": ""
+},
+    "node_k73fWv": {
+ "value": 2,
+ "sourceType": "",
+ "name": "",
+ "operator": "",
+ "dataType": "numeric",
+ "nodeType": "constant",
+ "attribute": "",
+ "query": "",
+ "parent": "rhs_8hcd4o",
+ "children": null,
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 1,
+ "returnType": ""
+},
+    "node_kRmVLV": {
+ "value": 2,
+ "sourceType": "",
+ "name": "",
+ "operator": "",
+ "dataType": "numeric",
+ "nodeType": "constant",
+ "attribute": "",
+ "query": "",
+ "parent": "rhs_8hcd4o",
+ "children": null,
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 1,
+ "returnType": ""
+},
+    "node_l4EhBS": {
+ "value": 1,
+ "sourceType": "",
+ "name": "",
+ "operator": "",
+ "dataType": "numeric",
+ "nodeType": "constant",
+ "attribute": "",
+ "query": "",
+ "parent": "cc_m3Uwtp",
+ "children": null,
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 0,
+ "returnType": ""
+},
+    "node_lhs29z": {
+ "value": 2,
+ "sourceType": "",
+ "name": "",
+ "operator": "",
+ "dataType": "numeric",
+ "nodeType": "constant",
+ "attribute": "",
+ "query": "",
+ "parent": "rhs_8hcd4o",
+ "children": null,
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 1,
+ "returnType": ""
+},
+    "node_mRrT7U": {
+ "value": 1,
+ "sourceType": "",
+ "name": "",
+ "operator": "",
+ "dataType": "numeric",
+ "nodeType": "constant",
+ "attribute": "",
+ "query": "",
+ "parent": "cc_ZJjRFL",
+ "children": null,
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 0,
+ "returnType": ""
+},
+    "node_mk73Xb": {
+ "value": 1,
+ "sourceType": "",
+ "name": "",
+ "operator": "",
+ "dataType": "numeric",
+ "nodeType": "constant",
+ "attribute": "",
+ "query": "",
+ "parent": "cc_dK9jOK",
+ "children": null,
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 0,
+ "returnType": ""
+},
+    "node_nOQemM": {
+ "value": 2,
+ "sourceType": "",
+ "name": "",
+ "operator": "",
+ "dataType": "numeric",
+ "nodeType": "constant",
+ "attribute": "",
+ "query": "",
+ "parent": "rhs_8hcd4o",
+ "children": null,
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 1,
+ "returnType": ""
+},
+    "node_o2RbT4": {
+ "value": 2,
+ "sourceType": "",
+ "name": "",
+ "operator": "",
+ "dataType": "numeric",
+ "nodeType": "constant",
+ "attribute": "",
+ "query": "",
+ "parent": "rhs_8hcd4o",
+ "children": null,
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 1,
+ "returnType": ""
+},
+    "node_pJQZ4E": {
+ "value": 2,
+ "sourceType": "",
+ "name": "",
+ "operator": "",
+ "dataType": "numeric",
+ "nodeType": "constant",
+ "attribute": "",
+ "query": "",
+ "parent": "rhs_8hcd4o",
+ "children": null,
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 1,
+ "returnType": ""
+},
+    "node_pOyuOq": {
+ "value": 2,
+ "sourceType": "",
+ "name": "",
+ "operator": "",
+ "dataType": "numeric",
+ "nodeType": "constant",
+ "attribute": "",
+ "query": "",
+ "parent": "rhs_8hcd4o",
+ "children": null,
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 1,
+ "returnType": ""
+},
+    "node_pbYywc": {
+ "value": 1,
+ "sourceType": "",
+ "name": "",
+ "operator": "",
+ "dataType": "numeric",
+ "nodeType": "constant",
+ "attribute": "",
+ "query": "",
+ "parent": "cc_ouRMTd",
+ "children": null,
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 0,
+ "returnType": ""
+},
+    "node_r0zlhu": {
+ "value": 2,
+ "sourceType": "",
+ "name": "",
+ "operator": "",
+ "dataType": "numeric",
+ "nodeType": "constant",
+ "attribute": "",
+ "query": "",
+ "parent": "rhs_8hcd4o",
+ "children": null,
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 1,
+ "returnType": ""
+},
+    "node_s1pvLS": {
+ "value": 1,
+ "sourceType": "",
+ "name": "",
+ "operator": "",
+ "dataType": "numeric",
+ "nodeType": "constant",
+ "attribute": "",
+ "query": "",
+ "parent": "cc_PHpDDX",
+ "children": null,
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 0,
+ "returnType": ""
+},
+    "node_sXeutS": {
+ "value": 1,
+ "sourceType": "",
+ "name": "",
+ "operator": "",
+ "dataType": "numeric",
+ "nodeType": "constant",
+ "attribute": "",
+ "query": "",
+ "parent": "cc_A9FnqM",
+ "children": null,
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 0,
+ "returnType": ""
+},
+    "node_v4M19k": {
+ "value": 1,
+ "sourceType": "",
+ "name": "",
+ "operator": "",
+ "dataType": "numeric",
+ "nodeType": "constant",
+ "attribute": "",
+ "query": "",
+ "parent": "cc_MclQ2F",
+ "children": null,
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 0,
+ "returnType": ""
+},
+    "node_w6kNeG": {
+ "value": 2,
+ "sourceType": "",
+ "name": "",
+ "operator": "",
+ "dataType": "numeric",
+ "nodeType": "constant",
+ "attribute": "",
+ "query": "",
+ "parent": "rhs_8hcd4o",
+ "children": null,
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 1,
+ "returnType": ""
+},
+    "node_wDXU1W": {
+ "value": 1,
+ "sourceType": "",
+ "name": "",
+ "operator": "",
+ "dataType": "numeric",
+ "nodeType": "constant",
+ "attribute": "",
+ "query": "",
+ "parent": "cc_yIjwJr",
+ "children": null,
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 0,
+ "returnType": ""
+},
+    "node_wLJVGe": {
+ "value": 1,
+ "sourceType": "",
+ "name": "",
+ "operator": "",
+ "dataType": "numeric",
+ "nodeType": "constant",
+ "attribute": "",
+ "query": "",
+ "parent": "cc_dtMx1O",
+ "children": null,
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 0,
+ "returnType": ""
+},
+    "node_xzcVbY": {
+ "value": 1,
+ "sourceType": "",
+ "name": "",
+ "operator": "",
+ "dataType": "numeric",
+ "nodeType": "constant",
+ "attribute": "",
+ "query": "",
+ "parent": "cc_btJuAd",
+ "children": null,
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 0,
+ "returnType": ""
+},
+    "node_yHIo8o": {
+ "value": 2,
+ "sourceType": "",
+ "name": "",
+ "operator": "",
+ "dataType": "numeric",
+ "nodeType": "constant",
+ "attribute": "",
+ "query": "",
+ "parent": "rhs_8hcd4o",
+ "children": null,
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 1,
+ "returnType": ""
+},
+    "node_yqo3dg": {
+ "value": 1,
+ "sourceType": "",
+ "name": "",
+ "operator": "",
+ "dataType": "numeric",
+ "nodeType": "constant",
+ "attribute": "",
+ "query": "",
+ "parent": "cc_0lAu6L",
+ "children": null,
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 0,
+ "returnType": ""
+},
+    "node_yunz9a": {
+ "value": 1,
+ "sourceType": "",
+ "name": "",
+ "operator": "",
+ "dataType": "numeric",
+ "nodeType": "constant",
+ "attribute": "",
+ "query": "",
+ "parent": "cc_F6DJDo",
+ "children": null,
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 0,
+ "returnType": ""
+},
+    "node_zW0QBn": {
+ "value": 2,
+ "sourceType": "",
+ "name": "",
+ "operator": "",
+ "dataType": "numeric",
+ "nodeType": "constant",
+ "attribute": "",
+ "query": "",
+ "parent": "rhs_8hcd4o",
+ "children": null,
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 1,
+ "returnType": ""
+},
+    "p_7BZFlK": {
+ "value": null,
+ "sourceType": "list",
+ "name": "",
+ "operator": "",
+ "dataType": "numeric",
+ "nodeType": "params",
+ "attribute": "item.quantity",
+ "query": "",
+ "parent": "cc_PHpDDX",
+ "children": null,
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 0,
+ "returnType": ""
+},
+    "p_7eCopC": {
+ "value": null,
+ "sourceType": "list",
+ "name": "",
+ "operator": "",
+ "dataType": "numeric",
+ "nodeType": "params",
+ "attribute": "item.quantity",
+ "query": "",
+ "parent": "cc_dtMx1O",
+ "children": null,
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 0,
+ "returnType": ""
+},
+    "p_8ocFKY": {
+ "value": 332,
+ "sourceType": "",
+ "name": "",
+ "operator": "",
+ "dataType": "numeric",
+ "nodeType": "constant",
+ "attribute": "",
+ "query": "",
+ "parent": "rhs_8hcd4o",
+ "children": null,
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 1,
+ "returnType": ""
+},
+    "p_9mFShD": {
+ "value": null,
+ "sourceType": "list",
+ "name": "",
+ "operator": "",
+ "dataType": "numeric",
+ "nodeType": "params",
+ "attribute": "item.quantity",
+ "query": "",
+ "parent": "cc_F6DJDo",
+ "children": null,
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 0,
+ "returnType": ""
+},
+    "p_AJOleZ": {
+ "value": null,
+ "sourceType": "list",
+ "name": "",
+ "operator": "",
+ "dataType": "numeric",
+ "nodeType": "params",
+ "attribute": "item.quantity",
+ "query": "",
+ "parent": "cc_7QumuP",
+ "children": null,
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 0,
+ "returnType": ""
+},
+    "p_AXExIV": {
+ "value": null,
+ "sourceType": "list",
+ "name": "",
+ "operator": "",
+ "dataType": "numeric",
+ "nodeType": "params",
+ "attribute": "item.quantity",
+ "query": "",
+ "parent": "cc_K9wo5k",
+ "children": null,
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 0,
+ "returnType": ""
+},
+    "p_AZrIbZ": {
+ "value": null,
+ "sourceType": "list",
+ "name": "",
+ "operator": "",
+ "dataType": "numeric",
+ "nodeType": "params",
+ "attribute": "item.quantity",
+ "query": "",
+ "parent": "cc_0lAu6L",
+ "children": null,
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 0,
+ "returnType": ""
+},
+    "p_FWPu3g": {
+ "value": null,
+ "sourceType": "list",
+ "name": "",
+ "operator": "",
+ "dataType": "numeric",
+ "nodeType": "params",
+ "attribute": "item.quantity",
+ "query": "",
+ "parent": "cc_Nj9gg8",
+ "children": null,
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 0,
+ "returnType": ""
+},
+    "p_Gy71he": {
+ "value": null,
+ "sourceType": "list",
+ "name": "",
+ "operator": "",
+ "dataType": "numeric",
+ "nodeType": "params",
+ "attribute": "item.quantity",
+ "query": "",
+ "parent": "cc_A9FnqM",
+ "children": null,
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 0,
+ "returnType": ""
+},
+    "p_Jqvns2": {
+ "value": null,
+ "sourceType": "list",
+ "name": "",
+ "operator": "",
+ "dataType": "numeric",
+ "nodeType": "params",
+ "attribute": "item.quantity",
+ "query": "",
+ "parent": "cc_7mmZ5m",
+ "children": null,
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 0,
+ "returnType": ""
+},
+    "p_KRYZWI": {
+ "value": null,
+ "sourceType": "list",
+ "name": "",
+ "operator": "",
+ "dataType": "numeric",
+ "nodeType": "params",
+ "attribute": "item.quantity",
+ "query": "",
+ "parent": "cc_OlqPWT",
+ "children": null,
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 0,
+ "returnType": ""
+},
+    "p_MMANQO": {
+ "value": null,
+ "sourceType": "list",
+ "name": "",
+ "operator": "",
+ "dataType": "numeric",
+ "nodeType": "params",
+ "attribute": "item.quantity",
+ "query": "",
+ "parent": "cc_btJuAd",
+ "children": null,
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 0,
+ "returnType": ""
+},
+    "p_NjgQbk": {
+ "value": null,
+ "sourceType": "list",
+ "name": "",
+ "operator": "",
+ "dataType": "numeric",
+ "nodeType": "params",
+ "attribute": "item.quantity",
+ "query": "",
+ "parent": "cc_sBv1NE",
+ "children": null,
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 0,
+ "returnType": ""
+},
+    "p_NyCAV3": {
+ "value": null,
+ "sourceType": "list",
+ "name": "",
+ "operator": "",
+ "dataType": "numeric",
+ "nodeType": "params",
+ "attribute": "item.quantity",
+ "query": "",
+ "parent": "cc_ZJjRFL",
+ "children": null,
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 0,
+ "returnType": ""
+},
+    "p_R8bypm": {
+ "value": null,
+ "sourceType": "list",
+ "name": "",
+ "operator": "",
+ "dataType": "numeric",
+ "nodeType": "params",
+ "attribute": "item.quantity",
+ "query": "",
+ "parent": "cc_L5W5nM",
+ "children": null,
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 0,
+ "returnType": ""
+},
+    "p_RO9Sjb": {
+ "value": null,
+ "sourceType": "list",
+ "name": "",
+ "operator": "",
+ "dataType": "numeric",
+ "nodeType": "params",
+ "attribute": "item.quantity",
+ "query": "",
+ "parent": "cc_OnrLvm",
+ "children": null,
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 0,
+ "returnType": ""
+},
+    "p_ShRDDg": {
+ "value": null,
+ "sourceType": "list",
+ "name": "",
+ "operator": "",
+ "dataType": "numeric",
+ "nodeType": "params",
+ "attribute": "item.quantity",
+ "query": "",
+ "parent": "cc_yIjwJr",
+ "children": null,
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 0,
+ "returnType": ""
+},
+    "p_UVLsvy": {
+ "value": null,
+ "sourceType": "list",
+ "name": "",
+ "operator": "",
+ "dataType": "numeric",
+ "nodeType": "params",
+ "attribute": "item.quantity",
+ "query": "",
+ "parent": "cc_r0UnXu",
+ "children": null,
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 0,
+ "returnType": ""
+},
+    "p_UYOmb0": {
+ "value": null,
+ "sourceType": "list",
+ "name": "",
+ "operator": "",
+ "dataType": "numeric",
+ "nodeType": "params",
+ "attribute": "item.quantity",
+ "query": "",
+ "parent": "cc_MEJpYe",
+ "children": null,
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 0,
+ "returnType": ""
+},
+    "p_Uf0Kle": {
+ "value": null,
+ "sourceType": "list",
+ "name": "",
+ "operator": "",
+ "dataType": "numeric",
+ "nodeType": "params",
+ "attribute": "item.quantity",
+ "query": "",
+ "parent": "cc_ilkaDm",
+ "children": null,
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 0,
+ "returnType": ""
+},
+    "p_WprNOg": {
+ "value": null,
+ "sourceType": "list",
+ "name": "",
+ "operator": "",
+ "dataType": "numeric",
+ "nodeType": "params",
+ "attribute": "item.quantity",
+ "query": "",
+ "parent": "cc_bEML9f",
+ "children": null,
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 0,
+ "returnType": ""
+},
+    "p_XxfpvL": {
+ "value": null,
+ "sourceType": "list",
+ "name": "",
+ "operator": "",
+ "dataType": "numeric",
+ "nodeType": "params",
+ "attribute": "item.quantity",
+ "query": "",
+ "parent": "cc_sMvV1m",
+ "children": null,
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 0,
+ "returnType": ""
+},
+    "p_bNqzcf": {
+ "value": 5,
+ "sourceType": "",
+ "name": "",
+ "operator": "",
+ "dataType": "numeric",
+ "nodeType": "constant",
+ "attribute": "",
+ "query": "",
+ "parent": "rhs_8hcd4o",
+ "children": null,
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 1,
+ "returnType": ""
+},
+    "p_bjlH3C": {
+ "value": null,
+ "sourceType": "list",
+ "name": "",
+ "operator": "",
+ "dataType": "numeric",
+ "nodeType": "params",
+ "attribute": "item.quantity",
+ "query": "",
+ "parent": "cc_jqI16b",
+ "children": null,
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 0,
+ "returnType": ""
+},
+    "p_cuDH0R": {
+ "value": null,
+ "sourceType": "list",
+ "name": "",
+ "operator": "",
+ "dataType": "numeric",
+ "nodeType": "params",
+ "attribute": "item.quantity",
+ "query": "",
+ "parent": "cc_0O8VEJ",
+ "children": null,
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 0,
+ "returnType": ""
+},
+    "p_d8bWHN": {
+ "value": 4,
+ "sourceType": "",
+ "name": "",
+ "operator": "",
+ "dataType": "numeric",
+ "nodeType": "constant",
+ "attribute": "",
+ "query": "",
+ "parent": "rhs_8hcd4o",
+ "children": null,
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 1,
+ "returnType": ""
+},
+    "p_dumeSk": {
+ "value": null,
+ "sourceType": "list",
+ "name": "",
+ "operator": "",
+ "dataType": "numeric",
+ "nodeType": "params",
+ "attribute": "item.quantity",
+ "query": "",
+ "parent": "cc_ouRMTd",
+ "children": null,
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 0,
+ "returnType": ""
+},
+    "p_fNfhDF": {
+ "value": null,
+ "sourceType": "list",
+ "name": "",
+ "operator": "",
+ "dataType": "list",
+ "nodeType": "params",
+ "attribute": "item.Ages",
+ "query": "",
+ "parent": "cc_kYy0yj",
+ "children": null,
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 0,
+ "returnType": ""
+},
+    "p_g7mc4W": {
+ "value": null,
+ "sourceType": "list",
+ "name": "",
+ "operator": "",
+ "dataType": "numeric",
+ "nodeType": "params",
+ "attribute": "item.quantity",
+ "query": "",
+ "parent": "cc_6XKOFy",
+ "children": null,
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 0,
+ "returnType": ""
+},
+    "p_iLWcmd": {
+ "value": null,
+ "sourceType": "list",
+ "name": "",
+ "operator": "",
+ "dataType": "numeric",
+ "nodeType": "params",
+ "attribute": "item.quantity",
+ "query": "",
+ "parent": "cc_LQ37Qo",
+ "children": null,
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 0,
+ "returnType": ""
+},
+    "p_iNHnBw": {
+ "value": null,
+ "sourceType": "customInput",
+ "name": "",
+ "operator": "",
+ "dataType": "",
+ "nodeType": "params",
+ "attribute": "cart.discount",
+ "query": "",
+ "parent": "rhs_RjFFno",
+ "children": null,
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 1,
+ "returnType": ""
+},
+    "p_jmd6KH": {
+ "value": null,
+ "sourceType": "list",
+ "name": "",
+ "operator": "",
+ "dataType": "numeric",
+ "nodeType": "params",
+ "attribute": "item.quantity",
+ "query": "",
+ "parent": "cc_OUQcyG",
+ "children": null,
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 0,
+ "returnType": ""
+},
+    "p_kemGh7": {
+ "value": null,
+ "sourceType": "list",
+ "name": "",
+ "operator": "",
+ "dataType": "numeric",
+ "nodeType": "params",
+ "attribute": "item.quantity",
+ "query": "",
+ "parent": "cc_g0vR7E",
+ "children": null,
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 0,
+ "returnType": ""
+},
+    "p_m8IkKS": {
+ "value": null,
+ "sourceType": "list",
+ "name": "",
+ "operator": "",
+ "dataType": "numeric",
+ "nodeType": "params",
+ "attribute": "item.quantity",
+ "query": "",
+ "parent": "cc_d7vVgo",
+ "children": null,
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 0,
+ "returnType": ""
+},
+    "p_mMLuQp": {
+ "value": null,
+ "sourceType": "list",
+ "name": "",
+ "operator": "",
+ "dataType": "numeric",
+ "nodeType": "params",
+ "attribute": "item.quantity",
+ "query": "",
+ "parent": "cc_m3Uwtp",
+ "children": null,
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 0,
+ "returnType": ""
+},
+    "p_nUloBb": {
+ "value": null,
+ "sourceType": "list",
+ "name": "",
+ "operator": "",
+ "dataType": "numeric",
+ "nodeType": "params",
+ "attribute": "item.quantity",
+ "query": "",
+ "parent": "cc_dK9jOK",
+ "children": null,
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 0,
+ "returnType": ""
+},
+    "p_vffUIC": {
+ "value": null,
+ "sourceType": "list",
+ "name": "",
+ "operator": "",
+ "dataType": "numeric",
+ "nodeType": "params",
+ "attribute": "item.quantity",
+ "query": "",
+ "parent": "cc_lezjlO",
+ "children": null,
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 0,
+ "returnType": ""
+},
+    "p_vsGFBm": {
+ "value": null,
+ "sourceType": "list",
+ "name": "",
+ "operator": "",
+ "dataType": "numeric",
+ "nodeType": "params",
+ "attribute": "item.quantity",
+ "query": "",
+ "parent": "cc_IxaRQD",
+ "children": null,
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 0,
+ "returnType": ""
+},
+    "p_wOX87e": {
+ "value": null,
+ "sourceType": "list",
+ "name": "",
+ "operator": "",
+ "dataType": "numeric",
+ "nodeType": "params",
+ "attribute": "item.quantity",
+ "query": "",
+ "parent": "cc_Imc37z",
+ "children": null,
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 0,
+ "returnType": ""
+},
+    "p_wPWylB": {
+ "value": null,
+ "sourceType": "list",
+ "name": "",
+ "operator": "",
+ "dataType": "numeric",
+ "nodeType": "params",
+ "attribute": "item.quantity",
+ "query": "",
+ "parent": "cc_cHlEDh",
+ "children": null,
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 0,
+ "returnType": ""
+},
+    "p_wp1qfR": {
+ "value": null,
+ "sourceType": "list",
+ "name": "",
+ "operator": "",
+ "dataType": "numeric",
+ "nodeType": "params",
+ "attribute": "item.quantity",
+ "query": "",
+ "parent": "cc_fWeinJ",
+ "children": null,
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 0,
+ "returnType": ""
+},
+    "p_xRk0Zd": {
+ "value": null,
+ "sourceType": "list",
+ "name": "",
+ "operator": "",
+ "dataType": "numeric",
+ "nodeType": "params",
+ "attribute": "item.quantity",
+ "query": "",
+ "parent": "cc_MclQ2F",
+ "children": null,
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 0,
+ "returnType": ""
+},
+    "p_zXZ474": {
+ "value": 2,
+ "sourceType": "",
+ "name": "",
+ "operator": "",
+ "dataType": "numeric",
+ "nodeType": "constant",
+ "attribute": "",
+ "query": "",
+ "parent": "rhs_8hcd4o",
+ "children": null,
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 1,
+ "returnType": ""
+},
+    "pc_UJN7QL": {
+ "value": null,
+ "sourceType": "list",
+ "name": "",
+ "operator": "",
+ "dataType": "numeric",
+ "nodeType": "params",
+ "attribute": "item",
+ "query": "",
+ "parent": "cc_cKjDAg",
+ "children": null,
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 0,
+ "returnType": ""
+},
+    "pc_q7zrqq": {
+ "value": null,
+ "sourceType": "list",
+ "name": "",
+ "operator": "",
+ "dataType": "numeric",
+ "nodeType": "params",
+ "attribute": "item.unitPrice",
+ "query": "",
+ "parent": "cc_fOK1bt",
+ "children": null,
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 0,
+ "returnType": ""
+},
+    "pc_tD6a14": {
+ "value": null,
+ "sourceType": "list",
+ "name": "",
+ "operator": "",
+ "dataType": "numeric",
+ "nodeType": "params",
+ "attribute": "item.quantity",
+ "query": "",
+ "parent": "cc_uvAHWT",
+ "children": null,
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 0,
+ "returnType": ""
+},
+    "pc_wlljBZ": {
+ "value": null,
+ "sourceType": "list",
+ "name": "",
+ "operator": "",
+ "dataType": "numeric",
+ "nodeType": "params",
+ "attribute": "item.quantity",
+ "query": "",
+ "parent": "cc_YT7Fzs",
+ "children": null,
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 0,
+ "returnType": ""
+},
+    "rhs_01XMwS": {
+ "value": {
+  "aggOperator": "lt",
+  "compareNodeId": "node_56kDDc",
+  "filterKeys": [
+ {
+  "label": "quantity",
+  "type": "(2)",
+  "value": "item.quantity"
+ }
+],
+  "startNodeId": "gc_WQOAdk"
+ },
+ "sourceType": "",
+ "name": "condition_31",
+ "operator": "",
+ "dataType": "list",
+ "nodeType": "listFilter",
+ "attribute": "",
+ "query": "",
+ "parent": "c_yOifMR",
+ "children": null,
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 1,
+ "returnType": ""
+},
+    "rhs_47P7DY": {
+ "value": {
+  "aggOperator": "lt",
+  "compareNodeId": "p_8ocFKY",
+  "filterKeys": [
+ {
+  "label": "quantity",
+  "type": "(2)",
+  "value": "item.quantity"
+ }
+],
+  "startNodeId": "gc_29rdkY"
+ },
+ "sourceType": "",
+ "name": "condition_31",
+ "operator": "",
+ "dataType": "list",
+ "nodeType": "listFilter",
+ "attribute": "",
+ "query": "",
+ "parent": "c_hjt0Sg",
+ "children": null,
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 1,
+ "returnType": ""
+},
+    "rhs_4XXmDq": {
+ "value": {
+  "aggOperator": "lt",
+  "compareNodeId": "node_IGztJF",
+  "filterKeys": [
+ {
+  "label": "quantity",
+  "type": "(2)",
+  "value": "item.quantity"
+ }
+],
+  "startNodeId": "gc_bz8kK1"
+ },
+ "sourceType": "",
+ "name": "condition_31",
+ "operator": "",
+ "dataType": "list",
+ "nodeType": "listFilter",
+ "attribute": "",
+ "query": "",
+ "parent": "c_PFXsXa",
+ "children": null,
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 1,
+ "returnType": ""
+},
+    "rhs_6Vg4Zs": {
+ "value": {
+  "aggOperator": "lt",
+  "compareNodeId": "node_yHIo8o",
+  "filterKeys": [
+ {
+  "label": "quantity",
+  "type": "(2)",
+  "value": "item.quantity"
+ }
+],
+  "startNodeId": "gc_xCer4m"
+ },
+ "sourceType": "",
+ "name": "condition_31",
+ "operator": "",
+ "dataType": "list",
+ "nodeType": "listFilter",
+ "attribute": "",
+ "query": "",
+ "parent": "c_A0LMQ6",
+ "children": null,
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 1,
+ "returnType": ""
+},
+    "rhs_6dGeuA": {
+ "value": {
+  "aggOperator": "lt",
+  "compareNodeId": "node_C4k7dm",
+  "filterKeys": [
+ {
+  "label": "quantity",
+  "type": "(2)",
+  "value": "item.quantity"
+ }
+],
+  "startNodeId": "gc_e8zWnY"
+ },
+ "sourceType": "",
+ "name": "condition_31",
+ "operator": "",
+ "dataType": "list",
+ "nodeType": "listFilter",
+ "attribute": "",
+ "query": "",
+ "parent": "c_nV4v4p",
+ "children": null,
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 1,
+ "returnType": ""
+},
+    "rhs_8CeVXJ": {
+ "value": {
+  "aggOperator": "lt",
+  "compareNodeId": "node_r0zlhu",
+  "filterKeys": [
+ {
+  "label": "quantity",
+  "type": "(2)",
+  "value": "item.quantity"
+ }
+],
+  "startNodeId": "gc_bsg7vY"
+ },
+ "sourceType": "",
+ "name": "condition_31",
+ "operator": "",
+ "dataType": "list",
+ "nodeType": "listFilter",
+ "attribute": "",
+ "query": "",
+ "parent": "c_LHZn7d",
+ "children": null,
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 1,
+ "returnType": ""
+},
+    "rhs_8dgW12": {
+ "value": {
+  "aggOperator": "lt",
+  "compareNodeId": "node_I3WSBG",
+  "filterKeys": [
+ {
+  "label": "quantity",
+  "type": "(2)",
+  "value": "item.quantity"
+ }
+],
+  "startNodeId": "gc_HKPuar"
+ },
+ "sourceType": "",
+ "name": "condition_31",
+ "operator": "",
+ "dataType": "list",
+ "nodeType": "listFilter",
+ "attribute": "",
+ "query": "",
+ "parent": "c_lb8mah",
+ "children": null,
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 1,
+ "returnType": ""
+},
+    "rhs_8hcd4o": {
+ "value": {
+  "aggOperator": "lt",
+  "compareNodeId": "p_zXZ474",
+  "filterKeys": [
+ {
+  "label": "quantity",
+  "type": "(2)",
+  "value": "item.quantity"
+ }
+],
+  "startNodeId": "gc_5ZVzXj"
+ },
+ "sourceType": "",
+ "name": "condition_31",
+ "operator": "",
+ "dataType": "list",
+ "nodeType": "listFilter",
+ "attribute": "",
+ "query": "",
+ "parent": "c_C5UI9c",
+ "children": null,
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 1,
+ "returnType": ""
+},
+    "rhs_9OvVHz": {
+ "value": {
+  "aggOperator": "lt",
+  "compareNodeId": "node_cEM3uM",
+  "filterKeys": [
+ {
+  "label": "quantity",
+  "type": "(2)",
+  "value": "item.quantity"
+ }
+],
+  "startNodeId": "gc_CRw6Cq"
+ },
+ "sourceType": "",
+ "name": "condition_31",
+ "operator": "",
+ "dataType": "list",
+ "nodeType": "listFilter",
+ "attribute": "",
+ "query": "",
+ "parent": "c_5gkjiP",
+ "children": null,
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 1,
+ "returnType": ""
+},
+    "rhs_AvivmE": {
+ "value": {
+  "aggOperator": "lt",
+  "compareNodeId": "node_SkGXMG",
+  "filterKeys": [
+ {
+  "label": "quantity",
+  "type": "(2)",
+  "value": "item.quantity"
+ }
+],
+  "startNodeId": "gc_mE5p3A"
+ },
+ "sourceType": "",
+ "name": "condition_31",
+ "operator": "",
+ "dataType": "list",
+ "nodeType": "listFilter",
+ "attribute": "",
+ "query": "",
+ "parent": "c_sz4CxX",
+ "children": null,
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 1,
+ "returnType": ""
+},
+    "rhs_B6CZRJ": {
+ "value": {
+  "aggOperator": "lt",
+  "compareNodeId": "node_pOyuOq",
+  "filterKeys": [
+ {
+  "label": "quantity",
+  "type": "(2)",
+  "value": "item.quantity"
+ }
+],
+  "startNodeId": "gc_JotOF0"
+ },
+ "sourceType": "",
+ "name": "condition_31",
+ "operator": "",
+ "dataType": "list",
+ "nodeType": "listFilter",
+ "attribute": "",
+ "query": "",
+ "parent": "c_BVeRL3",
+ "children": null,
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 1,
+ "returnType": ""
+},
+    "rhs_CCfkMp": {
+ "value": {
+  "aggOperator": "lt",
+  "compareNodeId": "p_bNqzcf",
+  "filterKeys": [
+ {
+  "label": "quantity",
+  "type": "(2)",
+  "value": "item.quantity"
+ }
+],
+  "startNodeId": "gc_T5oyUG"
+ },
+ "sourceType": "",
+ "name": "condition_31",
+ "operator": "",
+ "dataType": "list",
+ "nodeType": "listFilter",
+ "attribute": "",
+ "query": "",
+ "parent": "c_XKlby1",
+ "children": null,
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 1,
+ "returnType": ""
+},
+    "rhs_FLPE5w": {
+ "value": 2,
+ "sourceType": "",
+ "name": "",
+ "operator": "",
+ "dataType": "numeric",
+ "nodeType": "constant",
+ "attribute": "",
+ "query": "",
+ "parent": "cc_cKjDAg",
+ "children": null,
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 0,
+ "returnType": ""
+},
+    "rhs_MPmAMc": {
+ "value": {
+  "aggOperator": "lt",
+  "compareNodeId": "node_Gw0g8R",
+  "filterKeys": [
+ {
+  "label": "quantity",
+  "type": "(2)",
+  "value": "item.quantity"
+ }
+],
+  "startNodeId": "gc_lqm1m0"
+ },
+ "sourceType": "",
+ "name": "condition_31",
+ "operator": "",
+ "dataType": "list",
+ "nodeType": "listFilter",
+ "attribute": "",
+ "query": "",
+ "parent": "c_dANQWm",
+ "children": null,
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 1,
+ "returnType": ""
+},
+    "rhs_N6rpE0": {
+ "value": {
+  "aggOperator": "lt",
+  "compareNodeId": "p_d8bWHN",
+  "filterKeys": [
+ {
+  "label": "quantity",
+  "type": "(2)",
+  "value": "item.quantity"
+ }
+],
+  "startNodeId": "gc_B2lZH5"
+ },
+ "sourceType": "",
+ "name": "condition_31",
+ "operator": "",
+ "dataType": "list",
+ "nodeType": "listFilter",
+ "attribute": "",
+ "query": "",
+ "parent": "c_W35RvU",
+ "children": null,
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 1,
+ "returnType": ""
+},
+    "rhs_OMGKum": {
+ "value": {
+  "aggOperator": "lt",
+  "compareNodeId": "node_TvFf9x",
+  "filterKeys": [
+ {
+  "label": "quantity",
+  "type": "(2)",
+  "value": "item.quantity"
+ }
+],
+  "startNodeId": "gc_krkPio"
+ },
+ "sourceType": "",
+ "name": "condition_31",
+ "operator": "",
+ "dataType": "list",
+ "nodeType": "listFilter",
+ "attribute": "",
+ "query": "",
+ "parent": "c_fPIHUr",
+ "children": null,
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 1,
+ "returnType": ""
+},
+    "rhs_RVbyjx": {
+ "value": {
+  "aggOperator": "lt",
+  "compareNodeId": "node_4qi0GE",
+  "filterKeys": [
+ {
+  "label": "quantity",
+  "type": "(2)",
+  "value": "item.quantity"
+ }
+],
+  "startNodeId": "gc_TfqwPR"
+ },
+ "sourceType": "",
+ "name": "condition_31",
+ "operator": "",
+ "dataType": "list",
+ "nodeType": "listFilter",
+ "attribute": "",
+ "query": "",
+ "parent": "c_bNEd8O",
+ "children": null,
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 1,
+ "returnType": ""
+},
+    "rhs_RjFFno": {
+ "value": {
+  "aggOperator": "gt",
+  "compareNodeId": "p_iNHnBw",
+  "filterKeys": [
+ {
+  "label": "unitPrice",
+  "type": "(25.99)",
+  "value": "item.unitPrice"
+ }
+],
+  "startNodeId": "gc_OeLcce"
+ },
+ "sourceType": "",
+ "name": "condition_21",
+ "operator": "",
+ "dataType": "list",
+ "nodeType": "listFilter",
+ "attribute": "",
+ "query": "",
+ "parent": "c_d32AEC",
+ "children": null,
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 1,
+ "returnType": ""
+},
+    "rhs_UUttBX": {
+ "value": {
+  "aggOperator": "lt",
+  "compareNodeId": "node_KFQPOf",
+  "filterKeys": [
+ {
+  "label": "quantity",
+  "type": "(2)",
+  "value": "item.quantity"
+ }
+],
+  "startNodeId": "gc_2WnCBL"
+ },
+ "sourceType": "",
+ "name": "condition_31",
+ "operator": "",
+ "dataType": "list",
+ "nodeType": "listFilter",
+ "attribute": "",
+ "query": "",
+ "parent": "c_0TShCC",
+ "children": null,
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 1,
+ "returnType": ""
+},
+    "rhs_Yom2AH": {
+ "value": {
+  "aggOperator": "lt",
+  "compareNodeId": "node_w6kNeG",
+  "filterKeys": [
+ {
+  "label": "quantity",
+  "type": "(2)",
+  "value": "item.quantity"
+ }
+],
+  "startNodeId": "gc_4emB2U"
+ },
+ "sourceType": "",
+ "name": "condition_31",
+ "operator": "",
+ "dataType": "list",
+ "nodeType": "listFilter",
+ "attribute": "",
+ "query": "",
+ "parent": "c_OFur2v",
+ "children": null,
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 1,
+ "returnType": ""
+},
+    "rhs_bOHMNA": {
+ "value": {
+  "aggOperator": "lt",
+  "compareNodeId": "node_pJQZ4E",
+  "filterKeys": [
+ {
+  "label": "quantity",
+  "type": "(2)",
+  "value": "item.quantity"
+ }
+],
+  "startNodeId": "gc_Q8qGhJ"
+ },
+ "sourceType": "",
+ "name": "condition_31",
+ "operator": "",
+ "dataType": "list",
+ "nodeType": "listFilter",
+ "attribute": "",
+ "query": "",
+ "parent": "c_sD7saW",
+ "children": null,
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 1,
+ "returnType": ""
+},
+    "rhs_cDi45q": {
+ "value": 1,
+ "sourceType": "",
+ "name": "",
+ "operator": "",
+ "dataType": "numeric",
+ "nodeType": "constant",
+ "attribute": "",
+ "query": "",
+ "parent": "cc_YT7Fzs",
+ "children": null,
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 0,
+ "returnType": ""
+},
+    "rhs_dAllGa": {
+ "value": {
+  "aggOperator": "lt",
+  "compareNodeId": "node_YyD0QL",
+  "filterKeys": [
+ {
+  "label": "quantity",
+  "type": "(2)",
+  "value": "item.quantity"
+ }
+],
+  "startNodeId": "gc_IxYnIZ"
+ },
+ "sourceType": "",
+ "name": "condition_31",
+ "operator": "",
+ "dataType": "list",
+ "nodeType": "listFilter",
+ "attribute": "",
+ "query": "",
+ "parent": "c_0ejCuh",
+ "children": null,
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 1,
+ "returnType": ""
+},
+    "rhs_eH6e8Y": {
+ "value": {
+  "aggOperator": "lt",
+  "compareNodeId": "node_lhs29z",
+  "filterKeys": [
+ {
+  "label": "quantity",
+  "type": "(2)",
+  "value": "item.quantity"
+ }
+],
+  "startNodeId": "gc_KoRBjh"
+ },
+ "sourceType": "",
+ "name": "condition_31",
+ "operator": "",
+ "dataType": "list",
+ "nodeType": "listFilter",
+ "attribute": "",
+ "query": "",
+ "parent": "c_mCBFHz",
+ "children": null,
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 1,
+ "returnType": ""
+},
+    "rhs_ePKXzF": {
+ "value": 4,
+ "sourceType": "",
+ "name": "",
+ "operator": "",
+ "dataType": "numeric",
+ "nodeType": "constant",
+ "attribute": "",
+ "query": "",
+ "parent": "cc_fOK1bt",
+ "children": null,
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 0,
+ "returnType": ""
+},
+    "rhs_fZaFhg": {
+ "value": {
+  "aggOperator": "lt",
+  "compareNodeId": "node_JIMuCJ",
+  "filterKeys": [
+ {
+  "label": "quantity",
+  "type": "(2)",
+  "value": "item.quantity"
+ }
+],
+  "startNodeId": "gc_3kO8wG"
+ },
+ "sourceType": "",
+ "name": "condition_31",
+ "operator": "",
+ "dataType": "list",
+ "nodeType": "listFilter",
+ "attribute": "",
+ "query": "",
+ "parent": "c_VcqQuE",
+ "children": null,
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 1,
+ "returnType": ""
+},
+    "rhs_h1IROI": {
+ "value": {
+  "aggOperator": "lt",
+  "compareNodeId": "node_aOkJiq",
+  "filterKeys": [
+ {
+  "label": "quantity",
+  "type": "(2)",
+  "value": "item.quantity"
+ }
+],
+  "startNodeId": "gc_U1SlFd"
+ },
+ "sourceType": "",
+ "name": "condition_31",
+ "operator": "",
+ "dataType": "list",
+ "nodeType": "listFilter",
+ "attribute": "",
+ "query": "",
+ "parent": "c_bF2lNJ",
+ "children": null,
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 1,
+ "returnType": ""
+},
+    "rhs_iT8CU3": {
+ "value": {
+  "aggOperator": "lt",
+  "compareNodeId": "node_kRmVLV",
+  "filterKeys": [
+ {
+  "label": "quantity",
+  "type": "(2)",
+  "value": "item.quantity"
+ }
+],
+  "startNodeId": "gc_KAp7uL"
+ },
+ "sourceType": "",
+ "name": "condition_31",
+ "operator": "",
+ "dataType": "list",
+ "nodeType": "listFilter",
+ "attribute": "",
+ "query": "",
+ "parent": "c_TmXeBd",
+ "children": null,
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 1,
+ "returnType": ""
+},
+    "rhs_iskcdt": {
+ "value": {
+  "aggOperator": "",
+  "compareNodeId": "",
+  "filterKeys": [],
+  "startNodeId": "gc_sDrwHf"
+ },
+ "sourceType": "",
+ "name": "condition_21",
+ "operator": "",
+ "dataType": "list",
+ "nodeType": "listFilter",
+ "attribute": "",
+ "query": "",
+ "parent": "cc_kYy0yj",
+ "children": null,
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 0,
+ "returnType": ""
+},
+    "rhs_kGk3cY": {
+ "value": {
+  "aggOperator": "lt",
+  "compareNodeId": "node_7ZQjbp",
+  "filterKeys": [
+ {
+  "label": "quantity",
+  "type": "(2)",
+  "value": "item.quantity"
+ }
+],
+  "startNodeId": "gc_MKtOXe"
+ },
+ "sourceType": "",
+ "name": "condition_31",
+ "operator": "",
+ "dataType": "list",
+ "nodeType": "listFilter",
+ "attribute": "",
+ "query": "",
+ "parent": "c_VIyHuI",
+ "children": null,
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 1,
+ "returnType": ""
+},
+    "rhs_kiOuy6": {
+ "value": {
+  "aggOperator": "lt",
+  "compareNodeId": "node_nOQemM",
+  "filterKeys": [
+ {
+  "label": "quantity",
+  "type": "(2)",
+  "value": "item.quantity"
+ }
+],
+  "startNodeId": "gc_1CloRo"
+ },
+ "sourceType": "",
+ "name": "condition_31",
+ "operator": "",
+ "dataType": "list",
+ "nodeType": "listFilter",
+ "attribute": "",
+ "query": "",
+ "parent": "c_QRkz1y",
+ "children": null,
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 1,
+ "returnType": ""
+},
+    "rhs_kwrwCC": {
+ "value": 1,
+ "sourceType": "",
+ "name": "",
+ "operator": "",
+ "dataType": "numeric",
+ "nodeType": "constant",
+ "attribute": "",
+ "query": "",
+ "parent": "cc_uvAHWT",
+ "children": null,
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 0,
+ "returnType": ""
+},
+    "rhs_okTbah": {
+ "value": {
+  "aggOperator": "lt",
+  "compareNodeId": "node_o2RbT4",
+  "filterKeys": [
+ {
+  "label": "quantity",
+  "type": "(2)",
+  "value": "item.quantity"
+ }
+],
+  "startNodeId": "gc_nZbxCm"
+ },
+ "sourceType": "",
+ "name": "condition_31",
+ "operator": "",
+ "dataType": "list",
+ "nodeType": "listFilter",
+ "attribute": "",
+ "query": "",
+ "parent": "c_LgiTJ1",
+ "children": null,
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 1,
+ "returnType": ""
+},
+    "rhs_paB5Uz": {
+ "value": {
+  "aggOperator": "lt",
+  "compareNodeId": "node_9leKJ0",
+  "filterKeys": [
+ {
+  "label": "quantity",
+  "type": "(2)",
+  "value": "item.quantity"
+ }
+],
+  "startNodeId": "gc_Q1BG5Y"
+ },
+ "sourceType": "",
+ "name": "condition_31",
+ "operator": "",
+ "dataType": "list",
+ "nodeType": "listFilter",
+ "attribute": "",
+ "query": "",
+ "parent": "c_IGHWFZ",
+ "children": null,
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 1,
+ "returnType": ""
+},
+    "rhs_ql24cZ": {
+ "value": {
+  "aggOperator": "lt",
+  "compareNodeId": "node_9jGpRC",
+  "filterKeys": [
+ {
+  "label": "quantity",
+  "type": "(2)",
+  "value": "item.quantity"
+ }
+],
+  "startNodeId": "gc_GuGM7C"
+ },
+ "sourceType": "",
+ "name": "condition_31",
+ "operator": "",
+ "dataType": "list",
+ "nodeType": "listFilter",
+ "attribute": "",
+ "query": "",
+ "parent": "c_LvC8oM",
+ "children": null,
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 1,
+ "returnType": ""
+},
+    "rhs_ra3jpT": {
+ "value": {
+  "aggOperator": "lt",
+  "compareNodeId": "node_k73fWv",
+  "filterKeys": [
+ {
+  "label": "quantity",
+  "type": "(2)",
+  "value": "item.quantity"
+ }
+],
+  "startNodeId": "gc_4dhF2M"
+ },
+ "sourceType": "",
+ "name": "condition_31",
+ "operator": "",
+ "dataType": "list",
+ "nodeType": "listFilter",
+ "attribute": "",
+ "query": "",
+ "parent": "c_9NggNV",
+ "children": null,
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 1,
+ "returnType": ""
+},
+    "rhs_sOIKJs": {
+ "value": {
+  "aggOperator": "t",
+  "compareNodeId": "",
+  "filterKeys": [
+ {
+  "label": "quantity",
+  "type": "(2)",
+  "value": "item.quantity"
+ }
+],
+  "startNodeId": "gc_d8whxr"
+ },
+ "sourceType": "",
+ "name": "condition_1",
+ "operator": "",
+ "dataType": "list",
+ "nodeType": "listFilter",
+ "attribute": "",
+ "query": "",
+ "parent": "rule_02",
+ "children": null,
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 1,
+ "returnType": ""
+},
+    "rhs_sTjJyd": {
+ "value": {
+  "aggOperator": "lt",
+  "compareNodeId": "node_jhsiV8",
+  "filterKeys": [
+ {
+  "label": "quantity",
+  "type": "(2)",
+  "value": "item.quantity"
+ }
+],
+  "startNodeId": "gc_3oQW68"
+ },
+ "sourceType": "",
+ "name": "condition_31",
+ "operator": "",
+ "dataType": "list",
+ "nodeType": "listFilter",
+ "attribute": "",
+ "query": "",
+ "parent": "c_W9eOkT",
+ "children": null,
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 1,
+ "returnType": ""
+},
+    "rhs_twfJvf": {
+ "value": {
+  "aggOperator": "lt",
+  "compareNodeId": "node_3VeLLb",
+  "filterKeys": [
+ {
+  "label": "quantity",
+  "type": "(2)",
+  "value": "item.quantity"
+ }
+],
+  "startNodeId": "gc_3Hxtzo"
+ },
+ "sourceType": "",
+ "name": "condition_31",
+ "operator": "",
+ "dataType": "list",
+ "nodeType": "listFilter",
+ "attribute": "",
+ "query": "",
+ "parent": "c_a56pcp",
+ "children": null,
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 1,
+ "returnType": ""
+},
+    "rhs_ujqGxQ": {
+ "value": {
+  "aggOperator": "lt",
+  "compareNodeId": "node_zW0QBn",
+  "filterKeys": [
+ {
+  "label": "quantity",
+  "type": "(2)",
+  "value": "item.quantity"
+ }
+],
+  "startNodeId": "gc_uCWVtf"
+ },
+ "sourceType": "",
+ "name": "condition_31",
+ "operator": "",
+ "dataType": "list",
+ "nodeType": "listFilter",
+ "attribute": "",
+ "query": "",
+ "parent": "c_JGn4VY",
+ "children": null,
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 1,
+ "returnType": ""
+},
+    "rhs_vTBBKf": {
+ "value": {
+  "aggOperator": "lt",
+  "compareNodeId": "node_AUtdjD",
+  "filterKeys": [
+ {
+  "label": "quantity",
+  "type": "(2)",
+  "value": "item.quantity"
+ }
+],
+  "startNodeId": "gc_5OfZil"
+ },
+ "sourceType": "",
+ "name": "condition_31",
+ "operator": "",
+ "dataType": "list",
+ "nodeType": "listFilter",
+ "attribute": "",
+ "query": "",
+ "parent": "c_YqVWVR",
+ "children": null,
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 1,
+ "returnType": ""
+},
+    "rhs_vmwZBh": {
+ "value": {
+  "aggOperator": "lt",
+  "compareNodeId": "node_SM6MwO",
+  "filterKeys": [
+ {
+  "label": "quantity",
+  "type": "(2)",
+  "value": "item.quantity"
+ }
+],
+  "startNodeId": "gc_kTNskk"
+ },
+ "sourceType": "",
+ "name": "condition_31",
+ "operator": "",
+ "dataType": "list",
+ "nodeType": "listFilter",
+ "attribute": "",
+ "query": "",
+ "parent": "c_hOc3Nq",
+ "children": null,
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 1,
+ "returnType": ""
+},
+    "rhs_x6yCPy": {
+ "value": {
+  "aggOperator": "lt",
+  "compareNodeId": "node_2p7JO2",
+  "filterKeys": [
+ {
+  "label": "quantity",
+  "type": "(2)",
+  "value": "item.quantity"
+ }
+],
+  "startNodeId": "gc_g5R07P"
+ },
+ "sourceType": "",
+ "name": "condition_31",
+ "operator": "",
+ "dataType": "list",
+ "nodeType": "listFilter",
+ "attribute": "",
+ "query": "",
+ "parent": "c_pUSUPn",
+ "children": null,
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 1,
+ "returnType": ""
+},
+    "rhs_xMGsTm": {
+ "value": {
+  "aggOperator": "lt",
+  "compareNodeId": "node_aAfpuh",
+  "filterKeys": [
+ {
+  "label": "quantity",
+  "type": "(2)",
+  "value": "item.quantity"
+ }
+],
+  "startNodeId": "gc_4F0Vpe"
+ },
+ "sourceType": "",
+ "name": "condition_31",
+ "operator": "",
+ "dataType": "list",
+ "nodeType": "listFilter",
+ "attribute": "",
+ "query": "",
+ "parent": "c_X3S7hP",
+ "children": null,
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 1,
+ "returnType": ""
+},
+    "rhs_yUfiHO": {
+ "value": {
+  "aggOperator": "lt",
+  "compareNodeId": "node_hfTJKB",
+  "filterKeys": [
+ {
+  "label": "quantity",
+  "type": "(2)",
+  "value": "item.quantity"
+ }
+],
+  "startNodeId": "gc_CTHuxc"
+ },
+ "sourceType": "",
+ "name": "condition_31",
+ "operator": "",
+ "dataType": "list",
+ "nodeType": "listFilter",
+ "attribute": "",
+ "query": "",
+ "parent": "c_K9OW7F",
+ "children": null,
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 1,
+ "returnType": ""
+},
+    "rhs_ytikRF": {
+ "value": {
+  "aggOperator": "lt",
+  "compareNodeId": "node_VVvRPu",
+  "filterKeys": [
+ {
+  "label": "quantity",
+  "type": "(2)",
+  "value": "item.quantity"
+ }
+],
+  "startNodeId": "gc_wTI8Ev"
+ },
+ "sourceType": "",
+ "name": "condition_31",
+ "operator": "",
+ "dataType": "list",
+ "nodeType": "listFilter",
+ "attribute": "",
+ "query": "",
+ "parent": "c_kJA8Vj",
+ "children": null,
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 1,
+ "returnType": ""
+},
+    "rule_01": {
+ "value": null,
+ "sourceType": "",
+ "name": "",
+ "operator": "and",
+ "dataType": "",
+ "nodeType": "group",
+ "attribute": "",
+ "query": "",
+ "parent": "",
+ "children": [
+  "rule_02"
+ ],
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 1,
+ "returnType": ""
+},
+    "rule_02": {
+ "value": "",
+ "sourceType": "",
+ "name": "",
+ "operator": "sameFilter",
+ "dataType": "list",
+ "nodeType": "condition",
+ "attribute": "",
+ "query": "",
+ "parent": "rule_01",
+ "children": null,
+ "leftNode": [
+  "rule_03"
+ ],
+ "rightNode": [
+  "rhs_sOIKJs"
+ ],
+ "siblingIndex": 1,
+ "returnType": ""
+},
+    "rule_03": {
+ "value": null,
+ "sourceType": "customInput",
+ "name": "",
+ "operator": "",
+ "dataType": "list",
+ "nodeType": "params",
+ "attribute": "cart.items",
+ "query": "",
+ "parent": "",
+ "children": null,
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 1,
+ "returnType": ""
+}
+   },
+   "startNode": ""
+  },
+  "firstCustomInput": "cart",
+  "firstRuleChain": "",
+  "ruleSetPolicy": "",
+  "description": "",
+  "policy": "collect",
+  "comment": "",
+  "type": "decisionTable",
+  "dataSetId": "",
+  "ruleSet": [],
+  "settings": {
+   "startAt": "0001-01-01T00:00:00Z",
+   "endAt": "0001-01-01T00:00:00Z",
+   "event": null,
+   "api": {
+    "isEnabled": true,
+    "isPrivate": true
+   },
+   "isEnabled": true,
+   "auditIO": false,
+   "cachingInfo": {
+    "Enabled": false,
+    "Duration": {
+     "Value": 0,
+     "Unit": ""
+    },
+    "CacheKeys": ""
+   },
+   "timezone": "",
+   "dateFormat": "in",
+   "timeout": 0,
+   "timeoutAsync": 0,
+   "timeoutCron": 0
+  },
+  "isDemo": false,
+  "warnings": [],
+  "schemaVersion": "0.1.1"
+ }
+}

@@ -1,0 +1,136 @@
+{
+ "entityType": "dataSet",
+ "category": "dataSet",
+ "data": {
+  "createdAt": "2023-10-11T11:14:09.59Z",
+  "updatedAt": "2024-05-27T07:45:48.797Z",
+  "isDeleted": false,
+  "testedAt": "2023-12-21T15:21:56.206Z",
+  "publishedAt": "0001-01-01T00:00:00Z",
+  "entityId": "652683813fc3d4c2f6ae1569",
+  "version": "draft",
+  "name": "ds1",
+  "commitId": "commit-8497e6ca-338a-4666-85d4-2210a4020652",
+  "status": "draft",
+  "lastVersion": "",
+  "isLive": false,
+  "commitInfo": {
+   "title": "Draft",
+   "timeStamp": "2024-05-27T06:55:04.74Z"
+  },
+  "fields": {
+   "addressLine1": {
+ "ColumnName": "addressLine1",
+ "DataType": "string",
+ "Order": 8,
+ "ExecutedValue": "54, rue Royale"
+},
+   "addressLine2": {
+ "ColumnName": "addressLine2",
+ "DataType": "",
+ "Order": 4,
+ "ExecutedValue": null
+},
+   "city": {
+ "ColumnName": "city",
+ "DataType": "string",
+ "Order": 9,
+ "ExecutedValue": "Nantes"
+},
+   "contactFirstName": {
+ "ColumnName": "contactFirstName",
+ "DataType": "string",
+ "Order": 10,
+ "ExecutedValue": "Carine "
+},
+   "contactLastName": {
+ "ColumnName": "contactLastName",
+ "DataType": "string",
+ "Order": 1,
+ "ExecutedValue": "Schmitt"
+},
+   "country": {
+ "ColumnName": "country",
+ "DataType": "string",
+ "Order": 11,
+ "ExecutedValue": "France"
+},
+   "creditLimit": {
+ "ColumnName": "creditLimit",
+ "DataType": "numeric",
+ "Order": 12,
+ "ExecutedValue": 21000
+},
+   "customerName": {
+ "ColumnName": "customerName",
+ "DataType": "string",
+ "Order": 6,
+ "ExecutedValue": "Atelier graphique"
+},
+   "customerNumber": {
+ "ColumnName": "customerNumber",
+ "DataType": "numeric",
+ "Order": 13,
+ "ExecutedValue": 103
+},
+   "customer_score": {
+ "ColumnName": "customer_score",
+ "DataType": "numeric",
+ "Order": 5,
+ "ExecutedValue": 1853
+},
+   "phone": {
+ "ColumnName": "phone",
+ "DataType": "string",
+ "Order": 14,
+ "ExecutedValue": "40.32.2555"
+},
+   "postalCode": {
+ "ColumnName": "postalCode",
+ "DataType": "string",
+ "Order": 2,
+ "ExecutedValue": "44000"
+},
+   "salesRepEmployeeNumber": {
+ "ColumnName": "salesRepEmployeeNumber",
+ "DataType": "numeric",
+ "Order": 7,
+ "ExecutedValue": 1370
+},
+   "state": {
+ "ColumnName": "state",
+ "DataType": "string",
+ "Order": 3,
+ "ExecutedValue": "Kuch bhi"
+}
+  },
+  "description": "",
+  "query": "select *  from customers where customers.addressLine1 is not null;",
+  "params": null,
+  "connectorId": "649c1fe70eda1b2bd885585f",
+  "isDemo": false,
+  "settings": {
+   "durationUnit": "m",
+   "rowLimit": 1000,
+   "durationValue": 5,
+   "cacheEnabled": true,
+   "timezone": "",
+   "dateFormat": ""
+  }
+ },
+ "dependencies": [
+  {
+   "isDeleted": false,
+   "createdAt": "2024-09-10T21:32:06.566204Z",
+   "updatedAt": "2024-09-10T21:32:06.566204Z",
+   "entityCommitId": "commit-8497e6ca-338a-4666-85d4-2210a4020652",
+   "entityType": "dataSet",
+   "entityId": "652683813fc3d4c2f6ae1569",
+   "entityVersion": "draft",
+   "entityNodeId": "connector",
+   "dependencyType": "connector",
+   "dependencyId": "649c1fe70eda1b2bd885585f",
+   "dependencyVersion": "live"
+  }
+ ]
+}

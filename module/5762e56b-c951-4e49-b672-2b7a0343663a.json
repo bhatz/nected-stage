@@ -1,0 +1,11 @@
+{
+ "entityType": "module",
+ "data": {
+  "createdAt": "2025-10-24T10:28:22.006Z",
+  "updatedAt": "2025-10-24T10:28:22.006Z",
+  "isDeleted": false,
+  "entityId": "5762e56b-c951-4e49-b672-2b7a0343663a",
+  "name": "Healthcare Claim Automation",
+  "description": ""
+ }
+}

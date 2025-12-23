@@ -1,0 +1,237 @@
+{
+ "entityType": "rule",
+ "category": "simpleRule",
+ "data": {
+  "createdAt": "2023-05-10T13:05:46.742Z",
+  "updatedAt": "2023-07-19T12:07:19.23Z",
+  "isDeleted": false,
+  "testedAt": "2023-07-20T13:36:44.109Z",
+  "publishedAt": "0001-01-01T00:00:00Z",
+  "entityId": "645b96aa4bad076753850cf3",
+  "version": "draft",
+  "name": "testRule",
+  "commitId": "commit-4bb806d4-45a7-4692-bc93-c3ebf6140571",
+  "status": "tested",
+  "lastVersion": "",
+  "isLive": false,
+  "commitInfo": {
+   "title": "Draft",
+   "timeStamp": "2024-05-27T08:05:41.913Z"
+  },
+  "customInput": {
+   "customerNumber": {
+ "name": "customerNumber",
+ "dataType": "numeric",
+ "isOptional": false,
+ "isNullable": false,
+ "isCaseSensitive": false,
+ "attribute": "customernumber",
+ "sourceType": "dataSet",
+ "executedValue": null,
+ "config": null,
+ "value": null,
+ "next": "",
+ "previous": "",
+ "schemaId": ""
+}
+  },
+  "ruleChain": null,
+  "decisionTable": {
+   "rows": null,
+   "properties": null,
+   "results": null,
+   "firstRow": "",
+   "firstProperty": "",
+   "firstResult": "",
+   "firstAggOutputData": ""
+  },
+  "action": {
+   "then": {
+    "outputData": {
+     "key_name_2": {
+ "name": "key_name_2",
+ "dataType": "jsFormula",
+ "returnType": "",
+ "value": "var v =1\nv%2",
+ "next": "",
+ "executedValue": null,
+ "attribute": "",
+ "source": "",
+ "schemaId": ""
+},
+     "message": {
+ "name": "message",
+ "dataType": "json",
+ "returnType": "",
+ "value": "{\n  \"name\": \"{{.dataSet.productname}}\",\n  \"pline\": \"{{.dataSet.productline}}\",\n  \"price\": {{.dataSet.price}}\n}",
+ "next": "key_name_2",
+ "executedValue": null,
+ "attribute": "",
+ "source": "",
+ "schemaId": ""
+}
+    },
+    "actionNode": {
+     "actionData_1": {
+ "name": "getCustomer",
+ "connectorId": "649c1fe70eda1b2bd885585f",
+ "entity": null,
+ "entityId": null,
+ "config": {
+  "query": "SELECT customers.customerName from customers WHERE customers.customerNumber={{.dataSet.customernumber}}"
+ },
+ "input": null,
+ "next": ""
+}
+    },
+    "firstOutputData": "message",
+    "firstActionNode": "actionData_1"
+   },
+   "else": {
+    "outputData": null,
+    "actionNode": null,
+    "firstOutputData": "",
+    "firstActionNode": ""
+   }
+  },
+  "conditions": {
+   "nodes": {
+    "rule_01": {
+ "value": null,
+ "sourceType": "",
+ "name": "",
+ "operator": "and",
+ "dataType": "",
+ "nodeType": "group",
+ "attribute": "",
+ "query": "",
+ "parent": "",
+ "children": [
+  "rule_02"
+ ],
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 1,
+ "returnType": ""
+},
+    "rule_02": {
+ "value": null,
+ "sourceType": "",
+ "name": "",
+ "operator": "eq",
+ "dataType": "string",
+ "nodeType": "condition",
+ "attribute": "",
+ "query": "",
+ "parent": "rule_01",
+ "children": null,
+ "leftNode": [
+  "rule_ljo6ufum9ualw0mggjf"
+ ],
+ "rightNode": [
+  "rule_ljo6ufumfcpk914b6yb"
+ ],
+ "siblingIndex": 1,
+ "returnType": ""
+},
+    "rule_ljo6ufum9ualw0mggjf": {
+ "value": null,
+ "sourceType": "dataSet",
+ "name": "",
+ "operator": "",
+ "dataType": "string",
+ "nodeType": "params",
+ "attribute": "productline",
+ "query": "",
+ "parent": "rule_02",
+ "children": null,
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 1,
+ "returnType": ""
+},
+    "rule_ljo6ufumfcpk914b6yb": {
+ "value": "Classic Cars",
+ "sourceType": "",
+ "name": "",
+ "operator": "",
+ "dataType": "string",
+ "nodeType": "constant",
+ "attribute": "",
+ "query": "",
+ "parent": "rule_ljo6ufumfcpk914b6yb",
+ "children": null,
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 1,
+ "returnType": ""
+}
+   },
+   "startNode": "rule_01"
+  },
+  "firstCustomInput": "",
+  "firstRuleChain": "",
+  "ruleSetPolicy": "",
+  "description": "",
+  "policy": "",
+  "comment": "",
+  "type": "simpleRule",
+  "dataSetId": "649c204e0eda1b2bd8855861",
+  "ruleSet": null,
+  "settings": {
+   "startAt": "0001-01-01T00:00:00Z",
+   "endAt": "0001-01-01T00:00:00Z",
+   "event": null,
+   "api": {
+    "isEnabled": true,
+    "isPrivate": false
+   },
+   "isEnabled": true,
+   "auditIO": false,
+   "cachingInfo": {
+    "Enabled": false,
+    "Duration": {
+     "Value": 0,
+     "Unit": ""
+    },
+    "CacheKeys": ""
+   },
+   "timezone": "",
+   "dateFormat": "",
+   "timeout": 0,
+   "timeoutAsync": 0,
+   "timeoutCron": 0
+  },
+  "isDemo": false,
+  "warnings": null,
+  "schemaVersion": "0.1.0"
+ },
+ "dependencies": [
+  {
+   "isDeleted": false,
+   "createdAt": "2024-09-10T21:22:21.337459Z",
+   "updatedAt": "2024-09-10T21:22:21.337459Z",
+   "entityCommitId": "commit-4bb806d4-45a7-4692-bc93-c3ebf6140571",
+   "entityType": "rule",
+   "entityId": "645b96aa4bad076753850cf3",
+   "entityVersion": "draft",
+   "entityNodeId": "then-actionData_1",
+   "dependencyType": "connector",
+   "dependencyId": "649c1fe70eda1b2bd885585f",
+   "dependencyVersion": "live"
+  },
+  {
+   "isDeleted": false,
+   "createdAt": "2024-09-10T21:22:21.324474Z",
+   "updatedAt": "2024-09-10T21:22:21.324474Z",
+   "entityCommitId": "commit-4bb806d4-45a7-4692-bc93-c3ebf6140571",
+   "entityType": "rule",
+   "entityId": "645b96aa4bad076753850cf3",
+   "entityVersion": "draft",
+   "entityNodeId": "dataSet",
+   "dependencyType": "dataSet",
+   "dependencyId": "649c204e0eda1b2bd8855861",
+   "dependencyVersion": "draft"
+  }
+ ]
+}

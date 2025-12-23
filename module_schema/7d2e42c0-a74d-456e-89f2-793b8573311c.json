@@ -1,0 +1,24 @@
+{
+ "entityType": "module_schema",
+ "data": {
+  "createdAt": "2025-07-28T07:25:30.316Z",
+  "updatedAt": "2025-07-28T07:25:30.316Z",
+  "isDeleted": false,
+  "entityId": "7d2e42c0-a74d-456e-89f2-793b8573311c",
+  "name": "DeliverySpeed",
+  "moduleId": "f1d851fa-f03e-4b99-9a3e-69ed92d2b763",
+  "dataType": "string",
+  "usageType": "optional",
+  "options": [
+   {
+    "value": "Fast"
+   },
+   {
+    "value": "Medium"
+   },
+   {
+    "value": "Slow"
+   }
+  ]
+ }
+}

@@ -1,0 +1,227 @@
+{
+ "entityType": "dataSet",
+ "category": "dataSet",
+ "data": {
+  "createdAt": "2025-03-04T06:16:52.485Z",
+  "updatedAt": "2025-07-30T08:43:49.836306Z",
+  "isDeleted": false,
+  "testedAt": "2025-03-04T09:59:37.367Z",
+  "publishedAt": "0001-01-01T00:00:00Z",
+  "entityId": "f190ce4f-97fa-4c01-84e4-7b0987f7868a",
+  "version": "draft",
+  "name": "SFOrderDetails",
+  "commitId": "commit-83effab1-94a1-441d-9d13-5d0b94c32332",
+  "status": "draft",
+  "lastVersion": "",
+  "isLive": false,
+  "commitInfo": {
+   "title": "Created at 2025-03-04 06:16:52",
+   "timeStamp": "2025-03-04T06:16:52.484495551Z"
+  },
+  "fields": {
+   "ADDONS": {
+ "ColumnName": "ADDONS",
+ "DataType": "string",
+ "Order": 4,
+ "ExecutedValue": "Extra Storage"
+},
+   "ARRAY_FIELD": {
+ "ColumnName": "ARRAY_FIELD",
+ "DataType": "list",
+ "Order": 17,
+ "ExecutedValue": [
+  "Feature1",
+  "Feature2",
+  "Feature3"
+ ]
+},
+   "BILLING_ADDRESS": {
+ "ColumnName": "BILLING_ADDRESS",
+ "DataType": "string",
+ "Order": 18,
+ "ExecutedValue": "123 Main St, Springfield, IL, USA"
+},
+   "BILLING_CYCLE": {
+ "ColumnName": "BILLING_CYCLE",
+ "DataType": "string",
+ "Order": 5,
+ "ExecutedValue": "Monthly"
+},
+   "BILLING_INFO": {
+ "ColumnName": "BILLING_INFO",
+ "DataType": "json",
+ "Order": 19,
+ "ExecutedValue": {
+  "card_type": "Visa",
+  "exp": "12/25",
+  "last4": "4242"
+ }
+},
+   "CREATED_AT": {
+ "ColumnName": "CREATED_AT",
+ "DataType": "dateTime",
+ "Order": 12,
+ "ExecutedValue": "2024-03-01T12:05:00Z"
+},
+   "CURRENCY": {
+ "ColumnName": "CURRENCY",
+ "DataType": "string",
+ "Order": 9,
+ "ExecutedValue": "USD"
+},
+   "CUSTOMER_ID": {
+ "ColumnName": "CUSTOMER_ID",
+ "DataType": "string",
+ "Order": 13,
+ "ExecutedValue": "CUST1001"
+},
+   "EMAIL": {
+ "ColumnName": "EMAIL",
+ "DataType": "string",
+ "Order": 25,
+ "ExecutedValue": "john.doe@example.com"
+},
+   "ID": {
+ "ColumnName": "ID",
+ "DataType": "numeric",
+ "Order": 10,
+ "ExecutedValue": 1
+},
+   "META": {
+ "ColumnName": "META",
+ "DataType": "json",
+ "Order": 14,
+ "ExecutedValue": {
+  "device": "iPhone",
+  "ip": "192.168.1.1"
+ }
+},
+   "NAME": {
+ "ColumnName": "NAME",
+ "DataType": "string",
+ "Order": 11,
+ "ExecutedValue": "John Doe"
+},
+   "NECTED_TRANSACTION_ID": {
+ "ColumnName": "NECTED_TRANSACTION_ID",
+ "DataType": "string",
+ "Order": 7,
+ "ExecutedValue": "TXN98765"
+},
+   "PAYMENT_PROVIDER": {
+ "ColumnName": "PAYMENT_PROVIDER",
+ "DataType": "string",
+ "Order": 6,
+ "ExecutedValue": "Stripe"
+},
+   "PHONE": {
+ "ColumnName": "PHONE",
+ "DataType": "string",
+ "Order": 15,
+ "ExecutedValue": "+1234567890"
+},
+   "PLAN_DETAILS": {
+ "ColumnName": "PLAN_DETAILS",
+ "DataType": "json",
+ "Order": 8,
+ "ExecutedValue": {
+  "duration": "1 Month",
+  "features": [
+ "Storage",
+ "Priority Support"
+]
+ }
+},
+   "PLAN_ID": {
+ "ColumnName": "PLAN_ID",
+ "DataType": "string",
+ "Order": 1,
+ "ExecutedValue": "PLAN_001"
+},
+   "PLAN_NAME": {
+ "ColumnName": "PLAN_NAME",
+ "DataType": "string",
+ "Order": 16,
+ "ExecutedValue": "Premium Plan"
+},
+   "STATUS": {
+ "ColumnName": "STATUS",
+ "DataType": "string",
+ "Order": 22,
+ "ExecutedValue": "Active"
+},
+   "SUBSCRIPTION_AMOUNT": {
+ "ColumnName": "SUBSCRIPTION_AMOUNT",
+ "DataType": "numeric",
+ "Order": 2,
+ "ExecutedValue": 29.99
+},
+   "SUBSCRIPTION_END_DATE": {
+ "ColumnName": "SUBSCRIPTION_END_DATE",
+ "DataType": "dateTime",
+ "Order": 23,
+ "ExecutedValue": "2024-04-01T12:00:00Z"
+},
+   "SUBSCRIPTION_ID": {
+ "ColumnName": "SUBSCRIPTION_ID",
+ "DataType": "string",
+ "Order": 26,
+ "ExecutedValue": "SUB_123ABC"
+},
+   "SUBSCRIPTION_START_DATE": {
+ "ColumnName": "SUBSCRIPTION_START_DATE",
+ "DataType": "dateTime",
+ "Order": 24,
+ "ExecutedValue": "2024-03-01T12:00:00Z"
+},
+   "TRANSACTION_ID": {
+ "ColumnName": "TRANSACTION_ID",
+ "DataType": "string",
+ "Order": 20,
+ "ExecutedValue": "TRX54321"
+},
+   "UPDATED_AT": {
+ "ColumnName": "UPDATED_AT",
+ "DataType": "dateTime",
+ "Order": 21,
+ "ExecutedValue": "2024-03-01T12:05:00Z"
+},
+   "WSID": {
+ "ColumnName": "WSID",
+ "DataType": "string",
+ "Order": 3,
+ "ExecutedValue": "WS2001"
+}
+  },
+  "description": "",
+  "query": "select *  from order_detail;",
+  "params": {
+   
+  },
+  "connectorId": "dff19c15-50d0-416c-baaa-7ce6bcc7f16e",
+  "isDemo": false,
+  "settings": {
+   "durationUnit": "m",
+   "rowLimit": 1000,
+   "durationValue": 5,
+   "cacheEnabled": false,
+   "timezone": "",
+   "dateFormat": "in"
+  }
+ },
+ "dependencies": [
+  {
+   "isDeleted": false,
+   "createdAt": "2025-03-04T06:16:52.497029Z",
+   "updatedAt": "2025-07-30T08:43:49.841073Z",
+   "entityCommitId": "commit-83effab1-94a1-441d-9d13-5d0b94c32332",
+   "entityType": "dataSet",
+   "entityId": "f190ce4f-97fa-4c01-84e4-7b0987f7868a",
+   "entityVersion": "draft",
+   "entityNodeId": "connector",
+   "dependencyType": "connector",
+   "dependencyId": "dff19c15-50d0-416c-baaa-7ce6bcc7f16e",
+   "dependencyVersion": "live"
+  }
+ ]
+}

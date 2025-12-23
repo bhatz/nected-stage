@@ -1,0 +1,16 @@
+{
+ "entityType": "connector",
+ "category": "restAPI",
+ "data": {
+  "createdAt": "2023-08-08T10:51:18.7Z",
+  "updatedAt": "2024-09-26T18:55:13.895974Z",
+  "isDeleted": false,
+  "entityId": "64d21e26cc620b158d09bdd3",
+  "name": "Nalanda2",
+  "isDemo": false,
+  "category": "api",
+  "isSource": false,
+  "isAction": true,
+  "isTrigger": true
+ }
+}

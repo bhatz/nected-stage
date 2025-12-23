@@ -1,0 +1,715 @@
+{
+ "entityType": "workflow",
+ "data": {
+  "createdAt": "2025-10-15T08:01:13.718Z",
+  "updatedAt": "2025-12-16T17:54:09.472923Z",
+  "isDeleted": false,
+  "testedAt": "2025-12-16T17:54:09.472Z",
+  "publishedAt": "0001-01-01T00:00:00Z",
+  "entityId": "4959e86d-6103-443e-bf28-f195ff8b299c",
+  "version": "draft",
+  "name": "testAI",
+  "commitId": "commit-a80c7f26-e14c-402f-a3af-074f081001dc",
+  "status": "tested",
+  "lastVersion": "",
+  "isLive": false,
+  "commitInfo": {
+   "title": "Created at 2025-10-15 08:01:13",
+   "timeStamp": "2025-10-15T08:01:13.71835203Z"
+  },
+  "startNode": "n_t7W25y",
+  "description": "",
+  "trigger": {
+   "apiNode": "1",
+   "cronNode": ""
+  },
+  "nodes": [
+   {
+    "position": {
+     "x": 598.19921875,
+     "y": 0
+    },
+    "style": null,
+    "sourcePosition": "bottom",
+    "targetPosition": "top",
+    "id": "1",
+    "type": "trigger",
+    "data": {
+     "input": null,
+     "output": null,
+     "executedValue": null,
+     "settings": {
+      "authType": "private",
+      "cacheEnabled": false,
+      "cacheKeys": "",
+      "durationUnit": "d",
+      "durationValue": 0,
+      "isEnabled": true
+     },
+     "nodeType": "apiTrigger",
+     "entity": "",
+     "entityId": "",
+     "status": "",
+     "name": "Trigger",
+     "rootId": "",
+     "sourceId": null,
+     "isMergeNode": false,
+     "runInLoop": {
+      "status": false,
+      "source": "",
+      "attribute": "",
+      "value": null
+     },
+     "switcher": null,
+     "conditions": null,
+     "blockName": "trigger",
+     "testedAt": "0001-01-01T00:00:00Z"
+    },
+    "draggable": false
+   },
+   {
+    "position": {
+     "x": 598.19921875,
+     "y": 130
+    },
+    "style": null,
+    "sourcePosition": "bottom",
+    "targetPosition": "top",
+    "id": "n_S81NUP",
+    "type": "addNode",
+    "data": {
+     "input": null,
+     "output": null,
+     "executedValue": null,
+     "settings": null,
+     "nodeType": "addNodeMd",
+     "entity": "",
+     "entityId": "",
+     "status": "",
+     "name": "",
+     "rootId": "",
+     "sourceId": null,
+     "isMergeNode": false,
+     "runInLoop": {
+      "status": false,
+      "source": "",
+      "attribute": "",
+      "value": null
+     },
+     "switcher": null,
+     "conditions": null,
+     "blockName": "",
+     "testedAt": "0001-01-01T00:00:00Z"
+    },
+    "draggable": false
+   },
+   {
+    "position": {
+     "x": 598.19921875,
+     "y": 205
+    },
+    "style": null,
+    "sourcePosition": "bottom",
+    "targetPosition": "top",
+    "id": "n_t7W25y",
+    "type": "aiAgentNode",
+    "data": {
+     "input": {
+      "agentName": {
+ "value": "chat",
+ "executedValue": null,
+ "name": "",
+ "dataType": "string",
+ "source": "",
+ "attribute": "",
+ "keySource": "",
+ "keyAttribute": "",
+ "mapping": false,
+ "isOptional": false,
+ "isNullable": false,
+ "isCaseSensitive": false,
+ "sendNull": false,
+ "notSend": false,
+ "order": 0,
+ "schemaId": ""
+},
+      "formatMarkdown": {
+ "value": true,
+ "executedValue": null,
+ "name": "",
+ "dataType": "boolean",
+ "source": "",
+ "attribute": "",
+ "keySource": "",
+ "keyAttribute": "",
+ "mapping": false,
+ "isOptional": false,
+ "isNullable": false,
+ "isCaseSensitive": false,
+ "sendNull": false,
+ "notSend": false,
+ "order": 0,
+ "schemaId": ""
+},
+      "message": {
+ "value": "tell a joke about wolf in \"{{.globalVar.Countries}}\"",
+ "executedValue": null,
+ "name": "",
+ "dataType": "string",
+ "source": "",
+ "attribute": "",
+ "keySource": "",
+ "keyAttribute": "",
+ "mapping": false,
+ "isOptional": false,
+ "isNullable": false,
+ "isCaseSensitive": false,
+ "sendNull": false,
+ "notSend": false,
+ "order": 0,
+ "schemaId": ""
+},
+      "model": {
+ "value": "gpt-4",
+ "executedValue": null,
+ "name": "",
+ "dataType": "",
+ "source": "",
+ "attribute": "",
+ "keySource": "",
+ "keyAttribute": "",
+ "mapping": false,
+ "isOptional": false,
+ "isNullable": false,
+ "isCaseSensitive": false,
+ "sendNull": false,
+ "notSend": false,
+ "order": 0,
+ "schemaId": ""
+}
+     },
+     "output": null,
+     "executedValue": {
+      "error": "",
+      "executionTime": "3300ms",
+      "output": {
+ "metadata": null,
+ "processing_time": 3.2179999999934807,
+ "ref_id": "4086aa94-1bd3-44b2-bd00-163d6cc4c6fe",
+ "response": "Why don't wolves play hide and seek in Thailand and Singapore?\n\nBecause good luck hiding when you're the only wolf around!"
+}
+     },
+     "settings": {
+      "cacheEnabled": false,
+      "durationUnit": "m",
+      "durationValue": 5,
+      "errorContinue": false,
+      "maxRetries": 3,
+      "maxTokens": 4000,
+      "metadataRequired": false,
+      "rowLimit": null,
+      "temperature": 0.7,
+      "timeout": 30,
+      "timeoutAsync": 30
+     },
+     "nodeType": "aiAgentNode",
+     "entity": "connector",
+     "entityId": "e2bae7f6-188c-4580-9e92-5dd990bf687e",
+     "status": "success",
+     "name": "aiChatResponseNode",
+     "rootId": "",
+     "sourceId": null,
+     "isMergeNode": false,
+     "runInLoop": {
+      "status": false,
+      "source": "",
+      "attribute": "",
+      "value": null
+     },
+     "switcher": null,
+     "conditions": null,
+     "blockName": "",
+     "testedAt": "2025-12-16T17:54:09.471Z"
+    },
+    "draggable": false
+   },
+   {
+    "position": {
+     "x": 598.19921875,
+     "y": 335
+    },
+    "style": null,
+    "sourcePosition": "bottom",
+    "targetPosition": "top",
+    "id": "n_KWpMdI",
+    "type": "addNode",
+    "data": {
+     "input": null,
+     "output": null,
+     "executedValue": null,
+     "settings": null,
+     "nodeType": "addNodeMd",
+     "entity": "",
+     "entityId": "",
+     "status": "",
+     "name": "",
+     "rootId": "",
+     "sourceId": null,
+     "isMergeNode": false,
+     "runInLoop": {
+      "status": false,
+      "source": "",
+      "attribute": "",
+      "value": null
+     },
+     "switcher": null,
+     "conditions": null,
+     "blockName": "",
+     "testedAt": "0001-01-01T00:00:00Z"
+    },
+    "draggable": false
+   },
+   {
+    "position": {
+     "x": 598.19921875,
+     "y": 410
+    },
+    "style": null,
+    "sourcePosition": "bottom",
+    "targetPosition": "top",
+    "id": "n_B5A6o4",
+    "type": "aiAgentNode",
+    "data": {
+     "input": {
+      "agentName": {
+ "value": "classifier",
+ "executedValue": null,
+ "name": "",
+ "dataType": "string",
+ "source": "",
+ "attribute": "",
+ "keySource": "",
+ "keyAttribute": "",
+ "mapping": false,
+ "isOptional": false,
+ "isNullable": false,
+ "isCaseSensitive": false,
+ "sendNull": false,
+ "notSend": false,
+ "order": 0,
+ "schemaId": ""
+},
+      "attributeDefinitions": {
+ "value": "[\n   {\n     \"name\": \"score\",\n     \"description\": \"The CIBIL score is always a 3-digit number between 300 and 900.It usually appears near words like 'Score' or 'Your Score' or 'J 3 @ Your Score'. pickup sequence of digits separated by space. ignore space make one number from middle or last 3 digits if more than 3 digits sequences.\",\n     \"data_type\": \"integer\",\n     \"required\": true\n   },\n   {\n     \"name\": \"pan\",\n     \"description\": \"PAN (Income Tax ID Number) (10-character alphanumeric string, appears in the 'INCOME TAX ID NUMBER (PAN)' section\",\n     \"data_type\": \"text\",\n     \"required\": true\n   },\n   {\n     \"name\": \"name\",\n     \"description\": \"Name (appears in the 'NAME DATE OF BIRTH GENDER' section)\",\n     \"data_type\": \"integer\",\n     \"required\": true\n   },\n   {\n     \"name\": \"dob\",\n     \"description\": \"Date of Birth (format: DD-MM-YYYY, appears after the name)\",\n     \"data_type\": \"date\",\n     \"required\": true\n   },\n   {\n     \"name\": \"gender\",\n     \"description\": \"Gender (appears after the GENDER)\",\n     \"data_type\": \"date\",\n     \"required\": true\n   }\n   ]",
+ "executedValue": [
+  {
+   "data_type": "integer",
+   "description": "The CIBIL score is always a 3-digit number between 300 and 900.It usually appears near words like 'Score' or 'Your Score' or 'J 3 @ Your Score'. pickup sequence of digits separated by space. ignore space make one number from middle or last 3 digits if more than 3 digits sequences.",
+   "name": "score",
+   "required": true
+  },
+  {
+   "data_type": "text",
+   "description": "PAN (Income Tax ID Number) (10-character alphanumeric string, appears in the 'INCOME TAX ID NUMBER (PAN)' section",
+   "name": "pan",
+   "required": true
+  },
+  {
+   "data_type": "integer",
+   "description": "Name (appears in the 'NAME DATE OF BIRTH GENDER' section)",
+   "name": "name",
+   "required": true
+  },
+  {
+   "data_type": "date",
+   "description": "Date of Birth (format: DD-MM-YYYY, appears after the name)",
+   "name": "dob",
+   "required": true
+  },
+  {
+   "data_type": "date",
+   "description": "Gender (appears after the GENDER)",
+   "name": "gender",
+   "required": true
+  }
+ ],
+ "name": "",
+ "dataType": "list",
+ "source": "",
+ "attribute": "",
+ "keySource": "",
+ "keyAttribute": "",
+ "mapping": false,
+ "isOptional": false,
+ "isNullable": false,
+ "isCaseSensitive": false,
+ "sendNull": false,
+ "notSend": false,
+ "order": 0,
+ "schemaId": ""
+},
+      "classificationType": {
+ "value": "attributes",
+ "executedValue": null,
+ "name": "",
+ "dataType": "string",
+ "source": "",
+ "attribute": "",
+ "keySource": "",
+ "keyAttribute": "",
+ "mapping": false,
+ "isOptional": false,
+ "isNullable": false,
+ "isCaseSensitive": false,
+ "sendNull": false,
+ "notSend": false,
+ "order": 0,
+ "schemaId": ""
+},
+      "doOcr": {
+ "value": false,
+ "executedValue": null,
+ "name": "",
+ "dataType": "boolean",
+ "source": "",
+ "attribute": "",
+ "keySource": "",
+ "keyAttribute": "",
+ "mapping": false,
+ "isOptional": false,
+ "isNullable": false,
+ "isCaseSensitive": false,
+ "sendNull": false,
+ "notSend": false,
+ "order": 0,
+ "schemaId": ""
+},
+      "formatMarkdown": {
+ "value": true,
+ "executedValue": null,
+ "name": "",
+ "dataType": "boolean",
+ "source": "",
+ "attribute": "",
+ "keySource": "",
+ "keyAttribute": "",
+ "mapping": false,
+ "isOptional": false,
+ "isNullable": false,
+ "isCaseSensitive": false,
+ "sendNull": false,
+ "notSend": false,
+ "order": 0,
+ "schemaId": ""
+},
+      "model": {
+ "value": "gpt-4o",
+ "executedValue": "gpt-4o",
+ "name": "",
+ "dataType": "string",
+ "source": "",
+ "attribute": "",
+ "keySource": "",
+ "keyAttribute": "",
+ "mapping": false,
+ "isOptional": false,
+ "isNullable": false,
+ "isCaseSensitive": false,
+ "sendNull": false,
+ "notSend": false,
+ "order": 0,
+ "schemaId": ""
+},
+      "uploadedFileId": {
+ "value": null,
+ "executedValue": null,
+ "name": "",
+ "dataType": "",
+ "source": "",
+ "attribute": "",
+ "keySource": "",
+ "keyAttribute": "",
+ "mapping": false,
+ "isOptional": false,
+ "isNullable": false,
+ "isCaseSensitive": false,
+ "sendNull": false,
+ "notSend": false,
+ "order": 0,
+ "schemaId": ""
+},
+      "url": {
+ "value": "https://assets.nected.ai/mock/api/v1/cibil_score_2020.pdf",
+ "executedValue": null,
+ "name": "",
+ "dataType": "string",
+ "source": "",
+ "attribute": "",
+ "keySource": "",
+ "keyAttribute": "",
+ "mapping": false,
+ "isOptional": false,
+ "isNullable": false,
+ "isCaseSensitive": false,
+ "sendNull": false,
+ "notSend": false,
+ "order": 0,
+ "schemaId": ""
+}
+     },
+     "output": null,
+     "executedValue": {
+      "error": "",
+      "executionTime": "16329ms",
+      "output": {
+ "classification": {
+ "attributes": {
+ "dob": "03-09-1984",
+ "gender": "MALE",
+ "name": "MUKUL KUMAR",
+ "pan": "BCJPK0463K",
+ "score": 793
+},
+ "confidence_scores": {
+ "dob": 0.95,
+ "gender": 0.95,
+ "name": 0.95,
+ "pan": 0.95,
+ "score": 0.95
+},
+ "matched_criteria": [
+ "'CIBIL TRANSUNION SCORE' for score: 793",
+ "'INCOME TAX ID NUMBER (PAN)' for pan: BCJPK0463K",
+ "'NAME DATE OF BIRTH GENDER' for name: MUKUL KUMAR",
+ "'NAME DATE OF BIRTH GENDER' for dob: 03-09-1984",
+ "'NAME DATE OF BIRTH GENDER' for gender: MALE"
+],
+ "overall_confidence": 0.95,
+ "reasoning": "The values were extracted based on their specific sections in the document. The score was found near the words 'CIBIL TRANSUNION SCORE'. The PAN is located under 'INCOME TAX ID NUMBER (PAN)'. The name, date of birth, and gender were extracted from the 'NAME DATE OF BIRTH GENDER' section."
+},
+ "classification_type": "attributes",
+ "confidence": 0.95,
+ "file_size": 282471,
+ "file_type": ".pdf",
+ "metadata": null,
+ "processing_time": 16.29500000004191,
+ "ref_id": "384ca587-8a97-40e1-87bd-04d87f1ef5bb",
+ "url": "https://assets.nected.ai/mock/api/v1/cibil_score_2020.pdf"
+}
+     },
+     "settings": {
+      "cacheEnabled": false,
+      "durationUnit": "m",
+      "durationValue": 5,
+      "errorContinue": false,
+      "maxRetries": 3,
+      "maxTokens": 4000,
+      "metadataRequired": false,
+      "rowLimit": null,
+      "temperature": 0.7,
+      "timeout": 30,
+      "timeoutAsync": 30
+     },
+     "nodeType": "aiAgentNode",
+     "entity": "connector",
+     "entityId": "e2bae7f6-188c-4580-9e92-5dd990bf687e",
+     "status": "success",
+     "name": "aiDocClassifierNode",
+     "rootId": "",
+     "sourceId": null,
+     "isMergeNode": false,
+     "runInLoop": {
+      "status": false,
+      "source": "",
+      "attribute": "",
+      "value": null
+     },
+     "switcher": null,
+     "conditions": null,
+     "blockName": "",
+     "testedAt": "2025-12-16T17:54:09.472Z"
+    },
+    "draggable": false
+   },
+   {
+    "position": {
+     "x": 598.19921875,
+     "y": 540
+    },
+    "style": null,
+    "sourcePosition": "bottom",
+    "targetPosition": "top",
+    "id": "n_gf0byN",
+    "type": "addNode",
+    "data": {
+     "input": null,
+     "output": null,
+     "executedValue": null,
+     "settings": null,
+     "nodeType": "addNodeMd",
+     "entity": "",
+     "entityId": "",
+     "status": "",
+     "name": "",
+     "rootId": "",
+     "sourceId": null,
+     "isMergeNode": false,
+     "runInLoop": {
+      "status": false,
+      "source": "",
+      "attribute": "",
+      "value": null
+     },
+     "switcher": null,
+     "conditions": null,
+     "blockName": "",
+     "testedAt": "0001-01-01T00:00:00Z"
+    },
+    "draggable": false
+   }
+  ],
+  "edges": [
+   {
+    "style": {
+     "stroke": "gray",
+     "strokeWidth": 1
+    },
+    "id": "e_hFVxst",
+    "markerEnd": "",
+    "label": "",
+    "source": "1",
+    "target": "n_S81NUP",
+    "data": {
+     "edgeType": "then",
+     "pathId": ""
+    },
+    "type": "smoothEdge",
+    "sourceHandle": "",
+    "animated": false
+   },
+   {
+    "style": {
+     "stroke": "gray",
+     "strokeWidth": 1
+    },
+    "id": "e_slHuk0",
+    "markerEnd": "",
+    "label": "",
+    "source": "n_t7W25y",
+    "target": "n_KWpMdI",
+    "data": {
+     "edgeType": "then",
+     "pathId": ""
+    },
+    "type": "smoothEdge",
+    "sourceHandle": "",
+    "animated": false
+   },
+   {
+    "style": {
+     "stroke": "gray",
+     "strokeWidth": 1
+    },
+    "id": "e_YFGKko",
+    "markerEnd": "",
+    "label": "",
+    "source": "n_S81NUP",
+    "target": "n_t7W25y",
+    "data": {
+     "edgeType": "then",
+     "pathId": ""
+    },
+    "type": "smoothEdge",
+    "sourceHandle": "",
+    "animated": false
+   },
+   {
+    "style": {
+     "stroke": "gray",
+     "strokeWidth": 1
+    },
+    "id": "e_MYX2DY",
+    "markerEnd": "",
+    "label": "",
+    "source": "n_B5A6o4",
+    "target": "n_gf0byN",
+    "data": {
+     "edgeType": "then",
+     "pathId": ""
+    },
+    "type": "smoothEdge",
+    "sourceHandle": "",
+    "animated": false
+   },
+   {
+    "style": {
+     "stroke": "gray",
+     "strokeWidth": 1
+    },
+    "id": "e_uYqdVK",
+    "markerEnd": "",
+    "label": "",
+    "source": "n_KWpMdI",
+    "target": "n_B5A6o4",
+    "data": {
+     "edgeType": "then",
+     "pathId": ""
+    },
+    "type": "smoothEdge",
+    "sourceHandle": "",
+    "animated": false
+   }
+  ],
+  "isEnabled": true,
+  "settings": {
+   "auditIO": null,
+   "timezone": "",
+   "dateFormat": "",
+   "timeout": 0,
+   "timeoutAsync": 0
+  },
+  "comment": "",
+  "isDemo": false
+ },
+ "dependencies": [
+  {
+   "isDeleted": false,
+   "createdAt": "2025-10-16T09:06:47.18824Z",
+   "updatedAt": "2025-10-16T09:13:19.209722Z",
+   "entityCommitId": "commit-a80c7f26-e14c-402f-a3af-074f081001dc",
+   "entityType": "workflow",
+   "entityId": "4959e86d-6103-443e-bf28-f195ff8b299c",
+   "entityVersion": "draft",
+   "entityNodeId": "n_B5A6o4",
+   "dependencyType": "connector",
+   "dependencyId": "e2bae7f6-188c-4580-9e92-5dd990bf687e",
+   "dependencyVersion": "live"
+  },
+  {
+   "isDeleted": false,
+   "createdAt": "2025-10-15T18:20:20.806785Z",
+   "updatedAt": "2025-10-16T09:13:19.21062Z",
+   "entityCommitId": "commit-a80c7f26-e14c-402f-a3af-074f081001dc",
+   "entityType": "workflow",
+   "entityId": "4959e86d-6103-443e-bf28-f195ff8b299c",
+   "entityVersion": "draft",
+   "entityNodeId": "Countries",
+   "dependencyType": "variable",
+   "dependencyId": "645c686c4bad076753850d07",
+   "dependencyVersion": "live"
+  },
+  {
+   "isDeleted": false,
+   "createdAt": "2025-10-15T18:20:20.804127Z",
+   "updatedAt": "2025-10-16T09:13:19.2082Z",
+   "entityCommitId": "commit-a80c7f26-e14c-402f-a3af-074f081001dc",
+   "entityType": "workflow",
+   "entityId": "4959e86d-6103-443e-bf28-f195ff8b299c",
+   "entityVersion": "draft",
+   "entityNodeId": "n_t7W25y",
+   "dependencyType": "connector",
+   "dependencyId": "e2bae7f6-188c-4580-9e92-5dd990bf687e",
+   "dependencyVersion": "live"
+  }
+ ]
+}

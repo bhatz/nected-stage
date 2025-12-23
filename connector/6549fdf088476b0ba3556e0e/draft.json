@@ -1,0 +1,16 @@
+{
+ "entityType": "connector",
+ "category": "restAPI",
+ "data": {
+  "createdAt": "2023-11-07T09:05:52.099Z",
+  "updatedAt": "2024-09-26T18:55:16.157072Z",
+  "isDeleted": false,
+  "entityId": "6549fdf088476b0ba3556e0e",
+  "name": "ZohoCRM",
+  "isDemo": false,
+  "category": "api",
+  "isSource": false,
+  "isAction": true,
+  "isTrigger": true
+ }
+}

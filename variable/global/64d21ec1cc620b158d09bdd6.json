@@ -1,0 +1,20 @@
+{
+ "entityType": "variable",
+ "data": {
+  "createdAt": "2023-08-08T10:53:53.098Z",
+  "updatedAt": "2023-08-08T10:53:53.098Z",
+  "isDeleted": false,
+  "entityId": "64d21ec1cc620b158d09bdd6",
+  "name": "authKey",
+  "category": "globalVar",
+  "scope": "workspace",
+  "dataType": "string",
+  "value": {
+   "data": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdXRob3JpemVkIjp0cnVlLCJleHAiOjE2OTE3Mzg0NjAsInJvbGUiOlsiYWRtaW4iXSwic2Vzc2lvbklkIjoiNDRjMTcxY2ItNjFjNy00M2FlLWFmMDctN2Q3YzgzMDkyMzI5In0.4k8PVDYbp2nnhXRqmqVr22t2oj6J7NnaHiv9CaD7avo",
+   "isSecret": false,
+   "canReset": false
+  },
+  "isFunction": false,
+  "functionName": ""
+ }
+}

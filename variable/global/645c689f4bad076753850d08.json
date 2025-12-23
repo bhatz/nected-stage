@@ -1,0 +1,20 @@
+{
+ "entityType": "variable",
+ "data": {
+  "createdAt": "2023-05-11T04:01:35.882Z",
+  "updatedAt": "2023-09-21T12:19:04.634Z",
+  "isDeleted": false,
+  "entityId": "645c689f4bad076753850d08",
+  "name": "discount",
+  "category": "globalVar",
+  "scope": "workspace",
+  "dataType": "numeric",
+  "value": {
+   "data": 11,
+   "isSecret": false,
+   "canReset": false
+  },
+  "isFunction": false,
+  "functionName": ""
+ }
+}

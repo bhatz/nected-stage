@@ -1,0 +1,16 @@
+{
+ "entityType": "connector",
+ "category": "restAPI",
+ "data": {
+  "createdAt": "2025-12-17T13:42:52.917Z",
+  "updatedAt": "2025-12-17T13:42:52.917Z",
+  "isDeleted": false,
+  "entityId": "3ce46507-b0bb-4135-855c-4115f4380d9d",
+  "name": "JSonPlaceholder",
+  "isDemo": false,
+  "category": "api",
+  "isSource": false,
+  "isAction": true,
+  "isTrigger": true
+ }
+}

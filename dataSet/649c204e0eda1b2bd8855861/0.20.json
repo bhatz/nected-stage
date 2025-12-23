@@ -1,0 +1,107 @@
+{
+ "entityType": "dataSet",
+ "category": "dataSet",
+ "live": true,
+ "data": {
+  "createdAt": "2023-06-28T11:58:06.554Z",
+  "updatedAt": "2023-07-04T11:22:55.796Z",
+  "isDeleted": false,
+  "testedAt": "2023-07-04T11:22:50.22Z",
+  "publishedAt": "2023-07-04T11:22:55.795Z",
+  "entityId": "649c204e0eda1b2bd8855861",
+  "version": "0.20",
+  "name": "mySQLDS",
+  "commitId": "commit-89270862-05c9-4d6f-969f-9994f959d2ac",
+  "status": "published",
+  "lastVersion": "",
+  "isLive": true,
+  "commitInfo": {
+   "title": "Publish Version",
+   "timeStamp": "2024-05-27T08:05:37.342Z"
+  },
+  "fields": {
+   "MSRP": {
+ "ColumnName": "",
+ "DataType": "string",
+ "Order": 0,
+ "ExecutedValue": null
+},
+   "buyPrice": {
+ "ColumnName": "",
+ "DataType": "string",
+ "Order": 0,
+ "ExecutedValue": null
+},
+   "productCode": {
+ "ColumnName": "",
+ "DataType": "string",
+ "Order": 0,
+ "ExecutedValue": null
+},
+   "productDescription": {
+ "ColumnName": "",
+ "DataType": "string",
+ "Order": 0,
+ "ExecutedValue": null
+},
+   "productLine": {
+ "ColumnName": "",
+ "DataType": "string",
+ "Order": 0,
+ "ExecutedValue": null
+},
+   "productName": {
+ "ColumnName": "",
+ "DataType": "string",
+ "Order": 0,
+ "ExecutedValue": null
+},
+   "productScale": {
+ "ColumnName": "",
+ "DataType": "string",
+ "Order": 0,
+ "ExecutedValue": null
+},
+   "productVendor": {
+ "ColumnName": "",
+ "DataType": "string",
+ "Order": 0,
+ "ExecutedValue": null
+},
+   "quantityInStock": {
+ "ColumnName": "",
+ "DataType": "numeric",
+ "Order": 0,
+ "ExecutedValue": null
+}
+  },
+  "description": "",
+  "query": "select * from products",
+  "params": null,
+  "connectorId": "649c1fe70eda1b2bd885585f",
+  "isDemo": false,
+  "settings": {
+   "durationUnit": "m",
+   "rowLimit": 1000,
+   "durationValue": 30,
+   "cacheEnabled": true,
+   "timezone": "",
+   "dateFormat": ""
+  }
+ },
+ "dependencies": [
+  {
+   "isDeleted": false,
+   "createdAt": "2024-09-10T21:33:16.877576Z",
+   "updatedAt": "2024-09-10T21:33:16.877576Z",
+   "entityCommitId": "commit-89270862-05c9-4d6f-969f-9994f959d2ac",
+   "entityType": "dataSet",
+   "entityId": "649c204e0eda1b2bd8855861",
+   "entityVersion": "0.20",
+   "entityNodeId": "connector",
+   "dependencyType": "connector",
+   "dependencyId": "649c1fe70eda1b2bd885585f",
+   "dependencyVersion": "live"
+  }
+ ]
+}

@@ -1,0 +1,14 @@
+{
+ "entityType": "module_schema",
+ "data": {
+  "createdAt": "2025-10-24T10:28:22.092Z",
+  "updatedAt": "2025-10-24T10:28:22.092Z",
+  "isDeleted": false,
+  "entityId": "e00651c5-0111-43d9-bb96-bd61fe038a17",
+  "name": "proposed_emi",
+  "moduleId": "0bf720a4-77f9-472e-81e1-fb8c2bd178f1",
+  "dataType": "numeric",
+  "usageType": "optional",
+  "options": null
+ }
+}

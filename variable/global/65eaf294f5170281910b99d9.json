@@ -1,0 +1,47 @@
+{
+ "entityType": "variable",
+ "data": {
+  "createdAt": "2024-03-08T11:12:20.561Z",
+  "updatedAt": "2024-03-08T11:12:20.561Z",
+  "isDeleted": false,
+  "entityId": "65eaf294f5170281910b99d9",
+  "name": "b",
+  "category": "globalVar",
+  "scope": "workspace",
+  "dataType": "list",
+  "value": {
+   "data": [
+    {
+     "createdAt": "2024-01-16T03:37:31.132Z",
+     "credit_score": 842,
+     "current_loans": {
+ 
+},
+     "email_id": "Bernita.Konopelski91@hotmail.com",
+     "id": "1",
+     "name": "Brittany Davis",
+     "payroll_13m": 44,
+     "property_value": 14492,
+     "taxable_income_last_year": 18
+    },
+    {
+     "createdAt": "2024-01-16T05:23:55.429Z",
+     "credit_score": 758,
+     "current_loans": {
+ 
+},
+     "email_id": "Vernice.Fadel45@yahoo.com",
+     "id": "2",
+     "name": "Curtis Leffler Sr.",
+     "payroll_13m": 4,
+     "property_value": 70667,
+     "taxable_income_last_year": 26
+    }
+   ],
+   "isSecret": false,
+   "canReset": false
+  },
+  "isFunction": false,
+  "functionName": ""
+ }
+}
