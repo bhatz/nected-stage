@@ -1,0 +1,11 @@
+{
+ "entityType": "module",
+ "data": {
+  "createdAt": "2026-02-04T05:04:37.975Z",
+  "updatedAt": "2026-02-04T05:04:37.975Z",
+  "isDeleted": false,
+  "entityId": "631f1f4c-e566-43c9-a484-4e554b30a072",
+  "name": "OnbaseAttributes",
+  "description": ""
+ }
+}

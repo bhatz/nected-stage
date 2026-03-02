@@ -3,15 +3,15 @@
  "category": "decisionTable",
  "data": {
   "createdAt": "2025-10-24T10:28:22.114Z",
-  "updatedAt": "2025-10-24T10:28:22.114Z",
+  "updatedAt": "2026-01-06T13:09:38.603745Z",
   "isDeleted": false,
-  "testedAt": "0001-01-01T00:00:00Z",
+  "testedAt": "2026-01-06T13:09:38.603Z",
   "publishedAt": "0001-01-01T00:00:00Z",
   "entityId": "e4cf7be6-677f-45e5-b6a5-53f159395ca0",
   "version": "draft",
   "name": "CustomerBandSegmentations",
   "commitId": "commit-76b48077-f863-448f-9d5b-a274b7f46904",
-  "status": "draft",
+  "status": "tested",
   "lastVersion": "",
   "isLive": false,
   "commitInfo": {
@@ -878,10 +878,11 @@
    "dateFormat": "in",
    "timeout": 0,
    "timeoutAsync": 0,
-   "timeoutCron": 0
+   "timeoutCron": 0,
+   "styles": null
   },
   "isDemo": false,
-  "warnings": null,
+  "warnings": [],
   "schemaVersion": "0.1.1"
  },
  "dependencies": [
@@ -923,6 +924,16 @@
    "dependencyType": "module_schema",
    "dependencyId": "96212600-2716-4143-bcfa-b34b89b7cf03",
    "dependencyVersion": "live"
+  }
+ ],
+ "entityTags": [
+  {
+   "isDeleted": false,
+   "createdAt": "2025-12-17T12:58:35.88394Z",
+   "updatedAt": "2025-12-17T12:58:35.88394Z",
+   "entityType": "rule",
+   "entityId": "e4cf7be6-677f-45e5-b6a5-53f159395ca0",
+   "tagId": "a9e58b80-06c6-4995-bc81-50e88194eb92"
   }
  ]
 }

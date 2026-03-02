@@ -1,0 +1,12 @@
+{
+ "entityType": "tag",
+ "data": {
+  "createdAt": "2026-01-06T13:32:51.88Z",
+  "updatedAt": "2026-01-06T13:32:51.88Z",
+  "isDeleted": false,
+  "entityId": "35750ffb-9a6e-4758-97a7-9822a72d95ea",
+  "name": "North India",
+  "color": "#D3C0FF",
+  "type": "Region"
+ }
+}

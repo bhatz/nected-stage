@@ -1,0 +1,35 @@
+{
+ "entityType": "module_schema",
+ "data": {
+  "createdAt": "2026-02-04T05:04:37.984Z",
+  "updatedAt": "2026-02-04T05:04:37.984Z",
+  "isDeleted": false,
+  "entityId": "e900d0f2-39a4-4feb-b3fa-9241e24b1f3c",
+  "name": "BenchmarkList",
+  "moduleId": "631f1f4c-e566-43c9-a484-4e554b30a072",
+  "dataType": "list",
+  "usageType": "optional",
+  "options": [
+   {
+    "value": [
+     {
+      "BenchmarkName": "FHA 80",
+      "BenchmarkValue": 100
+     },
+     {
+      "BenchmarkName": "FHA 50",
+      "BenchmarkValue": 512
+     },
+     {
+      "BenchmarkName": "Truven 60",
+      "BenchmarkValue": 40
+     },
+     {
+      "BenchmarkName": "MED",
+      "BenchmarkValue": 50
+     }
+    ]
+   }
+  ]
+ }
+}

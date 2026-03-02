@@ -3,9 +3,9 @@
  "category": "decisionTable",
  "data": {
   "createdAt": "2025-10-24T10:28:22.115Z",
-  "updatedAt": "2025-12-17T12:00:33.795287Z",
+  "updatedAt": "2026-01-30T06:51:10.309211Z",
   "isDeleted": false,
-  "testedAt": "2025-12-17T12:00:33.794Z",
+  "testedAt": "2026-01-30T06:51:10.308Z",
   "publishedAt": "0001-01-01T00:00:00Z",
   "entityId": "4425f3ca-6a8f-4242-8e06-f5e244a5e7a0",
   "version": "draft",
@@ -152,9 +152,9 @@
  "name": "pricing_tier",
  "dataType": "string",
  "returnType": "",
- "value": "P1",
+ "value": "P1 {{.customInput.Segment}}",
  "next": "",
- "executedValue": "P1",
+ "executedValue": "P1 {{.customInput.Segment}}",
  "attribute": "",
  "source": "",
  "schemaId": ""
@@ -237,7 +237,9 @@
  "schemaId": ""
 }
     },
-    "actionNode": null,
+    "actionNode": {
+     
+    },
     "firstOutputData": "",
     "firstActionNode": ""
    },
@@ -1080,7 +1082,8 @@
    "dateFormat": "in",
    "timeout": 0,
    "timeoutAsync": 0,
-   "timeoutCron": 0
+   "timeoutCron": 0,
+   "styles": null
   },
   "isDemo": false,
   "warnings": [],
@@ -1090,7 +1093,7 @@
   {
    "isDeleted": false,
    "createdAt": "2025-10-24T10:28:22.181107Z",
-   "updatedAt": "2025-10-24T10:28:22.181107Z",
+   "updatedAt": "2026-01-30T06:51:08.48707Z",
    "entityCommitId": "commit-97b696f3-70ee-42bb-843d-c97c3d11f897",
    "entityType": "rule",
    "entityId": "4425f3ca-6a8f-4242-8e06-f5e244a5e7a0",
@@ -1103,7 +1106,7 @@
   {
    "isDeleted": false,
    "createdAt": "2025-10-24T10:28:22.180042Z",
-   "updatedAt": "2025-10-24T10:28:22.180042Z",
+   "updatedAt": "2026-01-30T06:51:08.485984Z",
    "entityCommitId": "commit-97b696f3-70ee-42bb-843d-c97c3d11f897",
    "entityType": "rule",
    "entityId": "4425f3ca-6a8f-4242-8e06-f5e244a5e7a0",
@@ -1116,7 +1119,7 @@
   {
    "isDeleted": false,
    "createdAt": "2025-10-24T10:28:22.177802Z",
-   "updatedAt": "2025-10-24T10:28:22.177802Z",
+   "updatedAt": "2026-01-30T06:51:08.483637Z",
    "entityCommitId": "commit-97b696f3-70ee-42bb-843d-c97c3d11f897",
    "entityType": "rule",
    "entityId": "4425f3ca-6a8f-4242-8e06-f5e244a5e7a0",
@@ -1125,6 +1128,32 @@
    "dependencyType": "module_schema",
    "dependencyId": "e2a9d5d8-2b02-4126-bee8-d60ae748c8de",
    "dependencyVersion": "live"
+  }
+ ],
+ "entityTags": [
+  {
+   "isDeleted": false,
+   "createdAt": "2025-12-17T12:52:47.712842Z",
+   "updatedAt": "2025-12-17T13:11:26.942142Z",
+   "entityType": "rule",
+   "entityId": "4425f3ca-6a8f-4242-8e06-f5e244a5e7a0",
+   "tagId": "aac58bde-c15b-4658-83ac-d5d3c1ee2a65"
+  },
+  {
+   "isDeleted": false,
+   "createdAt": "2025-12-17T12:21:08.276802Z",
+   "updatedAt": "2025-12-17T13:11:26.939818Z",
+   "entityType": "rule",
+   "entityId": "4425f3ca-6a8f-4242-8e06-f5e244a5e7a0",
+   "tagId": "a9e58b80-06c6-4995-bc81-50e88194eb92"
+  },
+  {
+   "isDeleted": false,
+   "createdAt": "2025-12-17T12:52:47.715395Z",
+   "updatedAt": "2025-12-17T13:11:26.936385Z",
+   "entityType": "rule",
+   "entityId": "4425f3ca-6a8f-4242-8e06-f5e244a5e7a0",
+   "tagId": "ea76d2d3-3612-4517-9a06-88353e4007d8"
   }
  ]
 }

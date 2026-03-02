@@ -1,0 +1,14 @@
+{
+ "entityType": "module_schema",
+ "data": {
+  "createdAt": "2026-02-04T05:04:37.979Z",
+  "updatedAt": "2026-02-04T05:04:37.979Z",
+  "isDeleted": false,
+  "entityId": "fd7a56d1-2d14-474a-bd82-fd4e19d96c01",
+  "name": "RepricedAmount",
+  "moduleId": "631f1f4c-e566-43c9-a484-4e554b30a072",
+  "dataType": "numeric",
+  "usageType": "optional",
+  "options": null
+ }
+}

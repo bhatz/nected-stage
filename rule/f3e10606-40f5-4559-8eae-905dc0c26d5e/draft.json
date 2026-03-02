@@ -330,7 +330,8 @@
    "dateFormat": "in",
    "timeout": 0,
    "timeoutAsync": 0,
-   "timeoutCron": 0
+   "timeoutCron": 0,
+   "styles": null
   },
   "isDemo": false,
   "warnings": [],
@@ -362,6 +363,24 @@
    "dependencyType": "variable",
    "dependencyId": "65eaf294f5170281910b99d9",
    "dependencyVersion": "live"
+  }
+ ],
+ "entityTags": [
+  {
+   "isDeleted": false,
+   "createdAt": "2026-01-06T13:33:57.71842Z",
+   "updatedAt": "2026-01-06T13:33:57.71842Z",
+   "entityType": "rule",
+   "entityId": "f3e10606-40f5-4559-8eae-905dc0c26d5e",
+   "tagId": "dbf979d2-6611-4125-bdb4-dfc0b7c36e8b"
+  },
+  {
+   "isDeleted": false,
+   "createdAt": "2026-01-06T13:33:57.716378Z",
+   "updatedAt": "2026-01-06T13:33:57.716378Z",
+   "entityType": "rule",
+   "entityId": "f3e10606-40f5-4559-8eae-905dc0c26d5e",
+   "tagId": "9a5ece2f-49e2-45ab-8f5e-d36443363e34"
   }
  ]
 }

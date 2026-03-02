@@ -2976,7 +2976,8 @@
    "dateFormat": "in",
    "timeout": 0,
    "timeoutAsync": 0,
-   "timeoutCron": 0
+   "timeoutCron": 0,
+   "styles": null
   },
   "isDemo": false,
   "warnings": [],
@@ -3008,6 +3009,16 @@
    "dependencyType": "module_schema",
    "dependencyId": "7d2e42c0-a74d-456e-89f2-793b8573311c",
    "dependencyVersion": "live"
+  }
+ ],
+ "entityTags": [
+  {
+   "isDeleted": false,
+   "createdAt": "2026-01-06T13:31:36.187715Z",
+   "updatedAt": "2026-01-06T13:31:36.187715Z",
+   "entityType": "rule",
+   "entityId": "8b8d172f-a065-467d-9889-17757c307a6e",
+   "tagId": "ea76d2d3-3612-4517-9a06-88353e4007d8"
   }
  ]
 }

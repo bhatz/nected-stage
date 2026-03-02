@@ -1,0 +1,12 @@
+{
+ "entityType": "tag",
+ "data": {
+  "createdAt": "2026-01-02T08:08:32.513Z",
+  "updatedAt": "2026-01-02T08:09:05.783828Z",
+  "isDeleted": false,
+  "entityId": "9a911c77-8fc5-4453-b44e-66dfe066615e",
+  "name": "P2",
+  "color": "#D3C0FF",
+  "type": "Product Line"
+ }
+}

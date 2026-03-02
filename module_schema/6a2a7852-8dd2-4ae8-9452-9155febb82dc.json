@@ -1,0 +1,14 @@
+{
+ "entityType": "module_schema",
+ "data": {
+  "createdAt": "2026-02-04T05:04:37.983Z",
+  "updatedAt": "2026-02-04T05:04:37.983Z",
+  "isDeleted": false,
+  "entityId": "6a2a7852-8dd2-4ae8-9452-9155febb82dc",
+  "name": "ClaimType",
+  "moduleId": "631f1f4c-e566-43c9-a484-4e554b30a072",
+  "dataType": "string",
+  "usageType": "optional",
+  "options": null
+ }
+}

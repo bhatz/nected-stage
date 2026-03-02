@@ -1,0 +1,14 @@
+{
+ "entityType": "module_schema",
+ "data": {
+  "createdAt": "2026-02-04T05:04:37.982Z",
+  "updatedAt": "2026-02-04T05:04:37.982Z",
+  "isDeleted": false,
+  "entityId": "66e98144-58db-4610-ac78-76c80c669c08",
+  "name": "PayerID",
+  "moduleId": "631f1f4c-e566-43c9-a484-4e554b30a072",
+  "dataType": "numeric",
+  "usageType": "optional",
+  "options": null
+ }
+}

@@ -92,7 +92,8 @@
    "dateFormat": "in",
    "timeout": 0,
    "timeoutAsync": 0,
-   "timeoutCron": 0
+   "timeoutCron": 0,
+   "styles": null
   },
   "isDemo": false,
   "warnings": null,
@@ -124,6 +125,24 @@
    "dependencyType": "rule",
    "dependencyId": "4d897723-f6cc-4030-b3ba-523b811644ea",
    "dependencyVersion": "draft"
+  }
+ ],
+ "entityTags": [
+  {
+   "isDeleted": false,
+   "createdAt": "2026-01-06T13:31:45.273247Z",
+   "updatedAt": "2026-01-06T13:31:45.273247Z",
+   "entityType": "rule",
+   "entityId": "26a3ae19-cff3-4854-acee-edf5578212b6",
+   "tagId": "9a911c77-8fc5-4453-b44e-66dfe066615e"
+  },
+  {
+   "isDeleted": false,
+   "createdAt": "2025-12-30T10:53:05.946895Z",
+   "updatedAt": "2026-01-06T13:31:45.271783Z",
+   "entityType": "rule",
+   "entityId": "26a3ae19-cff3-4854-acee-edf5578212b6",
+   "tagId": "ea76d2d3-3612-4517-9a06-88353e4007d8"
   }
  ]
 }

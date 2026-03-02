@@ -56,6 +56,7 @@
  "connectorId": "",
  "entity": "rule",
  "entityId": "82d3455f-9a69-4bc4-88a6-d8a7f8fa6e6e",
+ "pluginName": "",
  "config": {
   "query": ""
  },
@@ -317,7 +318,8 @@
    "dateFormat": "",
    "timeout": 0,
    "timeoutAsync": 0,
-   "timeoutCron": 0
+   "timeoutCron": 0,
+   "styles": null
   },
   "isDemo": false,
   "warnings": [],
@@ -339,19 +341,6 @@
   },
   {
    "isDeleted": false,
-   "createdAt": "2025-09-03T10:45:26.539386Z",
-   "updatedAt": "2025-09-03T11:14:59.306225Z",
-   "entityCommitId": "commit-bc404eff-bc3e-4b30-88d8-0834c8e863cb",
-   "entityType": "rule",
-   "entityId": "82d3455f-9a69-4bc4-88a6-d8a7f8fa6e6e",
-   "entityVersion": "draft",
-   "entityNodeId": "then-actionData_1",
-   "dependencyType": "rule",
-   "dependencyId": "82d3455f-9a69-4bc4-88a6-d8a7f8fa6e6e",
-   "dependencyVersion": "draft"
-  },
-  {
-   "isDeleted": false,
    "createdAt": "2025-09-03T10:41:45.310168Z",
    "updatedAt": "2025-09-03T11:14:59.307091Z",
    "entityCommitId": "commit-bc404eff-bc3e-4b30-88d8-0834c8e863cb",
@@ -362,6 +351,29 @@
    "dependencyType": "variable",
    "dependencyId": "ebd79b3b-f2cc-4fde-a770-ca63e554428f",
    "dependencyVersion": "live"
+  },
+  {
+   "isDeleted": false,
+   "createdAt": "2025-09-03T10:45:26.539386Z",
+   "updatedAt": "2025-09-03T11:14:59.306225Z",
+   "entityCommitId": "commit-bc404eff-bc3e-4b30-88d8-0834c8e863cb",
+   "entityType": "rule",
+   "entityId": "82d3455f-9a69-4bc4-88a6-d8a7f8fa6e6e",
+   "entityVersion": "draft",
+   "entityNodeId": "then-actionData_1",
+   "dependencyType": "rule",
+   "dependencyId": "82d3455f-9a69-4bc4-88a6-d8a7f8fa6e6e",
+   "dependencyVersion": "draft"
+  }
+ ],
+ "entityTags": [
+  {
+   "isDeleted": false,
+   "createdAt": "2026-01-06T13:32:00.952597Z",
+   "updatedAt": "2026-01-06T13:32:00.952597Z",
+   "entityType": "rule",
+   "entityId": "82d3455f-9a69-4bc4-88a6-d8a7f8fa6e6e",
+   "tagId": "dbf979d2-6611-4125-bdb4-dfc0b7c36e8b"
   }
  ]
 }

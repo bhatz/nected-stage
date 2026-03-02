@@ -1,0 +1,12 @@
+{
+ "entityType": "tag",
+ "data": {
+  "createdAt": "2026-01-02T08:08:56.96Z",
+  "updatedAt": "2026-01-02T08:08:56.96Z",
+  "isDeleted": false,
+  "entityId": "dbf979d2-6611-4125-bdb4-dfc0b7c36e8b",
+  "name": "P3",
+  "color": "#FFCC99",
+  "type": "Product Line"
+ }
+}

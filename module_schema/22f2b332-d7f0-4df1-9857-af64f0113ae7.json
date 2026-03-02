@@ -1,0 +1,14 @@
+{
+ "entityType": "module_schema",
+ "data": {
+  "createdAt": "2026-02-04T05:04:37.981Z",
+  "updatedAt": "2026-02-04T05:04:37.981Z",
+  "isDeleted": false,
+  "entityId": "22f2b332-d7f0-4df1-9857-af64f0113ae7",
+  "name": "SourceSystemName",
+  "moduleId": "631f1f4c-e566-43c9-a484-4e554b30a072",
+  "dataType": "string",
+  "usageType": "optional",
+  "options": null
+ }
+}

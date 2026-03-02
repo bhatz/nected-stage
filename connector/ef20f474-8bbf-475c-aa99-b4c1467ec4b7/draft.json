@@ -1,0 +1,16 @@
+{
+ "entityType": "connector",
+ "category": "msexcel",
+ "data": {
+  "createdAt": "2026-02-09T10:19:53.91Z",
+  "updatedAt": "2026-02-09T10:20:22.484629Z",
+  "isDeleted": false,
+  "entityId": "ef20f474-8bbf-475c-aa99-b4c1467ec4b7",
+  "name": "support account",
+  "isDemo": false,
+  "category": "third-party",
+  "isSource": true,
+  "isAction": true,
+  "isTrigger": false
+ }
+}
