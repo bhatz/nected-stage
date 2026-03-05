@@ -3,20 +3,20 @@
  "category": "simpleRule",
  "data": {
   "createdAt": "2026-01-09T17:41:43.503Z",
-  "updatedAt": "2026-01-09T17:41:43.503Z",
+  "updatedAt": "2026-03-05T16:36:51.850573Z",
   "isDeleted": false,
   "testedAt": "0001-01-01T00:00:00Z",
   "publishedAt": "0001-01-01T00:00:00Z",
   "entityId": "54ddead1-221e-4151-99aa-7016e7574d9b",
   "version": "draft",
   "name": "sr audit",
-  "commitId": "commit-c941003b-0cc2-4761-a8af-0c180b228119",
+  "commitId": "commit-1577bf0b-2e28-4261-a0fd-88d675c65bcb",
   "status": "draft",
   "lastVersion": "",
   "isLive": false,
   "commitInfo": {
-   "title": "Created at 2026-01-09 17:41:43",
-   "timeStamp": "2026-01-09T17:41:43.503803616Z"
+   "title": "Created at 2026-03-05 16:36:51",
+   "timeStamp": "2026-03-05T16:36:51.821910112Z"
   },
   "customInput": {
    "Salary": {
@@ -224,7 +224,7 @@
     "CacheKeys": ""
    },
    "timezone": "",
-   "dateFormat": "",
+   "dateFormat": "in",
    "timeout": 0,
    "timeoutAsync": 0,
    "timeoutCron": 0,

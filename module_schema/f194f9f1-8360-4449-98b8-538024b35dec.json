@@ -1,0 +1,45 @@
+{
+ "entityType": "module_schema",
+ "data": {
+  "createdAt": "2026-03-05T06:35:13.749Z",
+  "updatedAt": "2026-03-05T06:35:13.749Z",
+  "isDeleted": false,
+  "entityId": "f194f9f1-8360-4449-98b8-538024b35dec",
+  "name": "xx",
+  "moduleId": "0ae34a7a-f015-47f8-8a1c-b8a22e473185",
+  "dataType": "list",
+  "usageType": "optional",
+  "options": [
+   {
+    "value": [
+     1,
+     2,
+     3
+    ]
+   },
+   {
+    "value": [
+     1,
+     2,
+     3,
+     4
+    ]
+   }
+  ]
+ },
+ "dependencies": [
+  {
+   "isDeleted": false,
+   "createdAt": "2026-03-05T06:35:13.763204Z",
+   "updatedAt": "2026-03-05T06:35:13.763204Z",
+   "entityCommitId": "",
+   "entityType": "module_schema",
+   "entityId": "f194f9f1-8360-4449-98b8-538024b35dec",
+   "entityVersion": "live",
+   "entityNodeId": "module",
+   "dependencyType": "module",
+   "dependencyId": "0ae34a7a-f015-47f8-8a1c-b8a22e473185",
+   "dependencyVersion": "live"
+  }
+ ]
+}
