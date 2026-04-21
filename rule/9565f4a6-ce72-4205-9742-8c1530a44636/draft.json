@@ -3,7 +3,7 @@
  "category": "decisionTable",
  "data": {
   "createdAt": "2026-01-30T06:51:51.236Z",
-  "updatedAt": "2026-01-30T07:05:47.073847Z",
+  "updatedAt": "2026-03-08T08:08:01.239661Z",
   "isDeleted": false,
   "testedAt": "2026-01-30T06:55:38.454Z",
   "publishedAt": "0001-01-01T00:00:00Z",
@@ -44,12 +44,18 @@
  "nextId": "",
  "prevId": "",
  "firstOutputData": "output_mhLPWj",
- "isEnabled": true
+ "isEnabled": true,
+ "annotation": ""
 }
    },
    "properties": {
-    "rule_03": {
+    "param_ecb0oH": {
  "nextId": "",
+ "prevId": "rule_03",
+ "type": "simpleCondition"
+},
+    "rule_03": {
+ "nextId": "param_ecb0oH",
  "prevId": "",
  "type": "simpleCondition"
 }
@@ -66,11 +72,22 @@
    "firstRow": "rule_01",
    "firstProperty": "rule_03",
    "firstResult": "result_1rHXNj",
-   "firstAggOutputData": ""
+   "firstAggOutputData": "aggData_untitled"
   },
   "action": {
    "then": {
     "outputData": {
+     "aggData_untitled": {
+ "name": "untitled",
+ "dataType": "jsFormula",
+ "returnType": "number",
+ "value": "// this is code\n// this is code\n// this is code\n// this is code\n// this is code\n// this is code\n// this is code\n// this is code\n// this is code\n// this is code\n// this is code\n// this is code\n// this is code\n// this is code\n\n1",
+ "next": "",
+ "executedValue": 1,
+ "attribute": "",
+ "source": "",
+ "schemaId": ""
+},
      "output_mhLPWj": {
  "name": "keyName",
  "dataType": "string",
@@ -98,6 +115,42 @@
   },
   "conditions": {
    "nodes": {
+    "c_0chlJg": {
+ "value": "",
+ "sourceType": "",
+ "name": "",
+ "operator": "sw",
+ "dataType": "string",
+ "nodeType": "condition",
+ "attribute": "",
+ "query": "",
+ "parent": "rule_01",
+ "children": null,
+ "leftNode": [
+  "param_ecb0oH"
+ ],
+ "rightNode": [
+  "rhs_n8VYjp"
+ ],
+ "siblingIndex": 1,
+ "returnType": ""
+},
+    "param_ecb0oH": {
+ "value": null,
+ "sourceType": "customInput",
+ "name": "",
+ "operator": "",
+ "dataType": "string",
+ "nodeType": "params",
+ "attribute": "myName",
+ "query": "",
+ "parent": "",
+ "children": null,
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 1,
+ "returnType": ""
+},
     "rhs_BoUYN7": {
  "value": "Mukul",
  "sourceType": "",
@@ -108,6 +161,22 @@
  "attribute": "",
  "query": "",
  "parent": "rule_02",
+ "children": null,
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 1,
+ "returnType": ""
+},
+    "rhs_n8VYjp": {
+ "value": "aaa",
+ "sourceType": "",
+ "name": "",
+ "operator": "",
+ "dataType": "string",
+ "nodeType": "constant",
+ "attribute": "",
+ "query": "",
+ "parent": "c_0chlJg",
  "children": null,
  "leftNode": null,
  "rightNode": null,
@@ -125,7 +194,8 @@
  "query": "",
  "parent": "",
  "children": [
-  "rule_02"
+  "rule_02",
+  "c_0chlJg"
  ],
  "leftNode": null,
  "rightNode": null,
